@@ -1,11 +1,28 @@
 ---
 name: pixel-gif-sticker-pack
-description: Turn an authorized character illustration, mascot, or rendered 3D reference into a pack of individually animated chat sticker GIFs, with a playable preview and verified ZIP. Use for single packs and large themed series with distinct expressions and gestures.
+description: Create or repair chat sticker GIFs from character references, choosing pixel, clean illustration or photographic styling and light motion or consecutive character actions. Deliver transparent GIFs, playback previews and a verified ZIP with explicit visual review for animated actions.
 ---
 
 # Animated chat sticker packs
 
 Carry forward the latest reference, required count, format, language, and visual constraints. For a GLB, render a front or three-quarter reference with the face and identifying details visible. If the user supplied a drawing, preserve the recognizable silhouette, facial features, palette, and signature accessories. Use only imagery the user provided or authorized for the task.
+
+## Choose appearance and movement separately
+
+Carry forward accepted choices rather than asking again. Choose two independent axes:
+
+| Appearance | Rendering |
+| --- | --- |
+| Pixel | Deliberate pixel clusters and crisp stepped outlines; `--render-style pixel`, 320px |
+| Clean illustration | Anime, chibi, mascot or photo-to-illustration artwork; HD, 512px |
+| Photographic | Photo-like people or pets; preserve accepted likeness and lighting; HD, 512px |
+
+Subject categories such as anime, pets and public figures do not select a movement method. HD specifies sampling and resolution; it does not promise consistent anatomy or smoother motion. Photo-to-anime is an input transformation, not an extra appearance mode.
+
+- **Light motion:** one distinct expression/pose per sticker, animated with small bounce, nod, sway, squash and optional accents. Use `export_pack.py`. Keep captions fixed. A pack must still contain distinct visible expressions/poses, not one portrait with 25 captions.
+- **Consecutive character action:** generated sequential poses with coordinated face, head, shoulders, torso and relevant limbs, plus hair/clothing follow-through. Use the keyframe workflow below. A frozen body with only a rotating arm does not fulfill this mode. Do not substitute light motion to hide a failed action without telling the user.
+
+If the user says “like the approved full-character action,” preserve that method. When matching an existing reference, preserve its appearance unless a style conversion was requested. For photographic actions, pilot one restrained gesture before expanding; do not automatically add beauty filters. Rejection of one selfie animation does not reject all photographic stickers.
 
 ## Design and generate
 
@@ -16,9 +33,11 @@ Carry forward the latest reference, required count, format, language, and visual
 
 ## Articulated actions
 
-When the user asks a character to wave, give a thumbs-up, shrug, pump a fist, make a heart, or otherwise move a limb, use [the keyframe workflow](references/keyframes.md) and `scripts/export_keyframes.py`. Generate consecutive poses of the same character and compose them with shared alignment. Keep photographic and anime rendering styles as requested. Whole-sprite deformation alone does not fulfill a request for articulated motion.
+When the user requests the gesture to unfold over time, use [the keyframe workflow](references/keyframes.md) and `scripts/export_keyframes.py`. If the request is explicitly light motion, a static waving/heart pose plus a small preset remains appropriate. Generate consecutive poses of the same character and compose them with shared alignment. Keep photographic and anime rendering styles as requested. Whole-sprite deformation alone does not fulfill a request for articulated motion.
 
 For subtle idle movement or a large pack of distinct static poses, the existing motion-preset exporter remains appropriate. Keyframe GIFs may have visible pose transitions or identity drift; inspect them and describe material limits. Use a video or rigged compositor only when needed for genuinely smooth continuous motion, preserving the user's chosen provider and method.
+
+Read [the visual stability gate](references/stability.md) for every new consecutive-action workflow and when repairing an ugly or inconsistent frame. Review identity/pose anchors before filling transitions. Inspect the actual decoded frames, native-size face details, normal playback, and the loop seam. Frame count, distinct pixels, smooth timing and a valid ZIP are technical checks, not a visual acceptance decision. Repair a rejected frame and its neighbors, re-export, then repeat review. Keep assistant review separate from user acceptance; do not promise automatic elimination of all ugly frames.
 
 ## Automatic clear rendering
 

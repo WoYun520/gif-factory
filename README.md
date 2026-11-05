@@ -8,11 +8,11 @@
 
 ## 表情包展厅
 
-五个系列，共 **218 张 GIF**。人物高清与连续动作示例为 512 × 512，其余已有示例为 320 × 320；动作小样约 1.12 秒循环，其余约两秒。点击动图可查看原尺寸。新版工具默认导出 512 × 512 清晰版。
+已有系列共 **218 张 GIF**，另有 **2 张完整动作修补候选**，待使用者确认。人物高清与连续动作示例为 512 × 512，其余已有示例为 320 × 320；动作小样约 1.12 秒循环，其余约两秒。点击动图可查看原尺寸。新版工具默认导出 512 × 512 清晰版。
 
 **各系列默认收起；点击对应窗口即可展开分类动图。**
 
-[下载整个项目，包含五个系列共 218 张动图](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
+[下载整个项目，包含 218 张已有示例和 2 张动作修补候选](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
 
 ### 大肥鱼 · 精选动态预览
 
@@ -82,6 +82,21 @@
 | | | | |
 | --- | --- | --- | --- |
 | <a href="examples/whale-maid/07-celebrations/097.gif"><img src="examples/whale-maid/07-celebrations/097.gif" alt="大肥鱼 097 生日快乐" width="150" height="150"></a><br>097 生日快乐 | <a href="examples/whale-maid/07-celebrations/098.gif"><img src="examples/whale-maid/07-celebrations/098.gif" alt="大肥鱼 098 好运来" width="150" height="150"></a><br>098 好运来 | <a href="examples/whale-maid/07-celebrations/099.gif"><img src="examples/whale-maid/07-celebrations/099.gif" alt="大肥鱼 099 周末快乐" width="150" height="150"></a><br>099 周末快乐 | <a href="examples/whale-maid/07-celebrations/100.gif"><img src="examples/whale-maid/07-celebrations/100.gif" alt="大肥鱼 100 鲸喜给你" width="150" height="150"></a><br>100 鲸喜给你 |
+
+</details>
+
+<details>
+<summary><strong>🔎 完整动作稳定性 · 2 张修补候选 · 点击展开</strong></summary>
+
+阿尼亚比心、哆啦A梦挥手的动作一致性修补候选。先锁定关键姿势，再补过渡，并检查实际 GIF 的每一帧和首尾衔接；完成了制作方检查，**仍待使用者确认，不作为已验收的稳定模板**。
+
+| 阿尼亚 · 喜欢你 | 哆啦A梦 · 交给我 |
+| --- | --- |
+| <a href="examples/anime-stability/anya.gif"><img src="examples/anime-stability/anya.gif" alt="阿尼亚比心动作修补候选" width="240" height="240"></a> | <a href="examples/anime-stability/doraemon.gif"><img src="examples/anime-stability/doraemon.gif" alt="哆啦A梦挥手动作修补候选" width="240" height="240"></a> |
+
+两张均为 512 × 512、约 1.6 秒透明循环。阿尼亚保留 16 个不同姿势；哆啦A梦去掉一张孤立坏过渡，保留 15 个不同姿势，并延长相邻眨眼姿势的停顿。另纠正了图集列间距造成的整体位置跳动。
+
+查看[制作和检查记录](examples/anime-stability/review.json)、[阿尼亚逐帧图](examples/anime-stability/anya-frames.png)、[哆啦A梦逐帧图](examples/anime-stability/doraemon-frames.png)。数字检查不能判断是否好看，仍应查看实际播放。
 
 </details>
 
@@ -234,11 +249,23 @@ Skill 可以理解成给 Codex 用的一份做事指南。装好以后，它就�
 
 生成时会用到图片生成工具。第一次运行如果缺少做动图的工具，可以让 Codex 帮你检查和安装。
 
+## 画风和动作分开选
+
+画风有三种：**像素风、高清插画风、真人风**。二次元人物、宠物、吉祥物是题材；照片转插画是输入处理方式。真人风保留已认可的人物动作示例，不把未认可的自拍美颜试验当作默认模板。
+
+动作另选：**轻动效**用一张表情图加点头、弹跳、摇摆或符号变化；**完整动作**用连续姿势，让表情、身体及相关头发、服装一起动。高清导出与动作稳定是两件事，可以分别选择。
+
 ## 让人物做具体动作
 
-想让人物挥手、点赞、比心，可以直接告诉 Codex 动作。Skill 会改走“连续姿势”流程：生成几个动作阶段，固定人物位置后逐帧合成 GIF。它和单张图的弹跳、摇摆、挤压是两种制作方式。
+想让人物挥手、点赞、比心，可以直接告诉 Codex 动作。Skill 会改走“连续姿势”流程：先检查少量关键姿势，再补动作阶段；固定镜头和比例，让人物自然活动，逐帧合成 GIF。它和单张图的弹跳、摇摆、挤压是两种制作方式。
 
 连续动作已有独立导出脚本，详见[操作说明](references/keyframes.md)。这种方法适合小动作，可能有跳帧和细节变化；不等同于视频模型生成的连续运动。
+
+## 怎么减少丑帧
+
+完整动作先检查角色的关键姿势，再补过渡。导出后检查每一张实际 GIF 帧、脸部细节、手指和服装，并看正常播放及首尾衔接。有坏帧就修对应片段、重新导出检查，不用模糊或只转手臂来掩盖问题。
+
+工具会生成编号帧、放大检查图和本地播放页；检查记录与具体 GIF 版本绑定，改图后必须重新检查。自动统计只能判断尺寸、透明背景、时长等，不能保证人物一定好看。详细规则见[画面稳定性检查](references/stability.md)。
 
 ## 人物或宠物发糊怎么办
 
