@@ -8,11 +8,11 @@
 
 ## 表情包展厅
 
-四个系列，共 **212 张 GIF**。人物高清示例为 512 × 512，其余已有示例为 320 × 320；均为约两秒循环，点击动图可查看原尺寸。新版工具默认导出 512 × 512 清晰版。
+五个系列，共 **218 张 GIF**。人物高清与连续动作示例为 512 × 512，其余已有示例为 320 × 320；动作小样约 1.12 秒循环，其余约两秒。点击动图可查看原尺寸。新版工具默认导出 512 × 512 清晰版。
 
 **各系列默认收起；点击对应窗口即可展开分类动图。**
 
-[下载整个项目，包含四个系列共 212 张动图](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
+[下载整个项目，包含五个系列共 218 张动图](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
 
 ### 大肥鱼 · 精选动态预览
 
@@ -82,6 +82,31 @@
 | | | | |
 | --- | --- | --- | --- |
 | <a href="examples/whale-maid/07-celebrations/097.gif"><img src="examples/whale-maid/07-celebrations/097.gif" alt="大肥鱼 097 生日快乐" width="150" height="150"></a><br>097 生日快乐 | <a href="examples/whale-maid/07-celebrations/098.gif"><img src="examples/whale-maid/07-celebrations/098.gif" alt="大肥鱼 098 好运来" width="150" height="150"></a><br>098 好运来 | <a href="examples/whale-maid/07-celebrations/099.gif"><img src="examples/whale-maid/07-celebrations/099.gif" alt="大肥鱼 099 周末快乐" width="150" height="150"></a><br>099 周末快乐 | <a href="examples/whale-maid/07-celebrations/100.gif"><img src="examples/whale-maid/07-celebrations/100.gif" alt="大肥鱼 100 鲸喜给你" width="150" height="150"></a><br>100 鲸喜给你 |
+
+</details>
+
+<details>
+<summary><strong>🎬 真人 × 二次元 · 连续动作 GIF 6 张 · 点击窗口展开</strong></summary>
+
+每张采用多个连续姿势，表现点赞、摊手、挥手、挥拳、打气和比心；512 × 512 透明循环 GIF。关键姿势间可能有轻微跳帧或人物细节变化。
+
+<img src="examples/mixed-actions/preview.gif" alt="雷军、周星驰、山姆奥特曼、路飞、鸣人和阿尼亚的连续动作预览" width="720">
+
+### 真人动作 · 3 张
+
+| | | |
+| --- | --- | --- |
+| <a href="examples/mixed-actions/01-真人/001.gif"><img src="examples/mixed-actions/01-真人/001.gif" alt="雷军：这就稳了" width="180" height="180"></a><br>雷军 · 这就稳了 | <a href="examples/mixed-actions/01-真人/002.gif"><img src="examples/mixed-actions/01-真人/002.gif" alt="周星驰：我也没办法" width="180" height="180"></a><br>周星驰 · 我也没办法 | <a href="examples/mixed-actions/01-真人/003.gif"><img src="examples/mixed-actions/01-真人/003.gif" alt="山姆奥特曼：你好呀" width="180" height="180"></a><br>山姆奥特曼 · 你好呀 |
+
+### 二次元动作 · 3 张
+
+| | | |
+| --- | --- | --- |
+| <a href="examples/mixed-actions/02-二次元/004.gif"><img src="examples/mixed-actions/02-二次元/004.gif" alt="路飞：冲鸭" width="180" height="180"></a><br>路飞 · 冲鸭 | <a href="examples/mixed-actions/02-二次元/005.gif"><img src="examples/mixed-actions/02-二次元/005.gif" alt="鸣人：加油啊" width="180" height="180"></a><br>鸣人 · 加油啊 | <a href="examples/mixed-actions/02-二次元/006.gif"><img src="examples/mixed-actions/02-二次元/006.gif" alt="阿尼亚：爱你哦" width="180" height="180"></a><br>阿尼亚 · 爱你哦 |
+
+[制作记录、参考来源与提示词](examples/mixed-actions/generation.json) · [连续动作制作说明](references/keyframes.md)
+
+台词与姿势为趣味二创，并非真人原话或真实事件。动漫角色为同人小样。
 
 </details>
 
@@ -208,6 +233,12 @@ Skill 可以理解成给 Codex 用的一份做事指南。装好以后，它就�
 你也可以直接说“做一套上班用的”“做 30 张安慰人的”或“用我自己的台词”。数量、文字和风格都可以提。
 
 生成时会用到图片生成工具。第一次运行如果缺少做动图的工具，可以让 Codex 帮你检查和安装。
+
+## 让人物做具体动作
+
+想让人物挥手、点赞、比心，可以直接告诉 Codex 动作。Skill 会改走“连续姿势”流程：生成几个动作阶段，固定人物位置后逐帧合成 GIF。它和单张图的弹跳、摇摆、挤压是两种制作方式。
+
+连续动作已有独立导出脚本，详见[操作说明](references/keyframes.md)。这种方法适合小动作，可能有跳帧和细节变化；不等同于视频模型生成的连续运动。
 
 ## 人物或宠物发糊怎么办
 

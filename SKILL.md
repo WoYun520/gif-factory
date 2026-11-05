@@ -14,6 +14,12 @@ Carry forward the latest reference, required count, format, language, and visual
 - Inspect each atlas at full size. Count actual occupied cells, map each cell to its visible pose, and correct a mismatched caption or regenerate an unusable sprite. Watch for swapped cells, clipped hair or hands, and artifacts across gutters. A 100-sticker pack needs 100 accepted entries.
 - For tiny chat previews, prefer strong readable facial expressions, a short caption and one clear moving accent. Let each motion settle naturally into the next loop. Keep the original source and generated atlases outside the shareable ZIP unless requested.
 
+## Articulated actions
+
+When the user asks a character to wave, give a thumbs-up, shrug, pump a fist, make a heart, or otherwise move a limb, use [the keyframe workflow](references/keyframes.md) and `scripts/export_keyframes.py`. Generate consecutive poses of the same character and compose them with shared alignment. Keep photographic and anime rendering styles as requested. Whole-sprite deformation alone does not fulfill a request for articulated motion.
+
+For subtle idle movement or a large pack of distinct static poses, the existing motion-preset exporter remains appropriate. Keyframe GIFs may have visible pose transitions or identity drift; inspect them and describe material limits. Use a video or rigged compositor only when needed for genuinely smooth continuous motion, preserving the user's chosen provider and method.
+
 ## Automatic clear rendering
 
 The bundled exporter now defaults to **hd**: it renders directly from original atlas crops into 512 × 512 frames with LANCZOS resizing and BICUBIC continuous deformation. Use this default for photographic people, realistic pets and detailed illustration. A user invoking this Skill does not need to request a separate clarity fix or edit a compositor.
