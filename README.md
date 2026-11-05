@@ -8,11 +8,11 @@
 
 ## 表情包展厅
 
-两套角色，共 **200 张 GIF**。每张是 320 × 320 像素，大约两秒循环一次，点击任意动图可查看原尺寸。
+三个系列，共 **208 张 GIF**。每张是 320 × 320 像素，大约两秒循环一次，点击任意动图可查看原尺寸。
 
-**大肥鱼默认展示；点击「像素小秘书」窗口，就能展开另一套 100 张。**
+**大肥鱼默认展示；点击「宠物拟人风格」或「像素小秘书」窗口，可展开对应系列。**
 
-[下载整个项目，包含两套共 200 张动图](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
+[下载整个项目，包含三个系列共 208 张动图](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
 
 ### 大肥鱼 · 精选动态预览
 
@@ -82,6 +82,27 @@
 | | | | |
 | --- | --- | --- | --- |
 | <a href="examples/whale-maid/07-celebrations/097.gif"><img src="examples/whale-maid/07-celebrations/097.gif" alt="大肥鱼 097 生日快乐" width="150" height="150"></a><br>097 生日快乐 | <a href="examples/whale-maid/07-celebrations/098.gif"><img src="examples/whale-maid/07-celebrations/098.gif" alt="大肥鱼 098 好运来" width="150" height="150"></a><br>098 好运来 | <a href="examples/whale-maid/07-celebrations/099.gif"><img src="examples/whale-maid/07-celebrations/099.gif" alt="大肥鱼 099 周末快乐" width="150" height="150"></a><br>099 周末快乐 | <a href="examples/whale-maid/07-celebrations/100.gif"><img src="examples/whale-maid/07-celebrations/100.gif" alt="大肥鱼 100 鲸喜给你" width="150" height="150"></a><br>100 鲸喜给你 |
+
+</details>
+
+<details>
+<summary><strong>🐾 宠物拟人风格 · 柯基 8 张 · 点击窗口展开</strong></summary>
+
+保留真实宠物的毛发与面部特征，搭配服装、道具和拟人姿势，做成中文聊天 GIF。和其他系列一样，使用摇摆、弹跳、挤压及移动小特效制作循环动效。
+
+### 整活与上班 · 4 张
+
+| | | | |
+| --- | --- | --- | --- |
+| <a href="examples/pet-corgi/01-fun-and-work/001.gif"><img src="examples/pet-corgi/01-fun-and-work/001.gif" alt="柯基 嗨起来" width="150" height="150"></a><br>嗨起来 | <a href="examples/pet-corgi/01-fun-and-work/002.gif"><img src="examples/pet-corgi/01-fun-and-work/002.gif" alt="柯基 看我操作" width="150" height="150"></a><br>看我操作 | <a href="examples/pet-corgi/01-fun-and-work/003.gif"><img src="examples/pet-corgi/01-fun-and-work/003.gif" alt="柯基 接着奏乐" width="150" height="150"></a><br>接着奏乐 | <a href="examples/pet-corgi/01-fun-and-work/004.gif"><img src="examples/pet-corgi/01-fun-and-work/004.gif" alt="柯基 不想上班" width="150" height="150"></a><br>不想上班 |
+
+### 吃喝与生活 · 4 张
+
+| | | | |
+| --- | --- | --- | --- |
+| <a href="examples/pet-corgi/02-food-and-life/001.gif"><img src="examples/pet-corgi/02-food-and-life/001.gif" alt="柯基 干饭啦" width="150" height="150"></a><br>干饭啦 | <a href="examples/pet-corgi/02-food-and-life/002.gif"><img src="examples/pet-corgi/02-food-and-life/002.gif" alt="柯基 摸鱼中" width="150" height="150"></a><br>摸鱼中 | <a href="examples/pet-corgi/02-food-and-life/003.gif"><img src="examples/pet-corgi/02-food-and-life/003.gif" alt="柯基 一夜暴富" width="150" height="150"></a><br>一夜暴富 | <a href="examples/pet-corgi/02-food-and-life/004.gif"><img src="examples/pet-corgi/02-food-and-life/004.gif" alt="柯基 晚安啦" width="150" height="150"></a><br>晚安啦 |
+
+宠物原图来自 [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Fawn_and_white_Welsh_Corgi_puppy_standing_on_rear_legs_and_sticking_out_the_tongue.jpg)，作者 Huoadg5888，CC0 授权；以上为参考原图生成的拟人版本。
 
 </details>
 
