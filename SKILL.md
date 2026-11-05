@@ -14,19 +14,19 @@ Carry forward the latest reference, required count, format, language, and visual
 - Inspect each atlas at full size. Count actual occupied cells, map each cell to its visible pose, and correct a mismatched caption or regenerate an unusable sprite. Watch for swapped cells, clipped hair or hands, and artifacts across gutters. A 100-sticker pack needs 100 accepted entries.
 - For tiny chat previews, prefer strong readable facial expressions, a short caption and one clear moving accent. Let each motion settle naturally into the next loop. Keep the original source and generated atlases outside the shareable ZIP unless requested.
 
-## Choose rendering style and handle blur
+## Automatic clear rendering
 
-Choose the rendering path from the reference and the user's requested look. Keep the existing pixel path for intentional pixel art. For photographic people, realistic pets, detailed illustrations, or a report that faces look blurry, read [the clarity guide](references/clarity.md) before exporting.
+The bundled exporter now defaults to **hd**: it renders directly from original atlas crops into 512 × 512 frames with LANCZOS resizing and BICUBIC continuous deformation. Use this default for photographic people, realistic pets and detailed illustration. A user invoking this Skill does not need to request a separate clarity fix or edit a compositor.
 
-- Inspect the original atlas crop and a decoded GIF frame at the same display size. If the original is sharp but the GIF is blocky, fix composition and export before regenerating the artwork.
-- The bundled exporter currently crops sprites to roughly 106 pixels high, composes on a 160 × 160 canvas and enlarges to 320 × 320 with nearest-neighbor resampling. This is an intentional pixel treatment, not a suitable default for realistic faces. Increasing the output size after that reduction does not recover detail.
-- For a clear photographic result, adapt the compositor or use another compositor to render directly from the original high-resolution crop at the final size. A tested starting point is 512 × 512 per GIF, LANCZOS resizing and BICUBIC continuous deformation. Do not send the face through the 160-pixel intermediate canvas. The bundled exporter has no built-in high-resolution mode; do not invent a command-line flag for it.
-- Verify the actual decoded GIF and MP4, including a same-size before/after comparison. Report any remaining source-resolution or GIF-palette limitation; a larger file alone is not evidence of improved clarity.
+- Preserve the accepted face, expression, caption and pose while exporting. For a named person with an ambiguous name, resolve the identity from the user's handle or reference before generating it.
+- Use `--render-style pixel` (or manifest `"render_style": "pixel"`) only when the user explicitly wants pixel art or the reference is intentionally pixel-based. That mode preserves the original 320 × 320 pixel pipeline. The CLI flag overrides the manifest.
+- HD previews default to a clean grid without headings and are assembled from decoded final GIFs; `--preview-layout chapters` opts into category headings. Follow any explicit user choice about preview titles.
+- If a face still looks blurry, inspect the original crop and decoded output at the same display size. Read [the clarity guide](references/clarity.md) for source-resolution limits and before/after validation. Enlarging an already pixelated export cannot recover lost details.
 
 ## Compose and verify
 
 For a repeatable workflow, use [the atlas exporter](scripts/export_pack.py) with Python 3 and Pillow. It uses FFmpeg for MP4 playback. Run `python3 scripts/export_pack.py --help` and read [the manifest format](references/manifest.md) for cell overrides and motion presets. Choose a local font that covers the requested captions. Use another compositor when the brief requires actual skeletal or frame-by-frame character animation.
 
-Deliver one transparent looping GIF per entry, grouped in a ZIP. Default to 320 × 320 for the pixel path and roughly two seconds per loop when the user gave no target platform spec. For photographic output, prefer a direct 512 × 512 composition as described in the clarity guide, unless the user or target platform requires another size. A separate MP4 assembled from the decoded GIFs makes playback inspectable even in a chat surface that shows a still. A static contact sheet can help compare designs when clearly identified as a still.
+Deliver one transparent looping GIF per entry, grouped in a ZIP. Default to clear 512 × 512 GIFs and roughly two seconds per loop; use 320 × 320 only for the intentional pixel path. Respect explicit target-platform size limits with an appropriate compositor or final downsampling, then re-verify the result. A separate MP4 assembled from the decoded GIFs makes playback inspectable even in a chat surface that shows a still. A static contact sheet can help compare designs when clearly identified as a still.
 
 Verify exact count and unique captions, visible movement, frame timing, loop flag, alpha, safe margins, ZIP integrity and MP4 decoding. Inspect each category visually. Report actual deliverables and any limits that affect use. A local playback check does not establish compatibility with a specific messaging platform.

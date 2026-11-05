@@ -4,15 +4,15 @@
 
 比如你有一个卡通人物或吉祥物，想让它说“收到”“好耶”“抱抱”“我好困”。这套工具会帮你设计表情和动作、加上文字，再把做好的动图打包给你。
 
-做完能拿到一张张单独的 GIF、一个打包下载的文件，以及一段能直接播放的预览视频。GIF 的背景可以是透明的，方便放进聊天里。
+做完能拿到一张张单独的 GIF、一个打包下载的文件，以及一段能直接播放的预览视频。GIF 的背景可以是透明的，方便放进聊天里。人物、写实宠物等素材默认直接导出 512 × 512 清晰版；明确要求像素风时使用 320 × 320 像素模式。
 
 ## 表情包展厅
 
-三个系列，共 **208 张 GIF**。每张是 320 × 320 像素，大约两秒循环一次，点击任意动图可查看原尺寸。
+四个系列，共 **212 张 GIF**。人物高清示例为 512 × 512，其余已有示例为 320 × 320；均为约两秒循环，点击动图可查看原尺寸。新版工具默认导出 512 × 512 清晰版。
 
 **各系列默认收起；点击对应窗口即可展开分类动图。**
 
-[下载整个项目，包含三个系列共 208 张动图](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
+[下载整个项目，包含四个系列共 212 张动图](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
 
 ### 大肥鱼 · 精选动态预览
 
@@ -82,6 +82,22 @@
 | | | | |
 | --- | --- | --- | --- |
 | <a href="examples/whale-maid/07-celebrations/097.gif"><img src="examples/whale-maid/07-celebrations/097.gif" alt="大肥鱼 097 生日快乐" width="150" height="150"></a><br>097 生日快乐 | <a href="examples/whale-maid/07-celebrations/098.gif"><img src="examples/whale-maid/07-celebrations/098.gif" alt="大肥鱼 098 好运来" width="150" height="150"></a><br>098 好运来 | <a href="examples/whale-maid/07-celebrations/099.gif"><img src="examples/whale-maid/07-celebrations/099.gif" alt="大肥鱼 099 周末快乐" width="150" height="150"></a><br>099 周末快乐 | <a href="examples/whale-maid/07-celebrations/100.gif"><img src="examples/whale-maid/07-celebrations/100.gif" alt="大肥鱼 100 鲸喜给你" width="150" height="150"></a><br>100 鲸喜给你 |
+
+</details>
+
+<details>
+<summary><strong>👤 四位人物 · 高清 GIF 4 张 · 点击窗口展开</strong></summary>
+
+512 × 512 透明循环 GIF，使用高清合成方式保留人物脸部和衣服细节。Tibo 为 **@thsottiaux（Thibault Sottiaux）**，Dario 为 **Anthropic 的 Dario Amodei**。
+
+| | |
+| --- | --- |
+| <a href="examples/public-figures-hd/001.gif"><img src="examples/public-figures-hd/001.gif" alt="马斯克：冲就完了" width="200" height="200"></a><br>马斯克<br>冲就完了 | <a href="examples/public-figures-hd/002.gif"><img src="examples/public-figures-hd/002.gif" alt="Thibault Sottiaux（@thsottiaux）：先上线" width="200" height="200"></a><br>Thibault Sottiaux（@thsottiaux）<br>先上线 |
+| <a href="examples/public-figures-hd/003.gif"><img src="examples/public-figures-hd/003.gif" alt="Dario Amodei（Anthropic）：已封号" width="200" height="200"></a><br>Dario Amodei（Anthropic）<br>已封号 | <a href="examples/public-figures-hd/004.gif"><img src="examples/public-figures-hd/004.gif" alt="黄仁勋：安排算力" width="200" height="200"></a><br>黄仁勋<br>安排算力 |
+
+[查看同尺寸清晰度对比](examples/public-figures-hd/clarity-comparison.png) · [人物参考来源与署名](examples/public-figures-hd/sources.json)
+
+以上台词和姿势为趣味二创，并非本人原话；“已封号”为表情包文案，不表示真实封号事件。马斯克参考照片作者为 Gage Skidmore，原图及该改编按 [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) 提供。其他人物参考见来源文件。
 
 </details>
 
@@ -197,13 +213,13 @@ Skill 可以理解成给 Codex 用的一份做事指南。装好以后，它就�
 
 写实人物、宠物照片和细腻插画，可以保留原图细节导出清晰版；想要像素风时，继续使用像素化效果。
 
-如果原图清楚、GIF 却发糊，先检查导出过程。不要先把人物缩成很小的像素图，再放大冒充高清。可以直接从原始素材合成 512 × 512 GIF，使用平滑缩放和形变，再检查实际动图与预览视频。
+现在直接调用这个 Skill，就会从原始素材合成 512 × 512 清晰版 GIF，使用平滑缩放和形变，不需要另外修改脚本。预览视频默认不加标题。明确需要像素风时，才切换到像素模式。
 
 你可以对 Codex 说：
 
 > 人物有点糊，请先检查原图与导出过程。保留原图细节，直接合成清晰版 GIF，再给我同尺寸的前后对比。
 
-具体的诊断与处理方法已写进 [Skill](SKILL.md) 和[清晰度处理说明](references/clarity.md)。现有脚本仍采用像素风导出；清晰版需要调整合成方式，单纯调大输出尺寸无法补回细节。
+高清合成已内置到导出脚本。具体规则见 [Skill](SKILL.md) 和[清晰度处理说明](references/clarity.md)。如果原始图片本身已经模糊，仍需换清晰素材；单纯放大不能补回细节。
 
 <details>
 <summary>想自己运行脚本？点这里看操作方法</summary>
@@ -219,7 +235,7 @@ python3 scripts/export_pack.py manifest.json build --font /path/to/font.ttf --pr
 
 `--font` 后面填你电脑上支持中文的字体文件路径。做好的文件会放在 `build` 文件夹。
 
-默认动效包括位移、摇摆、挤压和像素小特效。脚本会检查数量、重复图片、动画是否变化、背景是否透明、有没有裁掉内容，以及压缩包能否打开。
+默认导出 512 × 512 清晰版。需要像素风时，在上面的命令中加上 `--render-style pixel`。默认动效包括位移、摇摆、挤压和移动小特效。脚本会检查数量、重复图片、动画是否变化、背景是否透明、有没有裁掉内容，以及压缩包能否打开。
 
 </details>
 

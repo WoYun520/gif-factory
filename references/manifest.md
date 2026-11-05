@@ -33,8 +33,12 @@ python3 scripts/export_pack.py manifest.json build --font /path/to/font.ttf --pr
 
 Use `--font-index` for a specific face inside a TTC. The output must be empty of earlier exports. The exporter writes a categorized GIF folder, an offline gallery that travels with the ZIP, and an optional MP4. Use `--jobs 2` if the environment needs fewer concurrent workers. The MP4 path requires FFmpeg with libx264. Pillow is required for GIF export.
 
-## Rendering clarity
+## Rendering clarity and previews
 
-The bundled exporter uses the pixel-art path: roughly 106-pixel-high sprites on a 160 × 160 intermediate canvas, enlarged to 320 × 320 with nearest-neighbor resampling. Its motion presets do not imply a photographic rendering mode.
+The exporter defaults to **hd**, including for older manifests without a rendering field. It samples original crops directly at 512 × 512 with LANCZOS resizing and BICUBIC deformation. Photographic people and pets do not pass through the 160-pixel intermediate canvas.
 
-For realistic people or pets, or a blur complaint, read [clarity.md](clarity.md). A clear 512 × 512 output requires a compositor change; the current exporter does not expose a size or high-resolution flag. Preserve the manifest's captions, cell/crop selections, motion and icon choices while adapting the renderer.
+Set top-level `"render_style": "pixel"` only for intentional pixel art. Pixel mode retains 320 × 320 output and the original nearest-neighbor pipeline. A CLI `--render-style hd` or `--render-style pixel` takes precedence over the manifest. Invalid modes fail instead of silently falling back.
+
+With `--preview`, HD defaults to a header-free grid of the decoded GIFs; pixel defaults to chapter headings. `--preview-layout clean` and `--preview-layout chapters` explicitly select either layout.
+
+Read [clarity.md](clarity.md) when source material is soft or a user requests a clarity comparison. The exporter verifies actual dimensions, transparency, margins and motion for both modes.

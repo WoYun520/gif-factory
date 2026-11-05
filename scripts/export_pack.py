@@ -56,6 +56,7 @@ class Job:
     folder: str
     font: str
     font_index: int
+    render_style: str = 'hd'
 
 def pulse(t, at, width):
     return exp(-((t-at)/width)**2)
@@ -162,6 +163,8 @@ def crop_sprite(job):
         raise ValueError(f'No transparent sprite in cell {job.entry["cell"]} of {job.atlas}')
     art.putalpha(alpha)
     art=art.crop(alpha.getbbox())
+    if job.render_style == 'hd':
+        return art
     ratio=min(106/art.height,118/art.width)
     return art.resize((max(1,round(art.width*ratio)),max(1,round(art.height*ratio))),NEAREST)
 
@@ -194,10 +197,51 @@ def draw_frame(sprite, label, job, t):
     composite.alpha_composite(label)
     return composite
 
+def make_hd_caption(text, ink, font_path, font_index):
+    face=Image.new('RGBA',(512,512))
+    pen=ImageDraw.Draw(face)
+    size=62 if len(text)<=4 else 56
+    font=ImageFont.truetype(font_path,size,index=font_index)
+    while font.getlength(text)>440:
+        size-=1
+        font=ImageFont.truetype(font_path,size,index=font_index)
+    pen.text((256,450),text,font=font,anchor='mm',fill=ink,stroke_width=1,stroke_fill=ink)
+    return outlined(face,4)
+
+
+def draw_hd_frame(source, label, job, t):
+    # Sample the original crop for every frame, never a reduced pixel sprite.
+    size=512
+    scale=size/160
+    ratio=min(330/source.height,400/source.width)
+    base_w,base_h=round(source.width*ratio),round(source.height*ratio)
+    dx,dy,squash,sway=motion(job.entry['motion'],t)
+    w=max(1,base_w+round(squash*scale))
+    h=max(1,base_h-round(squash*scale))
+    art=source.resize((w,h),Image.Resampling.LANCZOS)
+    pad=45
+    padded=Image.new('RGBA',(w+pad*2,h))
+    padded.alpha_composite(art,(pad,0))
+    shear=sway*scale
+    art=padded.transform(padded.size,Image.Transform.AFFINE,
+                         (1,shear/h,-shear,0,1,0),Image.Resampling.BICUBIC)
+    layer=Image.new('RGBA',(size,size))
+    layer.alpha_composite(art,(round((size-w)/2+dx*scale)-pad,
+                               round(390-h+dy*scale)))
+    accents=Image.new('RGBA',(160,160))
+    effects(accents,job.entry['icon'],t,job.tint,job.ink,job.number)
+    layer.alpha_composite(accents.resize((size,size),NEAREST))
+    layer=outlined(layer,3)
+    layer.alpha_composite(label)
+    layer.putalpha(layer.getchannel('A').point(lambda a:255 if a>=128 else 0))
+    return layer
+
+
 def save_gif(path, frames):
-    palette_input=Image.new('RGB',(SIZE*4,SIZE*6),WHITE)
+    size=frames[0].width
+    palette_input=Image.new('RGB',(size*4,size*6),WHITE)
     for j,im in enumerate(frames):
-        palette_input.paste(im,(SIZE*(j%4),SIZE*(j//4)),im.getchannel('A'))
+        palette_input.paste(im,(size*(j%4),size*(j//4)),im.getchannel('A'))
     palette=palette_input.quantize(colors=250)
     indexed=[]
     for im in frames:
@@ -213,18 +257,19 @@ def save_gif(path, frames):
 def clean_filename(text):
     return re.sub(r'[\\/:*?"<>|\x00-\x1f]', '_', text)
 
-def verify(path):
+def verify(path, expected_size=None):
     frames=set()
     duration=0
     with Image.open(path) as image:
-        if image.size!=(SIZE,SIZE) or image.info.get('loop')!=0:
+        size=image.width
+        if size not in {320,512} or image.height!=size or (expected_size is not None and size!=expected_size) or image.info.get('loop')!=0:
             raise ValueError(f'Invalid size or loop flag: {path}')
         for frame in ImageSequence.Iterator(image):
             duration+=frame.info['duration']
             rendered=frame.convert('RGBA')
             alpha=rendered.getchannel('A')
             box=alpha.getbbox()
-            if alpha.getextrema()!=(0,255) or box is None or not all(0<k<SIZE for k in box):
+            if alpha.getextrema()!=(0,255) or box is None or not all(0<k<size for k in box):
                 raise ValueError(f'Invalid alpha or clipped content: {path}')
             frames.add(hashlib.sha256(rendered.tobytes()).digest())
     if duration!=TICKS*DELAY or len(frames)<4:
@@ -233,14 +278,19 @@ def verify(path):
 
 def build_one(job):
     sprite=crop_sprite(job)
-    label=make_caption(job.entry['text'],job.ink,job.font,job.font_index)
-    frames=[draw_frame(sprite,label,job,k/TICKS) for k in range(TICKS)]
+    if job.render_style == 'hd':
+        label=make_hd_caption(job.entry['text'],job.ink,job.font,job.font_index)
+        frames=[draw_hd_frame(sprite,label,job,k/TICKS) for k in range(TICKS)]
+    else:
+        label=make_caption(job.entry['text'],job.ink,job.font,job.font_index)
+        frames=[draw_frame(sprite,label,job,k/TICKS) for k in range(TICKS)]
     path=Path(job.folder)/f'{job.number:03d}-{clean_filename(job.entry["text"])}.gif'
     save_gif(path,frames)
     poses=hashlib.sha256(sprite.tobytes()).hexdigest()
-    return path,poses,verify(path)
+    return path,poses,verify(path,512 if job.render_style=='hd' else 320)
 
-def gallery(title, groups, folder):
+def gallery(title, groups, folder, render_style='hd'):
+    image_rendering='pixelated' if render_style=='pixel' else 'auto'
     text=html.escape(title)
     tabs=[]
     content=[]
@@ -261,7 +311,7 @@ def gallery(title, groups, folder):
 *{{box-sizing:border-box}}body{{margin:auto;max-width:1100px;padding:30px 20px;background:#f3edf8;color:#2e253d;font:16px system-ui,sans-serif}}
 h1{{font-size:clamp(24px,5vw,43px);margin:0}}p{{color:#5d4b70}}nav{{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}}
 button{{font:inherit;border:1px solid #cbbcd7;border-radius:10px;padding:9px 12px;background:#fff9f4;color:inherit;cursor:pointer}}button[aria-pressed="true"]{{background:#372946;color:white}}
-.grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(135px,1fr));gap:12px}}a{{display:grid;justify-items:center;background:#fffaf6;border:1px solid #dccde4;border-radius:12px;padding:8px;text-decoration:none;color:inherit}}img{{width:100%;height:auto;max-width:180px;image-rendering:pixelated}}span{{padding-bottom:4px;font-size:13px}}
+.grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(135px,1fr));gap:12px}}a{{display:grid;justify-items:center;background:#fffaf6;border:1px solid #dccde4;border-radius:12px;padding:8px;text-decoration:none;color:inherit}}img{{width:100%;height:auto;max-width:180px;image-rendering:{image_rendering}}}span{{padding-bottom:4px;font-size:13px}}
 </style>
 <header><h1>{text}</h1><p>选择分类播放 GIF。点击任意一张可单独打开。</p></header>
 <nav>{"".join(tabs)}</nav>{"".join(content)}
@@ -283,7 +333,8 @@ def decoded_frames(path, scale):
     items=[]
     with Image.open(path) as img:
         for frame in ImageSequence.Iterator(img):
-            scaled=frame.convert('RGBA').resize((scale,scale),NEAREST)
+            sampling=NEAREST if img.width==320 else Image.Resampling.LANCZOS
+            scaled=frame.convert('RGBA').resize((scale,scale),sampling)
             items.extend([scaled]*(frame.info['duration']//DELAY))
     if len(items)!=TICKS:
         raise ValueError(f'Unexpected timing in {path}')
@@ -332,8 +383,41 @@ def preview(title, groups, path, font_path, font_index):
         if status:
             raise RuntimeError(f'FFmpeg returned {status}')
 
+def clean_preview(groups, path):
+    # A header-free grid built from the delivered GIFs, at native resolution.
+    files=[p for _,paths in groups for p in paths]
+    count=min(16,len(files))
+    cols=1 if count==1 else (2 if count<=4 else 4)
+    rows=(count+cols-1)//cols
+    with Image.open(files[0]) as first:
+        tile=first.width
+    width,height=cols*tile,rows*tile
+    video=Popen(['ffmpeg','-v','error','-y','-f','rawvideo','-pix_fmt','rgb24',
+                 '-s',f'{width}x{height}','-framerate','25','-i','pipe:0','-c:v','libx264',
+                 '-crf','16','-pix_fmt','yuv420p','-movflags','+faststart',str(path)],stdin=PIPE)
+    try:
+        with video.stdin:
+            for start in range(0,len(files),16):
+                decoded=[decoded_frames(p,tile) for p in files[start:start+16]]
+                for k in range(TICKS*2):
+                    im=Image.new('RGB',(width,height),'#EFF2F5')
+                    for j,timeline in enumerate(decoded):
+                        frame=timeline[k%TICKS]
+                        im.paste(frame,((j%cols)*tile,(j//cols)*tile),frame.getchannel('A'))
+                    raw=im.tobytes()
+                    video.stdin.write(raw)
+                    video.stdin.write(raw)
+    finally:
+        status=video.wait()
+        if status:
+            raise RuntimeError(f'FFmpeg returned {status}')
+
+
 def export(args):
     manifest=json.loads(args.manifest.read_text(encoding='utf-8'))
+    style=args.render_style or manifest.get('render_style','hd')
+    if style not in {'hd','pixel'}:
+        raise ValueError('render_style must be hd or pixel')
     count=manifest['count']
     groups=[]
     jobs=[]
@@ -358,7 +442,7 @@ def export(args):
             all_text.add(txt)
             seen_cells.add((atlas,cell))
             jobs.append(Job(len(jobs)+1,entry,atlas,(cols,rows),group['ink'],group['tint'],
-                            str(group_dir),args.font,args.font_index))
+                            str(group_dir),args.font,args.font_index,style))
         groups.append((group,slice(first,len(jobs))))
     assert len(jobs)==count and jobs
     with ProcessPoolExecutor(max_workers=args.jobs) as executor:
@@ -366,7 +450,7 @@ def export(args):
     paths=[item[0] for item in results]
     assert len(set(item[1] for item in results))==count,'Duplicate visual poses'
     visible_groups=[(group,paths[span]) for group,span in groups]
-    gallery(manifest['title'],visible_groups,folder)
+    gallery(manifest['title'],visible_groups,folder,style)
     bundle=args.output/f'{clean_filename(manifest["title"])}-{count}张GIF.zip'
     with ZipFile(bundle,'w',ZIP_DEFLATED) as z:
         for path in [*paths,folder/'动图浏览.html']:
@@ -377,8 +461,13 @@ def export(args):
         for path in paths:
             assert z.read(path.relative_to(folder).as_posix())==path.read_bytes()
     if args.preview:
-        preview(manifest['title'],visible_groups,args.output/'动态预览.mp4',args.font,args.font_index)
+        layout=args.preview_layout or ('clean' if style=='hd' else 'chapters')
+        if layout=='clean':
+            clean_preview(visible_groups,args.output/'动态预览.mp4')
+        else:
+            preview(manifest['title'],visible_groups,args.output/'动态预览.mp4',args.font,args.font_index)
     print(json.dumps({'gif_count':count,'unique_art':count,'unique_frame_min':min(r[2] for r in results),
+                      'render_style':style,'size':512 if style=='hd' else 320,
                       'zip':str(bundle),'preview':args.preview},ensure_ascii=False))
 
 def main():
@@ -388,7 +477,9 @@ def main():
     parser.add_argument('--font',required=True,help='Local font file covering all caption glyphs')
     parser.add_argument('--font-index',type=int,default=0)
     parser.add_argument('--jobs',type=int,default=4)
-    parser.add_argument('--preview',action='store_true',help='Build a chaptered MP4 from actual decoded GIF frames')
+    parser.add_argument('--render-style',choices=['hd','pixel'],help='Default: manifest render_style, otherwise hd (512px); pixel preserves the 320px pixel-art path')
+    parser.add_argument('--preview-layout',choices=['clean','chapters'],help='Default: clean for hd; chapters for pixel')
+    parser.add_argument('--preview',action='store_true',help='Build an MP4 from actual decoded GIF frames')
     export(parser.parse_args())
 
 if __name__=='__main__':
