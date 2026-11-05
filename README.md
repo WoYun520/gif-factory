@@ -10,7 +10,7 @@
 
 三个系列，共 **208 张 GIF**。每张是 320 × 320 像素，大约两秒循环一次，点击任意动图可查看原尺寸。
 
-**大肥鱼默认展示；点击「宠物拟人风格」或「像素小秘书」窗口，可展开对应系列。**
+**各系列默认收起；点击对应窗口即可展开分类动图。**
 
 [下载整个项目，包含三个系列共 208 张动图](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
 
@@ -18,8 +18,8 @@
 
 <img src="examples/whale-maid/preview.gif" alt="大肥鱼（鲸鱼娘）精选 12 张动态预览" width="720">
 
-<details open>
-<summary><strong>🐋 大肥鱼（鲸鱼娘） · 100 张 · 默认展开</strong></summary>
+<details>
+<summary><strong>🐋 大肥鱼（鲸鱼娘） · 100 张 · 点击窗口展开</strong></summary>
 
 蓝发鲸鱼娘的日常聊天表情，分为日常问候、开心撒娇、情绪反应、聊天回应、工作学习、生活状态和鲸喜祝福。
 
