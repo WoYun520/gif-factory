@@ -1,12 +1,36 @@
 # GIF 表情包工作室
 
-一个 Codex Skill，把角色参考图做成成套的聊天 GIF。适合吉祥物、原创角色和有清晰渲染参考图的 3D 角色。
+给 Codex 一张角色图，让它帮你做一套会动的表情包。
 
-给它一张授权使用的角色图、表情数量和使用场景。它会规划各款的台词、姿势和动效，生成角色素材，再导出透明循环 GIF、分类 ZIP 和可播放的 MP4 预览。ZIP 内含可离线打开的动图浏览页。
+比如你有一个卡通人物或吉祥物，想让它说“收到”“好耶”“抱抱”“我好困”。这套工具会帮你设计表情和动作、加上文字，再把做好的动图打包给你。
 
-## 100 张 GIF 示例
+做完能拿到一张张单独的 GIF、一个打包下载的文件，以及一段能直接播放的预览视频。GIF 的背景可以是透明的，方便放进聊天里。
 
-这套「像素小秘书 × 奶油麻薯」包含 100 张透明循环 GIF，每张 320 × 320 像素，约两秒一轮。点击任意一张，可以打开原尺寸动图。
+## 怎么用
+
+你需要在能生成图片、运行脚本的 Codex 中使用它。
+
+**第一步，把下面这句话发给 Codex，安装工具。**
+
+> 帮我安装这个表情包 Skill：https://github.com/WoYun520/pixel-gif-sticker-pack
+
+Skill 可以理解成给 Codex 用的一份做事指南。装好以后，它就知道怎么按这套流程做表情包了。
+
+**第二步，发一张角色图片，再说清楚想做什么。**
+
+比如，把下面这句话和图片一起发给 Codex。
+
+> 使用 $pixel-gif-sticker-pack，拿这张图里的角色做 16 张中文表情包。我要“收到”“好耶”“抱抱”“晚安”这类日常聊天用语，动作活泼一点，帮我打包好，再给我一个能播放的预览。
+
+你也可以直接说“做一套上班用的”“做 30 张安慰人的”或“用我自己的台词”。数量、文字和风格都可以提。
+
+生成时会用到图片生成工具。第一次运行如果缺少做动图的工具，可以让 Codex 帮你检查和安装。
+
+## 先看看做出来的效果
+
+下面是用“像素小秘书 × 奶油麻薯”做的 100 张动图。点开任意一张，就能看原尺寸。每张是 320 × 320 像素，大约两秒循环一次。
+
+[下载整个项目，包含这 100 张动图](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
 
 ### 回消息 · 16 张
 
@@ -68,35 +92,24 @@
 | --- | --- | --- | --- |
 | <a href="examples/07-celebrations/097.gif"><img src="examples/07-celebrations/097.gif" alt="097 新年快乐" width="150" height="150"></a><br>097 新年快乐 | <a href="examples/07-celebrations/098.gif"><img src="examples/07-celebrations/098.gif" alt="098 中秋快乐" width="150" height="150"></a><br>098 中秋快乐 | <a href="examples/07-celebrations/099.gif"><img src="examples/07-celebrations/099.gif" alt="099 节日快乐" width="150" height="150"></a><br>099 节日快乐 | <a href="examples/07-celebrations/100.gif"><img src="examples/07-celebrations/100.gif" alt="100 周末快乐" width="150" height="150"></a><br>100 周末快乐 |
 
-## 在 Codex 中使用
+<details>
+<summary>想自己运行脚本？点这里看操作方法</summary>
 
-把仓库放进 Codex 的 Skill 目录。以下命令会把它安装到本机用户的 Skill 目录。
+需要 Python 3 和 Pillow。如果还想生成预览视频，需要安装带有 libx264 的 FFmpeg。
 
-```sh
-git clone https://github.com/WoYun520/pixel-gif-sticker-pack.git ~/.codex/skills/pixel-gif-sticker-pack
-```
-
-打开新的 Codex 对话，附上角色图后，可以这样调用。
-
-> 使用 $pixel-gif-sticker-pack，做 16 张中文工作群表情包。保留角色的配色和标志性配饰，输出透明循环 GIF 和动态预览。
-
-生成新姿势需要当前会话能使用图像生成工具。已有透明精灵图时，也可以直接使用下面的导出脚本。
-
-## 从精灵图导出
-
-需要 Python 3 和 Pillow。生成 MP4 预览还需要带有 libx264 的 FFmpeg。
-
-1. 准备透明 PNG 精灵图，每格一个完整姿势，格间留空。
-2. 按 [清单格式](references/manifest.md) 写好台词、格子位置和动效。
-3. 用一款支持台词文字的本地字体导出。
+先准备一张透明背景的大图，把各个姿势分别放在大小相同的格子里，再按[清单格式](references/manifest.md)填好每张的文字、位置和动作。
 
 ```sh
 python3 -m pip install Pillow
 python3 scripts/export_pack.py manifest.json build --font /path/to/font.ttf --preview
 ```
 
-默认导出 320 × 320 像素、约两秒一轮的透明 GIF。动效基于每款的精灵姿势，叠加位移、挤压和像素特效。脚本检查数量、重复素材、有效帧、透明度、裁边和 ZIP 完整性。
+`--font` 后面填你电脑上支持中文的字体文件路径。做好的文件会放在 `build` 文件夹。
 
-## 许可证
+默认动效包括位移、摇摆、挤压和像素小特效。脚本会检查数量、重复图片、动画是否变化、背景是否透明、有没有裁掉内容，以及压缩包能否打开。
+
+</details>
+
+## 开源许可
 
 [MIT](LICENSE)
