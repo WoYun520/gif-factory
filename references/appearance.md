@@ -31,7 +31,7 @@ These are this project's version-specific user decisions, not universal judgment
 | Whale maid / pixel secretary; approved princess pixel light-motion sample expanded to a pack | Accepted pixel/light-motion references |
 | Earlier accepted Luffy action, Naruto/Miku full-action samples; illustrated princess curtsy expanded to a pack | Accepted illustrated-action references for the respective approach |
 | Accepted sparse public-figure gestures, including Lei Jun/Stephen Chow/Sam Altman examples | Retain photographic examples; do not replace their rendering with a rejected selfie treatment |
-| Anya/Doraemon old four-character full-action versions | Rejected for ugly/inconsistent frames; not successful full-action templates |
+| Anya/Doraemon old four-character full-action versions | Rejected for choppy/frame-skipping playback; not successful full-action templates |
 | Anya/Doraemon repaired versions in `examples/anime-stability/` | Assistant-reviewed candidates; user acceptance pending |
 | Latest four-character stability test: new Luffy, Sakuragi, Conan, Totoro | Test versions, user acceptance pending; not automatically promoted because an earlier version of Luffy was accepted |
 | Selfie peace-sign / natural makeup / beauty-filter animation experiment | Abandoned; exclude from recommended templates |

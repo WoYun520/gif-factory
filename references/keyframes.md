@@ -4,7 +4,7 @@ Use this workflow when the requested gesture changes arms, hands or another body
 
 ## Generate and inspect consecutive poses
 
-For full-character acting and for any unstable/ugly-frame repair, first read [stability.md](stability.md). A technically valid export is not a passed visual review.
+For full-character acting and for any unstable or jerky-action repair, first read [stability.md](stability.md). A technically valid export is not a passed visual review.
 
 - For a sparse gesture, plan 3–8 key poses; a return can reuse cells in reverse if it looks natural. For coordinated whole-character acting, review a few identity/pose anchors first, then fill a short loop (often 12–16 drawings). A forward/return loop can have distinct settling poses rather than simply playing in reverse. Keep lettering out of generated art.
 - Put one character's consecutive poses in a row or 4×4 equal-cell atlas. Specify fixed camera, lighting, scale and costume construction. For whole-character acting, let face, head, shoulders, torso and relevant limbs participate together with hair/clothing follow-through; do not freeze head/torso to conceal drift. For a restrained gesture, choose small coordinated changes. Each frame must include complete hair, hats, elbows and fingers, with clear gutters. Verify actual grid spacing before extracting.

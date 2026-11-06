@@ -1,6 +1,6 @@
 # Visual stability for character actions
 
-Use when generating consecutive actions or repairing ugly frames. Applies across illustration and photographic styling; it does not force every light-motion sticker into frame-by-frame generation.
+Use when generating consecutive actions or repairing choppy/frame-skipping playback. Also inspect individual drawings for visual defects. Applies across illustration and photographic styling; it does not force every light-motion sticker into frame-by-frame generation.
 
 ## Anchor before expanding
 
@@ -14,6 +14,12 @@ Character-specific examples, not universal face templates:
 - Doraemon: keep round head diameter and head/body ratio stable, one nose/bell/pouch, three whiskers per cheek, round hands without human fingers and correctly attached feet. Check mouth size and the nose-to-mouth center line as the head moves; a broad smile must not turn the head into an egg.
 
 Natural expression changes are allowed. Do not stabilize by pasting one frozen face over every frame or by replacing full-character acting with an isolated rotating arm.
+
+## Temporal continuity first
+
+When the user reports “抽帧”, interpret it as choppy motion or apparently missing transitions, not automatically as an unattractive still. Inspect pose-to-pose increments, uneven holds, camera/grid jumps and the loop seam. Fill missing action stages using the neighboring poses; correct layout errors before redrawing. Increasing playback FPS, repeating identical frames or crossfading alone does not supply missing physical motion.
+
+Removing a malformed isolated pose may be a separate visual repair, but it is not a fix for choppiness by itself. Do not remove valid in-betweens or add long holds to claim a smoother action; review the resulting cadence and disclose any remaining gap.
 
 ## Inspect the delivered GIF, not just the source sheet
 

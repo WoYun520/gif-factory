@@ -41,7 +41,7 @@ When the user requests the gesture to unfold over time, use [the keyframe workfl
 
 For subtle idle movement or a large pack of distinct static poses, the existing motion-preset exporter remains appropriate. Keyframe GIFs may have visible pose transitions or identity drift; inspect them and describe material limits. Use a video or rigged compositor only when needed for genuinely smooth continuous motion, preserving the user's chosen provider and method.
 
-Read [the visual stability gate](references/stability.md) for every new consecutive-action workflow and when repairing an ugly or inconsistent frame. Review identity/pose anchors before filling transitions. Inspect the actual decoded frames, native-size face details, normal playback, and the loop seam. Frame count, distinct pixels, smooth timing and a valid ZIP are technical checks, not a visual acceptance decision. Repair a rejected frame and its neighbors, re-export, then repeat review. Keep assistant review separate from user acceptance; do not promise automatic elimination of all ugly frames.
+Read [the visual stability gate](references/stability.md) for every new consecutive-action workflow and when repairing choppy/frame-skipping playback or an inconsistent frame. Review identity/pose anchors before filling transitions. Inspect the actual decoded frames, native-size face details, normal playback, and the loop seam. Frame count, distinct pixels, smooth timing and a valid ZIP are technical checks, not a visual acceptance decision. Repair a rejected frame and its neighbors, re-export, then repeat review. Keep assistant review separate from user acceptance; do not promise automatic elimination of all temporal or visual defects.
 
 ## Automatic clear rendering
 
