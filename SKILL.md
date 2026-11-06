@@ -13,9 +13,9 @@ Carry forward accepted choices rather than asking again. Choose two independent 
 
 | Appearance | Rendering |
 | --- | --- |
-| Pixel | Deliberate pixel clusters and crisp stepped outlines; `--render-style pixel`, 320px |
-| Clean illustration | Anime, chibi, mascot or photo-to-illustration artwork; HD, 512px |
-| Photographic | Photo-like people or pets; preserve accepted likeness and lighting; HD, 512px |
+| [Pixel](references/appearance.md#pixel) | Deliberate pixel clusters and crisp stepped outlines; `--render-style pixel`, 320px |
+| [Clean illustration](references/appearance.md#illustration) | Anime, chibi, mascot or photo-to-illustration artwork; HD, 512px |
+| [Photographic](references/appearance.md#photographic) | Photo-like people or pets; preserve accepted likeness and lighting; HD, 512px |
 
 Subject categories such as anime, pets and public figures do not select a movement method. HD specifies sampling and resolution; it does not promise consistent anatomy or smoother motion. Photo-to-anime is an input transformation, not an extra appearance mode.
 
@@ -23,6 +23,10 @@ Subject categories such as anime, pets and public figures do not select a moveme
 - **Consecutive character action:** generated sequential poses with coordinated face, head, shoulders, torso and relevant limbs, plus hair/clothing follow-through. Use the keyframe workflow below. A frozen body with only a rotating arm does not fulfill this mode. Do not substitute light motion to hide a failed action without telling the user.
 
 If the user says “like the approved full-character action,” preserve that method. When matching an existing reference, preserve its appearance unless a style conversion was requested. For photographic actions, pilot one restrained gesture before expanding; do not automatically add beauty filters. Rejection of one selfie animation does not reject all photographic stickers.
+
+Read the selected section of [the appearance guide](references/appearance.md), then read [light motion](references/light-motion.md) or [consecutive actions](references/keyframes.md). Record appearance, movement, reference, count, captions and acceptance status separately in the production notes. If an essential appearance/movement choice remains ambiguous, ask a short choice question; otherwise reuse the user's latest accepted settings and proceed. An approved sample followed by a request to expand it carries those settings into the batch.
+
+Do not assume all six combinations have the same ready-made exporter or visual reliability. Pixel + consecutive actions needs a pixel-aware compositor and a pilot; the current `export_keyframes.py` uses smooth HD sampling, so it is not a pixel-action exporter. See [the version-specific sample status](references/appearance.md#sample-status): a new revision remains pending until accepted; an abandoned experiment is not a default template.
 
 ## Design and generate
 
