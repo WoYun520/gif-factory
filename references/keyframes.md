@@ -1,6 +1,6 @@
 # Articulated GIF actions
 
-Use this workflow when the requested gesture changes arms, hands or another body part. `export_pack.py` moves and deforms a single pose; `export_keyframes.py` sequences distinct, generated poses. Both produce transparent 512px GIFs by default, but only the latter depicts a limb changing pose.
+Use this workflow when the requested gesture changes arms, hands or another body part. `export_pack.py` moves and deforms a single pose; `export_keyframes.py` sequences distinct, generated poses. For illustration/photographic art these produce transparent 512px GIFs by default; only the latter depicts a limb changing pose. For pixel actions use [pixel-actions.md](pixel-actions.md) and `export_pixel_actions.py` instead.
 
 ## Generate and inspect consecutive poses
 

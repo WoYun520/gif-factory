@@ -8,11 +8,11 @@
 
 ## 表情包展厅
 
-这里有 **218 张已有示例**，还有 **2 张刚重做的动作试样，等使用者确认**。点击动图可以看原尺寸。大部分约两秒一轮，部分动作示例会短一些。
+这里有 **238 张已有示例**，还有 **2 张刚重做的动作试样，等使用者确认**。点击动图可以看原尺寸。大部分约两秒一轮，部分动作示例会短一些。
 
 **各系列默认收起；点击对应窗口即可展开分类动图。**
 
-[下载整个项目：218 张已有示例＋2 张重做试样](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
+[下载整个项目：238 张已有示例＋2 张重做试样](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
 
 ### 大肥鱼 · 精选动态预览
 
@@ -82,6 +82,43 @@
 | | | | |
 | --- | --- | --- | --- |
 | <a href="examples/whale-maid/07-celebrations/097.gif"><img src="examples/whale-maid/07-celebrations/097.gif" alt="大肥鱼 097 生日快乐" width="150" height="150"></a><br>097 生日快乐 | <a href="examples/whale-maid/07-celebrations/098.gif"><img src="examples/whale-maid/07-celebrations/098.gif" alt="大肥鱼 098 好运来" width="150" height="150"></a><br>098 好运来 | <a href="examples/whale-maid/07-celebrations/099.gif"><img src="examples/whale-maid/07-celebrations/099.gif" alt="大肥鱼 099 周末快乐" width="150" height="150"></a><br>099 周末快乐 | <a href="examples/whale-maid/07-celebrations/100.gif"><img src="examples/whale-maid/07-celebrations/100.gif" alt="大肥鱼 100 鲸喜给你" width="150" height="150"></a><br>100 鲸喜给你 |
+
+</details>
+
+<details>
+<summary><strong>🎮 像素风 · 完整动作 · 4 个角色 × 5 张 · 点击窗口展开</strong></summary>
+
+这一组会让角色完整做完一个动作：男孩抬腿挥拳、女孩侧步招手、太空猫起跳落地、企鹅左右扭动。头、身体和手一起配合，衣服和配饰也跟着动。
+
+这套 20 张已经过使用者确认。每张都是 320 × 320 的透明 GIF，16 个姿势，约 1.92 秒一轮。
+
+[只下载这套 20 张](examples/pixel-actions/pixel-actions-20.zip) · [查看制作记录](examples/pixel-actions/production.json)
+
+<img src="examples/pixel-actions/preview.gif" alt="像素风完整动作：四个角色各五张" width="720">
+
+### 眼镜男孩 · 5 张
+
+| | | | | |
+| --- | --- | --- | --- | --- |
+| <a href="examples/pixel-actions/boy/01.gif"><img src="examples/pixel-actions/boy/01.gif" alt="眼镜男孩 冲鸭" width="140" height="140"></a><br>冲鸭 | <a href="examples/pixel-actions/boy/02.gif"><img src="examples/pixel-actions/boy/02.gif" alt="眼镜男孩 点赞" width="140" height="140"></a><br>点赞 | <a href="examples/pixel-actions/boy/03.gif"><img src="examples/pixel-actions/boy/03.gif" alt="眼镜男孩 谢谢你" width="140" height="140"></a><br>谢谢你 | <a href="examples/pixel-actions/boy/04.gif"><img src="examples/pixel-actions/boy/04.gif" alt="眼镜男孩 让我想想" width="140" height="140"></a><br>让我想想 | <a href="examples/pixel-actions/boy/05.gif"><img src="examples/pixel-actions/boy/05.gif" alt="眼镜男孩 太棒了" width="140" height="140"></a><br>太棒了 |
+
+### 红帽女孩 · 5 张
+
+| | | | | |
+| --- | --- | --- | --- | --- |
+| <a href="examples/pixel-actions/hood/01.gif"><img src="examples/pixel-actions/hood/01.gif" alt="红帽女孩 你好呀" width="140" height="140"></a><br>你好呀 | <a href="examples/pixel-actions/hood/02.gif"><img src="examples/pixel-actions/hood/02.gif" alt="红帽女孩 谢谢你" width="140" height="140"></a><br>谢谢你 | <a href="examples/pixel-actions/hood/03.gif"><img src="examples/pixel-actions/hood/03.gif" alt="红帽女孩 加油呀" width="140" height="140"></a><br>加油呀 | <a href="examples/pixel-actions/hood/04.gif"><img src="examples/pixel-actions/hood/04.gif" alt="红帽女孩 害羞了" width="140" height="140"></a><br>害羞了 | <a href="examples/pixel-actions/hood/05.gif"><img src="examples/pixel-actions/hood/05.gif" alt="红帽女孩 拜拜" width="140" height="140"></a><br>拜拜 |
+
+### 太空猫 · 5 张
+
+| | | | | |
+| --- | --- | --- | --- | --- |
+| <a href="examples/pixel-actions/cat/01.gif"><img src="examples/pixel-actions/cat/01.gif" alt="太空猫 起飞啦" width="140" height="140"></a><br>起飞啦 | <a href="examples/pixel-actions/cat/02.gif"><img src="examples/pixel-actions/cat/02.gif" alt="太空猫 收到" width="140" height="140"></a><br>收到 | <a href="examples/pixel-actions/cat/03.gif"><img src="examples/pixel-actions/cat/03.gif" alt="太空猫 赞一个" width="140" height="140"></a><br>赞一个 | <a href="examples/pixel-actions/cat/04.gif"><img src="examples/pixel-actions/cat/04.gif" alt="太空猫 伸个懒腰" width="140" height="140"></a><br>伸个懒腰 | <a href="examples/pixel-actions/cat/05.gif"><img src="examples/pixel-actions/cat/05.gif" alt="太空猫 吓一跳" width="140" height="140"></a><br>吓一跳 |
+
+### 小企鹅 · 5 张
+
+| | | | | |
+| --- | --- | --- | --- | --- |
+| <a href="examples/pixel-actions/penguin/01.gif"><img src="examples/pixel-actions/penguin/01.gif" alt="小企鹅 开心扭扭" width="140" height="140"></a><br>开心扭扭 | <a href="examples/pixel-actions/penguin/02.gif"><img src="examples/pixel-actions/penguin/02.gif" alt="小企鹅 谢谢你" width="140" height="140"></a><br>谢谢你 | <a href="examples/pixel-actions/penguin/03.gif"><img src="examples/pixel-actions/penguin/03.gif" alt="小企鹅 困了" width="140" height="140"></a><br>困了 | <a href="examples/pixel-actions/penguin/04.gif"><img src="examples/pixel-actions/penguin/04.gif" alt="小企鹅 震惊" width="140" height="140"></a><br>震惊 | <a href="examples/pixel-actions/penguin/05.gif"><img src="examples/pixel-actions/penguin/05.gif" alt="小企鹅 拜拜" width="140" height="140"></a><br>拜拜 |
 
 </details>
 
@@ -265,6 +302,8 @@ Skill 就是给 Codex 用的做事指南，装好后它会按这套方法制作�
 
 比如先低头、提起裙边、行礼，再站直；或者先蓄力，再举拳欢呼。头、身体和手会一起配合，头发和衣服也跟着动。
 
+像素风也能做完整动作，上面这套四角色表情就是例子。鲸鱼娘、小秘书那种小幅弹跳摇摆，仍然归在“像素风＋轻动效”。
+
 画风和动作可以分开选。**“更高清”和“动作更完整”也是两回事**：图片更大，不代表动起来就一定更自然。完整动作更容易出现变脸、手指变形，建议先看一张再决定要不要批量做。
 
 ## 可以直接这样说
@@ -272,6 +311,10 @@ Skill 就是给 Codex 用的做事指南，装好后它会按这套方法制作�
 想要之前鲸鱼娘那种效果：
 
 > 做 25 张像素风轻动效表情包。人物可爱一点，每张换不同的表情和姿势，加轻轻弹跳、摇摆和小符号。
+
+想要这次四角色这种像素动作：
+
+> 做像素风完整动作表情包，每个角色 5 张。分别画挥手、点赞、感谢、思考和欢呼，身体、头和手一起动，保留像素边缘，下面的字固定。
 
 想保留手里这张插画：
 
@@ -333,13 +376,19 @@ python3 scripts/export_pack.py manifest.json build --font /path/to/font.ttf --pr
 
 像素风在命令中加 `--render-style pixel`。插画和真人风默认使用 HD 合成。画风选择见[画风说明](references/appearance.md)。
 
-完整动作使用[连续姿势流程](references/keyframes.md)和独立脚本：
+插画和真人的完整动作使用[连续姿势流程](references/keyframes.md)和独立脚本：
 
 ```sh
 python3 scripts/export_keyframes.py actions.json build-actions --font /path/to/font.ttf --preview
 ```
 
-这个连续姿势脚本默认使用平滑的高清合成，不能直接当作像素动作导出器。像素风完整动作需要先做小样，并使用保留像素边缘的合成方式。
+像素风完整动作走单独的[像素动作流程](references/pixel-actions.md)，使用保留方格边缘的导出脚本：
+
+```sh
+python3 scripts/export_pixel_actions.py examples/pixel-actions/action-example.json build-pixel-actions --font /path/to/font.ttf
+```
+
+上面两个完整动作脚本各自负责对应画风；新角色仍然先出一张小样，确认后再批量做。
 
 [画面稳定性检查](references/stability.md)说明了逐帧检查、坏帧修补和重新检查的方法。[清晰度说明](references/clarity.md)负责处理模糊问题。检查记录与具体 GIF 版本绑定，修改后需要重查。
 

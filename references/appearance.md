@@ -7,7 +7,7 @@ Choose appearance independently from the movement method. Anime, pets, mascots a
 - Generate deliberate low-resolution pixel artwork: coherent square clusters, stepped contours, simplified readable face/costume, consistent limited colors. Preserve identity anchors from the reference. Converting a detailed illustration to a small blurry raster alone does not establish the requested pixel style.
 - For light motion, use `export_pack.py --render-style pixel`: its logical 160px composition and nearest-neighbor 320px output preserve the existing pixel workflow. Keep accents and contours on the pixel grid; do not smooth them or repeatedly resample between frames.
 - Keep captions legible and still. Use crisp outline treatment and a font covering the language. Choose a final size that preserves intentional pixel blocks; do not silently run the HD deformation path because it is the default.
-- For a requested full action, generate coherent pixel poses and pilot them. Use a compositor that preserves the logical grid and nearest-neighbor sampling. The current HD keyframe exporter does not implement this route; do not label its smoothed output a validated pixel action.
+- For a requested full action, generate coherent pixel poses and pilot them. Use [the pixel action exporter](pixel-actions.md), which preserves the logical grid and nearest-neighbor sampling. The HD keyframe exporter is a separate rendering route.
 
 ## Illustration
 
@@ -29,6 +29,7 @@ These are this project's version-specific user decisions, not universal judgment
 | Sample/version | Status and use |
 | --- | --- |
 | Whale maid / pixel secretary; approved princess pixel light-motion sample expanded to a pack | Accepted pixel/light-motion references |
+| Four-character pixel action pack: glasses boy, hooded girl, astronaut cat, penguin; five actions each | User accepted the exact 20-GIF set and requested publication; reference for pixel/full-character actions, not a guarantee for new generations |
 | Earlier accepted Luffy action, Naruto/Miku full-action samples; illustrated princess curtsy expanded to a pack | Accepted illustrated-action references for the respective approach |
 | Accepted sparse public-figure gestures, including Lei Jun/Stephen Chow/Sam Altman examples | Retain photographic examples; do not replace their rendering with a rejected selfie treatment |
 | Anya/Doraemon old four-character full-action versions | Rejected for choppy/frame-skipping playback; not successful full-action templates |
