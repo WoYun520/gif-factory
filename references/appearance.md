@@ -14,6 +14,7 @@ Choose appearance independently from the movement method. Anime, pets, mascots a
 - Match the accepted anime, chibi or illustration rendering rather than switching style because the input happens to be a photograph. For an explicit photo-to-illustration request, establish an illustrated identity reference before deriving the pack; keep hair, recognizable face, silhouette and signature clothing.
 - Specify concrete model invariants: eye color/spacing, face contour, hair ornaments, hat dimensions, costume panels, buttons/bows and hand type. For actions, let the body and costume move naturally while retaining their construction. Avoid extreme changes that a pilot has shown to distort the face.
 - Export detailed artwork directly from its source crop in HD, normally 512px. A smooth resizer does not repair a malformed drawing. Use light motion or the complete-action workflow as requested; high resolution does not select one for the user.
+- For a clay-look stylized mascot, use the same non-pixel HD pose-compositing route while preserving its accepted matte material, bead eyes, volume and lighting; do not impose drawn outlines or flatten it into anime. This material treatment is not proof of rigged 3D motion. Paper-collage scenery belongs to the film composition, not to a forced conversion of the character.
 
 ## Photographic
 
@@ -30,6 +31,8 @@ These are this project's version-specific user decisions, not universal judgment
 | --- | --- |
 | Whale maid / pixel secretary; approved princess pixel light-motion sample expanded to a pack | Accepted pixel/light-motion references |
 | Four-character pixel action pack: glasses boy, hooded girl, astronaut cat, penguin; five actions each | User accepted the exact 20-GIF set and requested publication; reference for pixel/full-character actions, not a guarantee for new generations |
+| Clay bakery trio: croissant, toast, coffee; original three GIFs | User accepted this clay-look pose-sequence sample; retain the shared sage apron and material anchors |
+| Manman Bakery 15-second clay-and-collage fusion film | User accepted this version and requested publication; reference for brand-film purpose, not a new universal appearance mode or a guarantee of physical contact precision |
 | Earlier accepted Luffy action, Naruto/Miku full-action samples; illustrated princess curtsy expanded to a pack | Accepted illustrated-action references for the respective approach |
 | Accepted sparse public-figure gestures, including Lei Jun/Stephen Chow/Sam Altman examples | Retain photographic examples; do not replace their rendering with a rejected selfie treatment |
 | Anya/Doraemon old four-character full-action versions | Rejected for choppy/frame-skipping playback; not successful full-action templates |

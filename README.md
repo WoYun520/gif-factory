@@ -6,13 +6,15 @@
 
 做完会给你单张 GIF、整套压缩包和播放预览。拿不准效果时，可以先做一张；已经选好了样子，就接着做一套。
 
+**还能拿角色做品牌短片。** 让吉祥物拉开店铺、递出产品、装进包装袋，把角色动作和纸片拼贴连成一个小故事。成片之外，也交付能继续修改的工程。[看看面包店的例子](#品牌宣传片展厅)。
+
 ## 表情包展厅
 
-这里有 **238 张已有示例**，还有 **2 张刚重做的动作试样，等使用者确认**。点击动图可以看原尺寸。大部分约两秒一轮，部分动作示例会短一些。
+这里有 **242 张已有示例**，还有 **2 张刚重做的动作试样，等使用者确认**。点击动图可以看原尺寸。大部分约两秒一轮，部分动作示例会短一些。品牌短片单独展示，不计入表情包数量。
 
 **各系列默认收起；点击对应窗口即可展开分类动图。**
 
-[下载整个项目：238 张已有示例＋2 张重做试样](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
+[下载整个项目：242 张已有示例＋2 张重做试样＋品牌短片案例](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
 
 ### 大肥鱼 · 精选动态预览
 
@@ -266,6 +268,36 @@
 
 </details>
 
+<details>
+<summary><strong>🥐 黏土品牌吉祥物 · 3 位店员 / 4 张 GIF · 点击窗口展开</strong></summary>
+
+虚构面包店的可颂店长、吐司店员和咖啡杯搭子，穿同款鼠尾草绿围裙。前三张是已认可的角色试样；拉纸条动作来自已认可的融合短片。看起来像黏土定格，使用连续姿态合成。
+
+| 可颂店长 · 开工啦 | 吐司店员 · 让我缓缓 | 咖啡杯搭子 · 干杯 | 可颂店长 · 拉开今天 |
+| --- | --- | --- | --- |
+| <a href="examples/clay-bakery/01-croissant.gif"><img src="examples/clay-bakery/01-croissant.gif" alt="黏土可颂店长 开工啦" width="160" height="160"></a> | <a href="examples/clay-bakery/02-toast.gif"><img src="examples/clay-bakery/02-toast.gif" alt="黏土吐司店员 让我缓缓" width="160" height="160"></a> | <a href="examples/clay-bakery/03-coffee.gif"><img src="examples/clay-bakery/03-coffee.gif" alt="黏土咖啡杯搭子 干杯" width="160" height="160"></a> | <a href="examples/clay-bakery/04-pull.gif"><img src="examples/clay-bakery/04-pull.gif" alt="黏土可颂店长 拉纸条连续动作" width="160" height="160"></a> |
+
+[下载这 4 张 GIF](examples/clay-bakery/clay-bakery-4-gifs.zip) · [看看它们怎么拍成广告](examples/brand-films/manman-bakery/README.md)
+
+</details>
+
+## 品牌宣传片展厅
+
+<details>
+<summary><strong>🎞️ 慢慢面包店 · 黏土角色 × 纸片拼贴 · 15 秒 · 点击展开</strong></summary>
+
+可颂店长拉纸条，店铺展开；热面包出炉，落到手托的一个盘子上，再装进印有店名的外带袋。角色的动作会推动故事往下走，品牌就留在故事里的招牌和包装上。
+
+<a href="examples/brand-films/manman-bakery/film.mp4"><img src="examples/brand-films/manman-bakery/preview.gif" alt="慢慢面包店15秒融合短片动态预览 点击查看MP4" width="720"></a>
+
+上面是缩小的动图预览，完整 MP4 为 1920 × 1080、有配乐。慢慢面包店是虚构品牌，这版效果已经得到使用者认可。
+
+[查看 / 下载完整视频](https://raw.githubusercontent.com/WoYun520/pixel-gif-sticker-pack/main/examples/brand-films/manman-bakery/film.mp4) · [下载可编辑工程](examples/brand-films/manman-bakery/editable-project.zip) · [查看案例和素材署名](examples/brand-films/manman-bakery/README.md)
+
+这次借鉴了 [gbro-collage-broll](https://github.com/pyang5166/gbro-collage-broll) 的构思和组装流程，结合本项目的角色动作方法，用可编辑图层完成；没有调用它的 Gemini 视频脚本。发布配乐版时保留[音乐署名](examples/brand-films/manman-bakery/CREDITS.md)。
+
+</details>
+
 ## 怎么用
 
 需要在能生成图片、运行脚本的 Codex 里使用。
@@ -292,6 +324,8 @@ Skill 就是给 Codex 用的做事指南，装好后它会按这套方法制作�
 
 照片也可以转成像素或插画，不一定非做真人风。把你想保留的感觉说清楚就行。
 
+黏土吉祥物也可以做，会保留它的材质、体积和光线，走高清连续姿态合成。它看起来像黏土动画，不等于已经做了真实三维模型。纸片拼贴是场景的做法，不需要把角色也变成纸片。
+
 ## 再选：想怎么动
 
 **轻动效：每张画一个表情和姿势，再让它小幅动起来。**
@@ -305,6 +339,12 @@ Skill 就是给 Codex 用的做事指南，装好后它会按这套方法制作�
 像素风也能做完整动作，上面这套四角色表情就是例子。鲸鱼娘、小秘书那种小幅弹跳摇摆，仍然归在“像素风＋轻动效”。
 
 画风和动作可以分开选。**“更高清”和“动作更完整”也是两回事**：图片更大，不代表动起来就一定更自然。完整动作更容易出现变脸、手指变形，建议先看一张再决定要不要批量做。
+
+## 最后选：拿来聊天，还是做宣传
+
+聊天用，就做一张张独立 GIF。品牌宣传用，就把角色、产品、包装和动作串成短片：谁动手、碰到什么、发生什么变化，最后让观众记住品牌。
+
+目前已做过的是上面的面包店融合短片。咖啡店或独立品牌也可以沿这个方法尝试，新角色、新动作先看小样，不把还没做过的效果当成成功案例。
 
 ## 可以直接这样说
 
@@ -327,6 +367,10 @@ Skill 就是给 Codex 用的做事指南，装好后它会按这套方法制作�
 想试真人照片：
 
 > 用这张人物照片，先做一张真人风的“收到”表情包，轻动效。保留人物长相和衣服，不要自动加美颜。
+
+想拿吉祥物做品牌短片：
+
+> 用已经确认的这套吉祥物，做一条 15 秒品牌宣传片。角色动手触发纸片机关，让产品最后进入印有店名的包装里。给我成片和能继续修改的工程。
 
 也可以只说“做一套上班用的”“用我自己的台词”。已经确认过的要求会继续沿用；有关键地方没说清楚，Codex 再问你。
 
@@ -354,6 +398,8 @@ Skill 就是给 Codex 用的做事指南，装好后它会按这套方法制作�
 - 完整动作还会附上逐张检查图，方便放大看细节。
 
 像素风默认是 320 × 320，插画和真人风默认是 512 × 512。通常使用透明背景；有明确的尺寸、文件大小或背景要求，可以直接提。
+
+品牌短片另外交付视频、可编辑工程和必要的素材署名，尺寸、时长按用途来定。不会因为做了广告，就自动再生成一整套表情包。
 
 ## 人物有点糊怎么办
 
@@ -394,8 +440,12 @@ python3 scripts/export_pixel_actions.py examples/pixel-actions/action-example.js
 
 完整规则见 [Skill](SKILL.md)。预览由最终 GIF 生成；自动检查负责数量、时长、透明背景、裁切和压缩包等，不能自动判断画面是否好看。
 
+品牌短片的制作规则见[品牌宣传片流程](references/brand-film.md)，现成的可编辑示例见[面包店工程](examples/brand-films/manman-bakery/project/DELIVERY.md)。表情包导出脚本负责角色素材，广告需要另外的可编辑时间线。
+
 </details>
 
 ## 开源许可
 
 [MIT](LICENSE)
+
+第三方配乐和字体按各自许可使用；面包店案例的来源与署名见 [CREDITS](examples/brand-films/manman-bakery/CREDITS.md)。

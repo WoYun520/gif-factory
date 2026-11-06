@@ -1,11 +1,15 @@
 ---
 name: pixel-gif-sticker-pack
-description: Create or repair chat sticker GIFs from character references, choosing pixel, clean illustration or photographic styling and light motion or consecutive character actions. Deliver transparent GIFs, playback previews and a verified ZIP with explicit visual review for animated actions.
+description: Create or repair character sticker GIFs, or turn accepted mascots into short brand films with character actions and paper-collage storytelling. Choose appearance, movement and output purpose separately; deliver visually reviewed media and verified downloads.
 ---
 
-# Animated chat sticker packs
+# Character stickers and brand films
 
 Carry forward the latest reference, required count, format, language, and visual constraints. For a GLB, render a front or three-quarter reference with the face and identifying details visible. If the user supplied a drawing, preserve the recognizable silhouette, facial features, palette, and signature accessories. Use only imagery the user provided or authorized for the task.
+
+## Choose the output purpose
+
+For independently usable chat GIFs, follow the sticker workflow below. For a mascot-led shop, product or independent-brand promo, read [brand films](references/brand-film.md): connect character acting to a visual cause and result, then to the brand. Appearance, movement and purpose are separate choices. A brand film does not automatically require a new sticker pack; a sticker request does not require an advertising story. Reuse accepted choices and prior authorization rather than restarting approvals.
 
 ## Choose appearance and movement separately
 
@@ -56,6 +60,6 @@ The bundled exporter now defaults to **hd**: it renders directly from original a
 
 For a repeatable workflow, use [the atlas exporter](scripts/export_pack.py) with Python 3 and Pillow. It uses FFmpeg for MP4 playback. Run `python3 scripts/export_pack.py --help` and read [the manifest format](references/manifest.md) for cell overrides and motion presets. Choose a local font that covers the requested captions. Use another compositor when the brief requires actual skeletal or frame-by-frame character animation.
 
-Deliver one transparent looping GIF per entry, grouped in a ZIP. Default to clear 512 × 512 GIFs and roughly two seconds per loop; use 320 × 320 only for the intentional pixel path. Respect explicit target-platform size limits with an appropriate compositor or final downsampling, then re-verify the result. A separate MP4 assembled from the decoded GIFs makes playback inspectable even in a chat surface that shows a still. A static contact sheet can help compare designs when clearly identified as a still.
+For sticker deliverables, give one transparent looping GIF per entry, grouped in a ZIP. Default to clear 512 × 512 GIFs and roughly two seconds per loop; use 320 × 320 only for the intentional pixel path. Respect explicit target-platform size limits with an appropriate compositor or final downsampling, then re-verify the result. A separate MP4 assembled from the decoded GIFs makes playback inspectable even in a chat surface that shows a still. A static contact sheet can help compare designs when clearly identified as a still. For brand-film deliverables, use the format and editable-source checks in the brand-film reference instead of forcing the sticker canvas or loop duration onto the film.
 
 Verify exact count and unique captions, visible movement, frame timing, loop flag, alpha, safe margins, ZIP integrity and MP4 decoding. Inspect each category visually. Report actual deliverables and any limits that affect use. A local playback check does not establish compatibility with a specific messaging platform.
