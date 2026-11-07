@@ -1,6 +1,6 @@
 # GIF 表情包工作室
 
-给 Codex 一张角色图，帮你做一套聊天用的 GIF 表情包。
+给 Codex 参考图，可以做聊天 GIF 表情包、双状态电子光栅卡，也可以拿吉祥物做品牌短片。
 
 像素小人、动漫插画、真人和宠物照片都可以试。每张可以只是轻轻晃动，也可以让人物完整地做一个动作，比如挥手、比心、提裙行礼。
 
@@ -8,13 +8,15 @@
 
 **还能拿角色做品牌短片。** 让吉祥物拉开店铺、递出产品、装进包装袋，把角色动作和纸片拼贴连成一个小故事。成片之外，也交付能继续修改的工程。[看看面包店的例子](#品牌宣传片展厅)。
 
+**新增：电子光栅卡。** 让人脸切成面罩、普通状态切成变身状态，像实体光栅卡一样来回变画。[看九张案例](#电子光栅卡展厅) · [先看什么图能做](#电子光栅卡什么图能做)。
+
 ## 表情包展厅
 
-这里有 **242 张已有示例**，还有 **2 张刚重做的动作试样，等使用者确认**。点击动图可以看原尺寸。大部分约两秒一轮，部分动作示例会短一些。品牌短片单独展示，不计入表情包数量。
+这里有 **242 张已有示例**，还有 **2 张刚重做的动作试样，等使用者确认**。点击动图可以看原尺寸。大部分约两秒一轮，部分动作示例会短一些。另有 **9 张电子光栅卡**，和品牌短片一起单独分类，不计入聊天表情包数量。
 
 **各系列默认收起；点击对应窗口即可展开分类动图。**
 
-[下载整个项目：242 张已有示例＋2 张重做试样＋品牌短片案例](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
+[下载整个项目：242 张表情包示例＋2 张重做试样＋9 张光栅卡＋品牌短片案例](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
 
 ### 大肥鱼 · 精选动态预览
 
@@ -281,6 +283,27 @@
 
 </details>
 
+## 电子光栅卡展厅
+
+同一张卡片在两幅画面间切换：人脸变成面罩，或者普通状态变成另一个形态。这套是 **9 张独立 GIF，每张 480×720、6 秒循环**，标题固定，画面按细条来回变换。蜘蛛侠保留使用者选定的首版近景。
+
+<details>
+<summary><strong>🪪 电子光栅卡 · 9 张 · 点击窗口展开</strong></summary>
+
+<img src="examples/lenticular-cards/preview.gif" alt="九张电子光栅卡动态总览" width="720">
+
+| | | |
+| --- | --- | --- |
+| <a href="examples/lenticular-cards/01-spider-man.gif"><img src="examples/lenticular-cards/01-spider-man.gif" alt="蜘蛛侠电子光栅卡" width="160" height="240"></a><br>蜘蛛侠 | <a href="examples/lenticular-cards/02-ghost-rider.gif"><img src="examples/lenticular-cards/02-ghost-rider.gif" alt="恶灵骑士电子光栅卡" width="160" height="240"></a><br>恶灵骑士 | <a href="examples/lenticular-cards/03-venom.gif"><img src="examples/lenticular-cards/03-venom.gif" alt="毒液电子光栅卡" width="160" height="240"></a><br>毒液 |
+| <a href="examples/lenticular-cards/04-iron-man.gif"><img src="examples/lenticular-cards/04-iron-man.gif" alt="钢铁侠电子光栅卡" width="160" height="240"></a><br>钢铁侠 | <a href="examples/lenticular-cards/05-batman.gif"><img src="examples/lenticular-cards/05-batman.gif" alt="蝙蝠侠电子光栅卡" width="160" height="240"></a><br>蝙蝠侠 | <a href="examples/lenticular-cards/06-black-panther.gif"><img src="examples/lenticular-cards/06-black-panther.gif" alt="黑豹电子光栅卡" width="160" height="240"></a><br>黑豹 |
+| <a href="examples/lenticular-cards/07-wolverine.gif"><img src="examples/lenticular-cards/07-wolverine.gif" alt="金刚狼电子光栅卡" width="160" height="240"></a><br>金刚狼 | <a href="examples/lenticular-cards/08-captain-america.gif"><img src="examples/lenticular-cards/08-captain-america.gif" alt="美国队长电子光栅卡" width="160" height="240"></a><br>美国队长 | <a href="examples/lenticular-cards/09-deadpool.gif"><img src="examples/lenticular-cards/09-deadpool.gif" alt="死侍电子光栅卡" width="160" height="240"></a><br>死侍 |
+
+[下载九张独立 GIF](examples/lenticular-cards/cards.zip) · [静态 A 状态](examples/lenticular-cards/state-a.jpg) · [静态 B 状态](examples/lenticular-cards/state-b.jpg) · [来源与制作说明](examples/lenticular-cards/README.md)
+
+这九张素材做法有区别：有生成图、照片合成，也有现成插画。黑豹和金刚狼带插画质感；金刚狼原画为 [Daniel Vásquez 的作品](https://www.behance.net/gallery/120626151/WolverineHugh-Jackman-Vector)。它们是动态效果案例，软件开源不等于角色和网络图片获得商业授权。
+
+</details>
+
 ## 品牌宣传片展厅
 
 <details>
@@ -340,11 +363,30 @@ Skill 就是给 Codex 用的做事指南，装好后它会按这套方法制作�
 
 画风和动作可以分开选。**“更高清”和“动作更完整”也是两回事**：图片更大，不代表动起来就一定更自然。完整动作更容易出现变脸、手指变形，建议先看一张再决定要不要批量做。
 
-## 最后选：拿来聊天，还是做宣传
+## 最后选：聊天、光栅卡，还是宣传片
 
-聊天用，就做一张张独立 GIF。品牌宣传用，就把角色、产品、包装和动作串成短片：谁动手、碰到什么、发生什么变化，最后让观众记住品牌。
+聊天用，就做一张张独立表情包 GIF。想做收藏卡、人物双身份或产品两状态，就做电子光栅卡；它也交付独立 GIF，尺寸和节奏单独设置。品牌宣传用，就把角色、产品、包装和动作串成短片：谁动手、碰到什么、发生什么变化，最后让观众记住品牌。
 
 目前已做过的是上面的面包店融合短片。咖啡店或独立品牌也可以沿这个方法尝试，新角色、新动作先看小样，不把还没做过的效果当成成功案例。
+
+## 电子光栅卡：什么图能做
+
+**最好用的是两张已经配得上的图。** 同一个角度、差不多的姿势，眼睛和下巴能对上，切换才像同一个人变了状态。真人、动漫、插画、像素画和产品图都可以先试。
+
+| 你手里的图 | 能不能做、怎么开始 |
+| --- | --- |
+| 同角度的两张人脸／面罩图 | 最适合，先把眼睛、鼻子和下巴对齐 |
+| 一张左右拼脸图 | 可以分别取两侧，必要时镜像；要检查取出来是否完整 |
+| 一张完整人物图 | 可以尝试，但还要生成或找第二种状态，不能保证一张图直接变出任何角色 |
+| 产品的两个配色、角色的两种表情 | 可以试，物体位置、轮廓和光线最好一致 |
+| 一张正脸搭一张明显侧脸 | 先换配对；把眼睛强行移到一起，鼻子和下巴还是会跳 |
+| 下巴被截掉、脸很小很糊、轮廓缺失 | 先换更完整清楚的图，或先重做静态图；不会靠拉宽脸、加黑边冒充修好了 |
+
+这套参考是 **480×720 的半脸近景**。想露下巴，就得有完整下巴；想铺满画面，就先把人物和背景重新安排好。不会为了凑尺寸把脸拉变形、把画幅突然变窄，也不拿明显拼接的城市或一条模糊色带补右侧。
+
+新构图先看两张静态稿，合适后再动。图里的人物、画风和角度是否匹配，比角色叫什么更影响效果。热门角色可能被生图服务拦截；有现成可用素材可以换条路线，但不能保证每个 IP 都能生成，也不能把一次失败说成永久不能做。
+
+[电子光栅卡详细流程](references/lenticular.md) · [九张案例和来源](examples/lenticular-cards/README.md)
 
 ## 可以直接这样说
 
@@ -367,6 +409,10 @@ Skill 就是给 Codex 用的做事指南，装好后它会按这套方法制作�
 想试真人照片：
 
 > 用这张人物照片，先做一张真人风的“收到”表情包，轻动效。保留人物长相和衣服，不要自动加美颜。
+
+想做电子光栅卡：
+
+> 用这两张图做一张电子光栅卡，480×720，6 秒循环，画面和标题固定。先检查角度、眼睛和下巴能不能对上。缺少的部分先调整静态图，不要只裁剪或补一条黑边。
 
 想拿吉祥物做品牌短片：
 
@@ -398,6 +444,8 @@ Skill 就是给 Codex 用的做事指南，装好后它会按这套方法制作�
 - 完整动作还会附上逐张检查图，方便放大看细节。
 
 像素风默认是 320 × 320，插画和真人风默认是 512 × 512。通常使用透明背景；有明确的尺寸、文件大小或背景要求，可以直接提。
+
+电子光栅卡交付独立循环 GIF，批量时再给动态总览、压缩包和素材来源；不需要额外做成带片头片尾的视频。
 
 品牌短片另外交付视频、可编辑工程和必要的素材署名，尺寸、时长按用途来定。不会因为做了广告，就自动再生成一整套表情包。
 
@@ -446,6 +494,6 @@ python3 scripts/export_pixel_actions.py examples/pixel-actions/action-example.js
 
 ## 开源许可
 
-[MIT](LICENSE)
+制作脚本与 Skill 文档采用 [MIT](LICENSE)。电子光栅卡中的角色 IP、网络照片与他人插画不随代码一并授予 MIT 权利，出处及使用边界见[案例来源说明](examples/lenticular-cards/README.md)。
 
 第三方配乐和字体按各自许可使用；面包店案例的来源与署名见 [CREDITS](examples/brand-films/manman-bakery/CREDITS.md)。

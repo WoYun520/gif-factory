@@ -23,6 +23,10 @@ Choose appearance independently from the movement method. Anime, pets, mascots a
 - Compare the original crop and decoded output at the same useful size when evaluating blur. Follow [clarity.md](clarity.md); a larger canvas cannot restore absent source detail. Photo-like skin/fur also needs palette/playback inspection in the final GIF.
 - Keep successful restrained public-figure examples available. The rejected selfie/beauty test below is not a default recipe; it does not ban photographic people or prevent a new explicitly requested experiment. Do not silently reuse that rejected recipe for a different portrait.
 
+## Lenticular card purpose
+
+Photographic and illustrated pairs can also become [electronic lenticular cards](lenticular.md). Route that purpose to its own source-pairing and full-bleed GIF workflow; a two-state flip is not an articulated gesture. Source compatibility matters more than the character label, and a single photograph still requires a second state.
+
 ## Sample status
 
 These are this project's version-specific user decisions, not universal judgments about characters, genres or all future output:
@@ -38,6 +42,7 @@ These are this project's version-specific user decisions, not universal judgment
 | Anya/Doraemon old four-character full-action versions | Rejected for choppy/frame-skipping playback; not successful full-action templates |
 | Anya/Doraemon repaired versions in `examples/anime-stability/` | Assistant-reviewed candidates; user acceptance pending |
 | Latest four-character stability test: new Luffy, Sakuragi, Conan, Totoro | Test versions, user acceptance pending; not automatically promoted because an earlier version of Luffy was accepted |
+| Nine half-face lenticular cards in `examples/lenticular-cards/` | Published at user request; source/style differences documented per card. Spider-Man uses the exact user-selected first close crop, not rejected narrow/patched versions. Later five remain distinct from the earlier accepted four; publication does not guarantee all future source pairs. |
 | Selfie peace-sign / natural makeup / beauty-filter animation experiment | Abandoned; exclude from recommended templates |
 | Frozen-body / isolated-arm rig presented as a full-character action | Rejected for that brief; do not substitute it for coordinated acting |
 
