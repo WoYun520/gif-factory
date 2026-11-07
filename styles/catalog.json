@@ -1,0 +1,83 @@
+[
+  {
+    "id": "pixel-light",
+    "name": "像素轻动效",
+    "category": "像素与游戏",
+    "guide": "pixel-light/STYLE.md",
+    "preview": "../docs/previews/pixel-light.gif",
+    "sample": "../examples/whale-maid/01-greetings/001.gif",
+    "use": "聊天表情包、头像小动画"
+  },
+  {
+    "id": "pixel-actions",
+    "name": "像素完整动作",
+    "category": "像素与游戏",
+    "guide": "pixel-actions/STYLE.md",
+    "preview": "../docs/previews/pixel-actions.gif",
+    "sample": "../examples/pixel-actions/boy/01.gif",
+    "use": "游戏感角色、动作表情包"
+  },
+  {
+    "id": "illustrated-actions",
+    "name": "插画角色动作",
+    "category": "插画与二次元",
+    "guide": "illustrated-actions/STYLE.md",
+    "preview": "../docs/previews/illustrated-actions.gif",
+    "sample": "../examples/mixed-actions/02-二次元/005.gif",
+    "use": "动漫角色、角色动作表情"
+  },
+  {
+    "id": "photo-people",
+    "name": "真人轻动效",
+    "category": "真人与宠物",
+    "guide": "photo-people/STYLE.md",
+    "preview": "../docs/previews/photo-people.gif",
+    "sample": "../examples/public-figures-hd/001.gif",
+    "use": "人物反应、个人聊天表情"
+  },
+  {
+    "id": "photo-pets",
+    "name": "宠物拟人",
+    "category": "真人与宠物",
+    "guide": "photo-pets/STYLE.md",
+    "preview": "../docs/previews/photo-pets.gif",
+    "sample": "../examples/pet-corgi/01-fun-and-work/001.gif",
+    "use": "宠物聊天表情、趣味反应"
+  },
+  {
+    "id": "clay-mascot",
+    "name": "粘土吉祥物",
+    "category": "材质与吉祥物",
+    "guide": "clay-mascot/STYLE.md",
+    "preview": "../docs/previews/clay-mascot.gif",
+    "sample": "../examples/clay-bakery/01-croissant.gif",
+    "use": "虚构店铺、品牌 IP、产品搭档"
+  },
+  {
+    "id": "lenticular",
+    "name": "双状态光栅卡",
+    "category": "卡片与变画",
+    "guide": "lenticular/STYLE.md",
+    "preview": "../docs/previews/lenticular.gif",
+    "sample": "../examples/lenticular-cards/01-spider-man.gif",
+    "use": "收藏卡、人物双身份、产品两配色"
+  },
+  {
+    "id": "type-linked",
+    "name": "人物与字体联动",
+    "category": "海报与文字",
+    "guide": "type-linked/STYLE.md",
+    "preview": "../docs/previews/type-linked.gif",
+    "sample": "../examples/dynamic-posters/type-linked/01-rin.gif",
+    "use": "演出预告、人物宣传、换装展示"
+  },
+  {
+    "id": "comic-fusion",
+    "name": "漫画印刷整体融合",
+    "category": "海报与文字",
+    "guide": "comic-fusion/STYLE.md",
+    "preview": "../docs/previews/comic-fusion.gif",
+    "sample": "../examples/dynamic-posters/p5-integrated/04-yuki.gif",
+    "use": "角色宣传、活动主视觉、演出海报"
+  }
+]
