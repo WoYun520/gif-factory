@@ -1,6 +1,6 @@
 # GIF 表情包工作室
 
-给 Codex 参考图，可以做聊天 GIF 表情包、双状态电子光栅卡，也可以拿吉祥物做品牌短片。
+给 Codex 参考图，可以做聊天 GIF 表情包、双状态电子光栅卡、人物与文字联动的动态海报，也可以拿吉祥物做品牌短片。
 
 像素小人、动漫插画、真人和宠物照片都可以试。每张可以只是轻轻晃动，也可以让人物完整地做一个动作，比如挥手、比心、提裙行礼。
 
@@ -10,13 +10,15 @@
 
 **新增：电子光栅卡。** 让人脸切成面罩、普通状态切成变身状态，像实体光栅卡一样来回变画。[看九张案例](#电子光栅卡展厅) · [先看什么图能做](#电子光栅卡什么图能做)。
 
+**新增：动态海报。** 不只换衣服，让人物表情、动作和大字一起变化。也可以把人物、背景、配色和文字一起重绘成一整张漫画海报。[看九角色合集](#动态海报展厅)。
+
 ## 表情包展厅
 
-这里有 **242 张已有示例**，还有 **2 张刚重做的动作试样，等使用者确认**。点击动图可以看原尺寸。大部分约两秒一轮，部分动作示例会短一些。另有 **9 张电子光栅卡**，和品牌短片一起单独分类，不计入聊天表情包数量。
+这里有 **242 张已有示例**，还有 **2 张刚重做的动作试样，等使用者确认**。点击动图可以看原尺寸。大部分约两秒一轮，部分动作示例会短一些。另有 **9 张电子光栅卡**、**9 张动态海报**，和品牌短片一起单独分类，不计入聊天表情包数量。
 
 **各系列默认收起；点击对应窗口即可展开分类动图。**
 
-[下载整个项目：242 张表情包示例＋2 张重做试样＋9 张光栅卡＋品牌短片案例](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
+[下载整个项目：242 张表情包示例＋2 张重做试样＋9 张光栅卡＋9 张动态海报＋品牌短片案例](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
 
 ### 大肥鱼 · 精选动态预览
 
@@ -283,6 +285,31 @@
 
 </details>
 
+## 动态海报展厅
+
+适合角色宣传、演出预告、活动主视觉。人物从平静切到开唱、蓄力或登场，字也跟着撑开。日期、地点这些要读清楚的信息保持不动。每张都是完整海报循环，不做成有片头片尾的视频。
+
+<details>
+<summary><strong>⚡ 人物、背景、文字整体融合 · 9 张 · 点击窗口展开</strong></summary>
+
+这套借鉴 P5 式漫画印刷的视觉语言：限定色、墨线、网点和斜切字形一起设计。人物头发能挡住部分标题，手臂和大字形成前后层次。每个角色保留自己的主色，避免一套字硬套所有角色。
+
+<img src="examples/dynamic-posters/p5-integrated/preview.gif" alt="九角色整体融合动态海报合集" width="720">
+
+| | | |
+| --- | --- | --- |
+| <a href="examples/dynamic-posters/p5-integrated/01-rin.gif"><img src="examples/dynamic-posters/p5-integrated/01-rin.gif" alt="镜音铃整体融合海报" width="180" height="240"></a><br>镜音铃 · TURN IT UP | <a href="examples/dynamic-posters/p5-integrated/02-luka.gif"><img src="examples/dynamic-posters/p5-integrated/02-luka.gif" alt="流歌整体融合海报" width="180" height="240"></a><br>流歌 · NIGHT ECHOES | <a href="examples/dynamic-posters/p5-integrated/03-teto.gif"><img src="examples/dynamic-posters/p5-integrated/03-teto.gif" alt="Teto整体融合海报" width="180" height="240"></a><br>Teto · BREAK THE LOOP |
+| <a href="examples/dynamic-posters/p5-integrated/04-yuki.gif"><img src="examples/dynamic-posters/p5-integrated/04-yuki.gif" alt="结城理整体融合海报" width="180" height="240"></a><br>结城理 · BLUE HOUR | <a href="examples/dynamic-posters/p5-integrated/05-miku.gif"><img src="examples/dynamic-posters/p5-integrated/05-miku.gif" alt="初音整体融合海报" width="180" height="240"></a><br>初音 · LIVE LOUD | <a href="examples/dynamic-posters/p5-integrated/06-naruto.gif"><img src="examples/dynamic-posters/p5-integrated/06-naruto.gif" alt="鸣人整体融合海报" width="180" height="240"></a><br>鸣人 · CHARGE UP |
+| <a href="examples/dynamic-posters/p5-integrated/07-luffy.gif"><img src="examples/dynamic-posters/p5-integrated/07-luffy.gif" alt="路飞整体融合海报" width="180" height="240"></a><br>路飞 · SET SAIL | <a href="examples/dynamic-posters/p5-integrated/08-gojo.gif"><img src="examples/dynamic-posters/p5-integrated/08-gojo.gif" alt="五条悟整体融合海报" width="180" height="240"></a><br>五条悟 · LIMIT LESS | <a href="examples/dynamic-posters/p5-integrated/09-goku.gif"><img src="examples/dynamic-posters/p5-integrated/09-goku.gif" alt="悟空整体融合海报" width="180" height="240"></a><br>悟空 · GO BEYOND |
+
+单张 720×960、6 秒循环，点击看原尺寸。结城理在第二排左侧。
+
+[九张文件与制作说明](examples/dynamic-posters/p5-integrated/README.md) · [静态封面](examples/dynamic-posters/p5-integrated/cover.jpg) · [动态海报怎么分类和制作](references/dynamic-posters.md)
+
+这些是非官方角色效果案例，活动信息均为虚构。
+
+</details>
+
 ## 电子光栅卡展厅
 
 同一张卡片在两幅画面间切换：人脸变成面罩，或者普通状态变成另一个形态。这套是 **9 张独立 GIF，每张 480×720、6 秒循环**，标题固定，画面按细条来回变换。蜘蛛侠保留使用者选定的首版近景。
@@ -363,11 +390,20 @@ Skill 就是给 Codex 用的做事指南，装好后它会按这套方法制作�
 
 画风和动作可以分开选。**“更高清”和“动作更完整”也是两回事**：图片更大，不代表动起来就一定更自然。完整动作更容易出现变脸、手指变形，建议先看一张再决定要不要批量做。
 
-## 最后选：聊天、光栅卡，还是宣传片
+## 最后选：聊天、光栅卡、动态海报，还是宣传片
 
 聊天用，就做一张张独立表情包 GIF。想做收藏卡、人物双身份或产品两状态，就做电子光栅卡；它也交付独立 GIF，尺寸和节奏单独设置。品牌宣传用，就把角色、产品、包装和动作串成短片：谁动手、碰到什么、发生什么变化，最后让观众记住品牌。
 
 目前已做过的是上面的面包店融合短片。咖啡店或独立品牌也可以沿这个方法尝试，新角色、新动作先看小样，不把还没做过的效果当成成功案例。
+
+### 动态海报又分两种
+
+- **保留原画，文字一起动：** 适合已经满意的照片或插画。人物状态与字的大小、字距、角度一起变。
+- **人物、背景、文字整体融合：** 想要明显的漫画、印刷或其他设计语言，就把整张图一起重绘。这次九角色用的是这条路。
+
+两种都可以用于演出预告、角色宣传和产品展示。游戏人物 UI 也是应用场景，但 GIF 只展示效果，不等于做出了能点的界面。
+
+不要只把同一套大字贴在不同人物上。衣服变了还不够时，继续设计表情、姿态、发丝和灯光；脸、眼睛和重要道具要看清。详细制作方式见[动态海报分类](references/dynamic-posters.md)。
 
 ## 电子光栅卡：什么图能做
 
@@ -414,6 +450,10 @@ Skill 就是给 Codex 用的做事指南，装好后它会按这套方法制作�
 
 > 用这两张图做一张电子光栅卡，480×720，6 秒循环，画面和标题固定。先检查角度、眼睛和下巴能不能对上。缺少的部分先调整静态图，不要只裁剪或补一条黑边。
 
+想要这次整体融合的效果：
+
+> 做一张人物、背景、文字一起设计的动态海报。用限定色、漫画墨线和网点，人物从安静切到爆发，大字一起撑开。头发、手臂和标题有前后层次，眼睛和招牌道具不要挡住。6 秒循环，日期场地固定，保留 GIF 的顿挫感。
+
 想拿吉祥物做品牌短片：
 
 > 用已经确认的这套吉祥物，做一条 15 秒品牌宣传片。角色动手触发纸片机关，让产品最后进入印有店名的包装里。给我成片和能继续修改的工程。
@@ -446,6 +486,8 @@ Skill 就是给 Codex 用的做事指南，装好后它会按这套方法制作�
 像素风默认是 320 × 320，插画和真人风默认是 512 × 512。通常使用透明背景；有明确的尺寸、文件大小或背景要求，可以直接提。
 
 电子光栅卡交付独立循环 GIF，批量时再给动态总览、压缩包和素材来源；不需要额外做成带片头片尾的视频。
+
+动态海报交付独立循环 GIF 和合集预览。当前案例是两张完整海报关键状态切换；需要逐字修改文案时，另做分层文字。
 
 品牌短片另外交付视频、可编辑工程和必要的素材署名，尺寸、时长按用途来定。不会因为做了广告，就自动再生成一整套表情包。
 
@@ -494,6 +536,6 @@ python3 scripts/export_pixel_actions.py examples/pixel-actions/action-example.js
 
 ## 开源许可
 
-制作脚本与 Skill 文档采用 [MIT](LICENSE)。电子光栅卡中的角色 IP、网络照片与他人插画不随代码一并授予 MIT 权利，出处及使用边界见[案例来源说明](examples/lenticular-cards/README.md)。
+制作脚本与 Skill 文档采用 [MIT](LICENSE)。动态海报的角色与参考设计语言不随代码转授商业权利，见[案例说明](examples/dynamic-posters/p5-integrated/README.md)。电子光栅卡中的角色 IP、网络照片与他人插画不随代码一并授予 MIT 权利，出处及使用边界见[案例来源说明](examples/lenticular-cards/README.md)。
 
 第三方配乐和字体按各自许可使用；面包店案例的来源与署名见 [CREDITS](examples/brand-films/manman-bakery/CREDITS.md)。
