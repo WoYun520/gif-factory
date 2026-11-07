@@ -2,7 +2,24 @@
 
 [返回风格库](../README.md) · [查看原尺寸案例](../../examples/pixel-actions/boy/01.gif)
 
-<img src="../../docs/previews/pixel-actions.gif" alt="像素完整动作动态预览" height="240">
+## 动态案例 · 8 张
+
+<table>
+<tr>
+<td width="33%" valign="top"><a href="../../examples/pixel-actions/boy/01.gif"><img src="../../docs/previews/pixel-actions.gif" alt="眼镜男孩·冲鸭" height="180"></a><br>眼镜男孩·冲鸭</td>
+<td width="33%" valign="top"><a href="../../examples/pixel-actions/boy/02.gif"><img src="../../docs/previews/pixel-actions-02.gif" alt="眼镜男孩·点赞" height="180"></a><br>眼镜男孩·点赞</td>
+<td width="33%" valign="top"><a href="../../examples/pixel-actions/hood/01.gif"><img src="../../docs/previews/pixel-actions-03.gif" alt="红帽女孩·你好呀" height="180"></a><br>红帽女孩·你好呀</td>
+</tr>
+<tr>
+<td width="33%" valign="top"><a href="../../examples/pixel-actions/hood/02.gif"><img src="../../docs/previews/pixel-actions-04.gif" alt="红帽女孩·谢谢你" height="180"></a><br>红帽女孩·谢谢你</td>
+<td width="33%" valign="top"><a href="../../examples/pixel-actions/cat/01.gif"><img src="../../docs/previews/pixel-actions-05.gif" alt="太空猫·起飞啦" height="180"></a><br>太空猫·起飞啦</td>
+<td width="33%" valign="top"><a href="../../examples/pixel-actions/cat/02.gif"><img src="../../docs/previews/pixel-actions-06.gif" alt="太空猫·收到" height="180"></a><br>太空猫·收到</td>
+</tr>
+<tr>
+<td width="33%" valign="top"><a href="../../examples/pixel-actions/penguin/01.gif"><img src="../../docs/previews/pixel-actions-07.gif" alt="小企鹅·开心扭扭" height="180"></a><br>小企鹅·开心扭扭</td>
+<td width="33%" valign="top"><a href="../../examples/pixel-actions/penguin/02.gif"><img src="../../docs/previews/pixel-actions-08.gif" alt="小企鹅·谢谢你" height="180"></a><br>小企鹅·谢谢你</td>
+</tr>
+</table>
 
 ## 长什么样
 

@@ -2,7 +2,25 @@
 
 [返回风格库](../README.md) · [查看原尺寸案例](../../examples/dynamic-posters/p5-integrated/04-yuki.gif)
 
-<img src="../../docs/previews/comic-fusion.gif" alt="漫画印刷整体融合动态预览" height="240">
+## 动态案例 · 9 张
+
+<table>
+<tr>
+<td width="33%" valign="top"><a href="../../examples/dynamic-posters/p5-integrated/04-yuki.gif"><img src="../../docs/previews/comic-fusion.gif" alt="结城理" height="180"></a><br>结城理</td>
+<td width="33%" valign="top"><a href="../../examples/dynamic-posters/p5-integrated/01-rin.gif"><img src="../../docs/previews/comic-fusion-02.gif" alt="镜音铃" height="180"></a><br>镜音铃</td>
+<td width="33%" valign="top"><a href="../../examples/dynamic-posters/p5-integrated/02-luka.gif"><img src="../../docs/previews/comic-fusion-03.gif" alt="流歌" height="180"></a><br>流歌</td>
+</tr>
+<tr>
+<td width="33%" valign="top"><a href="../../examples/dynamic-posters/p5-integrated/03-teto.gif"><img src="../../docs/previews/comic-fusion-04.gif" alt="Teto" height="180"></a><br>Teto</td>
+<td width="33%" valign="top"><a href="../../examples/dynamic-posters/p5-integrated/05-miku.gif"><img src="../../docs/previews/comic-fusion-05.gif" alt="初音" height="180"></a><br>初音</td>
+<td width="33%" valign="top"><a href="../../examples/dynamic-posters/p5-integrated/06-naruto.gif"><img src="../../docs/previews/comic-fusion-06.gif" alt="鸣人" height="180"></a><br>鸣人</td>
+</tr>
+<tr>
+<td width="33%" valign="top"><a href="../../examples/dynamic-posters/p5-integrated/07-luffy.gif"><img src="../../docs/previews/comic-fusion-07.gif" alt="路飞" height="180"></a><br>路飞</td>
+<td width="33%" valign="top"><a href="../../examples/dynamic-posters/p5-integrated/08-gojo.gif"><img src="../../docs/previews/comic-fusion-08.gif" alt="五条悟" height="180"></a><br>五条悟</td>
+<td width="33%" valign="top"><a href="../../examples/dynamic-posters/p5-integrated/09-goku.gif"><img src="../../docs/previews/comic-fusion-09.gif" alt="悟空" height="180"></a><br>悟空</td>
+</tr>
+</table>
 
 ## 长什么样
 

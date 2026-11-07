@@ -2,7 +2,24 @@
 
 [返回风格库](../README.md) · [查看原尺寸案例](../../examples/pet-corgi/01-fun-and-work/001.gif)
 
-<img src="../../docs/previews/photo-pets.gif" alt="宠物拟人动态预览" height="240">
+## 动态案例 · 8 张
+
+<table>
+<tr>
+<td width="33%" valign="top"><a href="../../examples/pet-corgi/01-fun-and-work/001.gif"><img src="../../docs/previews/photo-pets.gif" alt="柯基·整活1" height="180"></a><br>柯基·整活1</td>
+<td width="33%" valign="top"><a href="../../examples/pet-corgi/01-fun-and-work/002.gif"><img src="../../docs/previews/photo-pets-02.gif" alt="柯基·整活2" height="180"></a><br>柯基·整活2</td>
+<td width="33%" valign="top"><a href="../../examples/pet-corgi/01-fun-and-work/003.gif"><img src="../../docs/previews/photo-pets-03.gif" alt="柯基·整活3" height="180"></a><br>柯基·整活3</td>
+</tr>
+<tr>
+<td width="33%" valign="top"><a href="../../examples/pet-corgi/01-fun-and-work/004.gif"><img src="../../docs/previews/photo-pets-04.gif" alt="柯基·整活4" height="180"></a><br>柯基·整活4</td>
+<td width="33%" valign="top"><a href="../../examples/pet-corgi/02-food-and-life/001.gif"><img src="../../docs/previews/photo-pets-05.gif" alt="柯基·生活1" height="180"></a><br>柯基·生活1</td>
+<td width="33%" valign="top"><a href="../../examples/pet-corgi/02-food-and-life/002.gif"><img src="../../docs/previews/photo-pets-06.gif" alt="柯基·生活2" height="180"></a><br>柯基·生活2</td>
+</tr>
+<tr>
+<td width="33%" valign="top"><a href="../../examples/pet-corgi/02-food-and-life/003.gif"><img src="../../docs/previews/photo-pets-07.gif" alt="柯基·生活3" height="180"></a><br>柯基·生活3</td>
+<td width="33%" valign="top"><a href="../../examples/pet-corgi/02-food-and-life/004.gif"><img src="../../docs/previews/photo-pets-08.gif" alt="柯基·生活4" height="180"></a><br>柯基·生活4</td>
+</tr>
+</table>
 
 ## 长什么样
 

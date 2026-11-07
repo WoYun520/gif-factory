@@ -8,7 +8,7 @@
 
 **1. 先安装。** 把这句话发给 Codex：
 
-> 帮我安装GIF 工厂 Skill：https://github.com/WoYun520/pixel-gif-sticker-pack
+> 帮我安装GIF 工厂 Skill：https://github.com/WoYun520/gif-factory
 
 Skill 就是给 Codex 用的做事指南，装好后它会按这套方法制作。
 

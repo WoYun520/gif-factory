@@ -2,7 +2,20 @@
 
 [返回风格库](../README.md) · [查看原尺寸案例](../../examples/whale-maid/01-greetings/001.gif)
 
-<img src="../../docs/previews/pixel-light.gif" alt="像素轻动效动态预览" height="240">
+## 动态案例 · 6 张
+
+<table>
+<tr>
+<td width="33%" valign="top"><a href="../../examples/whale-maid/01-greetings/001.gif"><img src="../../docs/previews/pixel-light.gif" alt="鲸鱼娘·问候" height="180"></a><br>鲸鱼娘·问候</td>
+<td width="33%" valign="top"><a href="../../examples/whale-maid/02-joy-and-affection/017.gif"><img src="../../docs/previews/pixel-light-02.gif" alt="鲸鱼娘·开心" height="180"></a><br>鲸鱼娘·开心</td>
+<td width="33%" valign="top"><a href="../../examples/whale-maid/03-emotions/033.gif"><img src="../../docs/previews/pixel-light-03.gif" alt="鲸鱼娘·情绪" height="180"></a><br>鲸鱼娘·情绪</td>
+</tr>
+<tr>
+<td width="33%" valign="top"><a href="../../examples/01-replies/001.gif"><img src="../../docs/previews/pixel-light-04.gif" alt="小秘书·回消息" height="180"></a><br>小秘书·回消息</td>
+<td width="33%" valign="top"><a href="../../examples/02-emotions/017.gif"><img src="../../docs/previews/pixel-light-05.gif" alt="小秘书·情绪" height="180"></a><br>小秘书·情绪</td>
+<td width="33%" valign="top"><a href="../../examples/06-daily-life/081.gif"><img src="../../docs/previews/pixel-light-06.gif" alt="小秘书·生活" height="180"></a><br>小秘书·生活</td>
+</tr>
+</table>
 
 ## 长什么样
 

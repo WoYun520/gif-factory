@@ -2,7 +2,18 @@
 
 [返回风格库](../README.md) · [查看原尺寸案例](../../examples/mixed-actions/02-二次元/005.gif)
 
-<img src="../../docs/previews/illustrated-actions.gif" alt="插画角色动作动态预览" height="240">
+## 动态案例 · 4 张
+
+<table>
+<tr>
+<td width="33%" valign="top"><a href="../../examples/mixed-actions/02-二次元/005.gif"><img src="../../docs/previews/illustrated-actions.gif" alt="鸣人·加油" height="180"></a><br>鸣人·加油</td>
+<td width="33%" valign="top"><a href="../../examples/mixed-actions/02-二次元/004.gif"><img src="../../docs/previews/illustrated-actions-02.gif" alt="路飞·冲鸭" height="180"></a><br>路飞·冲鸭</td>
+<td width="33%" valign="top"><a href="../../examples/illustrated-actions/01-miku.gif"><img src="../../docs/previews/illustrated-actions-03.gif" alt="初音·嗨呀" height="180"></a><br>初音·嗨呀</td>
+</tr>
+<tr>
+<td width="33%" valign="top"><a href="../../examples/illustrated-actions/02-princess-curtsy.gif"><img src="../../docs/previews/illustrated-actions-04.gif" alt="公主裙·提裙行礼" height="180"></a><br>公主裙·提裙行礼</td>
+</tr>
+</table>
 
 ## 长什么样
 

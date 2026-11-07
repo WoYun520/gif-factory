@@ -2,7 +2,18 @@
 
 [返回风格库](../README.md) · [查看原尺寸案例](../../examples/public-figures-hd/001.gif)
 
-<img src="../../docs/previews/photo-people.gif" alt="真人轻动效动态预览" height="240">
+## 动态案例 · 4 张
+
+<table>
+<tr>
+<td width="33%" valign="top"><a href="../../examples/public-figures-hd/001.gif"><img src="../../docs/previews/photo-people.gif" alt="马斯克" height="180"></a><br>马斯克</td>
+<td width="33%" valign="top"><a href="../../examples/public-figures-hd/002.gif"><img src="../../docs/previews/photo-people-02.gif" alt="Tibo" height="180"></a><br>Tibo</td>
+<td width="33%" valign="top"><a href="../../examples/public-figures-hd/003.gif"><img src="../../docs/previews/photo-people-03.gif" alt="Dario Amodei" height="180"></a><br>Dario Amodei</td>
+</tr>
+<tr>
+<td width="33%" valign="top"><a href="../../examples/public-figures-hd/004.gif"><img src="../../docs/previews/photo-people-04.gif" alt="黄仁勋" height="180"></a><br>黄仁勋</td>
+</tr>
+</table>
 
 ## 长什么样
 

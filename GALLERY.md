@@ -4,11 +4,11 @@
 
 ## 表情包展厅
 
-这里有 **242 张已有示例**，还有 **2 张刚重做的动作试样，等使用者确认**。点击动图可以看原尺寸。大部分约两秒一轮，部分动作示例会短一些。另有 **9 张电子光栅卡**、**10 张动态海报**，和品牌短片一起单独分类，不计入聊天表情包数量。
+这里有 **244 张已有示例**，还有 **2 张刚重做的动作试样，等使用者确认**。点击动图可以看原尺寸。大部分约两秒一轮，部分动作示例会短一些。另有 **9 张电子光栅卡**、**13 张动态海报**，和品牌短片一起单独分类，不计入聊天表情包数量。
 
 **各系列默认收起；点击对应窗口即可展开分类动图。**
 
-[下载整个项目：242 张表情包示例＋2 张重做试样＋9 张光栅卡＋10 张动态海报＋品牌短片案例](https://github.com/WoYun520/pixel-gif-sticker-pack/archive/refs/heads/main.zip)
+[下载整个项目：244 张表情包示例＋2 张重做试样＋9 张光栅卡＋13 张动态海报＋品牌短片案例](https://github.com/WoYun520/gif-factory/archive/refs/heads/main.zip)
 
 ### 大肥鱼 · 精选动态预览
 
@@ -275,6 +275,17 @@
 
 </details>
 
+<details>
+<summary><strong>🎀 更多插画动作 · 初音与公主裙 · 点击展开</strong></summary>
+
+初音动作与公主裙提裙行礼，是此前已制作的两张插画动作小样；此次补入作品库。仅发布生成的 GIF，不包含用户的原始照片。
+
+<img src="examples/illustrated-actions/01-miku.gif" alt="初音插画动作" width="240"><img src="examples/illustrated-actions/02-princess-curtsy.gif" alt="公主裙提裙行礼" width="240">
+
+[案例说明](examples/illustrated-actions/README.md) · [更多插画动作](styles/illustrated-actions/STYLE.md)
+
+</details>
+
 ## 动态海报展厅
 
 适合角色宣传、演出预告、活动主视觉。人物从平静切到开唱、蓄力或登场，字也跟着撑开。日期、地点这些要读清楚的信息保持不动。每张都是完整海报循环，不做成有片头片尾的视频。
@@ -301,13 +312,22 @@
 </details>
 
 <details>
-<summary><strong>🔤 保留原画＋字体联动 · 镜音铃试样 · 点击展开</strong></summary>
+<summary><strong>🔤 保留原画＋字体联动 · 4 张 · 点击展开</strong></summary>
 
-人物日常到开唱，独立文字图层放大、错位和倾斜，日期场地保持固定。
+人物日常到开唱，文字图层联动，日期场地保持固定。
 
-<img src="examples/dynamic-posters/type-linked/01-rin.gif" alt="镜音铃独立字体联动海报" width="480">
+<table>
+<tr>
+<td width="33%" valign="top"><a href="examples/dynamic-posters/type-linked/01-rin.gif"><img src="docs/previews/type-linked.gif" alt="镜音铃" height="180"></a><br>镜音铃</td>
+<td width="33%" valign="top"><a href="examples/dynamic-posters/type-linked/02-luka.gif"><img src="docs/previews/type-linked-02.gif" alt="流歌" height="180"></a><br>流歌</td>
+<td width="33%" valign="top"><a href="examples/dynamic-posters/type-linked/03-teto.gif"><img src="docs/previews/type-linked-03.gif" alt="Teto" height="180"></a><br>Teto</td>
+</tr>
+<tr>
+<td width="33%" valign="top"><a href="examples/dynamic-posters/type-linked/04-len.gif"><img src="docs/previews/type-linked-04.gif" alt="镜音连" height="180"></a><br>镜音连</td>
+</tr>
+</table>
 
-[案例说明](examples/dynamic-posters/type-linked/README.md) · [风格入口](styles/type-linked/STYLE.md)
+[四张独立 GIF 与说明](examples/dynamic-posters/type-linked/README.md) · [风格入口](styles/type-linked/STYLE.md)
 
 </details>
 
@@ -343,7 +363,7 @@
 
 上面是缩小的动图预览，完整 MP4 为 1920 × 1080、有配乐。慢慢面包店是虚构品牌，这版效果已经得到使用者认可。
 
-[查看 / 下载完整视频](https://raw.githubusercontent.com/WoYun520/pixel-gif-sticker-pack/main/examples/brand-films/manman-bakery/film.mp4) · [下载可编辑工程](examples/brand-films/manman-bakery/editable-project.zip) · [查看案例和素材署名](examples/brand-films/manman-bakery/README.md)
+[查看 / 下载完整视频](https://raw.githubusercontent.com/WoYun520/gif-factory/main/examples/brand-films/manman-bakery/film.mp4) · [下载可编辑工程](examples/brand-films/manman-bakery/editable-project.zip) · [查看案例和素材署名](examples/brand-films/manman-bakery/README.md)
 
 这次借鉴了 [gbro-collage-broll](https://github.com/pyang5166/gbro-collage-broll) 的构思和组装流程，结合本项目的角色动作方法，用可编辑图层完成；没有调用它的 Gemini 视频脚本。发布配乐版时保留[音乐署名](examples/brand-films/manman-bakery/CREDITS.md)。
 
