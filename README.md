@@ -1,11 +1,11 @@
 # GIF 工厂
 
-**挑一种风格，给一张参考图，把角色、相片和想法做成循环 GIF。**
+**挑一种风格，给一张参考图，把角色、相片和想法做成 GIF，也能延伸成动态绘本。**
 
 像素小人、人物与宠物、粘土吉祥物、光栅变画、漫画动态海报。
 先看效果，再换成你自己的角色和主题；拿不准就先做一张。
 
-**6 个分类 · 9 个 GIF 风格入口 · 56 个动态案例**
+**6 个 GIF 分类 · 9 个 GIF 风格入口 · 56 个动态案例，另有动态绘本和品牌短片**
 
 [浏览风格](styles/README.md) · [完整作品库](GALLERY.md) · [怎么使用](GUIDE.md) · [Skill](SKILL.md) · [下载项目](https://github.com/WoYun520/gif-factory/archive/refs/heads/main.zip)
 
@@ -139,7 +139,7 @@
 
 ## 完整作品库
 
-这里是制作方法的入口，完整系列另放作品库：**244 张已有聊天示例＋2 张重做待确认试样、9 张光栅卡、13 张动态海报**，以及品牌短片案例。每个系列默认折叠，100 张鲸鱼娘和像素小秘书也保留，点击对应窗口展开。
+这里是制作方法的入口，完整系列另放作品库：**244 张已有聊天示例＋2 张重做待确认试样、9 张光栅卡、13 张动态海报**，以及动态绘本和品牌短片案例。每个系列默认折叠，100 张鲸鱼娘和像素小秘书也保留，点击对应窗口展开。
 
 [打开完整作品库](GALLERY.md) · [鲸鱼娘与聊天表情包](GALLERY.md#表情包展厅) · [光栅卡](GALLERY.md#电子光栅卡展厅) · [动态海报](GALLERY.md#动态海报展厅)
 
@@ -152,6 +152,20 @@
 <a href="examples/brand-films/manman-bakery/film.mp4"><img src="examples/brand-films/manman-bakery/preview.gif" alt="慢慢面包店品牌短片预览" width="480"></a>
 
 [看面包店短片与工程](examples/brand-films/manman-bakery/README.md) · [品牌短片制作流程](references/brand-film.md)
+
+## 扩展应用：紧凑动态绘本
+
+一页做完一个动作，再翻页。递信、放飞纸鸟、接住、送礼、合书，保留低帧插画的节奏，去掉长时间空等。默认每页约3秒、实际6帧，可以做独立页面，也能串成一本故事。
+
+<a href="examples/storybooks/tea-party/film.mp4"><img src="examples/storybooks/tea-party/preview.gif" alt="风送来的茶会第一章动态预览，点击看完整故事" width="720"></a>
+
+网页动图循环预览，正式动作只做一遍。《风送来的茶会》完整成片 **41.5秒、12页、4章、无声**，已经认可。
+
+[看完整故事、四章和12页动作](examples/storybooks/tea-party/README.md) · [什么图适合做](styles/compact-storybook/STYLE.md) · [初版 Skill](skills/compact-storybook/SKILL.md)
+
+可以直接说：
+
+> 使用 $pixel-gif-sticker-pack，选“紧凑动态绘本”，把这个故事做成6帧固定画面小动画，先给一页看看。
 
 ## 制作说明
 

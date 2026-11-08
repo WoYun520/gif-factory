@@ -368,3 +368,19 @@
 这次借鉴了 [gbro-collage-broll](https://github.com/pyang5166/gbro-collage-broll) 的构思和组装流程，结合本项目的角色动作方法，用可编辑图层完成；没有调用它的 Gemini 视频脚本。发布配乐版时保留[音乐署名](examples/brand-films/manman-bakery/CREDITS.md)。
 
 </details>
+
+
+<a id="动态绘本展厅"></a>
+
+## 动态绘本展厅
+
+<details>
+<summary><strong>📖 风送来的茶会 · 12页 · 4章 · 41.5秒 · 点击展开</strong></summary>
+
+<a href="examples/storybooks/tea-party/film.mp4"><img src="examples/storybooks/tea-party/preview.gif" alt="动态绘本第一章循环网页预览" width="720"></a>
+
+固定构图、实际6fps、单次动作、短暂停留。完整紧凑版已获认可，无声；上方只是第一章的循环网页预览，正式成片不倒放循环。
+
+[完整视频、四章与12页动作](examples/storybooks/tea-party/README.md) · [适用素材与做法](styles/compact-storybook/STYLE.md) · [独立Skill](skills/compact-storybook/SKILL.md)
+
+</details>

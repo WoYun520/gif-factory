@@ -1,6 +1,6 @@
 ---
 name: pixel-gif-sticker-pack
-description: Create or repair character sticker GIFs, electronic lenticular flip cards, character-led dynamic posters, or mascot-led brand films. Choose appearance, movement and output purpose separately; assess source suitability and deliver reviewed media with verified downloads.
+description: Create or repair character sticker GIFs, electronic lenticular flip cards, character-led dynamic posters, mascot-led brand films, or compact low-frame storybooks. Choose appearance, movement and output purpose separately; assess source suitability and deliver reviewed media with verified downloads.
 ---
 
 # GIF 工厂 · GIF Factory
@@ -9,9 +9,9 @@ Carry forward the latest reference, required count, format, language, and visual
 
 ## Browse styles first when the user asks for a look
 
-Use [the style index](styles/README.md) to resolve Chinese/English style names, then read only that `styles/<id>/STYLE.md` and its linked production reference. The six gallery groups are discovery categories, not six new rendering engines. Continue to record appearance, movement and purpose separately, and preserve accepted user choices. Do not invent a new style by only changing a character or promote a pending repair because it appears in the full gallery.
+Use [the style index](styles/README.md) to resolve Chinese/English style names, then read only that `styles/<id>/STYLE.md` and its linked production reference. The six GIF gallery groups are discovery categories, not six new rendering engines. Compact storybooks and brand films are separate narrative extensions. Continue to record appearance, movement and purpose separately, and preserve accepted user choices. Do not invent a new style by only changing a character or promote a pending repair because it appears in the full gallery.
 
-Human-facing name: **GIF 工厂 / GIF Factory**. Keep the existing `$pixel-gif-sticker-pack` invocation identifier compatible. The homepage is a style chooser; [GALLERY.md](GALLERY.md) holds complete series and their status, while [GUIDE.md](GUIDE.md) holds longer usage instructions. Mascot brand films remain an extension, not another GIF loop preset.
+Human-facing name: **GIF 工厂 / GIF Factory**. Keep the existing `$pixel-gif-sticker-pack` invocation identifier compatible. The homepage is a style chooser; [GALLERY.md](GALLERY.md) holds complete series and their status, while [GUIDE.md](GUIDE.md) holds longer usage instructions. Mascot brand films and compact storybooks remain extensions, not GIF loop presets.
 
 ## Choose the output purpose
 
@@ -21,6 +21,7 @@ Human-facing name: **GIF 工厂 / GIF Factory**. Keep the existing `$pixel-gif-s
 | 收藏卡／双身份变画，主要展示两幅图 | [Lenticular cards](references/lenticular.md) |
 | 演出预告／角色主视觉／人物与字体联动／P5 式整体融合海报 | [Dynamic posters](references/dynamic-posters.md) |
 | 吉祥物带动产品、包装与品牌的短片 | [Brand films](references/brand-film.md) |
+| 动态绘本／固定画面叙事／页内单次动作／翻书故事 | [Compact storybooks](references/storybook.md), then [standalone Skill](skills/compact-storybook/SKILL.md) |
 
 For dynamic posters, distinguish **preserve artwork + animated type** from **integrated artwork/background/type redesign**. The approved P5-inspired route is a limited-palette, ink/halftone composition with meaningful character-state contrast and type interacting with the figure; it is not letter stickers pasted onto unchanged full-color artwork. The current nine-poster examples encode two complete poster key states, not independently animated glyphs. Read only the selected purpose reference; a GIF preview of a game UI is not a working interactive UI.
 
@@ -28,7 +29,9 @@ For **electronic lenticular cards / 电子光栅卡 / 人脸面罩切换 / 双�
 
 For independently usable chat GIFs, follow the sticker workflow below. For a mascot-led shop, product or independent-brand promo, read [brand films](references/brand-film.md): connect character acting to a visual cause and result, then to the brand. Appearance, movement and purpose are separate choices. A brand film does not automatically require a new sticker pack; a sticker request does not require an advertising story. Reuse accepted choices and prior authorization rather than restarting approvals.
 
-The remaining sections describe the **chat-sticker workflow**. For a lenticular-card, dynamic-poster or brand-film brief, follow its selected reference instead; the square canvas, atlas layout, transparent margins and two-second sticker defaults below do not apply.
+For **compact storybooks**, use the standalone storybook Skill: preserve the requested art style; default to fixed framing, real 6fps, a roughly three-second once-only action and a brief result hold. Keep props continuous between pages and inspect contact anchors. Do not force loops, smooth interpolation, montage shots, or long idle padding. This route has its own output and review rules.
+
+The remaining sections describe the **chat-sticker workflow**. For a lenticular-card, dynamic-poster, brand-film or storybook brief, follow its selected reference instead; the square canvas, atlas layout, transparent margins and two-second sticker defaults below do not apply.
 
 ## Choose appearance and movement separately
 
