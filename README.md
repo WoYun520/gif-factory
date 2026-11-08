@@ -184,7 +184,7 @@
 <table>
 <tr>
 <td align="center" valign="top"><strong>横屏 · 左字右图</strong><br><a href="examples/storybooks/tea-party/realbook-writing.mp4"><img src="examples/storybooks/tea-party/realbook-writing-preview.gif" alt="横屏真实书本与正文书写预览" width="440"></a></td>
-<td align="center" valign="top"><strong>竖屏 · 图上字下</strong><br><a href="examples/storybooks/tea-party/portrait-writing.mp4"><img src="examples/storybooks/tea-party/portrait-writing-preview.gif" alt="竖屏白框书页与正文书写预览" width="200"></a></td>
+<td align="center" valign="top"><strong>竖屏 · 手机阅读优化</strong><br><a href="examples/storybooks/tea-party/portrait-writing.mp4"><img src="examples/storybooks/tea-party/portrait-writing-preview.gif" alt="竖屏白框书页与正文书写预览" width="200"></a></td>
 </tr>
 </table>
 

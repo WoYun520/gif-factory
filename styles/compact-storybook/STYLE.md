@@ -43,4 +43,4 @@
 
 [观看54秒真实书本书写完整版](../../examples/storybooks/tea-party/realbook-writing.mp4)。12页、6fps，含配乐与15组正文书写。
 
-[观看54秒竖屏书写完整版](../../examples/storybooks/tea-party/portrait-writing.mp4)。1080×1920，与横屏共用动作、书写节拍、配乐和沙沙声；独立重排，保留四周白框。
+[观看54秒竖屏书写完整版](../../examples/storybooks/tea-party/portrait-writing.mp4)。1080×1920，与横屏共用动作、书写节拍、配乐和沙沙声；按手机阅读重排，正文和插画放大，预留右侧与底部界面空间，保留四周白框。
