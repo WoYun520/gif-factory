@@ -375,12 +375,12 @@
 ## 动态绘本展厅
 
 <details>
-<summary><strong>📖 风送来的茶会 · 12页 · 4章 · 41.5秒 · 点击展开</strong></summary>
+<summary><strong>📖 风送来的茶会 · 12页 · 54秒 · 真实书本与书写 · 点击展开</strong></summary>
 
-<a href="examples/storybooks/tea-party/film.mp4"><img src="examples/storybooks/tea-party/preview.gif" alt="动态绘本第一章循环网页预览" width="720"></a>
+<a href="examples/storybooks/tea-party/realbook-writing.mp4"><img src="examples/storybooks/tea-party/realbook-writing-preview.gif" alt="真实书本正文书写循环网页预览" width="720"></a>
 
-固定构图、实际6fps、单次动作、短暂停留。完整紧凑版已获认可，无声；上方只是第一章的循环网页预览，正式成片不倒放循环。
+正俯拍真实书本，实际6fps，正文快速写出，含轻微沙沙声与配乐。上方为循环网页预览，54秒正式成片中的动作单次完成。
 
-[完整视频、四章与12页动作](examples/storybooks/tea-party/README.md) · [适用素材与做法](styles/compact-storybook/STYLE.md) · [独立Skill](skills/compact-storybook/SKILL.md)
+[完整视频与12页独立动作](examples/storybooks/tea-party/README.md) · [适用素材与做法](styles/compact-storybook/STYLE.md) · [独立Skill](skills/compact-storybook/SKILL.md)
 
 </details>

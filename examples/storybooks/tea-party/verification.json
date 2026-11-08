@@ -1,138 +1,25 @@
-[
-  {
-    "file": "chapters/01.mp4",
-    "width": 1920,
-    "height": 1080,
-    "avg_frame_rate": "6/1",
-    "duration": "10.000000",
-    "nb_frames": "60"
-  },
-  {
-    "file": "chapters/02.mp4",
-    "width": 1920,
-    "height": 1080,
-    "avg_frame_rate": "6/1",
-    "duration": "10.000000",
-    "nb_frames": "60"
-  },
-  {
-    "file": "chapters/03.mp4",
-    "width": 1920,
-    "height": 1080,
-    "avg_frame_rate": "6/1",
-    "duration": "10.000000",
-    "nb_frames": "60"
-  },
-  {
-    "file": "chapters/04.mp4",
-    "width": 1920,
-    "height": 1080,
-    "avg_frame_rate": "6/1",
-    "duration": "10.000000",
-    "nb_frames": "60"
-  },
-  {
-    "file": "film.mp4",
-    "width": 1920,
-    "height": 1080,
-    "avg_frame_rate": "6/1",
-    "duration": "41.500000",
-    "nb_frames": "249"
-  },
-  {
-    "file": "pages/01.mp4",
-    "width": 1920,
-    "height": 1080,
-    "avg_frame_rate": "6/1",
-    "duration": "3.000000",
-    "nb_frames": "18"
-  },
-  {
-    "file": "pages/02.mp4",
-    "width": 1920,
-    "height": 1080,
-    "avg_frame_rate": "6/1",
-    "duration": "3.000000",
-    "nb_frames": "18"
-  },
-  {
-    "file": "pages/03.mp4",
-    "width": 1920,
-    "height": 1080,
-    "avg_frame_rate": "6/1",
-    "duration": "3.000000",
-    "nb_frames": "18"
-  },
-  {
-    "file": "pages/04.mp4",
-    "width": 1920,
-    "height": 1080,
-    "avg_frame_rate": "6/1",
-    "duration": "3.000000",
-    "nb_frames": "18"
-  },
-  {
-    "file": "pages/05.mp4",
-    "width": 1920,
-    "height": 1080,
-    "avg_frame_rate": "6/1",
-    "duration": "3.000000",
-    "nb_frames": "18"
-  },
-  {
-    "file": "pages/06.mp4",
-    "width": 1920,
-    "height": 1080,
-    "avg_frame_rate": "6/1",
-    "duration": "3.000000",
-    "nb_frames": "18"
-  },
-  {
-    "file": "pages/07.mp4",
-    "width": 1920,
-    "height": 1080,
-    "avg_frame_rate": "6/1",
-    "duration": "3.000000",
-    "nb_frames": "18"
-  },
-  {
-    "file": "pages/08.mp4",
-    "width": 1920,
-    "height": 1080,
-    "avg_frame_rate": "6/1",
-    "duration": "3.000000",
-    "nb_frames": "18"
-  },
-  {
-    "file": "pages/09.mp4",
-    "width": 1920,
-    "height": 1080,
-    "avg_frame_rate": "6/1",
-    "duration": "3.000000",
-    "nb_frames": "18"
-  },
-  {
-    "file": "pages/10.mp4",
-    "width": 1920,
-    "height": 1080,
-    "avg_frame_rate": "6/1",
-    "duration": "3.000000",
-    "nb_frames": "18"
-  },
-  {
-    "file": "pages/11.mp4",
-    "width": 1920,
-    "height": 1080,
-    "avg_frame_rate": "6/1",
-    "duration": "3.000000",
-    "nb_frames": "18"
-  },
-  {
-    "file": "pages/12.mp4",
-    "width": 1920,
-    "height": 1080,
-    "avg_frame_rate": "6/1",
-    "duration": "3.000000",
-    "nb_frames": "18"
-  }
-]
+{
+  "file": "realbook-writing.mp4",
+  "width": 1920,
+  "height": 1080,
+  "fps": 6.0,
+  "nominal_fps": 6.0,
+  "duration": 54.0,
+  "decoded_frames": 324,
+  "checks_passed": true,
+  "errors": [],
+  "audio": [
+    {
+      "codec_name": "h264",
+      "codec_type": "video"
+    },
+    {
+      "codec_name": "aac",
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2
+    }
+  ],
+  "writing_cues": 15,
+  "completed_text_frames": 15
+}

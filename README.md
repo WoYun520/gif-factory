@@ -1,5 +1,7 @@
 # GIF 工厂
 
+[像素与游戏](#pixel-games) · [插画与二次元](#illustration-anime) · [真人与宠物](#people-pets) · [材质与吉祥物](#materials-mascots) · [卡片与变画](#cards-transforms) · [海报与文字](#posters-type) · [品牌短片](#brand-films) · [动态绘本](#storybooks)
+
 **挑一种风格，给一张参考图，把角色、相片和想法做成 GIF，也能延伸成动态绘本。**
 
 像素小人、人物与宠物、粘土吉祥物、光栅变画、漫画动态海报。
@@ -21,6 +23,8 @@
 
 每个分类都放了多个角色、动作或场景。点击动图看原尺寸，点击风格名看制作方法；各风格详情页共有 **56 个动态案例**。100 张完整系列继续放在作品库，默认收起。
 
+<a id="pixel-games"></a>
+
 ### 像素与游戏
 
 <table>
@@ -38,6 +42,8 @@
 
 [像素轻动效 · 全部 6 张](styles/pixel-light/STYLE.md) · [像素完整动作 · 全部 8 张](styles/pixel-actions/STYLE.md)
 
+<a id="illustration-anime"></a>
+
 ### 插画与二次元
 
 <table>
@@ -52,6 +58,8 @@
 </table>
 
 [插画角色动作 · 全部 4 张](styles/illustrated-actions/STYLE.md)
+
+<a id="people-pets"></a>
 
 ### 真人与宠物
 
@@ -70,6 +78,8 @@
 
 [真人轻动效 · 全部 4 张](styles/photo-people/STYLE.md) · [宠物拟人 · 全部 8 张](styles/photo-pets/STYLE.md)
 
+<a id="materials-mascots"></a>
+
 ### 材质与吉祥物
 
 <table>
@@ -84,6 +94,8 @@
 </table>
 
 [粘土吉祥物 · 全部 4 张](styles/clay-mascot/STYLE.md)
+
+<a id="cards-transforms"></a>
 
 ### 卡片与变画
 
@@ -101,6 +113,8 @@
 </table>
 
 [双状态光栅卡 · 全部 9 张](styles/lenticular/STYLE.md)
+
+<a id="posters-type"></a>
 
 ### 海报与文字
 
@@ -145,6 +159,8 @@
 
 <a id="品牌宣传片展厅"></a>
 
+<a id="brand-films"></a>
+
 ## 扩展应用：吉祥物品牌短片
 
 让吉祥物动手、递出产品、触发纸片机关，再把产品送进包装。这是从 GIF 角色素材延伸出来的视频方向，交付成片和能继续修改的工程，单独分类。
@@ -153,13 +169,13 @@
 
 [看面包店短片与工程](examples/brand-films/manman-bakery/README.md) · [品牌短片制作流程](references/brand-film.md)
 
+<a id="storybooks"></a>
+
 ## 扩展应用：紧凑动态绘本
 
 一页做完一个动作，再翻页。递信、放飞纸鸟、接住、送礼、合书，保留低帧插画的节奏，去掉长时间空等。默认每页约3秒、实际6帧，可以做独立页面，也能串成一本故事。
 
-<a href="examples/storybooks/tea-party/film.mp4"><img src="examples/storybooks/tea-party/preview.gif" alt="风送来的茶会第一章动态预览，点击看完整故事" width="720"></a>
-
-网页动图循环预览，正式动作只做一遍。原紧凑版是 **41.5秒、12页、4章、无声**；现在还有 **54秒真实书本版**，带正文快速书写、沙沙声和配乐。
+网页动图循环预览，正式动作只做一遍。《风送来的茶会》是 **54秒、12页的真实书本版**，带正文快速书写、沙沙声和配乐。
 
 **新版可以做成真实书本**：横屏左字右图，正俯拍能看见薄纸、书脊和桌面质感；竖屏图上字下，露出白框，方便手机看。先定静态质感，再放回原动画，配乐按故事选择。正文可在落页后快速写出，配轻微沙沙声，写完停留阅读。
 
@@ -167,7 +183,7 @@
 
 <a href="examples/storybooks/tea-party/realbook-writing.mp4"><img src="examples/storybooks/tea-party/realbook-writing-preview.gif" alt="真实书本与正文快速书写预览，点击看54秒完整版" width="720"></a>
 
-[看完整故事、四章和12页动作](examples/storybooks/tea-party/README.md) · [什么图适合做](styles/compact-storybook/STYLE.md) · [稳定版 Skill](skills/compact-storybook/SKILL.md)
+[看完整故事和12页动作](examples/storybooks/tea-party/README.md) · [什么图适合做](styles/compact-storybook/STYLE.md) · [稳定版 Skill](skills/compact-storybook/SKILL.md)
 
 可以直接说：
 
