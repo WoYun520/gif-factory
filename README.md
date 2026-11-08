@@ -175,13 +175,18 @@
 
 一页做完一个动作，再翻页。递信、放飞纸鸟、接住、送礼、合书，保留低帧插画的节奏，去掉长时间空等。默认每页约3秒、实际6帧，可以做独立页面，也能串成一本故事。
 
-网页动图循环预览，正式动作只做一遍。《风送来的茶会》是 **54秒、12页的真实书本版**，带正文快速书写、沙沙声和配乐。
+网页动图循环预览，正式动作只做一遍。《风送来的茶会》是 **54秒、12页的真实书本版**，横屏、竖屏各自排版，均带正文快速书写、沙沙声和配乐。
 
 **新版可以做成真实书本**：横屏左字右图，正俯拍能看见薄纸、书脊和桌面质感；竖屏图上字下，露出白框，方便手机看。先定静态质感，再放回原动画，配乐按故事选择。正文可在落页后快速写出，配轻微沙沙声，写完停留阅读。
 
 配乐可由 **Suno、Gemini 这类工具单独制作**，导出音频后再加入视频；本案例使用用户通过 Gemini 一侧提供的《Candle at Dusk》，不是 Skill 自带生成的音乐。
 
-<a href="examples/storybooks/tea-party/realbook-writing.mp4"><img src="examples/storybooks/tea-party/realbook-writing-preview.gif" alt="真实书本与正文快速书写预览，点击看54秒完整版" width="720"></a>
+<table>
+<tr>
+<td align="center" valign="top"><strong>横屏 · 左字右图</strong><br><a href="examples/storybooks/tea-party/realbook-writing.mp4"><img src="examples/storybooks/tea-party/realbook-writing-preview.gif" alt="横屏真实书本与正文书写预览" width="440"></a></td>
+<td align="center" valign="top"><strong>竖屏 · 图上字下</strong><br><a href="examples/storybooks/tea-party/portrait-writing.mp4"><img src="examples/storybooks/tea-party/portrait-writing-preview.gif" alt="竖屏白框书页与正文书写预览" width="200"></a></td>
+</tr>
+</table>
 
 [看完整故事和12页动作](examples/storybooks/tea-party/README.md) · [什么图适合做](styles/compact-storybook/STYLE.md) · [稳定版 Skill](skills/compact-storybook/SKILL.md)
 

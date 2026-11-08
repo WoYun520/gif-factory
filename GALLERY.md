@@ -377,9 +377,14 @@
 <details>
 <summary><strong>📖 风送来的茶会 · 12页 · 54秒 · 真实书本与书写 · 点击展开</strong></summary>
 
-<a href="examples/storybooks/tea-party/realbook-writing.mp4"><img src="examples/storybooks/tea-party/realbook-writing-preview.gif" alt="真实书本正文书写循环网页预览" width="720"></a>
+<table>
+<tr>
+<td align="center" valign="top"><strong>横屏 · 左字右图</strong><br><a href="examples/storybooks/tea-party/realbook-writing.mp4"><img src="examples/storybooks/tea-party/realbook-writing-preview.gif" alt="横屏真实书本与正文书写预览" width="440"></a></td>
+<td align="center" valign="top"><strong>竖屏 · 图上字下</strong><br><a href="examples/storybooks/tea-party/portrait-writing.mp4"><img src="examples/storybooks/tea-party/portrait-writing-preview.gif" alt="竖屏白框书页与正文书写预览" width="200"></a></td>
+</tr>
+</table>
 
-正俯拍真实书本，实际6fps，正文快速写出，含轻微沙沙声与配乐。上方为循环网页预览，54秒正式成片中的动作单次完成。
+横屏摊开绘本、竖屏白框单页，实际6fps，正文快速写出，含轻微沙沙声与配乐。上方为循环网页预览，54秒正式成片中的动作单次完成。
 
 [完整视频与12页独立动作](examples/storybooks/tea-party/README.md) · [适用素材与做法](styles/compact-storybook/STYLE.md) · [独立Skill](skills/compact-storybook/SKILL.md)
 

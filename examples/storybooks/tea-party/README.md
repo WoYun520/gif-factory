@@ -6,9 +6,18 @@
 
 ## 真实书本与书写版
 
-<a href="realbook-writing.mp4"><img src="realbook-writing-preview.gif" alt="真实书本正文书写预览" width="720"></a>
+<table>
+<tr>
+<td align="center" valign="top"><strong>横屏 · 左字右图</strong><br><a href="realbook-writing.mp4"><img src="realbook-writing-preview.gif" alt="横屏真实书本与正文书写预览" width="440"></a></td>
+<td align="center" valign="top"><strong>竖屏 · 图上字下</strong><br><a href="portrait-writing.mp4"><img src="portrait-writing-preview.gif" alt="竖屏白框书页与正文书写预览" width="200"></a></td>
+</tr>
+</table>
 
-[观看 / 下载54秒完整版](realbook-writing.mp4)。横屏1920×1080、实际6fps、324帧、12页；正俯拍薄纸书本，原插画动画，15组正文落页后快速写出，配轻微沙沙声。标题和页码静态。版式与书写三页样片已获认可；完整版已逐组检查完成文字及声音间隔。
+[横屏观看 / 下载](realbook-writing.mp4) · [竖屏观看 / 下载](portrait-writing.mp4)。两版均54秒、12页、6fps，含15组正文书写与相同配乐。
+
+横屏：1920×1080、实际6fps、324帧、12页；正俯拍薄纸书本，原插画动画，15组正文落页后快速写出，配轻微沙沙声。标题和页码静态。版式与书写三页样片已获认可；完整版已逐组检查完成文字及声音间隔。
+
+竖屏为 **1080×1920、324帧**，单页图上字下、两行手写居中，保留白框、真实纸纹和木面。以横屏底板为材质参考单独制作竖屏空白单页，并重排原动画；没有将横屏整本缩小或裁切。15组正文完成状态、翻页及音轨已检查，详见 [竖屏规格检查](portrait-verification.json)。
 
 **音乐制作说明**：配乐可用 Suno、Gemini 这类工具单独制作，再导出音频交给本流程混音。本案例使用用户通过 Gemini 一侧制作并提供的《Candle at Dusk》，选取开头54秒，降低音量、首尾淡入淡出；不声称本案例用了 Suno，也不猜测底层模型。书写音效另取自 [SFXMint](https://sfxmint.com/sounds/pencil-writing-01)，来源标注 CC0 和 AI 生成。音乐、音效与代码的许可分别处理；音乐不随仓库代码自动转授 MIT 权利。
 

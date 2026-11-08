@@ -4,7 +4,12 @@
 
 让一张插画把一件事做完：递一封信、放飞纸鸟、接住礼物、合上书。动作之后短暂停留，再翻到下一页。适合绘本故事、角色小剧场、品牌故事和插画叙事。
 
-<a href="../../examples/storybooks/tea-party/realbook-writing.mp4"><img src="../../examples/storybooks/tea-party/realbook-writing-preview.gif" alt="真实书本与正文书写预览" width="720"></a>
+<table>
+<tr>
+<td align="center" valign="top"><strong>横屏 · 左字右图</strong><br><a href="../../examples/storybooks/tea-party/realbook-writing.mp4"><img src="../../examples/storybooks/tea-party/realbook-writing-preview.gif" alt="横屏真实书本与正文书写预览" width="440"></a></td>
+<td align="center" valign="top"><strong>竖屏 · 图上字下</strong><br><a href="../../examples/storybooks/tea-party/portrait-writing.mp4"><img src="../../examples/storybooks/tea-party/portrait-writing-preview.gif" alt="竖屏白框书页与正文书写预览" width="200"></a></td>
+</tr>
+</table>
 
 默认固定构图、实际6fps、每页约3秒；可以独立输出，也可以放进翻书外框。这里的网页预览循环播放，正式成片动作只做一遍。低帧不等于像素化，用户指定的画风照样保留。
 
@@ -37,3 +42,5 @@
 正文可以在翻页落稳后快速写上纸面，配轻轻的沙沙声；写完就停，留下阅读时间。标题和页码保持静态。[书写效果规则](../../skills/compact-storybook/references/handwriting.md)。
 
 [观看54秒真实书本书写完整版](../../examples/storybooks/tea-party/realbook-writing.mp4)。12页、6fps，含配乐与15组正文书写。
+
+[观看54秒竖屏书写完整版](../../examples/storybooks/tea-party/portrait-writing.mp4)。1080×1920，与横屏共用动作、书写节拍、配乐和沙沙声；独立重排，保留四周白框。
