@@ -49,7 +49,7 @@
 
 固定画面、一次做完动作、短暂停留再翻页。默认每页约3秒、实际6fps，输出独立页面或翻书合集；单独归为叙事扩展，不计入循环GIF数量。
 
-[风格与适用素材](compact-storybook/STYLE.md) · [41.5秒完整案例](../examples/storybooks/tea-party/README.md) · [初版Skill](../skills/compact-storybook/SKILL.md)
+[风格与适用素材](compact-storybook/STYLE.md) · [完整绘本案例](../examples/storybooks/tea-party/README.md) · [稳定版Skill](../skills/compact-storybook/SKILL.md)
 
 ## 新风格怎么加入
 

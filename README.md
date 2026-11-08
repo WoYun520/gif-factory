@@ -159,9 +159,15 @@
 
 <a href="examples/storybooks/tea-party/film.mp4"><img src="examples/storybooks/tea-party/preview.gif" alt="风送来的茶会第一章动态预览，点击看完整故事" width="720"></a>
 
-网页动图循环预览，正式动作只做一遍。《风送来的茶会》完整成片 **41.5秒、12页、4章、无声**，已经认可。
+网页动图循环预览，正式动作只做一遍。原紧凑版是 **41.5秒、12页、4章、无声**；现在还有 **54秒真实书本版**，带正文快速书写、沙沙声和配乐。
 
-[看完整故事、四章和12页动作](examples/storybooks/tea-party/README.md) · [什么图适合做](styles/compact-storybook/STYLE.md) · [初版 Skill](skills/compact-storybook/SKILL.md)
+**新版可以做成真实书本**：横屏左字右图，正俯拍能看见薄纸、书脊和桌面质感；竖屏图上字下，露出白框，方便手机看。先定静态质感，再放回原动画，配乐按故事选择。正文可在落页后快速写出，配轻微沙沙声，写完停留阅读。
+
+配乐可由 **Suno、Gemini 这类工具单独制作**，导出音频后再加入视频；本案例使用用户通过 Gemini 一侧提供的《Candle at Dusk》，不是 Skill 自带生成的音乐。
+
+<a href="examples/storybooks/tea-party/realbook-writing.mp4"><img src="examples/storybooks/tea-party/realbook-writing-preview.gif" alt="真实书本与正文快速书写预览，点击看54秒完整版" width="720"></a>
+
+[看完整故事、四章和12页动作](examples/storybooks/tea-party/README.md) · [什么图适合做](styles/compact-storybook/STYLE.md) · [稳定版 Skill](skills/compact-storybook/SKILL.md)
 
 可以直接说：
 
