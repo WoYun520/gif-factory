@@ -1,6 +1,6 @@
 ---
 name: pixel-gif-sticker-pack
-description: Create or repair character sticker GIFs, electronic lenticular flip cards, character-led dynamic posters, mascot-led brand films, or compact low-frame storybooks. Choose appearance, movement and output purpose separately; assess source suitability and deliver reviewed media with verified downloads.
+description: Create or repair character sticker GIFs, electronic lenticular flip cards, character-led dynamic posters, mascot-led brand films, compact low-frame storybooks, or handwritten artistic signature loops. Choose appearance, movement and output purpose separately; assess source suitability and deliver reviewed media with verified downloads.
 ---
 
 # GIF 工厂 · GIF Factory
@@ -17,6 +17,7 @@ Human-facing name: **GIF 工厂 / GIF Factory**. Keep the existing `$pixel-gif-s
 
 | Request | Route |
 | --- | --- |
+| 动态艺术签名／名字＋物体＋渐变／两笔书写 | [Dynamic signatures](references/dynamic-signatures.md), then [standalone module](skills/dynamic-art-signature/SKILL.md) |
 | 独立聊天表情包 | Sticker workflow below |
 | 收藏卡／双身份变画，主要展示两幅图 | [Lenticular cards](references/lenticular.md) |
 | 演出预告／角色主视觉／人物与字体联动／P5 式整体融合海报 | [Dynamic posters](references/dynamic-posters.md) |
@@ -31,7 +32,9 @@ For independently usable chat GIFs, follow the sticker workflow below. For a mas
 
 For **compact storybooks**, use the standalone storybook Skill: preserve the requested art style; default to fixed framing, real 6fps, a roughly three-second once-only action and a brief result hold. Keep props continuous between pages and inspect contact anchors. Do not force loops, smooth interpolation, montage shots, or long idle padding. This route has its own output and review rules.
 
-The remaining sections describe the **chat-sticker workflow**. For a lenticular-card, dynamic-poster, brand-film or storybook brief, follow its selected reference instead; the square canvas, atlas layout, transparent margins and two-second sticker defaults below do not apply.
+For **dynamic artistic signatures**, integrate the motif into letter anatomy; preserve the accepted two-gesture rhythm, roughly one-second pause, clean blank background, and decelerating final terminal. Default to flat handwritten ink, no metallic material, shake or recoil. Inspect independently separated stroke layers and body-to-tail handoff. Read the signature route instead of applying sticker atlases or whole-sprite bounce.
+
+The remaining sections describe the **chat-sticker workflow**. For a lenticular-card, dynamic-poster, brand-film, storybook or signature brief, follow its selected reference instead; the square canvas, atlas layout, transparent margins and two-second sticker defaults below do not apply.
 
 ## Choose appearance and movement separately
 
@@ -85,3 +88,4 @@ For a repeatable workflow, use [the atlas exporter](scripts/export_pack.py) with
 For sticker deliverables, give one transparent looping GIF per entry, grouped in a ZIP. Default to clear 512 × 512 GIFs and roughly two seconds per loop; use 320 × 320 only for the intentional pixel path. Respect explicit target-platform size limits with an appropriate compositor or final downsampling, then re-verify the result. A separate MP4 assembled from the decoded GIFs makes playback inspectable even in a chat surface that shows a still. A static contact sheet can help compare designs when clearly identified as a still. For lenticular cards, use the opaque full-bleed format, source-suitability checks, actual-duration audit and GIF deliverables in [lenticular.md](references/lenticular.md); do not require sticker transparency or an MP4. For dynamic posters, follow [the poster design and loop checks](references/dynamic-posters.md); do not apply the card rule that all display titles remain fixed to a brief requesting animated type. For brand-film deliverables, use the format and editable-source checks in the brand-film reference instead of forcing the sticker canvas or loop duration onto the film.
 
 Verify exact count and unique captions, visible movement, frame timing, loop flag, alpha, safe margins, ZIP integrity and MP4 decoding. Inspect each category visually. Report actual deliverables and any limits that affect use. A local playback check does not establish compatibility with a specific messaging platform.
+

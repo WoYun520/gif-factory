@@ -377,5 +377,62 @@
         "preview": "docs/previews/comic-fusion-09.gif"
       }
     ]
+  },
+  {
+    "id": "dynamic-signatures",
+    "name": "动态艺术签名",
+    "category": "海报与文字",
+    "guide": "dynamic-signatures/STYLE.md",
+    "preview": "../skills/dynamic-art-signature/assets/media/nine-grid.gif",
+    "sample": "../skills/dynamic-art-signature/assets/media/Aster.gif",
+    "use": "名字、物体与渐变融合的两笔书写签名",
+    "cases": [
+      {
+        "file": "skills/dynamic-art-signature/assets/media/Levi.gif",
+        "title": "Levi",
+        "preview": "skills/dynamic-art-signature/assets/media/Levi.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/Aster.gif",
+        "title": "Aster",
+        "preview": "skills/dynamic-art-signature/assets/media/Aster.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/Luna.gif",
+        "title": "Luna",
+        "preview": "skills/dynamic-art-signature/assets/media/Luna.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/Iris.gif",
+        "title": "Iris",
+        "preview": "skills/dynamic-art-signature/assets/media/Iris.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/Kai.gif",
+        "title": "Kai",
+        "preview": "skills/dynamic-art-signature/assets/media/Kai.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/Rowan.gif",
+        "title": "Rowan",
+        "preview": "skills/dynamic-art-signature/assets/media/Rowan.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/Sage.gif",
+        "title": "Sage",
+        "preview": "skills/dynamic-art-signature/assets/media/Sage.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/Nova.gif",
+        "title": "Nova",
+        "preview": "skills/dynamic-art-signature/assets/media/Nova.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/Elio.gif",
+        "title": "Elio",
+        "preview": "skills/dynamic-art-signature/assets/media/Elio.gif"
+      }
+    ]
   }
 ]
+

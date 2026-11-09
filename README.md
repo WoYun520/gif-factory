@@ -7,7 +7,7 @@
 像素小人、人物与宠物、粘土吉祥物、光栅变画、漫画动态海报。
 先看效果，再换成你自己的角色和主题；拿不准就先做一张。
 
-**6 个 GIF 分类 · 9 个 GIF 风格入口 · 56 个动态案例，另有动态绘本和品牌短片**
+**6 个 GIF 分类 · 10 个 GIF 风格入口 · 65 个动态案例，另有动态绘本和品牌短片**
 
 [浏览风格](styles/README.md) · [完整作品库](GALLERY.md) · [怎么使用](GUIDE.md) · [Skill](SKILL.md) · [下载项目](https://github.com/WoYun520/gif-factory/archive/refs/heads/main.zip)
 
@@ -21,7 +21,7 @@
 
 ## 挑一种风格
 
-每个分类都放了多个角色、动作或场景。点击动图看原尺寸，点击风格名看制作方法；各风格详情页共有 **56 个动态案例**。100 张完整系列继续放在作品库，默认收起。
+每个分类都放了多个角色、动作或场景。点击动图看原尺寸，点击风格名看制作方法；各风格详情页共有 **65 个动态案例**。100 张完整系列继续放在作品库，默认收起。
 
 <a id="pixel-games"></a>
 
@@ -133,6 +133,14 @@
 
 [人物与字体联动 · 全部 4 张](styles/type-linked/STYLE.md) · [漫画印刷整体融合 · 全部 9 张](styles/comic-fusion/STYLE.md)
 
+### 动态艺术签名
+
+名字、物体和渐变色融进同一套手写笔势。上方快划、停约一秒，下方快写，末端缓慢收锋；无底印、无轻震、无回弹。
+
+<a href="skills/dynamic-art-signature/assets/media/nine-grid.gif"><img src="skills/dynamic-art-signature/assets/media/nine-grid.png" alt="九款原创动态艺术签名，点击播放" width="720"></a>
+
+[▶ 播放九宫格](skills/dynamic-art-signature/assets/media/nine-grid.gif) · [风格与单款案例](styles/dynamic-signatures/STYLE.md) · [动态签名 Skill](skills/dynamic-art-signature/SKILL.md)
+
 ## 怎么用
 
 在能生成图片、运行脚本的 Codex 里安装：
@@ -205,3 +213,4 @@
 制作脚本与 Skill 文档采用 [MIT](LICENSE)。动态海报的角色与参考设计语言不随代码转授商业权利，见[案例说明](examples/dynamic-posters/p5-integrated/README.md)。电子光栅卡中的角色 IP、网络照片与他人插画不随代码一并授予 MIT 权利，出处及使用边界见[案例来源说明](examples/lenticular-cards/README.md)。
 
 第三方配乐和字体按各自许可使用；面包店案例的来源与署名见 [CREDITS](examples/brand-films/manman-bakery/CREDITS.md)。
+

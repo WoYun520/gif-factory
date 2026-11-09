@@ -389,3 +389,13 @@
 [完整视频与12页独立动作](examples/storybooks/tea-party/README.md) · [适用素材与做法](styles/compact-storybook/STYLE.md) · [独立Skill](skills/compact-storybook/SKILL.md)
 
 </details>
+
+
+## 动态艺术签名
+
+名字、物体和渐变共享字形轮廓，使用独立上、下笔势与约一秒停顿。末端减速收锋，未写区域无底印，不加轻震或回弹。Levi、Aster 是逐轮修订基准；其余七款是扩展制作样例，技术检查不等同于逐款用户认可。
+
+<a href="skills/dynamic-art-signature/assets/media/nine-grid.gif"><img src="skills/dynamic-art-signature/assets/media/nine-grid.png" alt="动态签名九宫格" width="720"></a>
+
+[九款 GIF、MP4 与参数](examples/dynamic-signatures/README.md) · [风格入口](styles/dynamic-signatures/STYLE.md) · [独立模块](skills/dynamic-art-signature/SKILL.md)
+
