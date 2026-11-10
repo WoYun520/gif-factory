@@ -3,7 +3,12 @@
 import argparse,subprocess
 from pathlib import Path
 p=argparse.ArgumentParser(description=__doc__);p.add_argument('--videos',nargs=9,required=True);p.add_argument('--labels',nargs=9,required=True);p.add_argument('--out',required=True);p.add_argument('--font');a=p.parse_args()
-font=a.font or next((x for x in ['/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf','/System/Library/Fonts/Supplemental/Arial.ttf'] if Path(x).exists()),None)
+cjk=any(ord(c)>127 for title in a.labels for c in title)
+candidates=(['/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',
+             '/System/Library/Fonts/PingFang.ttc','C:/Windows/Fonts/msyh.ttc'] if cjk else
+            ['/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
+             '/System/Library/Fonts/Supplemental/Arial.ttf'])
+font=a.font or next((x for x in candidates if Path(x).exists()),None)
 if not font:raise SystemExit('Provide a readable TTF/OTF via --font')
 out=Path(a.out).resolve();out.parent.mkdir(parents=True,exist_ok=True);cmd=['ffmpeg','-hide_banner','-loglevel','error'];filters=[]
 for v in a.videos:cmd+=['-i',v]

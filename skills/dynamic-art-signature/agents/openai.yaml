@@ -1,4 +1,4 @@
 interface:
   display_name: "动态艺术签名"
-  short_description: "将名字、物体和渐变色融合为手写签名，制作两笔快写与缓慢收锋动效"
+  short_description: "中英文名字融合意象与渐变，支持两三字草书、两段快写和慢收锋"
   default_prompt: "使用 $dynamic-art-signature，为我设计一款名字、物体与渐变色融合的动态艺术签名。"

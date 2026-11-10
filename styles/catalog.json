@@ -385,7 +385,7 @@
     "guide": "dynamic-signatures/STYLE.md",
     "preview": "../skills/dynamic-art-signature/assets/media/nine-grid.gif",
     "sample": "../skills/dynamic-art-signature/assets/media/Aster.gif",
-    "use": "名字、物体与渐变融合的两笔书写签名",
+    "use": "中英文名字、两字与三字草书，意象渐变与两段快写慢收锋",
     "cases": [
       {
         "file": "skills/dynamic-art-signature/assets/media/Levi.gif",
@@ -431,8 +431,57 @@
         "file": "skills/dynamic-art-signature/assets/media/Elio.gif",
         "title": "Elio",
         "preview": "skills/dynamic-art-signature/assets/media/Elio.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/chinese/Woyun.gif",
+        "title": "卧云·草书",
+        "preview": "skills/dynamic-art-signature/assets/media/chinese/Woyun.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/chinese/Qiyue.gif",
+        "title": "栖月·草书",
+        "preview": "skills/dynamic-art-signature/assets/media/chinese/Qiyue.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/chinese/Zhenxing.gif",
+        "title": "枕星·草书",
+        "preview": "skills/dynamic-art-signature/assets/media/chinese/Zhenxing.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/chinese/Tinglan.gif",
+        "title": "听澜·草书",
+        "preview": "skills/dynamic-art-signature/assets/media/chinese/Tinglan.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/chinese/Zhuyin.gif",
+        "title": "竹隐·草书",
+        "preview": "skills/dynamic-art-signature/assets/media/chinese/Zhuyin.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/chinese/Luming.gif",
+        "title": "鹿鸣·草书",
+        "preview": "skills/dynamic-art-signature/assets/media/chinese/Luming.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/chinese/Jinghong.gif",
+        "title": "惊鸿·草书",
+        "preview": "skills/dynamic-art-signature/assets/media/chinese/Jinghong.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/chinese/Liuying.gif",
+        "title": "流萤·草书",
+        "preview": "skills/dynamic-art-signature/assets/media/chinese/Liuying.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/chinese/Songfeng.gif",
+        "title": "松风·草书",
+        "preview": "skills/dynamic-art-signature/assets/media/chinese/Songfeng.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/chinese/Woyunjian.gif",
+        "title": "卧云间·草书",
+        "preview": "skills/dynamic-art-signature/assets/media/chinese/Woyunjian.gif"
       }
     ]
   }
 ]
-

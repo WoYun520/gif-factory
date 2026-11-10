@@ -7,7 +7,7 @@
 像素小人、人物与宠物、粘土吉祥物、光栅变画、漫画动态海报。
 先看效果，再换成你自己的角色和主题；拿不准就先做一张。
 
-**6 个 GIF 分类 · 10 个 GIF 风格入口 · 65 个动态案例，另有动态绘本和品牌短片**
+**6 个 GIF 分类 · 10 个 GIF 风格入口 · 75 个动态案例，另有动态绘本和品牌短片**
 
 [浏览风格](styles/README.md) · [完整作品库](GALLERY.md) · [怎么使用](GUIDE.md) · [Skill](SKILL.md) · [下载项目](https://github.com/WoYun520/gif-factory/archive/refs/heads/main.zip)
 
@@ -21,7 +21,7 @@
 
 ## 挑一种风格
 
-每个分类都放了多个角色、动作或场景。点击动图看原尺寸，点击风格名看制作方法；各风格详情页共有 **65 个动态案例**。100 张完整系列继续放在作品库，默认收起。
+每个分类都放了多个角色、动作或场景。点击动图看原尺寸，点击风格名看制作方法；各风格详情页共有 **75 个动态案例**。100 张完整系列继续放在作品库，默认收起。
 
 <a id="pixel-games"></a>
 
@@ -140,6 +140,12 @@
 <a href="skills/dynamic-art-signature/assets/media/nine-grid.gif"><img src="skills/dynamic-art-signature/assets/media/nine-grid.png" alt="九款原创动态艺术签名，点击播放" width="720"></a>
 
 [▶ 播放九宫格](skills/dynamic-art-signature/assets/media/nine-grid.gif) · [风格与单款案例](styles/dynamic-signatures/STYLE.md) · [动态签名 Skill](skills/dynamic-art-signature/SKILL.md)
+
+**中文草书：九款两字签名＋三字「卧云间」**
+
+<a href="skills/dynamic-art-signature/assets/media/chinese/nine-grid.gif"><img src="skills/dynamic-art-signature/assets/media/chinese/nine-grid.png" alt="中文草书动态签名九宫格" width="720"></a>
+
+[▶ 中文九宫格](skills/dynamic-art-signature/assets/media/chinese/nine-grid.gif) · [三字卧云间](skills/dynamic-art-signature/assets/media/chinese/Woyunjian.gif) · [中文制作规则与案例](skills/dynamic-art-signature/references/chinese.md)
 
 ## 怎么用
 

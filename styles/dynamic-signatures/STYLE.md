@@ -22,3 +22,11 @@
 
 [九款独立媒体与原图](../../examples/dynamic-signatures/README.md)
 
+
+## 中文草书与三字签名
+
+默认草书，明确要求行书时保留完整结构并减少连笔。中文也保留可见意象，上方图形与下方字身物理分离；三字重新安排宽度、重心和末字长锋，沿用两组视觉笔势，不挤字或丢字。
+
+![中文九宫格](../../skills/dynamic-art-signature/assets/media/chinese/nine-grid.gif)
+
+[三字「卧云间」](../../skills/dynamic-art-signature/assets/media/chinese/Woyunjian.gif) · [中文规则与可复现案例](../../skills/dynamic-art-signature/references/chinese.md)

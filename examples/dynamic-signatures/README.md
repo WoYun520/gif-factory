@@ -1,4 +1,4 @@
-# 动态艺术签名 · 九款样例
+# 动态艺术签名 · 中英文样例
 
 [制作方法](../../skills/dynamic-art-signature/SKILL.md) · [风格入口](../../styles/dynamic-signatures/STYLE.md)
 
@@ -18,3 +18,22 @@
 
 两笔分离、约一秒停顿、无底印、无轻震、无回弹，末端减速。Levi 与 Aster 是迭代基准；七款扩展已完成技术检查，未据此推断逐款用户认可。原图为原创生成设计，未包含第三方参考截图。参数使用相对路径，需在安装模块内运行随附脚本。
 
+
+## 中文草书
+
+![中文九宫格](../../skills/dynamic-art-signature/assets/media/chinese/nine-grid.gif)
+
+| 名字 | GIF | MP4 | 原图与参数 |
+| --- | --- | --- | --- |
+| 卧云 | [播放](../../skills/dynamic-art-signature/assets/media/chinese/Woyun.gif) | [视频](../../skills/dynamic-art-signature/assets/media/chinese/Woyun.mp4) | [原图](../../skills/dynamic-art-signature/assets/chinese/Woyun.png) · [配置](../../skills/dynamic-art-signature/assets/chinese/Woyun.json) |
+| 栖月 | [播放](../../skills/dynamic-art-signature/assets/media/chinese/Qiyue.gif) | [视频](../../skills/dynamic-art-signature/assets/media/chinese/Qiyue.mp4) | [原图](../../skills/dynamic-art-signature/assets/chinese/Qiyue.png) · [配置](../../skills/dynamic-art-signature/assets/chinese/Qiyue.json) |
+| 枕星 | [播放](../../skills/dynamic-art-signature/assets/media/chinese/Zhenxing.gif) | [视频](../../skills/dynamic-art-signature/assets/media/chinese/Zhenxing.mp4) | [原图](../../skills/dynamic-art-signature/assets/chinese/Zhenxing.png) · [配置](../../skills/dynamic-art-signature/assets/chinese/Zhenxing.json) |
+| 听澜 | [播放](../../skills/dynamic-art-signature/assets/media/chinese/Tinglan.gif) | [视频](../../skills/dynamic-art-signature/assets/media/chinese/Tinglan.mp4) | [原图](../../skills/dynamic-art-signature/assets/chinese/Tinglan.png) · [配置](../../skills/dynamic-art-signature/assets/chinese/Tinglan.json) |
+| 竹隐 | [播放](../../skills/dynamic-art-signature/assets/media/chinese/Zhuyin.gif) | [视频](../../skills/dynamic-art-signature/assets/media/chinese/Zhuyin.mp4) | [原图](../../skills/dynamic-art-signature/assets/chinese/Zhuyin.png) · [配置](../../skills/dynamic-art-signature/assets/chinese/Zhuyin.json) |
+| 鹿鸣 | [播放](../../skills/dynamic-art-signature/assets/media/chinese/Luming.gif) | [视频](../../skills/dynamic-art-signature/assets/media/chinese/Luming.mp4) | [原图](../../skills/dynamic-art-signature/assets/chinese/Luming.png) · [配置](../../skills/dynamic-art-signature/assets/chinese/Luming.json) |
+| 惊鸿 | [播放](../../skills/dynamic-art-signature/assets/media/chinese/Jinghong.gif) | [视频](../../skills/dynamic-art-signature/assets/media/chinese/Jinghong.mp4) | [原图](../../skills/dynamic-art-signature/assets/chinese/Jinghong.png) · [配置](../../skills/dynamic-art-signature/assets/chinese/Jinghong.json) |
+| 流萤 | [播放](../../skills/dynamic-art-signature/assets/media/chinese/Liuying.gif) | [视频](../../skills/dynamic-art-signature/assets/media/chinese/Liuying.mp4) | [原图](../../skills/dynamic-art-signature/assets/chinese/Liuying.png) · [配置](../../skills/dynamic-art-signature/assets/chinese/Liuying.json) |
+| 松风 | [播放](../../skills/dynamic-art-signature/assets/media/chinese/Songfeng.gif) | [视频](../../skills/dynamic-art-signature/assets/media/chinese/Songfeng.mp4) | [原图](../../skills/dynamic-art-signature/assets/chinese/Songfeng.png) · [配置](../../skills/dynamic-art-signature/assets/chinese/Songfeng.json) |
+| 卧云间 | [播放](../../skills/dynamic-art-signature/assets/media/chinese/Woyunjian.gif) | [视频](../../skills/dynamic-art-signature/assets/media/chinese/Woyunjian.mp4) | [原图](../../skills/dynamic-art-signature/assets/chinese/Woyunjian.png) · [配置](../../skills/dynamic-art-signature/assets/chinese/Woyunjian.json) |
+
+用户选择中文草书方向，并接受三字「卧云间」；扩展九宫格用于展示设计范围，不据此推断每款逐项认可。[中文设计与渲染规则](../../skills/dynamic-art-signature/references/chinese.md)。

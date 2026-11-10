@@ -17,3 +17,7 @@ Read these as concrete design and movement references, not fixed letter template
 [Nine-grid cover](../assets/media/nine-grid.png) · [animated grid](../assets/media/nine-grid.gif) · [grid video](../assets/media/nine-grid.mp4)
 
 These are original generated design examples. Reference screenshots and third-party designer credits are not included. Do not claim that technical checks guarantee handwriting quality or that a general raster reveal recovers exact handwritten stroke order.
+
+## 中文扩展
+
+查看[中文草书九宫格与三字示例](chinese.md)：九款两字签名和「卧云间」三字布局，附原图、可移植配置和成品。

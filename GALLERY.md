@@ -399,3 +399,9 @@
 
 [九款 GIF、MP4 与参数](examples/dynamic-signatures/README.md) · [风格入口](styles/dynamic-signatures/STYLE.md) · [独立模块](skills/dynamic-art-signature/SKILL.md)
 
+
+### 中文草书签名与三字布局
+
+<a href="skills/dynamic-art-signature/assets/media/chinese/nine-grid.gif"><img src="skills/dynamic-art-signature/assets/media/chinese/nine-grid.png" alt="中文草书九宫格" width="720"></a>
+
+[中文九宫格 GIF](skills/dynamic-art-signature/assets/media/chinese/nine-grid.gif) · [三字卧云间](skills/dynamic-art-signature/assets/media/chinese/Woyunjian.gif) · [十款原图、配置与成品](examples/dynamic-signatures/README.md#中文草书)
