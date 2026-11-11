@@ -2,12 +2,12 @@
 
 [像素与游戏](#pixel-games) · [插画与二次元](#illustration-anime) · [真人与宠物](#people-pets) · [材质与吉祥物](#materials-mascots) · [卡片与变画](#cards-transforms) · [海报与文字](#posters-type) · [电影片名字形](#cinematic-title-lettering) · [品牌短片](#brand-films) · [动态绘本](#storybooks)
 
-**挑一种风格，给一张参考图，把角色、相片和想法做成 GIF，也能延伸成动态绘本。**
+**挑一种风格，给一张参考图，把角色、照片和想法做成动图、电影片头或动态绘本。**
 
 像素小人、人物与宠物、粘土吉祥物、光栅变画、漫画动态海报。
 先看效果，再换成你自己的角色和主题；拿不准就先做一张。
 
-**6 个 GIF 分类 · 10 个 GIF 风格入口 · 75 个动态案例，另有动态绘本和品牌短片**
+**75 个动态案例 · 40 种电影片头 · 动态绘本和品牌短片**
 
 [浏览风格](styles/README.md) · [完整作品库](GALLERY.md) · [怎么使用](GUIDE.md) · [Skill](SKILL.md) · [下载项目](https://github.com/WoYun520/gif-factory/archive/refs/heads/main.zip)
 
@@ -135,24 +135,22 @@
 
 <a id="cinematic-title-lettering"></a>
 
-### 电影片名字形
+### 电影片头 · 40 种字的风格
 
-从故事的情绪出发，把片名、字形、排版、场景与色调一起设计。细节长在笔画、字腔和收笔里，英文嵌进字组留白。现有 **40 类字形、40 张横向片头案例**，本次新增 **20 张**。分类按骨架、笔画构造和字腔区分，每类附原图、适用方向及相近类别的区别；静帧不计入动态案例数。
+细字、粗笔、粉笔、刻字、空心字……每种都有一张完整片头图。先看效果，选喜欢的编号，再换成你的片名；字和场景会一起设计。
 
 <a href="skills/cinematic-title-lettering/assets/style-catalog/previews/new-01.jpg"><img src="skills/cinematic-title-lettering/assets/style-catalog/previews/new-01.jpg" width="820" alt="新增片头上篇 F21–F30：招牌连笔、残印邮戳、窄黑竖骨、软角胶刻、空心双线、铅字错位、圆头记号、断线钢笔、竹节窄骨、方折篆意"></a>
 
 <a href="skills/cinematic-title-lettering/assets/style-catalog/previews/new-02.jpg"><img src="skills/cinematic-title-lettering/assets/style-catalog/previews/new-02.jpg" width="820" alt="新增片头下篇 F31–F40：扁隶挑尾、反骨涂写、丝带扁笔、疏漏点阵、蜡笔重描、剪口留桥、缝线断笔、排刷梳纹、断层错版、负形留白"></a>
 
-> 用 `$cinematic-title-lettering` 的 F25 空心双线、F34 疏漏点阵、F37 缝线断笔，各做一张原创横向电影片头。句子和场景可以重新设计，保留三种不同的笔画构造与私人笔迹，让英文和细节依附字组留白。
+> 用 `$cinematic-title-lettering`，照 F25 空心双线的感觉，做一张《晚风借我一夜》的片头。场景也帮我配，字写得有点特别。
 
-F01–F10 为早期探索，**F11–F20 为已选十款原版**，F21–F40 为新增待选稿。原组 03、04、10 保留原版。F11–F40 使用参考图研究笔形与字图关系，摄影式场景重新生成；公开包不分发第三方参考原图。40 类是创作方向，不是四十套完整字库。
-
-[40 类目录与逐张原图](skills/cinematic-title-lettering/references/style-catalog.md) · [已选十款原版总览](skills/cinematic-title-lettering/assets/style-catalog/previews/selected-01.jpg) · [片头设计方法](skills/cinematic-title-lettering/references/film-title-frames.md) · [新增二十款生成记录](skills/cinematic-title-lettering/assets/style-catalog/new-prompts.json) · [来源与版本](skills/cinematic-title-lettering/assets/style-catalog/source-notes.md) · [电影片名字形 Skill](skills/cinematic-title-lettering/SKILL.md)
+[看全部 40 种和原图](skills/cinematic-title-lettering/references/style-catalog.md) · [片头怎么做](skills/cinematic-title-lettering/references/film-title-frames.md) · [Skill](skills/cinematic-title-lettering/SKILL.md)
 
 <details>
-<summary>更多排法与三幅竖列宣传图</summary>
+<summary>更多排法和三联图</summary>
 
-也可给一张参考图和新片名，或从五种排法选一个编号。根据新字重新安排主字、长笔和留白。需要独立字标、原片叠字或三幅竖列时按对应交付制作。
+也可以只做片名字稿，按参考图换字，或把三张图竖着排成一张宣传图。
 
 <a href="skills/cinematic-title-lettering/assets/layout-examples/overview.jpg"><img src="skills/cinematic-title-lettering/assets/layout-examples/overview.jpg" width="560" alt="五款电影片名字标，展示波线托底、两头撑开、两行错层、长笔斜穿和大字抱两行"></a>
 

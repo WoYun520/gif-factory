@@ -42,7 +42,7 @@
 | 漫画印刷整体融合 | 9 张 | 角色宣传、活动主视觉、演出海报 | [打开风格](comic-fusion/STYLE.md) |
 | 动态艺术签名 | 19 款 | 名字、物体与渐变融合的两笔书写签名 | [打开风格](dynamic-signatures/STYLE.md) |
 
-电影片名字形把片名、笔形、排版、镜头和色调一起设计，收录 **40 类字形与 40 张横向片头案例**。F01–F10 为早期探索，F11–F20 为已选十款原版，F21–F40 为新增二十款待选稿。各类按字骨、笔画构造和内腔区别；也可制作独立字标或明确要求的三联宣传图。静帧不计入 GIF 动态案例数。[40 类目录](../skills/cinematic-title-lettering/references/style-catalog.md) · [片头方法](../skills/cinematic-title-lettering/references/film-title-frames.md) · [Skill](../skills/cinematic-title-lettering/SKILL.md) · [看总览](../README.md#cinematic-title-lettering)
+**电影片头有 40 种字的风格**，每种都有完整图片。选一个编号，换成你的片名，场景也一起配；也能只做字稿或三联图。[看 40 种风格](../skills/cinematic-title-lettering/references/style-catalog.md) · [片头怎么做](../skills/cinematic-title-lettering/references/film-title-frames.md)
 
 ## 扩展应用：品牌短片
 

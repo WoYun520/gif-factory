@@ -2,17 +2,15 @@
 
 [返回首页](README.md) · [按风格浏览](styles/README.md) · [使用指南](GUIDE.md)
 
-## 原创电影片头 · 40 类字形
+## 电影片头 · 40 种字的风格
 
-40 类按字骨、笔画构造和内腔区别，每类有独立横向静帧；本次新增 F21–F40 二十款。片名、字形、排版、镜头与情绪一同设计，保留各自的个人笔迹，不计入动态案例数量。
+每种都有一张完整片头图，点开看大图。选好编号，说片名和想要的感觉，就能继续做新图。
 
 <a href="skills/cinematic-title-lettering/assets/style-catalog/previews/new-01.jpg"><img src="skills/cinematic-title-lettering/assets/style-catalog/previews/new-01.jpg" alt="新增二十款片头 F21–F30" width="720"></a>
 
 <a href="skills/cinematic-title-lettering/assets/style-catalog/previews/new-02.jpg"><img src="skills/cinematic-title-lettering/assets/style-catalog/previews/new-02.jpg" alt="新增二十款片头 F31–F40" width="720"></a>
 
-F01–F10 为早期探索，F11–F20 为已选十款原版，F21–F40 为新增待选稿。F11–F40 以用户提供的电影标题设计局部作参考，标题和摄影式场景重新生成；公开包不含第三方参考原图。
-
-[40 类结构、区别与原图](skills/cinematic-title-lettering/references/style-catalog.md) · [已选十款原版](skills/cinematic-title-lettering/assets/style-catalog/previews/selected-01.jpg) · [完整片头方法](skills/cinematic-title-lettering/references/film-title-frames.md) · [新增制作记录](skills/cinematic-title-lettering/assets/style-catalog/new-prompts.json) · [来源与版本](skills/cinematic-title-lettering/assets/style-catalog/source-notes.md)
+[看全部 40 种和原图](skills/cinematic-title-lettering/references/style-catalog.md) · [片头怎么做](skills/cinematic-title-lettering/references/film-title-frames.md)
 
 ## 表情包展厅
 
