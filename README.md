@@ -1,6 +1,6 @@
 # GIF 工厂
 
-[像素与游戏](#pixel-games) · [插画与二次元](#illustration-anime) · [真人与宠物](#people-pets) · [材质与吉祥物](#materials-mascots) · [卡片与变画](#cards-transforms) · [海报与文字](#posters-type) · [品牌短片](#brand-films) · [动态绘本](#storybooks)
+[像素与游戏](#pixel-games) · [插画与二次元](#illustration-anime) · [真人与宠物](#people-pets) · [材质与吉祥物](#materials-mascots) · [卡片与变画](#cards-transforms) · [海报与文字](#posters-type) · [电影片名字形](#cinematic-title-lettering) · [品牌短片](#brand-films) · [动态绘本](#storybooks)
 
 **挑一种风格，给一张参考图，把角色、相片和想法做成 GIF，也能延伸成动态绘本。**
 
@@ -132,6 +132,25 @@
 </table>
 
 [人物与字体联动 · 全部 4 张](styles/type-linked/STYLE.md) · [漫画印刷整体融合 · 全部 9 张](styles/comic-fusion/STYLE.md)
+
+<a id="cinematic-title-lettering"></a>
+
+### 电影片名字形
+
+从 58 种字形方向选一个，换成自己的片名、副题和标点。可以单独导出字标，也可以配实拍照片，把三幅横画面排成一张白边竖版宣传图。
+
+<table>
+<tr>
+<td width="25%" valign="top"><a href="examples/cinematic-title-lettering/camp-and-road.jpg"><img src="examples/cinematic-title-lettering/camp-and-road.jpg" width="220" alt="营地与远方，三幅实拍宣传图"></a><br>营地与远方</td>
+<td width="25%" valign="top"><a href="examples/cinematic-title-lettering/backlight-and-night.jpg"><img src="examples/cinematic-title-lettering/backlight-and-night.jpg" width="220" alt="逆光与夜色，三幅实拍宣传图"></a><br>逆光与夜色</td>
+<td width="25%" valign="top"><a href="examples/cinematic-title-lettering/city-and-stars.jpg"><img src="examples/cinematic-title-lettering/city-and-stars.jpg" width="220" alt="城市与星空，三幅实拍宣传图"></a><br>城市与星空</td>
+<td width="25%" valign="top"><a href="examples/cinematic-title-lettering/cloud-and-sea.jpg"><img src="examples/cinematic-title-lettering/cloud-and-sea.jpg" width="220" alt="云与海的日常，三幅实拍宣传图"></a><br>云与海的日常</td>
+</tr>
+</table>
+
+> 用 `$cinematic-title-lettering` 的「双行黄块与白色英文穿行」做《夏日公路》。把副题改成 SUMMER ROAD，配实拍照片，和另外两款片名一起排成三联竖图。
+
+[58 款字标样稿](skills/cinematic-title-lettering/references/all-styles.md) · [电影片名字形 Skill](skills/cinematic-title-lettering/SKILL.md) · [三联制作方法](skills/cinematic-title-lettering/references/promo-triptychs.md) · [实拍照片来源](examples/cinematic-title-lettering/photo-credits.md)
 
 ### 动态艺术签名
 

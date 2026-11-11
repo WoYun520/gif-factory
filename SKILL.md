@@ -1,6 +1,6 @@
 ---
 name: pixel-gif-sticker-pack
-description: Create or repair character sticker GIFs, electronic lenticular flip cards, character-led dynamic posters, mascot-led brand films, compact low-frame storybooks, or handwritten artistic signature loops. Choose appearance, movement and output purpose separately; assess source suitability and deliver reviewed media with verified downloads.
+description: Create or repair character sticker GIFs, electronic lenticular flip cards, character-led dynamic posters, mascot-led brand films, compact low-frame storybooks, handwritten artistic signature loops, or cinematic title lettering and three-photo promotional sheets. Choose appearance, movement and output purpose separately; assess source suitability and deliver reviewed media with verified downloads.
 ---
 
 # GIF 工厂 · GIF Factory
@@ -21,6 +21,7 @@ Human-facing name: **GIF 工厂 / GIF Factory**. Keep the existing `$pixel-gif-s
 | 独立聊天表情包 | Sticker workflow below |
 | 收藏卡／双身份变画，主要展示两幅图 | [Lenticular cards](references/lenticular.md) |
 | 演出预告／角色主视觉／人物与字体联动／P5 式整体融合海报 | [Dynamic posters](references/dynamic-posters.md) |
+| 电影片名／自定义字标／实拍三联宣传图 | [电影片名字形 Skill](skills/cinematic-title-lettering/SKILL.md) |
 | 吉祥物带动产品、包装与品牌的短片 | [Brand films](references/brand-film.md) |
 | 动态绘本／固定画面叙事／页内单次动作／翻书故事 | [Compact storybooks](references/storybook.md), then [standalone Skill](skills/compact-storybook/SKILL.md) |
 
@@ -34,7 +35,7 @@ For **compact storybooks**, use the standalone storybook Skill: preserve the req
 
 For **dynamic artistic signatures**, integrate the motif into letter anatomy; preserve the accepted two-gesture rhythm, roughly one-second pause, clean blank background, and decelerating final terminal. Default to flat handwritten ink, no metallic material, shake or recoil. Inspect independently separated stroke layers and body-to-tail handoff. Read the signature route instead of applying sticker atlases or whole-sprite bounce.
 
-The remaining sections describe the **chat-sticker workflow**. For a lenticular-card, dynamic-poster, brand-film, storybook or signature brief, follow its selected reference instead; the square canvas, atlas layout, transparent margins and two-second sticker defaults below do not apply.
+The remaining sections describe the **chat-sticker workflow**. For a lenticular-card, dynamic-poster, brand-film, storybook, signature or cinematic title brief, use the selected workflow above.
 
 ## Choose appearance and movement separately
 
