@@ -1,94 +1,53 @@
 ---
 name: pixel-gif-sticker-pack
-description: Create or repair character sticker GIFs, electronic lenticular flip cards, character-led dynamic posters, mascot-led brand films, compact low-frame storybooks, handwritten artistic signature loops, original cinematic title lettering and widescreen title frames, or three-photo promotional sheets. Choose appearance, movement and output purpose separately; assess source suitability and deliver reviewed media with verified downloads.
+description: 根据图片或文字制作角色表情包、光栅变画卡、动态海报、动态签名、电影片头、动态绘本和品牌短片。按用途选择做法，保留用户已定的画风、素材和要求，导出并检查实际作品。
 ---
 
-# GIF 工厂 · GIF Factory
+# GIF 工厂
 
-Carry forward the latest reference, required count, format, language, and visual constraints. For a GLB, render a front or three-quarter reference with the face and identifying details visible. If the user supplied a drawing, preserve the recognizable silhouette, facial features, palette, and signature accessories. Use only imagery the user provided or authorized for the task.
+接续用户最新的素材、数量、文字、尺寸和已选方案。角色图、场景图、片名、定稿字稿和配乐都可以由用户提供；先分清直接使用的素材与风格参考，只补缺少的部分。沿用已认可的选择，不因换用途重做整个项目。对外叫 GIF 工厂，调用名保留 `$pixel-gif-sticker-pack`。
 
-## Browse styles first when the user asks for a look
+## 先按用途找做法
 
-Use [the style index](styles/README.md) to resolve Chinese/English style names, then read only that `styles/<id>/STYLE.md` and its linked production reference. The six GIF gallery groups are discovery categories, not six new rendering engines. Compact storybooks and brand films are separate narrative extensions. Continue to record appearance, movement and purpose separately, and preserve accepted user choices. Do not invent a new style by only changing a character or promote a pending repair because it appears in the full gallery.
+在[分类说明](styles/README.md)看效果，按需阅读对应说明。七类用途平等，不把画风当成用途；[作品库](GALLERY.md)保留案例状态，待确认的版本不能当成已认可模板。
 
-Human-facing name: **GIF 工厂 / GIF Factory**. Keep the existing `$pixel-gif-sticker-pack` invocation identifier compatible. The homepage is a style chooser; [GALLERY.md](GALLERY.md) holds complete series and their status, while [GUIDE.md](GUIDE.md) holds longer usage instructions. Mascot brand films and compact storybooks remain extensions, not GIF loop presets.
-
-## Choose the output purpose
-
-| Request | Route |
+| 要做什么 | 看哪里 |
 | --- | --- |
-| 动态艺术签名／名字＋物体＋渐变／两笔书写 | [Dynamic signatures](references/dynamic-signatures.md), then [standalone module](skills/dynamic-art-signature/SKILL.md) |
-| 独立聊天表情包 | Sticker workflow below |
-| 收藏卡／双身份变画，主要展示两幅图 | [Lenticular cards](references/lenticular.md) |
-| 演出预告／角色主视觉／人物与字体联动／P5 式整体融合海报 | [Dynamic posters](references/dynamic-posters.md) |
-| 电影片名／片头图／40 种字形／三联宣传图 | [片头 Skill](skills/cinematic-title-lettering/SKILL.md) · [40 种风格和原图](skills/cinematic-title-lettering/references/style-catalog.md) |
-| 吉祥物带动产品、包装与品牌的短片 | [Brand films](references/brand-film.md) |
-| 动态绘本／固定画面叙事／页内单次动作／翻书故事 | [Compact storybooks](references/storybook.md), then [standalone Skill](skills/compact-storybook/SKILL.md) |
+| 表情包 | 下文，以及[外观](references/appearance.md)、[轻动效](references/light-motion.md) |
+| 光栅变画卡 | [双状态变画](references/lenticular.md) |
+| 动态海报 | [海报制作](references/dynamic-posters.md) |
+| 动态签名 | [签名入口](references/dynamic-signatures.md)、[独立 Skill](skills/dynamic-art-signature/SKILL.md) |
+| 电影片头 | [独立 Skill](skills/cinematic-title-lettering/SKILL.md)、[40 种字形原图](skills/cinematic-title-lettering/references/style-catalog.md) |
+| 动态绘本 | [绘本入口](references/storybook.md)、[独立 Skill](skills/compact-storybook/SKILL.md) |
+| 品牌短片 | [短片制作](references/brand-film.md) |
 
-For dynamic posters, distinguish **preserve artwork + animated type** from **integrated artwork/background/type redesign**. The approved P5-inspired route is a limited-palette, ink/halftone composition with meaningful character-state contrast and type interacting with the figure; it is not letter stickers pasted onto unchanged full-color artwork. The current nine-poster examples encode two complete poster key states, not independently animated glyphs. Read only the selected purpose reference; a GIF preview of a game UI is not a working interactive UI.
+卡片先检查两图的角度、眼线、下巴和肩线，默认 480×720、6 秒、标题固定。海报先区分保留原画加动态字，还是连人物、背景和字一起重新设计；现有漫画海报是两幅完整状态切换，不能说成逐字独立动画。游戏界面的 GIF 演示也不等于可玩的游戏。
 
-For **electronic lenticular cards / 电子光栅卡 / 人脸面罩切换 / 双状态变画**, read [the lenticular workflow](references/lenticular.md) first: assess whether two images can align, establish the requested composition, then export the flip. This is an output/movement category usable with photographic or illustrated art, not a fourth appearance style. Default for this series is fixed 480×720 opaque posters, six-second loops, fixed titles; do not run the square transparent-sticker presets or a brand-film sequence.
+签名让意象进入笔画，保留两段快写、约一秒停顿和慢收锋，普通款用平面墨迹。电影片头把字形、排法、场景一起设计，默认横向；提供的原图和定稿字稿按要求沿用。绘本默认固定画面、实际 6fps、每页约三秒、一个动作加结果停留，前后页道具要接得上。品牌短片交付视频和所需工程，不套表情包的方形循环规格。具体参数以各自说明和用户要求为准。
 
-For independently usable chat GIFs, follow the sticker workflow below. For a mascot-led shop, product or independent-brand promo, read [brand films](references/brand-film.md): connect character acting to a visual cause and result, then to the brand. Appearance, movement and purpose are separate choices. A brand film does not automatically require a new sticker pack; a sticker request does not require an advertising story. Reuse accepted choices and prior authorization rather than restarting approvals.
+## 表情包先分清画风和动作
 
-For **compact storybooks**, use the standalone storybook Skill: preserve the requested art style; default to fixed framing, real 6fps, a roughly three-second once-only action and a brief result hold. Keep props continuous between pages and inspect contact anchors. Do not force loops, smooth interpolation, montage shots, or long idle padding. This route has its own output and review rules.
+像素画用清楚的像素块和阶梯边缘，默认 320×320，缩放保持像素边缘。插画、真人和宠物默认高清 512×512；照片保留本人或宠物的特征、光线和衣着，不自行美颜或改成二次元。GLB 模型先渲染能看清脸和特征的正面或四分之三侧面。高清尺寸不保证动作和五官一致。
 
-For **dynamic artistic signatures**, integrate the motif into letter anatomy; preserve the accepted two-gesture rhythm, roughly one-second pause, clean blank background, and decelerating final terminal. Default to flat handwritten ink, no metallic material, shake or recoil. Inspect independently separated stroke layers and body-to-tail handoff. Read the signature route instead of applying sticker atlases or whole-sprite bounce.
+- **轻动效**：每张有不同的表情或姿势，再加小幅点头、弹跳、摇摆，字幕固定。用 `scripts/export_pack.py`，读[轻动效](references/light-motion.md)。不能只给同一张脸换很多句字幕。
+- **完整动作**：用连续姿态让脸、头、肩、躯干、相关手脚和衣发一起配合。像素用 `scripts/export_pixel_actions.py` 和[像素动作](references/pixel-actions.md)；插画或照片用 `scripts/export_keyframes.py` 和[高清动作](references/keyframes.md)。不能用整张图变形或只转手臂代替完整动作。
 
-做**电影片头**时，把片名、字和场景放在一起设计，保留用户已经选好的稿子。先看[片头做法](skills/cinematic-title-lettering/references/film-title-frames.md)；要挑风格或做多款时，再看[40 种字形](skills/cinematic-title-lettering/references/style-catalog.md)。每款的写法要有区别，默认做横向画面，用户有尺寸要求就按要求。
+新角色或动作先内部做一个代表样片检查；用户已授权整套就继续，不额外设置逐张确认。延续案例时实际查看对应版本和[样片状态](references/appearance.md#sample-status)，不把废弃实验当模板，也不默认各种组合都有同样可靠的现成导出方法。
 
-The remaining sections describe the **chat-sticker workflow**. For a lenticular-card, dynamic-poster, brand-film, storybook, signature or cinematic title brief, use the selected workflow above.
+## 做素材和组合
 
-## Choose appearance and movement separately
+每张先有一句聊天用语、一个看得见的姿态或道具、一个动作重点。用可用的图像生成工具做新素材；常用 4×4 透明角色图集，格间留足空白，指定顺序、身份特征和一致取景，文字在组合时另加。
 
-Carry forward accepted choices rather than asking again. Choose two independent axes:
+打开实际图集逐格核对，按可见姿态配字幕，修正错格、缺格、穿帮和裁断的手发。数量按有效作品计算，不按生成次数计算。默认不把私人参考截图和原图放进分享压缩包。
 
-| Appearance | Rendering |
-| --- | --- |
-| [Pixel](references/appearance.md#pixel) | Deliberate pixel clusters and crisp stepped outlines; 320px; separate light/action exporters |
-| [Clean illustration](references/appearance.md#illustration) | Anime, chibi, mascot or photo-to-illustration artwork; HD, 512px |
-| [Photographic](references/appearance.md#photographic) | Photo-like people or pets; preserve accepted likeness and lighting; HD, 512px |
+看[清晰度说明](references/clarity.md)判断源图细节，放大旧像素图不能补回细节。连续动作和返修按[画面稳定检查](references/stability.md)看实际解码帧、原尺寸脸部、正常播放及首尾接缝；有问题修该帧和邻帧，不能靠模糊、降帧或偷换成轻动效遮掩。
 
-Subject categories such as anime, pets and public figures do not select a movement method. HD specifies sampling and resolution; it does not promise consistent anatomy or smoother motion. Photo-to-anime is an input transformation, not an extra appearance mode.
+## 导出和交付
 
-- **Light motion:** one distinct expression/pose per sticker, animated with small bounce, nod, sway, squash and optional accents. Use `export_pack.py`. Keep captions fixed. A pack must still contain distinct visible expressions/poses, not one portrait with 25 captions.
-- **Consecutive character action:** generated sequential poses with coordinated face, head, shoulders, torso and relevant limbs, plus hair/clothing follow-through. Use the keyframe workflow below. A frozen body with only a rotating arm does not fulfill this mode. Do not substitute light motion to hide a failed action without telling the user.
+普通表情包用 Python 3、Pillow；运行脚本 `--help`，按[素材清单格式](references/manifest.md)准备图集、格位、动作和本地可用字体。`export_pack.py` 默认高清；明确像素画时用 `--render-style pixel`，命令行优先于素材清单。
 
-If the user says “like the approved full-character action,” preserve that method. When matching an existing reference, preserve its appearance unless a style conversion was requested. For photographic actions, pilot one restrained gesture before expanding; do not automatically add beauty filters. Rejection of one selfie animation does not reject all photographic stickers.
+`export_pack.py` 和 `export_keyframes.py` 写 GIF、ZIP 时不需要 FFmpeg；加 `--preview` 制作 MP4 预览时才需要。其他用途的依赖见各自说明和[使用指南](GUIDE.md#需要装什么)。先检查当前环境，只补所选功能需要的工具；本仓库不自带生图模型或付费服务。
 
-Read the selected section of [the appearance guide](references/appearance.md), then read [light motion](references/light-motion.md), [pixel consecutive actions](references/pixel-actions.md), or [HD consecutive actions](references/keyframes.md) for the selected combination. Record appearance, movement, reference, count, captions and acceptance status separately in the production notes. If an essential appearance/movement choice remains ambiguous, ask a short choice question; otherwise reuse the user's latest accepted settings and proceed. An approved sample followed by a request to expand it carries those settings into the batch.
+每张交付独立循环 GIF，成组加 ZIP。默认约两秒；完整动作按实际动作安排，明确的平台限制优先。需要视频预览时，从最终 GIF 的实际帧合成；高清默认无标题网格，`--preview-layout chapters` 可加分类标题。静态拼图须标为静态预览。
 
-Do not assume all six combinations have the same ready-made exporter or visual reliability. Pixel + consecutive actions uses `export_pixel_actions.py` and the accepted four-character pack as a reference. Pilot new identities/actions before expanding. `export_keyframes.py` uses smooth HD sampling and is reserved for illustration/photographic actions. See [the version-specific sample status](references/appearance.md#sample-status): a new revision remains pending until accepted; an abandoned experiment is not a default template.
-
-## Design and generate
-
-- For a large pack, plan categories first and give each sticker a chat line, a visible pose or prop, and an animated beat. Review neighboring concepts for semantic duplicates. An identical pose with new text alone is insufficient.
-- Use the image generation tool for new pose art. Ask for one transparent sprite atlas at a time, usually a 4 × 4 sheet with wide gutters and no lettering. Give exact reading order, stable framing and identity anchors. Keep lettering in composition, where it can be verified.
-- Inspect each atlas at full size. Count actual occupied cells, map each cell to its visible pose, and correct a mismatched caption or regenerate an unusable sprite. Watch for swapped cells, clipped hair or hands, and artifacts across gutters. A 100-sticker pack needs 100 accepted entries.
-- For tiny chat previews, prefer strong readable facial expressions, a short caption and one clear moving accent. Let each motion settle naturally into the next loop. Keep the original source and generated atlases outside the shareable ZIP unless requested.
-
-## Articulated actions
-
-When the user requests the gesture to unfold over time, use [the pixel action workflow](references/pixel-actions.md) with `scripts/export_pixel_actions.py` for pixel art, or [the HD keyframe workflow](references/keyframes.md) with `scripts/export_keyframes.py` for illustration/photographic art. If the request is explicitly light motion, a static waving/heart pose plus a small preset remains appropriate. Generate consecutive poses of the same character and compose them with shared alignment. Keep photographic and anime rendering styles as requested. Whole-sprite deformation alone does not fulfill a request for articulated motion.
-
-For subtle idle movement or a large pack of distinct static poses, the existing motion-preset exporter remains appropriate. Keyframe GIFs may have visible pose transitions or identity drift; inspect them and describe material limits. Use a video or rigged compositor only when needed for genuinely smooth continuous motion, preserving the user's chosen provider and method.
-
-Read [the visual stability gate](references/stability.md) for every new consecutive-action workflow and when repairing choppy/frame-skipping playback or an inconsistent frame. Review identity/pose anchors before filling transitions. Inspect the actual decoded frames, native-size face details, normal playback, and the loop seam. Frame count, distinct pixels, smooth timing and a valid ZIP are technical checks, not a visual acceptance decision. Repair a rejected frame and its neighbors, re-export, then repeat review. Keep assistant review separate from user acceptance; do not promise automatic elimination of all temporal or visual defects.
-
-## Automatic clear rendering
-
-The bundled exporter now defaults to **hd**: it renders directly from original atlas crops into 512 × 512 frames with LANCZOS resizing and BICUBIC continuous deformation. Use this default for photographic people, realistic pets and detailed illustration. A user invoking this Skill does not need to request a separate clarity fix or edit a compositor.
-
-- Preserve the accepted face, expression, caption and pose while exporting. For a named person with an ambiguous name, resolve the identity from the user's handle or reference before generating it.
-- Use `--render-style pixel` (or manifest `"render_style": "pixel"`) only when the user explicitly wants pixel art or the reference is intentionally pixel-based. That mode preserves the original 320 × 320 pixel pipeline. The CLI flag overrides the manifest.
-- HD previews default to a clean grid without headings and are assembled from decoded final GIFs; `--preview-layout chapters` opts into category headings. Follow any explicit user choice about preview titles.
-- If a face still looks blurry, inspect the original crop and decoded output at the same display size. Read [the clarity guide](references/clarity.md) for source-resolution limits and before/after validation. Enlarging an already pixelated export cannot recover lost details.
-
-## Compose and verify
-
-For a repeatable workflow, use [the atlas exporter](scripts/export_pack.py) with Python 3 and Pillow. It uses FFmpeg for MP4 playback. Run `python3 scripts/export_pack.py --help` and read [the manifest format](references/manifest.md) for cell overrides and motion presets. Choose a local font that covers the requested captions. Use another compositor when the brief requires actual skeletal or frame-by-frame character animation.
-
-For sticker deliverables, give one transparent looping GIF per entry, grouped in a ZIP. Default to clear 512 × 512 GIFs and roughly two seconds per loop; use 320 × 320 only for the intentional pixel path. Respect explicit target-platform size limits with an appropriate compositor or final downsampling, then re-verify the result. A separate MP4 assembled from the decoded GIFs makes playback inspectable even in a chat surface that shows a still. A static contact sheet can help compare designs when clearly identified as a still. For lenticular cards, use the opaque full-bleed format, source-suitability checks, actual-duration audit and GIF deliverables in [lenticular.md](references/lenticular.md); do not require sticker transparency or an MP4. For dynamic posters, follow [the poster design and loop checks](references/dynamic-posters.md); do not apply the card rule that all display titles remain fixed to a brief requesting animated type. For brand-film deliverables, use the format and editable-source checks in the brand-film reference instead of forcing the sticker canvas or loop duration onto the film.
-
-Verify exact count and unique captions, visible movement, frame timing, loop flag, alpha, safe margins, ZIP integrity and MP4 decoding. Inspect each category visually. Report actual deliverables and any limits that affect use. A local playback check does not establish compatibility with a specific messaging platform.
-
+核对实际数量、字幕不重复、可见动作、帧延时、循环、透明度、安全边距、ZIP 内容和视频解码，再看各类正常播放。技术通过、视觉自查和用户认可分开记录，不宣称所有平台兼容或所有案例稳定。

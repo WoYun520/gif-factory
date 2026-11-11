@@ -2,7 +2,7 @@
   {
     "id": "pixel-light",
     "name": "像素轻动效",
-    "category": "像素与游戏",
+    "category": "表情包",
     "guide": "pixel-light/STYLE.md",
     "preview": "../docs/previews/pixel-light.gif",
     "sample": "../examples/whale-maid/01-greetings/001.gif",
@@ -43,7 +43,7 @@
   {
     "id": "pixel-actions",
     "name": "像素完整动作",
-    "category": "像素与游戏",
+    "category": "表情包",
     "guide": "pixel-actions/STYLE.md",
     "preview": "../docs/previews/pixel-actions.gif",
     "sample": "../examples/pixel-actions/boy/01.gif",
@@ -94,7 +94,7 @@
   {
     "id": "illustrated-actions",
     "name": "插画角色动作",
-    "category": "插画与二次元",
+    "category": "表情包",
     "guide": "illustrated-actions/STYLE.md",
     "preview": "../docs/previews/illustrated-actions.gif",
     "sample": "../examples/mixed-actions/02-二次元/005.gif",
@@ -125,7 +125,7 @@
   {
     "id": "photo-people",
     "name": "真人轻动效",
-    "category": "真人与宠物",
+    "category": "表情包",
     "guide": "photo-people/STYLE.md",
     "preview": "../docs/previews/photo-people.gif",
     "sample": "../examples/public-figures-hd/001.gif",
@@ -156,7 +156,7 @@
   {
     "id": "photo-pets",
     "name": "宠物拟人",
-    "category": "真人与宠物",
+    "category": "表情包",
     "guide": "photo-pets/STYLE.md",
     "preview": "../docs/previews/photo-pets.gif",
     "sample": "../examples/pet-corgi/01-fun-and-work/001.gif",
@@ -207,7 +207,7 @@
   {
     "id": "clay-mascot",
     "name": "粘土吉祥物",
-    "category": "材质与吉祥物",
+    "category": "表情包",
     "guide": "clay-mascot/STYLE.md",
     "preview": "../docs/previews/clay-mascot.gif",
     "sample": "../examples/clay-bakery/01-croissant.gif",
@@ -238,7 +238,7 @@
   {
     "id": "lenticular",
     "name": "双状态光栅卡",
-    "category": "卡片与变画",
+    "category": "光栅变画卡",
     "guide": "lenticular/STYLE.md",
     "preview": "../docs/previews/lenticular.gif",
     "sample": "../examples/lenticular-cards/01-spider-man.gif",
@@ -294,7 +294,7 @@
   {
     "id": "type-linked",
     "name": "人物与字体联动",
-    "category": "海报与文字",
+    "category": "动态海报",
     "guide": "type-linked/STYLE.md",
     "preview": "../docs/previews/type-linked.gif",
     "sample": "../examples/dynamic-posters/type-linked/01-rin.gif",
@@ -325,7 +325,7 @@
   {
     "id": "comic-fusion",
     "name": "漫画印刷整体融合",
-    "category": "海报与文字",
+    "category": "动态海报",
     "guide": "comic-fusion/STYLE.md",
     "preview": "../docs/previews/comic-fusion.gif",
     "sample": "../examples/dynamic-posters/p5-integrated/04-yuki.gif",
@@ -381,7 +381,7 @@
   {
     "id": "dynamic-signatures",
     "name": "动态艺术签名",
-    "category": "海报与文字",
+    "category": "动态签名",
     "guide": "dynamic-signatures/STYLE.md",
     "preview": "../skills/dynamic-art-signature/assets/media/nine-grid.gif",
     "sample": "../skills/dynamic-art-signature/assets/media/Aster.gif",

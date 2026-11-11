@@ -1,16 +1,8 @@
 # GIF 工厂 · 完整作品库
 
-[返回首页](README.md) · [按风格浏览](styles/README.md) · [使用指南](GUIDE.md)
+[返回首页](README.md) · [分类说明](styles/README.md) · [使用指南](GUIDE.md)
 
-## 电影片头 · 40 种字的风格
-
-每种都有一张完整片头图，点开看大图。选好编号，说片名和想要的感觉，就能继续做新图。
-
-<a href="skills/cinematic-title-lettering/assets/style-catalog/previews/new-01.jpg"><img src="skills/cinematic-title-lettering/assets/style-catalog/previews/new-01.jpg" alt="新增二十款片头 F21–F30" width="720"></a>
-
-<a href="skills/cinematic-title-lettering/assets/style-catalog/previews/new-02.jpg"><img src="skills/cinematic-title-lettering/assets/style-catalog/previews/new-02.jpg" alt="新增二十款片头 F31–F40" width="720"></a>
-
-[看全部 40 种和原图](skills/cinematic-title-lettering/references/style-catalog.md) · [片头怎么做](skills/cinematic-title-lettering/references/film-title-frames.md)
+[表情包展厅](#表情包展厅) · [电子光栅卡展厅](#电子光栅卡展厅) · [动态海报展厅](#动态海报展厅) · [动态艺术签名](#动态艺术签名) · [电影片头](#电影片头) · [动态绘本展厅](#动态绘本展厅) · [品牌宣传片展厅](#品牌宣传片展厅)
 
 ## 表情包展厅
 
@@ -20,9 +12,9 @@
 
 [下载整个项目：244 张表情包示例＋2 张重做试样＋9 张光栅卡＋13 张动态海报＋品牌短片案例](https://github.com/WoYun520/gif-factory/archive/refs/heads/main.zip)
 
-### 大肥鱼 · 精选动态预览
+### 大肥鱼 · 12 张动态预览
 
-<img src="examples/whale-maid/preview.gif" alt="大肥鱼（鲸鱼娘）精选 12 张动态预览" width="720">
+<img src="examples/whale-maid/preview.gif" alt="大肥鱼（鲸鱼娘）12 张动态预览" width="720">
 
 <details>
 <summary><strong>🐋 大肥鱼（鲸鱼娘） · 100 张 · 点击窗口展开</strong></summary>
@@ -296,6 +288,27 @@
 
 </details>
 
+## 电子光栅卡展厅
+
+同一张卡片在两幅画面间切换：人脸变成面罩，或者普通状态变成另一个形态。这套是 **9 张独立 GIF，每张 480×720、6 秒循环**，标题固定，画面按细条来回变换。蜘蛛侠保留使用者选定的首版近景。
+
+<details>
+<summary><strong>🪪 电子光栅卡 · 9 张 · 点击窗口展开</strong></summary>
+
+<img src="examples/lenticular-cards/preview.gif" alt="九张电子光栅卡动态总览" width="720">
+
+| | | |
+| --- | --- | --- |
+| <a href="examples/lenticular-cards/01-spider-man.gif"><img src="examples/lenticular-cards/01-spider-man.gif" alt="蜘蛛侠电子光栅卡" width="160" height="240"></a><br>蜘蛛侠 | <a href="examples/lenticular-cards/02-ghost-rider.gif"><img src="examples/lenticular-cards/02-ghost-rider.gif" alt="恶灵骑士电子光栅卡" width="160" height="240"></a><br>恶灵骑士 | <a href="examples/lenticular-cards/03-venom.gif"><img src="examples/lenticular-cards/03-venom.gif" alt="毒液电子光栅卡" width="160" height="240"></a><br>毒液 |
+| <a href="examples/lenticular-cards/04-iron-man.gif"><img src="examples/lenticular-cards/04-iron-man.gif" alt="钢铁侠电子光栅卡" width="160" height="240"></a><br>钢铁侠 | <a href="examples/lenticular-cards/05-batman.gif"><img src="examples/lenticular-cards/05-batman.gif" alt="蝙蝠侠电子光栅卡" width="160" height="240"></a><br>蝙蝠侠 | <a href="examples/lenticular-cards/06-black-panther.gif"><img src="examples/lenticular-cards/06-black-panther.gif" alt="黑豹电子光栅卡" width="160" height="240"></a><br>黑豹 |
+| <a href="examples/lenticular-cards/07-wolverine.gif"><img src="examples/lenticular-cards/07-wolverine.gif" alt="金刚狼电子光栅卡" width="160" height="240"></a><br>金刚狼 | <a href="examples/lenticular-cards/08-captain-america.gif"><img src="examples/lenticular-cards/08-captain-america.gif" alt="美国队长电子光栅卡" width="160" height="240"></a><br>美国队长 | <a href="examples/lenticular-cards/09-deadpool.gif"><img src="examples/lenticular-cards/09-deadpool.gif" alt="死侍电子光栅卡" width="160" height="240"></a><br>死侍 |
+
+[下载九张独立 GIF](examples/lenticular-cards/cards.zip) · [静态 A 状态](examples/lenticular-cards/state-a.jpg) · [静态 B 状态](examples/lenticular-cards/state-b.jpg) · [来源与制作说明](examples/lenticular-cards/README.md)
+
+这九张素材做法有区别：有生成图、照片合成，也有现成插画。黑豹和金刚狼带插画质感；金刚狼原画为 [Daniel Vásquez 的作品](https://www.behance.net/gallery/120626151/WolverineHugh-Jackman-Vector)。它们是动态效果案例，软件开源不等于角色和网络图片获得商业授权。
+
+</details>
+
 ## 动态海报展厅
 
 适合角色宣传、演出预告、活动主视觉。人物从平静切到开唱、蓄力或登场，字也跟着撑开。日期、地点这些要读清楚的信息保持不动。每张都是完整海报循环，不做成有片头片尾的视频。
@@ -341,46 +354,32 @@
 
 </details>
 
-## 电子光栅卡展厅
+## 动态艺术签名
 
-同一张卡片在两幅画面间切换：人脸变成面罩，或者普通状态变成另一个形态。这套是 **9 张独立 GIF，每张 480×720、6 秒循环**，标题固定，画面按细条来回变换。蜘蛛侠保留使用者选定的首版近景。
+名字、物体和渐变共享字形轮廓，使用独立上、下笔势与约一秒停顿。末端减速收锋，未写区域无底印，不加轻震或回弹。Levi、Aster 是逐轮修订基准；其余七款是扩展制作样例，技术检查不等同于逐款用户认可。
 
-<details>
-<summary><strong>🪪 电子光栅卡 · 9 张 · 点击窗口展开</strong></summary>
+<a href="skills/dynamic-art-signature/assets/media/nine-grid.gif"><img src="skills/dynamic-art-signature/assets/media/nine-grid.png" alt="动态签名九宫格" width="720"></a>
 
-<img src="examples/lenticular-cards/preview.gif" alt="九张电子光栅卡动态总览" width="720">
-
-| | | |
-| --- | --- | --- |
-| <a href="examples/lenticular-cards/01-spider-man.gif"><img src="examples/lenticular-cards/01-spider-man.gif" alt="蜘蛛侠电子光栅卡" width="160" height="240"></a><br>蜘蛛侠 | <a href="examples/lenticular-cards/02-ghost-rider.gif"><img src="examples/lenticular-cards/02-ghost-rider.gif" alt="恶灵骑士电子光栅卡" width="160" height="240"></a><br>恶灵骑士 | <a href="examples/lenticular-cards/03-venom.gif"><img src="examples/lenticular-cards/03-venom.gif" alt="毒液电子光栅卡" width="160" height="240"></a><br>毒液 |
-| <a href="examples/lenticular-cards/04-iron-man.gif"><img src="examples/lenticular-cards/04-iron-man.gif" alt="钢铁侠电子光栅卡" width="160" height="240"></a><br>钢铁侠 | <a href="examples/lenticular-cards/05-batman.gif"><img src="examples/lenticular-cards/05-batman.gif" alt="蝙蝠侠电子光栅卡" width="160" height="240"></a><br>蝙蝠侠 | <a href="examples/lenticular-cards/06-black-panther.gif"><img src="examples/lenticular-cards/06-black-panther.gif" alt="黑豹电子光栅卡" width="160" height="240"></a><br>黑豹 |
-| <a href="examples/lenticular-cards/07-wolverine.gif"><img src="examples/lenticular-cards/07-wolverine.gif" alt="金刚狼电子光栅卡" width="160" height="240"></a><br>金刚狼 | <a href="examples/lenticular-cards/08-captain-america.gif"><img src="examples/lenticular-cards/08-captain-america.gif" alt="美国队长电子光栅卡" width="160" height="240"></a><br>美国队长 | <a href="examples/lenticular-cards/09-deadpool.gif"><img src="examples/lenticular-cards/09-deadpool.gif" alt="死侍电子光栅卡" width="160" height="240"></a><br>死侍 |
-
-[下载九张独立 GIF](examples/lenticular-cards/cards.zip) · [静态 A 状态](examples/lenticular-cards/state-a.jpg) · [静态 B 状态](examples/lenticular-cards/state-b.jpg) · [来源与制作说明](examples/lenticular-cards/README.md)
-
-这九张素材做法有区别：有生成图、照片合成，也有现成插画。黑豹和金刚狼带插画质感；金刚狼原画为 [Daniel Vásquez 的作品](https://www.behance.net/gallery/120626151/WolverineHugh-Jackman-Vector)。它们是动态效果案例，软件开源不等于角色和网络图片获得商业授权。
-
-</details>
-
-## 品牌宣传片展厅
-
-<details>
-<summary><strong>🎞️ 慢慢面包店 · 黏土角色 × 纸片拼贴 · 15 秒 · 点击展开</strong></summary>
-
-可颂店长拉纸条，店铺展开；热面包出炉，落到手托的一个盘子上，再装进印有店名的外带袋。角色的动作会推动故事往下走，品牌就留在故事里的招牌和包装上。
-
-<a href="examples/brand-films/manman-bakery/film.mp4"><img src="examples/brand-films/manman-bakery/preview.gif" alt="慢慢面包店15秒融合短片动态预览 点击查看MP4" width="720"></a>
-
-上面是缩小的动图预览，完整 MP4 为 1920 × 1080、有配乐。慢慢面包店是虚构品牌，这版效果已经得到使用者认可。
-
-[查看 / 下载完整视频](https://raw.githubusercontent.com/WoYun520/gif-factory/main/examples/brand-films/manman-bakery/film.mp4) · [下载可编辑工程](examples/brand-films/manman-bakery/editable-project.zip) · [查看案例和素材署名](examples/brand-films/manman-bakery/README.md)
-
-这次借鉴了 [gbro-collage-broll](https://github.com/pyang5166/gbro-collage-broll) 的构思和组装流程，结合本项目的角色动作方法，用可编辑图层完成；没有调用它的 Gemini 视频脚本。发布配乐版时保留[音乐署名](examples/brand-films/manman-bakery/CREDITS.md)。
-
-</details>
+[九款 GIF、MP4 与参数](examples/dynamic-signatures/README.md) · [风格入口](styles/dynamic-signatures/STYLE.md) · [独立模块](skills/dynamic-art-signature/SKILL.md)
 
 
-<a id="动态绘本展厅"></a>
+### 中文草书签名与三字布局
+
+<a href="skills/dynamic-art-signature/assets/media/chinese/nine-grid.gif"><img src="skills/dynamic-art-signature/assets/media/chinese/nine-grid.png" alt="中文草书九宫格" width="720"></a>
+
+[中文九宫格 GIF](skills/dynamic-art-signature/assets/media/chinese/nine-grid.gif) · [三字卧云间](skills/dynamic-art-signature/assets/media/chinese/Woyunjian.gif) · [十款原图、配置与成品](examples/dynamic-signatures/README.md#中文草书)
+
+<a id="电影片头"></a>
+
+## 电影片头 · 40 种字的风格
+
+每种都有一张完整片头图，点开看大图。选好编号，说片名和想要的感觉，就能继续做新图。
+
+<a href="skills/cinematic-title-lettering/assets/style-catalog/previews/new-01.jpg"><img src="skills/cinematic-title-lettering/assets/style-catalog/previews/new-01.jpg" alt="新增二十款片头 F21–F30" width="720"></a>
+
+<a href="skills/cinematic-title-lettering/assets/style-catalog/previews/new-02.jpg"><img src="skills/cinematic-title-lettering/assets/style-catalog/previews/new-02.jpg" alt="新增二十款片头 F31–F40" width="720"></a>
+
+[看全部 40 种和原图](skills/cinematic-title-lettering/references/style-catalog.md) · [片头怎么做](skills/cinematic-title-lettering/references/film-title-frames.md)
 
 ## 动态绘本展厅
 
@@ -400,18 +399,19 @@
 
 </details>
 
+## 品牌宣传片展厅
 
-## 动态艺术签名
+<details>
+<summary><strong>🎞️ 慢慢面包店 · 黏土角色 × 纸片拼贴 · 15 秒 · 点击展开</strong></summary>
 
-名字、物体和渐变共享字形轮廓，使用独立上、下笔势与约一秒停顿。末端减速收锋，未写区域无底印，不加轻震或回弹。Levi、Aster 是逐轮修订基准；其余七款是扩展制作样例，技术检查不等同于逐款用户认可。
+可颂店长拉纸条，店铺展开；热面包出炉，落到手托的一个盘子上，再装进印有店名的外带袋。角色的动作会推动故事往下走，品牌就留在故事里的招牌和包装上。
 
-<a href="skills/dynamic-art-signature/assets/media/nine-grid.gif"><img src="skills/dynamic-art-signature/assets/media/nine-grid.png" alt="动态签名九宫格" width="720"></a>
+<a href="examples/brand-films/manman-bakery/film.mp4"><img src="examples/brand-films/manman-bakery/preview.gif" alt="慢慢面包店15秒融合短片动态预览 点击查看MP4" width="720"></a>
 
-[九款 GIF、MP4 与参数](examples/dynamic-signatures/README.md) · [风格入口](styles/dynamic-signatures/STYLE.md) · [独立模块](skills/dynamic-art-signature/SKILL.md)
+上面是缩小的动图预览，完整 MP4 为 1920 × 1080、有配乐。慢慢面包店是虚构品牌，这版效果已经得到使用者认可。
 
+[查看 / 下载完整视频](https://raw.githubusercontent.com/WoYun520/gif-factory/main/examples/brand-films/manman-bakery/film.mp4) · [下载可编辑工程](examples/brand-films/manman-bakery/editable-project.zip) · [查看案例和素材署名](examples/brand-films/manman-bakery/README.md)
 
-### 中文草书签名与三字布局
+这次借鉴了 [gbro-collage-broll](https://github.com/pyang5166/gbro-collage-broll) 的构思和组装流程，结合本项目的角色动作方法，用可编辑图层完成；没有调用它的 Gemini 视频脚本。发布配乐版时保留[音乐署名](examples/brand-films/manman-bakery/CREDITS.md)。
 
-<a href="skills/dynamic-art-signature/assets/media/chinese/nine-grid.gif"><img src="skills/dynamic-art-signature/assets/media/chinese/nine-grid.png" alt="中文草书九宫格" width="720"></a>
-
-[中文九宫格 GIF](skills/dynamic-art-signature/assets/media/chinese/nine-grid.gif) · [三字卧云间](skills/dynamic-art-signature/assets/media/chinese/Woyunjian.gif) · [十款原图、配置与成品](examples/dynamic-signatures/README.md#中文草书)
+</details>

@@ -1,70 +1,54 @@
 ---
 name: dynamic-art-signature
-description: Design original handwritten artistic signatures from a name, one object and a gradient palette, then render stroke-writing MP4/GIF animations and nine-grid collections. Use for 动态签名、艺术签名、名字＋物体＋渐变、两笔快写、书法收锋、乐器入字、粒子按字意成字 or signature-grid requests. Supports Latin names, 中文两字/三字草书与行书, new designs and timing repairs; does not replace ordinary document signing or character-sticker workflows.
+description: 将中英文名字与意象融成手写艺术签名，制作两段快写、停顿和慢收锋的 MP4、GIF，也可做动态九宫格。适合新签名、书体变化、乐器入字和书写节奏修改，不用于文件签署。
 ---
 
 # 动态艺术签名
 
-## Preserve the brief
+保留准确名字、意象、配色和最新认可稿。字稿、动画、交付版式分开处理，只改速度时不换字。延续旧款先实际打开[案例](references/examples.md)，新稿使用可用的图像生成工具。
 
-Carry forward the exact name, object, palette and latest accepted design. Ask only for missing essentials; choose names and motifs autonomously when requested. Separate **letter design**, **movement**, and **delivery layout**. For a timing-only revision, retain the artwork. Keep sample-specific choices such as an eye inside `e` out of the universal defaults.
+## 先把字写出特点
 
-## Design the shared letter/object silhouette
+按[设计说明](references/design.md)，让物体进入笔画、轮廓或字内留白，不能只是旁边放图标。保持名字可读，用平面手写墨迹、提按粗细和尖收笔；不默认加金属、立体、发光或粉笔质感。
 
-Read [design guidance](references/design.md). Use the available image-generation tool for new raster artwork and visual edits. Make the object part of the letter anatomy and negative space. Preserve legibility and original composition; borrow a reference's integration principle rather than its exact lettering. Use flat handwritten ink with natural pressure, thick/thin contrast and tapered terminals. “质感” defaults to handwriting, not metal, bevels, glow, extrusion or rough chalk.
+上方意象和下方名字、长尾是两个独立书写组，靠近处留小空隙。相连时先修稿或明确分层遮罩，不能把连在一起的成品用横向擦除切成两半。某例把眼睛藏进字母的做法不是所有名字都要照搬。
 
-Design two physically independent gesture groups: an upper blade/wing/flourish and lower lettering/tail. Leave a small intentional gap where they approach. If strokes touch, repair the artwork or supply explicit independent layer masks before animation. Do not divide a completed connected logo with a horizontal wipe and call it two independent strokes.
+中文默认草书，用户指定行书、瘦金体等书体就按要求；看[中文字与两三字布局](references/chinese.md)。换书体时保留签名构图、意象、配色和两段书写节奏，三字不等于必须写三段，也不自动改成逐笔教学演示。
 
-Use [the nine examples](references/examples.md) for range, not as mandatory templates. Inspect spelling and actual geometry before rendering. A static design preview does not complete an animation request.
+用户要乐器入字或字意粒子时，看[乐器案例与分层方法](references/instrument-semantic.md)：琴弦、管身、音孔等共用目标字的笔画，粒子按字意运动，落到目标笔画后凝成字。普通款不自动加粒子。
 
-## Chinese handwriting
+## 再做书写节奏
 
-Use 草书 as the default for Chinese names in this workflow; honor explicit 行书 or other script requests. Read [Chinese lettering and examples](references/chinese.md) for two- and three-character composition, motif treatment and portable demo configurations. Preserve all requested characters, keep the motif visible, and retain the accepted two-gesture timing when changing script.
+默认不透明深灰底、960×640、4 秒循环，MP4 60fps、GIF 25fps。明确要求可改。
 
-## 乐器入字与粒子按字意成字
-
-当用户点名这套玩法或延续已确认的乐器九宫格时，先指定乐器共用的笔画和粒子要形成的目标字。让琴框、琴弦、管身、音孔或钟形直接进入字的轮廓、笔画或留白。粒子的形状、运动方向和落点都由字意决定，粒子落入目标笔画后逐步凝成实字。保留清晰字形、上方独立意象、两段书写和末锋减速。
-
-见[两组九宫格、分层方法与可复现示例](references/instrument-semantic.md)。验收时看片中粒子聚拢、笔画长出和成字后的完整定格。
-
-## Animate the accepted two-gesture rhythm
-
-Default to a flat opaque charcoal background, 960×640, 60fps MP4, 4-second loop, 25fps GIF. Respect explicit changes.
-
-| Event | Default |
+| 阶段 | 默认节奏 |
 | --- | --- |
-| Initial clean hold | 0.30s |
-| Upper gesture | 0.14s, accelerating and decisive |
-| Gap after upper completion | 1.02s |
-| Lower gesture begins | 1.46s |
-| Lower main body | roughly 0.16–0.18s |
-| Final tail/terminal | another 0.65–0.72s, progressively slowing |
-| Final hold / loop reset | hold the result, fade ink only during last 0.30s |
+| 干净空白 | 0.30 秒 |
+| 上方一笔 | 0.14 秒，果断加速 |
+| 停顿 | 上方写完后 1.02 秒 |
+| 下方开始 | 第 1.46 秒 |
+| 主体快写 | 约 0.16–0.18 秒 |
+| 末锋慢收 | 再用约 0.65–0.72 秒，逐渐减速 |
+| 完成与循环 | 保留完整稿，最后 0.30 秒只淡出墨迹 |
 
-Keep the background completely free of future strokes. Composite revealed ink over a clean background; do not dim the full finished artwork underneath the reveal. Ordinary two-gesture signatures default to no shake, spring/recoil, particles, glow or audio. The requested instrument-and-semantic-particle treatment uses the targeted ink formation described above.
+未写到的地方必须干净，不能垫一张暗淡的完整字稿。普通款默认无抖动、回弹、光效和声音。尾部转向就用沿真实曲线的路径，不能用从左到右的擦除冒充往回写；简单单向末锋可用减速显露，但要实际看起来像书写。
 
-Read [render configuration and safeguards](references/rendering.md). Require Python 3, Pillow, NumPy, SciPy, FFmpeg and ffprobe. Run:
+## 工具与检查
+
+看[渲染配置](references/rendering.md)。脚本需要 Python 3、Pillow、NumPy、SciPy、FFmpeg 和 ffprobe；FFmpeg 负责本地视频编码、GIF 转换，ffprobe 读取视频参数。
 
 ```bash
-python scripts/render_signature.py inspect --image assets/examples/Aster.png
-python scripts/render_signature.py render --config assets/examples/Aster.json --out /absolute/output/aster
-python scripts/audit_video.py /absolute/output/aster.mp4
+python3 scripts/render_signature.py inspect --image assets/examples/Aster.png
+python3 scripts/render_signature.py render --config assets/examples/Aster.json --out /absolute/output/aster
+python3 scripts/audit_video.py /absolute/output/aster.mp4
 ```
 
-Use the inspect result to select component IDs **for that exact image and threshold**. Never reuse IDs blindly on a newly generated image. The compositor supports an optional vector-defined tail region/path. Give an actual sequential path for a returning tail; a left-to-right bounding-box wipe does not model a tail that returns leftward. For a design with a single forward terminal, the simpler decelerating reveal is acceptable if playback looks handwritten. Inspect intermediate frames, not just the completed logo.
+每张图重新检查连通区域编号和阈值，不盲用旧稿编号。主体与长尾的遮罩要互斥，整条尾巴留给末锋阶段，避免出现两遍或接缝。先看上方完成后的停顿、主笔到末锋的交接、慢收锋和循环重置，再扩展。
 
-## Repair failures before expanding
+未来笔画提前出现就去掉底层完整稿；上下串笔先修连接处；机械描字就加快主体，把减速留给末锋。检查实际中间帧和正常播放，静态封面不能算完成动画，技术检查不能代替视觉判断。
 
-- **Future ink visible:** remove the underneath finished image; verify a uniform opening and blank lower group during the gap.
-- **Two strokes bleed together:** inspect connected components, assign exclusive ownership, and repair physical joins. Do not rely on a wide brush mask over intersecting artwork.
-- **Tail appears twice / has a seam:** keep the entire tail out of the body pass, then reveal it continuously from the body endpoint. Use a path matching its actual curve.
-- **Mechanical slow tracing:** keep the main strokes fast and confine deceleration to the terminal.
-- **Static masquerading as animation:** verify actual decoded intermediate states and timing.
+## 交付
 
-Inspect normal playback, the upper-only hold, the body-to-tail handoff, slow terminal and loop reset. Technical checks are necessary but do not establish visual acceptance. Repair a failed sample before batching. Preserve confirmed settings in later iterations.
+交付 MP4 和循环 GIF，封面只作补充。九宫格要有九个不同的名字、意象或配色方案，用九个实际成片运行 `scripts/make_grid.py`，不能交静态拼图。需要时加合集 ZIP、配置和可复现素材，私人参考截图不放进公开包。
 
-## Deliver and package
-
-Deliver MP4 and a looping GIF; supply a static cover only as a labelled supplement. For nine-grid requests, make nine distinct name/object/palette designs and compose the **decoded finished videos**, not a static collage. Use `scripts/make_grid.py` with exactly nine videos. Keep a complete collection ZIP when requested, with individual media, covers and the configuration needed to reproduce them. Avoid including private user reference screenshots in public packages.
-
-When incorporated into GIF Factory, link this module from the root purpose router while retaining `$pixel-gif-sticker-pack` compatibility. Preserve existing sticker, poster, lenticular, film and storybook routes. Do not replace the user's whole `gif-factory` with this module.
+作为 GIF 工厂的一部分时保留总入口和其他用途，不用签名模块覆盖整个仓库。

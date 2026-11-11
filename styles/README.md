@@ -1,60 +1,58 @@
-# GIF 工厂 · 风格库
+# GIF 工厂 · 分类说明
 
-先看效果，选一种做法，再换成你自己的角色或主题。这里有 **6 个浏览分类、10 个已有样例的 GIF 风格入口、75 个动态案例**；分类帮助找效果，实际制作仍分开记录外观、动作和用途。[返回首页](../README.md) · [完整作品库](../GALLERY.md)
+按想做的东西选，每类都能看案例和制作方法。画风放在各类里面选择。
 
-## 像素与游戏
+[返回首页](../README.md) · [完整作品库](../GALLERY.md) · [使用指南](../GUIDE.md)
 
-| 风格 | 动态案例 | 适合做什么 | 制作说明 |
-| --- | --- | --- | --- |
-| 像素轻动效 | 6 张 | 聊天表情包、头像小动画 | [打开风格](pixel-light/STYLE.md) |
-| 像素完整动作 | 8 张 | 游戏感角色、动作表情包 | [打开风格](pixel-actions/STYLE.md) |
+## 表情包
 
-## 插画与二次元
+| 风格 | 能做什么 | 看做法 |
+| --- | --- | --- |
+| 像素轻动效 | 像素小人轻轻弹跳、点头、摇摆 | [打开](pixel-light/STYLE.md) |
+| 像素完整动作 | 像素角色做完挥手、点赞、欢呼等动作 | [打开](pixel-actions/STYLE.md) |
+| 插画角色动作 | 保留插画画风，让头、身体、手一起动 | [打开](illustrated-actions/STYLE.md) |
+| 真人轻动效 | 保留照片里的人物长相，做小表情和小动作 | [打开](photo-people/STYLE.md) |
+| 宠物拟人 | 保留宠物特征，加服装、道具或趣味动作 | [打开](photo-pets/STYLE.md) |
+| 粘土吉祥物 | 让软软的粘土角色动起来 | [打开](clay-mascot/STYLE.md) |
 
-| 风格 | 动态案例 | 适合做什么 | 制作说明 |
-| --- | --- | --- | --- |
-| 插画角色动作 | 4 张 | 动漫角色、角色动作表情 | [打开风格](illustrated-actions/STYLE.md) |
+## 光栅变画卡
 
-## 真人与宠物
+两张配得上的图，做成一张来回变换的卡片。适合人物双身份、变身或产品两种配色。
 
-| 风格 | 动态案例 | 适合做什么 | 制作说明 |
-| --- | --- | --- | --- |
-| 真人轻动效 | 4 张 | 人物反应、个人聊天表情 | [打开风格](photo-people/STYLE.md) |
-| 宠物拟人 | 8 张 | 宠物聊天表情、趣味反应 | [打开风格](photo-pets/STYLE.md) |
+[看做法和案例](lenticular/STYLE.md)
 
-## 材质与吉祥物
+## 动态海报
 
-| 风格 | 动态案例 | 适合做什么 | 制作说明 |
-| --- | --- | --- | --- |
-| 粘土吉祥物 | 4 张 | 虚构店铺、品牌 IP、产品搭档 | [打开风格](clay-mascot/STYLE.md) |
+| 做法 | 能做什么 | 看做法 |
+| --- | --- | --- |
+| 人物与字体联动 | 保留原画，让人物状态和文字一起变化 | [打开](type-linked/STYLE.md) |
+| 漫画印刷整体融合 | 人物、背景、大字一起重新设计 | [打开](comic-fusion/STYLE.md) |
 
-## 卡片与变画
+## 动态签名
 
-| 风格 | 动态案例 | 适合做什么 | 制作说明 |
-| --- | --- | --- | --- |
-| 双状态光栅卡 | 9 张 | 收藏卡、人物双身份、产品两配色 | [打开风格](lenticular/STYLE.md) |
+名字和物体共用笔画，配渐变色，做出快写、停顿、慢收锋。支持中英文，也有乐器入字和粒子成字案例。
 
-## 海报与文字
+[看做法和案例](dynamic-signatures/STYLE.md) · [独立 Skill](../skills/dynamic-art-signature/SKILL.md)
 
-| 风格 | 动态案例 | 适合做什么 | 制作说明 |
-| --- | --- | --- | --- |
-| 人物与字体联动 | 4 张 | 演出预告、人物宣传、换装展示 | [打开风格](type-linked/STYLE.md) |
-| 漫画印刷整体融合 | 9 张 | 角色宣传、活动主视觉、演出海报 | [打开风格](comic-fusion/STYLE.md) |
-| 动态艺术签名 | 19 款 | 名字、物体与渐变融合的两笔书写签名 | [打开风格](dynamic-signatures/STYLE.md) |
+## 电影片头
 
-**电影片头有 40 种字的风格**，每种都有完整图片。选一个编号，换成你的片名，场景也一起配；也能只做字稿或三联图。[看 40 种风格](../skills/cinematic-title-lettering/references/style-catalog.md) · [片头怎么做](../skills/cinematic-title-lettering/references/film-title-frames.md)
+40 种字形可选。可以重新设计片名和场景，也可以直接用你提供的照片、文案或字稿。
 
-## 扩展应用：品牌短片
+[看 40 种字形](../skills/cinematic-title-lettering/references/style-catalog.md) · [看做法](../skills/cinematic-title-lettering/references/film-title-frames.md) · [独立 Skill](../skills/cinematic-title-lettering/SKILL.md)
 
-吉祥物也能与产品、包装和纸片场景组合成品牌短片。它交付视频和可编辑工程，单独放在扩展区，不计入上面的 GIF 风格数。[面包店案例](../examples/brand-films/manman-bakery/README.md) · [品牌短片制作流程](../references/brand-film.md)
+## 动态绘本
 
-## 扩展应用：紧凑动态绘本
+一页做完一个动作，再翻到下一页。可做独立页面、横屏翻书和竖屏书页，支持正文书写和配乐。
 
-固定画面、一次做完动作、短暂停留再翻页。默认每页约3秒、实际6fps，输出独立页面或翻书合集；单独归为叙事扩展，不计入循环GIF数量。
+[看做法和案例](compact-storybook/STYLE.md) · [独立 Skill](../skills/compact-storybook/SKILL.md)
 
-[风格与适用素材](compact-storybook/STYLE.md) · [完整绘本案例](../examples/storybooks/tea-party/README.md) · [稳定版Skill](../skills/compact-storybook/SKILL.md)
+## 品牌短片
 
-## 新风格怎么加入
+把角色、产品、包装和品牌放进一个小故事，交付视频和可修改的工程。
 
-先完成一个可看的小样，再给它独立的 `STYLE.md`：外观、动作、适用素材、提示词、制作流程、案例与限制。循环GIF入口登记到 `catalog.json`，放进对应分类；动态绘本、品牌短片这类叙事扩展单独列出，不放进循环GIF预览脚本；只有设想、被弃用或待确认的修正版留在作品库说明中，不靠换角色名字增加风格数量。
+[看面包店案例](../examples/brand-films/manman-bakery/README.md) · [看制作方法](../references/brand-film.md)
+
+## 维护分类
+
+新增做法先有可看的小样，再写清楚适合什么、怎么做、交付什么。循环 GIF 的案例登记在 [catalog.json](catalog.json)，影片和片头按各自格式展示。试作、已选稿和弃用版本在案例说明中分别记录。
 
