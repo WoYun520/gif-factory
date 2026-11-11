@@ -82,13 +82,13 @@
 
 ## 动态签名
 
-把名字、物体和渐变色融进同一组字。上方快划，停约一秒，下方快写，最后慢慢收锋；也有乐器入字、粒子成字的做法。
+把名字、意象和乐器融进同一组笔画，再做快写、停顿和慢收锋。下面这组把竹笛、竖琴、古琴等乐器写进字里，配合粒子成字。
 
-<a href="styles/dynamic-signatures/STYLE.md"><img src="skills/dynamic-art-signature/assets/media/chinese/nine-grid.gif" alt="中文动态签名案例" width="560"></a>
+<a href="skills/dynamic-art-signature/assets/media/instrument-semantic/Instrument_Semantic_Nine_Grid.mp4"><img src="docs/previews/dynamic-signatures-instruments.gif" alt="乐器入字与粒子成字动态签名九宫格" width="560"></a>
 
-[看做法](styles/dynamic-signatures/STYLE.md) · [中英文案例](examples/dynamic-signatures/README.md) · [乐器入字与粒子成字](skills/dynamic-art-signature/references/instrument-semantic.md) · [Skill](skills/dynamic-art-signature/SKILL.md)
+[看原版视频](skills/dynamic-art-signature/assets/media/instrument-semantic/Instrument_Semantic_Nine_Grid.mp4) · [看做法](styles/dynamic-signatures/STYLE.md) · [中英文案例](examples/dynamic-signatures/README.md) · [乐器入字与粒子成字](skills/dynamic-art-signature/references/instrument-semantic.md) · [Skill](skills/dynamic-art-signature/SKILL.md)
 
-> 做一款「卧云间＋竹叶＋月白到浅青渐变」的动态签名，沿用仓库的快写和慢收锋节奏。
+> 做一款「卧云间＋竹笛＋月白到浅青渐变」的动态签名，让乐器融进笔画，沿用仓库的快写和慢收锋节奏。
 
 <a id="cinematic-title-lettering"></a>
 
