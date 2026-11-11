@@ -2,6 +2,8 @@
 
 先看图，挑喜欢的编号，再说片名和想要的感觉。每张都是按那句话重新写的，换片名时也会重新设计。
 
+场景图、片名文案或现成字稿都可以自己提供。可以只设计字、只配场景，也可以把你给的图片和字稿排成一张片头图。
+
 > 例：用 F25 空心双线，做一张《晚风借我一夜》的片头，场景也帮我配。
 
 [前十款](../assets/style-catalog/previews/all-01.jpg) · [原版十款](../assets/style-catalog/previews/selected-01.jpg) · [新作上篇](../assets/style-catalog/previews/new-01.jpg) · [新作下篇](../assets/style-catalog/previews/new-02.jpg)

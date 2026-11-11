@@ -139,6 +139,8 @@
 
 细字、粗笔、粉笔、刻字、空心字……每种都有一张完整片头图。先看效果，选喜欢的编号，再换成你的片名；字和场景会一起设计。
 
+场景图、片名文案、已经设计好的字稿，都可以自己提供。提供的部分按你的要求使用，缺的部分再帮你补齐。
+
 <a href="skills/cinematic-title-lettering/assets/style-catalog/previews/new-01.jpg"><img src="skills/cinematic-title-lettering/assets/style-catalog/previews/new-01.jpg" width="820" alt="新增片头上篇 F21–F30：招牌连笔、残印邮戳、窄黑竖骨、软角胶刻、空心双线、铅字错位、圆头记号、断线钢笔、竹节窄骨、方折篆意"></a>
 
 <a href="skills/cinematic-title-lettering/assets/style-catalog/previews/new-02.jpg"><img src="skills/cinematic-title-lettering/assets/style-catalog/previews/new-02.jpg" width="820" alt="新增片头下篇 F31–F40：扁隶挑尾、反骨涂写、丝带扁笔、疏漏点阵、蜡笔重描、剪口留桥、缝线断笔、排刷梳纹、断层错版、负形留白"></a>
