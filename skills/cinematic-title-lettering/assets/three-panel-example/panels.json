@@ -1,37 +1,31 @@
 {
   "panels": [
     {
-      "photo": "camp.jpg",
-      "title": "lettering.png",
-      "title_crop": [0, 0, 1, 0.351],
-      "title_matte": "gray",
-      "photo_focus": [0.5, 0.72],
-      "title_center": [0.70, 0.45],
-      "title_max": [0.42, 0.72],
-      "saturation": 0.87,
-      "exposure": 0.89
+      "photo": "country-road.jpg",
+      "title": "wind.png",
+      "photo_focus": [0.5, 0.66],
+      "title_center": [0.57, 0.73],
+      "title_max": [0.60, 0.45],
+      "saturation": 0.78,
+      "exposure": 0.92
     },
     {
-      "photo": "pool.jpg",
-      "title": "lettering.png",
-      "title_crop": [0, 0.351, 1, 0.640],
-      "title_matte": "gray",
-      "photo_focus": [0.5, 0.51],
-      "title_center": [0.62, 0.40],
-      "title_max": [0.64, 0.55],
-      "saturation": 0.87,
-      "exposure": 0.97
+      "photo": "open-sea.jpg",
+      "title": "tide.png",
+      "photo_focus": [0.5, 0.30],
+      "title_center": [0.52, 0.37],
+      "title_max": [0.42, 0.45],
+      "saturation": 0.78,
+      "exposure": 1.12
     },
     {
-      "photo": "road.jpg",
-      "title": "lettering.png",
-      "title_crop": [0, 0.640, 1, 1],
-      "title_matte": "gray",
-      "photo_focus": [0.5, 0.52],
-      "title_center": [0.68, 0.52],
-      "title_max": [0.49, 0.80],
+      "photo": "night-mountains.jpg",
+      "title": "signal.png",
+      "photo_focus": [0.5, 0.59],
+      "title_center": [0.39, 0.69],
+      "title_max": [0.52, 0.45],
       "saturation": 0.85,
-      "exposure": 0.86
+      "exposure": 0.88
     }
   ]
 }

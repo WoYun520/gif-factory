@@ -4,7 +4,7 @@
 
 ## 先定字稿
 
-- 要改字时，使用用户的新片名和可选副题，按选定参考幅位重新设计字标。参考图里的原文用于观察字形。确认新字的简繁、标点、英文和断行。批量要求每幅用不同文案时，先核对整批标题是否重复。
+- 要改字时，使用用户的新片名和可选副题，结合新片名的题材，重新设计字的骨架、间距和排布。确认新字的简繁、标点、英文和断行。批量要求每幅用不同文案时，先核对整批标题是否重复。
 - 用户贴的是指定成品字稿时，优先直接取其中的字形、配色和小字，顺序按用户给出的幅位。浅色细线和标点应一同保留。
 - 新做字标优先导出透明 PNG。已有均匀灰底字稿也可以叠合。多款字标在同一张稿上时，先看每个长笔的实际范围，再给每幅定裁切框。
 
@@ -26,4 +26,4 @@ python3 scripts/render_three_panel.py assets/three-panel-example/panels.json --o
 
 以 [示例配置](../assets/three-panel-example/panels.json) 为起点。路径相对配置文件。数组按上、中、下幅排列。每幅填 `photo` 和 `title`。可用 `photo_focus` 微调照片裁切，用 `title_center` 指定字标中心，用 `title_max` 限制字标宽高占比。两项坐标均为 0–1，从左上开始。透明字标使用默认的 `title_matte: alpha`。均匀灰底用 `title_matte: gray`。三款字标在同一张图时，可用 `title_crop` 指定比例裁切框，顺序为左、上、右、下。灰底提取后检查边缘、小字和原有的飞白。
 
-示例使用 [营地与远方字稿](../assets/three-panel-example/lettering.png) 和三张实拍照片。各幅照片的原始出处见 [来源](../assets/three-panel-example/photo-credits.md)。[成品预览](../assets/three-panel-example/preview.jpg)
+示例用《风经过的坐标》《潮汐时差》《山外有信号》三张独立字标配三张实拍照片。各幅照片的原始出处见 [来源](../assets/three-panel-example/photo-credits.md)。[成品预览](../assets/three-panel-example/preview.jpg)

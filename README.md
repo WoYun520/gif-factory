@@ -137,20 +137,13 @@
 
 ### 电影片名字形
 
-从 58 种字形方向选一个，换成自己的片名、副题和标点。可以单独导出字标，也可以配实拍照片，把三幅横画面排成一张白边竖版宣传图。
+从自己的片名和故事出发，设计字形、笔触和排布。可以单独导出字标，也可以配实拍照片，把三幅横画面排成一张白边竖版宣传图。
 
-<table>
-<tr>
-<td width="25%" valign="top"><a href="examples/cinematic-title-lettering/camp-and-road.jpg"><img src="examples/cinematic-title-lettering/camp-and-road.jpg" width="220" alt="营地与远方，三幅实拍宣传图"></a><br>营地与远方</td>
-<td width="25%" valign="top"><a href="examples/cinematic-title-lettering/backlight-and-night.jpg"><img src="examples/cinematic-title-lettering/backlight-and-night.jpg" width="220" alt="逆光与夜色，三幅实拍宣传图"></a><br>逆光与夜色</td>
-<td width="25%" valign="top"><a href="examples/cinematic-title-lettering/city-and-stars.jpg"><img src="examples/cinematic-title-lettering/city-and-stars.jpg" width="220" alt="城市与星空，三幅实拍宣传图"></a><br>城市与星空</td>
-<td width="25%" valign="top"><a href="examples/cinematic-title-lettering/cloud-and-sea.jpg"><img src="examples/cinematic-title-lettering/cloud-and-sea.jpg" width="220" alt="云与海的日常，三幅实拍宣传图"></a><br>云与海的日常</td>
-</tr>
-</table>
+<a href="skills/cinematic-title-lettering/assets/three-panel-example/preview.jpg"><img src="skills/cinematic-title-lettering/assets/three-panel-example/preview.jpg" width="420" alt="风经过的坐标、潮汐时差、山外有信号，三幅实拍宣传图"></a>
 
-> 用 `$cinematic-title-lettering` 的「双行黄块与白色英文穿行」做《夏日公路》。把副题改成 SUMMER ROAD，配实拍照片，和另外两款片名一起排成三联竖图。
+> 用 `$cinematic-title-lettering` 为《夏日公路》设计字标。让横画带一点向前的动势，副题用 SUMMER ROAD，配一张傍晚公路实拍。
 
-[58 款字标样稿](skills/cinematic-title-lettering/references/all-styles.md) · [电影片名字形 Skill](skills/cinematic-title-lettering/SKILL.md) · [三联制作方法](skills/cinematic-title-lettering/references/promo-triptychs.md) · [实拍照片来源](examples/cinematic-title-lettering/photo-credits.md)
+[电影片名字形 Skill](skills/cinematic-title-lettering/SKILL.md) · [三联制作方法](skills/cinematic-title-lettering/references/promo-triptychs.md) · [实拍照片来源](skills/cinematic-title-lettering/assets/three-panel-example/photo-credits.md)
 
 ### 动态艺术签名
 
