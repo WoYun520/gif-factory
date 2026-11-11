@@ -1,0 +1,772 @@
+{
+  "version": 1,
+  "total": 40,
+  "description": "40类原创电影片名字形创作方向。每类有可读骨架与笔画结构定义、相近类区别和图例；并非40套完整字库。",
+  "image_path_base": "directory containing catalog.json",
+  "selected_original_ids": [
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17",
+    "F18",
+    "F19",
+    "F20"
+  ],
+  "new_case_ids": [
+    "F21",
+    "F22",
+    "F23",
+    "F24",
+    "F25",
+    "F26",
+    "F27",
+    "F28",
+    "F29",
+    "F30",
+    "F31",
+    "F32",
+    "F33",
+    "F34",
+    "F35",
+    "F36",
+    "F37",
+    "F38",
+    "F39",
+    "F40"
+  ],
+  "families": [
+    "细笔私写",
+    "刷写笔势",
+    "连写异形",
+    "块面印刻",
+    "字骨重构",
+    "圆笔湿写",
+    "粉蜡媒介",
+    "点线空构"
+  ],
+  "styles": [
+    {
+      "id": "F01",
+      "name": "针锋游丝",
+      "family": "细笔私写",
+      "structure": "细长毛笔骨架，起笔稍实、末端拉成针锋，字内保留稀疏飞白和长竖。",
+      "use_for": "安静回忆、风景小片",
+      "nearest": "F11",
+      "difference": "与日记硬笔相比，粗细来自压笔与提锋，笔尾持续变细。",
+      "title": "晚风经过我",
+      "image": "../film-title-examples/01.png",
+      "status": "early_exploration",
+      "size": [
+        1931,
+        814
+      ],
+      "sha256": "1592e4866896a739a14caeaa8d12f94acc035531c0cd293868980294440c1d0f",
+      "generation_record": "../film-title-examples/prompts.json"
+    },
+    {
+      "id": "F02",
+      "name": "尖头疾刷",
+      "family": "刷写笔势",
+      "structure": "尖头宽刷快速起落，粗主干与尖细斜出并存，主字有向前倾的力量。",
+      "use_for": "青春出发、公路片",
+      "nearest": "F33",
+      "difference": "疾刷侧重快写的突然提锋；丝带扁笔侧重平笔截面与转面。",
+      "title": "把晴天借给你",
+      "image": "../film-title-examples/02.png",
+      "status": "early_exploration",
+      "size": [
+        1928,
+        816
+      ],
+      "sha256": "d36c943bcb160fb7c1d3df388cd1680a8ad9a2f262fc645a63901713f319d24f",
+      "generation_record": "../film-title-examples/prompts.json"
+    },
+    {
+      "id": "F03",
+      "name": "顿挫行写",
+      "family": "刷写笔势",
+      "structure": "中粗行写在转折处停顿，粗横与细勾的交接清楚，字肩高低错落。",
+      "use_for": "离别、日常对白",
+      "nearest": "F07",
+      "difference": "顿挫行写仍有弯转；硬折斜笔由更明确的棱角和急折构骨。",
+      "title": "晚点再告别",
+      "image": "../film-title-examples/03.png",
+      "status": "early_exploration",
+      "size": [
+        1931,
+        814
+      ],
+      "sha256": "8213fa929749a38c497987ffbc3752ace8703b6723eb9367a76d53bdbcbdf069",
+      "generation_record": "../film-title-examples/prompts.json"
+    },
+    {
+      "id": "F04",
+      "name": "密叠钝角",
+      "family": "块面印刻",
+      "structure": "宽短笔画直压成密实字块，钝口转角，部件靠近但内腔保持开口。",
+      "use_for": "悬疑、压迫、城市片",
+      "nearest": "F16",
+      "difference": "密叠靠平头压笔；粗凿靠刀口裂角与参差切面。",
+      "title": "无人应答",
+      "image": "../film-title-examples/04.png",
+      "status": "early_exploration",
+      "size": [
+        1932,
+        814
+      ],
+      "sha256": "f5c6763499f814b87e2c1d605c9920b98130fd0536159f45ba23b334e67a94c7",
+      "generation_record": "../film-title-examples/prompts.json"
+    },
+    {
+      "id": "F05",
+      "name": "回锋飞白",
+      "family": "刷写笔势",
+      "structure": "粗干笔有明显回锋，曲笔向内折返，实墨与长条飞白共同形成轮廓。",
+      "use_for": "转折、山路、旅途",
+      "nearest": "F17",
+      "difference": "回锋的字内有回转；野笔干刷以向外开张和骤停为主。",
+      "title": "风把山路折弯",
+      "image": "../film-title-examples/05.png",
+      "status": "early_exploration",
+      "size": [
+        1934,
+        813
+      ],
+      "sha256": "8e23161ca854b19f3be2a38fe229b6dde425ccf8d03630f34bc6dfe527bc8f3a",
+      "generation_record": "../film-title-examples/prompts.json"
+    },
+    {
+      "id": "F06",
+      "name": "枯枝细锋",
+      "family": "细笔私写",
+      "structure": "细枝状字骨，短横轻、长竖瘦，关节由细到粗再提走，字腔开阔。",
+      "use_for": "春日、植物、自然",
+      "nearest": "F29",
+      "difference": "枯枝笔性自然提按；竹节窄骨保留更直的连续竖笔与明确短节。",
+      "title": "春天藏在树后",
+      "image": "../film-title-examples/06.png",
+      "status": "early_exploration",
+      "size": [
+        1930,
+        815
+      ],
+      "sha256": "8a6a964f475eea80805114c1e30aa7dfeb9dff8d5ef8a38a9abf876b82dca5c6",
+      "generation_record": "../film-title-examples/prompts.json"
+    },
+    {
+      "id": "F07",
+      "name": "硬折斜笔",
+      "family": "刷写笔势",
+      "structure": "硬笔势的粗细急变，斜画与折角明确，局部字身被拉窄，终笔短促硬收。",
+      "use_for": "抵达、分离、暮色",
+      "nearest": "F02",
+      "difference": "硬折在关节处转向；疾刷以一段快速斜出形成方向。",
+      "title": "我们慢慢靠岸",
+      "image": "../film-title-examples/07.png",
+      "status": "early_exploration",
+      "size": [
+        1931,
+        814
+      ],
+      "sha256": "02718630adb60ddd7d5c4ff68208c3c78511e328ad5e1d401952b7a53b597f0c",
+      "generation_record": "../film-title-examples/prompts.json"
+    },
+    {
+      "id": "F08",
+      "name": "瘦骨残墨",
+      "family": "细笔私写",
+      "structure": "瘦长字身和稀墨笔缘，细竖承担重心，短笔有残缺纤维但不丢偏旁。",
+      "use_for": "冬日、独白、留白镜头",
+      "nearest": "F28",
+      "difference": "残墨是连续笔画的墨量变化；断线钢笔保留有意提笔间隙。",
+      "title": "远山没有回信",
+      "image": "../film-title-examples/08.png",
+      "status": "early_exploration",
+      "size": [
+        1935,
+        813
+      ],
+      "sha256": "57012957867c034f4ef52e6cd7c02128c8bf422e0677c6858a2fe26bf038c8ca",
+      "generation_record": "../film-title-examples/prompts.json"
+    },
+    {
+      "id": "F09",
+      "name": "尖角劈笔",
+      "family": "刷写笔势",
+      "structure": "尖楔厚起笔突然劈成细线，内角锐利，实墨块与长斜锋形成强反差。",
+      "use_for": "午夜、焦虑、青年群像",
+      "nearest": "F15",
+      "difference": "劈笔的墨块更厚重；偏锋长线把大部分重量留在极细拖笔。",
+      "title": "凌晨还有人醒着",
+      "image": "../film-title-examples/09.png",
+      "status": "early_exploration",
+      "size": [
+        1931,
+        814
+      ],
+      "sha256": "e0913da98d6a8f40ae3cd6eed187bfeb98ee77d66c6a6cb4953703a4321e8984",
+      "generation_record": "../film-title-examples/prompts.json"
+    },
+    {
+      "id": "F10",
+      "name": "饱墨圆锋",
+      "family": "圆笔湿写",
+      "structure": "圆头饱墨起笔，宽弯与细尾明显，内腔较开，墨缘清晰。",
+      "use_for": "海边、缓慢叙事",
+      "nearest": "F27",
+      "difference": "圆锋仍有毛笔提按；圆头记号整体笔宽更接近恒定。",
+      "title": "等潮水说完",
+      "image": "../film-title-examples/10.png",
+      "status": "early_exploration",
+      "size": [
+        1931,
+        814
+      ],
+      "sha256": "43f76ebc0efa9779179ec5d2422e5d9a6ec0dc031ab3014b80110846766a8990",
+      "generation_record": "../film-title-examples/prompts.json"
+    },
+    {
+      "id": "F11",
+      "name": "日记硬笔",
+      "family": "细笔私写",
+      "structure": "个人随笔式细硬笔，部件宽窄不等，急停、轻微复笔与偏心字腔共同定形。",
+      "use_for": "室内日常、私密记忆",
+      "nearest": "F01",
+      "difference": "硬笔由线条行进构骨，避免用毛笔针锋统一收尾。",
+      "title": "把日子写慢一点",
+      "image": "selected/F11.png",
+      "status": "selected_original",
+      "size": [
+        1930,
+        815
+      ],
+      "sha256": "4028b9866a81c80747319d2189a2cff07c0a55703ed86281ead04ef47bb63a62",
+      "generation_record": "selected-prompts.json"
+    },
+    {
+      "id": "F12",
+      "name": "彩绘拼块",
+      "family": "块面印刻",
+      "structure": "平头色块拼成汉字，部分转角露出细线骨架，方块与歪角相互嵌套。",
+      "use_for": "青春喜剧、明亮街景",
+      "nearest": "F24",
+      "difference": "拼块保留直边和开放关节；软角胶刻由圆钝厚短块构成。",
+      "title": "今天先不回家",
+      "image": "selected/F12.png",
+      "status": "selected_original",
+      "size": [
+        1930,
+        815
+      ],
+      "sha256": "7b2133d319ee62c7630b31e6e2f375cd7f4fdfd187eaa700f4ccc57e7f3a1855",
+      "generation_record": "selected-prompts.json"
+    },
+    {
+      "id": "F13",
+      "name": "粉笔拙块",
+      "family": "粉蜡媒介",
+      "structure": "宽胖粉笔填色，孔隙边缘、偏心内腔，字块挤压成稚拙轮廓。",
+      "use_for": "校园、没说出口的对白",
+      "nearest": "F35",
+      "difference": "粉笔以实心宽块为主；蜡笔重描以露底的多条反复线构笔。",
+      "title": "夏天欠我一句话",
+      "image": "selected/F13.png",
+      "status": "selected_original",
+      "size": [
+        1920,
+        819
+      ],
+      "sha256": "08d43b8468f1ec7d64d63a5ab5a316c106dfd59d2c7a6acc4bed04c07764439a",
+      "generation_record": "selected-prompts.json"
+    },
+    {
+      "id": "F14",
+      "name": "切面混写",
+      "family": "块面印刻",
+      "structure": "同一字组中结合手切角面块字和尖细断刷，主次层级由两种笔形相接构成。",
+      "use_for": "都市夜行、冷暖玻璃",
+      "nearest": "F36",
+      "difference": "混写允许两套笔性相接；剪口留桥全组遵守同一切口结构。",
+      "title": "凌晨两点的蓝",
+      "image": "selected/F14.png",
+      "status": "selected_original",
+      "size": [
+        1933,
+        813
+      ],
+      "sha256": "1cc82ff65664c30f90a7d37a886f0f0d68fb66804438dc3189e670f067c5f2d4",
+      "generation_record": "selected-prompts.json"
+    },
+    {
+      "id": "F15",
+      "name": "偏锋长线",
+      "family": "刷写笔势",
+      "structure": "偏锋极细拖线配少数厚墨起点，长笔有折落与险峻转向，内腔轻而疏。",
+      "use_for": "旧城、巷道、奇异短片",
+      "nearest": "F09",
+      "difference": "偏锋重在细线的行进；劈笔重在厚墨与尖楔的冲突。",
+      "title": "风从旧楼穿过",
+      "image": "selected/F15.png",
+      "status": "selected_original",
+      "size": [
+        1934,
+        813
+      ],
+      "sha256": "0fe545a5d8f97ed371eb704683ce3d719ee07ad05aeedee2be98a71a284b8a1e",
+      "generation_record": "selected-prompts.json"
+    },
+    {
+      "id": "F16",
+      "name": "粗凿字块",
+      "family": "块面印刻",
+      "structure": "刀凿般粗厚字块，破角与锯齿边，内部负形短促不均，重心互抵。",
+      "use_for": "悬疑、工业、紧张情绪",
+      "nearest": "F04",
+      "difference": "粗凿用切口和裂角构骨，避免只把密叠宽笔换成红色。",
+      "title": "第七盏灯",
+      "image": "selected/F16.png",
+      "status": "selected_original",
+      "size": [
+        1933,
+        814
+      ],
+      "sha256": "99e91bbeb9b97eb93d304158260c43087e15840fd1e8f8824986c5ebb3741f2d",
+      "generation_record": "selected-prompts.json"
+    },
+    {
+      "id": "F17",
+      "name": "野笔干刷",
+      "family": "刷写笔势",
+      "structure": "按下即提的开张粗刷，大块实墨与断裂纤维并列，短笔骤停、外轮廓强烈。",
+      "use_for": "山野、秋日、公路",
+      "nearest": "F05",
+      "difference": "野笔向外开张；回锋飞白有字内回折和回环收束。",
+      "title": "山路拐进秋天",
+      "image": "selected/F17.png",
+      "status": "selected_original",
+      "size": [
+        1934,
+        813
+      ],
+      "sha256": "e658cf9c97c03b7e4a9ba12b515762769b441bea23e639d04cf334ccb0d96c82",
+      "generation_record": "selected-prompts.json"
+    },
+    {
+      "id": "F18",
+      "name": "窄骨衬线",
+      "family": "字骨重构",
+      "structure": "窄长内腔、细横与较实的竖笔，小三角收端不完全一致，重心轻而直。",
+      "use_for": "文学片、雨后留白",
+      "nearest": "F26",
+      "difference": "窄骨比扁厚铅字更高、更轻，衬线较小且非等宽敲印。",
+      "title": "雨停在八月",
+      "image": "selected/F18.png",
+      "status": "selected_original",
+      "size": [
+        1931,
+        814
+      ],
+      "sha256": "749ad5d5745cba51fca841fdb238c586300b3b18452268d166c32ab21090c553",
+      "generation_record": "selected-prompts.json"
+    },
+    {
+      "id": "F19",
+      "name": "水痕湿笔",
+      "family": "圆笔湿写",
+      "structure": "饱满湿墨边轻微渗开，圆弯与细小墨点相接，局部轻线从字脚延续。",
+      "use_for": "水边、夜游、青春",
+      "nearest": "F10",
+      "difference": "水痕由湿缘与墨点构成；饱墨圆锋强调清晰边缘和提按。",
+      "title": "浪花替我回答",
+      "image": "selected/F19.png",
+      "status": "selected_original",
+      "size": [
+        1933,
+        813
+      ],
+      "sha256": "2cde8ee902899b4706ce58ca5a596257b1a63ec61869ece7e8c9d1ae4b8118ba",
+      "generation_record": "selected-prompts.json"
+    },
+    {
+      "id": "F20",
+      "name": "绕线怪字",
+      "family": "连写异形",
+      "structure": "细圆线把字的局部绕成大小不一的回环，重描、急停与小墨团保留私人习惯。",
+      "use_for": "孤独夜间、怪趣短片",
+      "nearest": "F21",
+      "difference": "绕线是细线和异常回环；招牌连笔是宽扁漆笔与细连筋。",
+      "title": "月亮晚点来",
+      "image": "selected/F20.png",
+      "status": "selected_original",
+      "size": [
+        1930,
+        815
+      ],
+      "sha256": "7105119a7badd8c400dceeba2f136eb224ef1101a6607dd4626198b4aeaeb202",
+      "generation_record": "selected-prompts.json"
+    },
+    {
+      "id": "F21",
+      "name": "招牌连笔",
+      "family": "连写异形",
+      "structure": "宽扁漆笔形成厚字身，字脚通过细连筋接住相邻字，内腔歪而开。",
+      "use_for": "街角、小店、日常片",
+      "nearest": "F20",
+      "difference": "用宽厚字身和细连筋区分细线绕写，不把相邻字糊为一团。",
+      "title": "街口那家还亮着",
+      "image": "new-20/F21.png",
+      "status": "new_draft",
+      "size": [
+        1935,
+        813
+      ],
+      "sha256": "b040f6569d30b8186f98aac1e43dff9f07fe2637ec9d925e9a00327173fe1b06",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F22",
+      "name": "残印邮戳",
+      "family": "块面印刻",
+      "structure": "近等宽短粗字骨配圆钝方口，局部压力不足留下缺墨，字身完整。",
+      "use_for": "邮寄、渡口、回忆",
+      "nearest": "F26",
+      "difference": "邮戳偏无衬线残印；铅字有清楚的矩形齿脚和扁厚敲印骨架。",
+      "title": "寄往没有人的岛",
+      "image": "new-20/F22.png",
+      "status": "new_draft",
+      "size": [
+        1935,
+        813
+      ],
+      "sha256": "06ce645306d1f120aefbddf4ce0b3a1b6abd39cecd617f3215e790799c779d04",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F23",
+      "name": "窄黑竖骨",
+      "family": "字骨重构",
+      "structure": "无衬线窄长字身，粗竖、极短横与压窄日口，字肩高低不齐。",
+      "use_for": "汽车站、城市、紧张片",
+      "nearest": "F18",
+      "difference": "窄黑用厚实无衬线竖骨；窄骨衬线用细横和三角端头。",
+      "title": "最后一班向北",
+      "image": "new-20/F23.png",
+      "status": "new_draft",
+      "size": [
+        1935,
+        813
+      ],
+      "sha256": "b93b1e26a16676886e39fd98a9265731d8b51822927e38756227dd3a6661c590",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F24",
+      "name": "软角胶刻",
+      "family": "块面印刻",
+      "structure": "圆钝厚短块组成稚拙汉字，偏心小内腔，边缘保留软胶切口。",
+      "use_for": "小镇、童趣、梦境",
+      "nearest": "F12",
+      "difference": "软胶的短块和圆角区别于彩绘拼块的直边与露线转角。",
+      "title": "小镇借我一场梦",
+      "image": "new-20/F24.png",
+      "status": "new_draft",
+      "size": [
+        1935,
+        813
+      ],
+      "sha256": "5545f98c356fabdd420c4fbd2e9816015aa05e2b94da7be40ede8af67a074716",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F25",
+      "name": "空心双线",
+      "family": "点线空构",
+      "structure": "笔画仅用内外两条不均匀轮廓界定，笔画内部与字腔均透出背景。",
+      "use_for": "车窗、风、透明空间",
+      "nearest": "F28",
+      "difference": "空心必须有双轮廓围出笔画宽度；断线钢笔是单根细线。",
+      "title": "把风留在窗外",
+      "image": "new-20/F25.png",
+      "status": "new_draft",
+      "size": [
+        1934,
+        813
+      ],
+      "sha256": "aace9d5d1315930b1254ee83262ebe31383df83feb4e5ba44acc3eb14559a013",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F26",
+      "name": "铅字错位",
+      "family": "字骨重构",
+      "structure": "扁厚近等宽字身，粗短矩形衬线、机械横线与逐字基线偏移并存。",
+      "use_for": "旧信、旧物、年代片",
+      "nearest": "F18",
+      "difference": "扁厚铅字的齿脚和敲印结构区别于瘦长三角衬线。",
+      "title": "旧信还没拆开",
+      "image": "new-20/F26.png",
+      "status": "new_draft",
+      "size": [
+        1935,
+        813
+      ],
+      "sha256": "578a0ca3454a05a2c022f0ed31f82247f84e94812e98607cbb5062988bcb7c32",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F27",
+      "name": "圆头记号",
+      "family": "圆笔湿写",
+      "structure": "基本恒宽的圆头记号笔，胖端头和慢转圆角，内腔靠挤压产生变化。",
+      "use_for": "便利店、晴天、轻喜剧",
+      "nearest": "F10",
+      "difference": "保持较恒定笔宽，避免毛笔由粗到细的整套提按。",
+      "title": "等你经过便利店",
+      "image": "new-20/F27.png",
+      "status": "new_draft",
+      "size": [
+        1935,
+        813
+      ],
+      "sha256": "6cfaff3575557d1b97b61d520a31aaa04b134708a21648daf14c6a3ef000607f",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F28",
+      "name": "断线钢笔",
+      "family": "细笔私写",
+      "structure": "细硬单线骨架，尖角多，笔画中段或关节留下有意窄小提笔间隙。",
+      "use_for": "桥下、步行、轻声对白",
+      "nearest": "F08",
+      "difference": "间隙来自抬笔，不能只在连续毛笔笔画边缘做残墨。",
+      "title": "我们在桥下散步",
+      "image": "new-20/F28.png",
+      "status": "new_draft",
+      "size": [
+        1935,
+        813
+      ],
+      "sha256": "669c8a6c7e04a956707fba7b4c5345a3c6dff994eb9547fd1e9ee55d02f4fb5a",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F29",
+      "name": "竹节窄骨",
+      "family": "字骨重构",
+      "structure": "极窄连续直竖配轻横，少数关节形成短方节，字内留白瘦而高。",
+      "use_for": "竹影、老宅、清淡自然",
+      "nearest": "F06",
+      "difference": "直骨与有节关节区别于自然弯曲提按的枯枝细锋。",
+      "title": "竹影替我关了灯",
+      "image": "new-20/F29.png",
+      "status": "new_draft",
+      "size": [
+        1935,
+        813
+      ],
+      "sha256": "d3857576ce0655c2effb6bcbc3fd85e5c632b3fdafb4fd0dc861b05b2f37463c",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F30",
+      "name": "方折篆意",
+      "family": "字骨重构",
+      "structure": "现代可读字用近匀线宽重建方圆回折和迷宫式内腔，横竖有绕角。",
+      "use_for": "河道、旧地、寻人叙事",
+      "nearest": "F31",
+      "difference": "篆意侧重匀线回折；隶意侧重宽扁横势和蚕头挑尾。",
+      "title": "沿着旧河找你",
+      "image": "new-20/F30.png",
+      "status": "new_draft",
+      "size": [
+        1933,
+        814
+      ],
+      "sha256": "73e14814d680d30fec67013d3e8792dc09f998f88fccb7989b5659197b6a0825",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F31",
+      "name": "扁隶挑尾",
+      "family": "字骨重构",
+      "structure": "宽扁字身、短厚竖笔，横笔钝起后轻挑尾，口部被压扁但完整。",
+      "use_for": "门牌、老巷、岁月",
+      "nearest": "F30",
+      "difference": "隶意用横势与钝起挑尾，不能退回匀线迷宫骨架。",
+      "title": "北风吹旧了门牌",
+      "image": "new-20/F31.png",
+      "status": "new_draft",
+      "size": [
+        1935,
+        813
+      ],
+      "sha256": "88f74e12c1f8926642532a0f4c597ad314ea3315d81da9f0fd5fdd58a8230d9c",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F32",
+      "name": "反骨涂写",
+      "family": "连写异形",
+      "structure": "毡笔的直线短折与反复划痕重建部件，局部挤出字格，急停收笔。",
+      "use_for": "青年、告别、城市情绪",
+      "nearest": "F20",
+      "difference": "以直线、反划和改写习惯区别于大小圆环绕线，不整字涂掉。",
+      "title": "今天不想说再见",
+      "image": "new-20/F32.png",
+      "status": "new_draft",
+      "size": [
+        1933,
+        814
+      ],
+      "sha256": "28f94ca0b143bb307485329d2b70f21164832e96464e68cc2cc1ab1cce8cfd89",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F33",
+      "name": "丝带扁笔",
+      "family": "刷写笔势",
+      "structure": "平笔截面方，斜向压转形成带状宽窄，折角短顿，保持平面墨迹。",
+      "use_for": "霞光、公路、流动情绪",
+      "nearest": "F02",
+      "difference": "以扁笔转面而非尖头突然提锋控制宽窄，不画立体丝带。",
+      "title": "晚霞把路涂红",
+      "image": "new-20/F33.png",
+      "status": "new_draft",
+      "size": [
+        1935,
+        813
+      ],
+      "sha256": "18cf6108c43fff64bb6533912f27683e10cf38e60503904ce58693daf2a85616",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F34",
+      "name": "疏漏点阵",
+      "family": "点线空构",
+      "structure": "离散圆墨点构成整根笔画，点径点距稍不齐，少量漏点不破坏字骨。",
+      "use_for": "电话、雨声、年代感",
+      "nearest": "F37",
+      "difference": "点阵用点成笔；缝线用有方向的短线与转角结点。",
+      "title": "雨声从电话里来",
+      "image": "new-20/F34.png",
+      "status": "new_draft",
+      "size": [
+        1934,
+        813
+      ],
+      "sha256": "022f1b7737f1ddb84416a7c19075d668d827e9c0de7d851b9d131579624202ef",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F35",
+      "name": "蜡笔重描",
+      "family": "粉蜡媒介",
+      "structure": "两三条不平行蜡笔线反复构成每笔，保留露底和重描，外框故意偏。",
+      "use_for": "夏日、校园、私人涂画",
+      "nearest": "F13",
+      "difference": "以细中线反复重描区别于实心宽胖粉笔填块。",
+      "title": "想把夏天画歪",
+      "image": "new-20/F35.png",
+      "status": "new_draft",
+      "size": [
+        1935,
+        813
+      ],
+      "sha256": "c69da8b8ba028a9f3583ed28ea6b545a69662813a394539ec223624375248fa0",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F36",
+      "name": "剪口留桥",
+      "family": "块面印刻",
+      "structure": "长直剪口和不规则切角构成平面字块，内腔有意留下小桥和切口。",
+      "use_for": "风、屋顶、轻微撕裂感",
+      "nearest": "F14",
+      "difference": "全组采用切口留桥结构，不靠两套笔形混排或实体贴纸。",
+      "title": "被风撕开的下午",
+      "image": "new-20/F36.png",
+      "status": "new_draft",
+      "size": [
+        1934,
+        813
+      ],
+      "sha256": "01f31eaad4c044b8d4e76997226ca42bd2ed61cb872131784d05c72693968f5d",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F37",
+      "name": "缝线断笔",
+      "family": "点线空构",
+      "structure": "长短不齐、略歪的针脚短线构笔，转角有小结点，少量连续线接字。",
+      "use_for": "晚安、裁缝铺、轻暖记忆",
+      "nearest": "F34",
+      "difference": "针脚有方向和线长，不能用一颗颗圆点替代或画厚绳3D。",
+      "title": "你把晚安缝进风里",
+      "image": "new-20/F37.png",
+      "status": "new_draft",
+      "size": [
+        1935,
+        813
+      ],
+      "sha256": "c98c525ba9c1374bc99fd5b29494b49091f86a8a4879dcc5c7306b8fb3028907",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F38",
+      "name": "排刷梳纹",
+      "family": "刷写笔势",
+      "structure": "每个宽笔画由数条随笔势弯转的平行细轨构成，轨间直接露底。",
+      "use_for": "海风、屋顶、轻亮镜头",
+      "nearest": "F17",
+      "difference": "排刷的细轨是实际笔画结构；野笔干刷以实墨块和飞白为主。",
+      "title": "海风梳过旧屋顶",
+      "image": "new-20/F38.png",
+      "status": "new_draft",
+      "size": [
+        1934,
+        813
+      ],
+      "sha256": "5f5c49dba4dfa1ca2ad5f5f634c009b18a064202f6f58ba26dc2c9d22fdc9ca0",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F39",
+      "name": "断层错版",
+      "family": "块面印刻",
+      "structure": "完整字骨的一两组笔画或偏旁小幅错层，部件基线错开，断口保持读序。",
+      "use_for": "报亭、夜色、记忆打乱",
+      "nearest": "F22",
+      "difference": "错版移动部件的位置；残印主要改变完整字骨上的着墨。",
+      "title": "这一页被夜色打乱",
+      "image": "new-20/F39.png",
+      "status": "new_draft",
+      "size": [
+        1935,
+        813
+      ],
+      "sha256": "31ebd23b5b78385895888fa1fdd00d9c49248c3210cdc2a61028c95526dd4b9c",
+      "generation_record": "new-prompts.json"
+    },
+    {
+      "id": "F40",
+      "name": "负形留白",
+      "family": "块面印刻",
+      "structure": "不规则墨迹随字外轮廓起伏，整句笔画以负形挖空，露出真实背景。",
+      "use_for": "留白、庭院、缺席叙事",
+      "nearest": "F25",
+      "difference": "负形依赖周围实墨；双线空心靠笔画内外两道轮廓，无大墨场。",
+      "title": "留白的那一天",
+      "image": "new-20/F40.png",
+      "status": "new_draft",
+      "size": [
+        1935,
+        813
+      ],
+      "sha256": "4499a33c0e5d2fc3321a61061ca96c01a9daef287e7e95fbbbc189196ca7aa6a",
+      "generation_record": "new-prompts.json"
+    }
+  ]
+}

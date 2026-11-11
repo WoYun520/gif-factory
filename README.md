@@ -137,15 +137,17 @@
 
 ### 电影片名字形
 
-从故事的情绪出发，把片名、字形、排版、场景与色调一起设计。细节可以长在笔画、字腔和收笔里，英文嵌进字组留白。这里新增 **10 款原创电影片头静帧**，分别呈现青春、雨夜、悬疑、公路、春日、黄昏、雪地与午夜等气质；不计入上面的动态案例数。
+从故事的情绪出发，把片名、字形、排版、场景与色调一起设计。细节长在笔画、字腔和收笔里，英文嵌进字组留白。现有 **40 类字形、40 张横向片头案例**，本次新增 **20 张**。分类按骨架、笔画构造和字腔区分，每类附原图、适用方向及相近类别的区别；静帧不计入动态案例数。
 
-<a href="skills/cinematic-title-lettering/assets/film-title-examples/overview.jpg"><img src="skills/cinematic-title-lettering/assets/film-title-examples/overview.jpg" width="820" alt="十款原创电影片头：晚风经过我、把晴天借给你、晚点再告别、无人应答、风把山路折弯、春天藏在树后、我们慢慢靠岸、远山没有回信、凌晨还有人醒着、等潮水说完"></a>
+<a href="skills/cinematic-title-lettering/assets/style-catalog/previews/new-01.jpg"><img src="skills/cinematic-title-lettering/assets/style-catalog/previews/new-01.jpg" width="820" alt="新增片头上篇 F21–F30：招牌连笔、残印邮戳、窄黑竖骨、软角胶刻、空心双线、铅字错位、圆头记号、断线钢笔、竹节窄骨、方折篆意"></a>
 
-> 用 `$cinematic-title-lettering` 沿用十款基础字稿，设计新的横向电影片头。句子和场景可以重新选，每款保留不同的笔性和构图；让英文、收笔与画面里的光、路、树或潮线形成关系。
+<a href="skills/cinematic-title-lettering/assets/style-catalog/previews/new-02.jpg"><img src="skills/cinematic-title-lettering/assets/style-catalog/previews/new-02.jpg" width="820" alt="新增片头下篇 F31–F40：扁隶挑尾、反骨涂写、丝带扁笔、疏漏点阵、蜡笔重描、剪口留桥、缝线断笔、排刷梳纹、断层错版、负形留白"></a>
 
-本组为参考实拍素材参与生成的设计图，场景经过 AI 重构。已保存十张独立 PNG、总览、基础字稿、提示词与照片来源；新片头为制作示例，尚未逐款确认。
+> 用 `$cinematic-title-lettering` 的 F25 空心双线、F34 疏漏点阵、F37 缝线断笔，各做一张原创横向电影片头。句子和场景可以重新设计，保留三种不同的笔画构造与私人笔迹，让英文和细节依附字组留白。
 
-[片头设计方法与十款原图](skills/cinematic-title-lettering/references/film-title-frames.md) · [生成记录](skills/cinematic-title-lettering/assets/film-title-examples/prompts.json) · [照片来源](skills/cinematic-title-lettering/assets/film-title-examples/source-credits.md) · [电影片名字形 Skill](skills/cinematic-title-lettering/SKILL.md)
+F01–F10 为早期探索，**F11–F20 为已选十款原版**，F21–F40 为新增待选稿。原组 03、04、10 保留原版。F11–F40 使用参考图研究笔形与字图关系，摄影式场景重新生成；公开包不分发第三方参考原图。40 类是创作方向，不是四十套完整字库。
+
+[40 类目录与逐张原图](skills/cinematic-title-lettering/references/style-catalog.md) · [已选十款原版总览](skills/cinematic-title-lettering/assets/style-catalog/previews/selected-01.jpg) · [片头设计方法](skills/cinematic-title-lettering/references/film-title-frames.md) · [新增二十款生成记录](skills/cinematic-title-lettering/assets/style-catalog/new-prompts.json) · [来源与版本](skills/cinematic-title-lettering/assets/style-catalog/source-notes.md) · [电影片名字形 Skill](skills/cinematic-title-lettering/SKILL.md)
 
 <details>
 <summary>更多排法与三幅竖列宣传图</summary>

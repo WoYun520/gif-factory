@@ -21,7 +21,7 @@ Human-facing name: **GIF 工厂 / GIF Factory**. Keep the existing `$pixel-gif-s
 | 独立聊天表情包 | Sticker workflow below |
 | 收藏卡／双身份变画，主要展示两幅图 | [Lenticular cards](references/lenticular.md) |
 | 演出预告／角色主视觉／人物与字体联动／P5 式整体融合海报 | [Dynamic posters](references/dynamic-posters.md) |
-| 电影片名／原创电影片头／字与场景融合／自定义字标／实拍三联宣传图 | [电影片名字形 Skill](skills/cinematic-title-lettering/SKILL.md) |
+| 电影片名／原创电影片头／40 类字形／字与场景融合／自定义字标／实拍三联宣传图 | [电影片名字形 Skill](skills/cinematic-title-lettering/SKILL.md)，分类与原图见 [F01–F40](skills/cinematic-title-lettering/references/style-catalog.md) |
 | 吉祥物带动产品、包装与品牌的短片 | [Brand films](references/brand-film.md) |
 | 动态绘本／固定画面叙事／页内单次动作／翻书故事 | [Compact storybooks](references/storybook.md), then [standalone Skill](skills/compact-storybook/SKILL.md) |
 
@@ -35,7 +35,7 @@ For **compact storybooks**, use the standalone storybook Skill: preserve the req
 
 For **dynamic artistic signatures**, integrate the motif into letter anatomy; preserve the accepted two-gesture rhythm, roughly one-second pause, clean blank background, and decelerating final terminal. Default to flat handwritten ink, no metallic material, shake or recoil. Inspect independently separated stroke layers and body-to-tail handoff. Read the signature route instead of applying sticker atlases or whole-sprite bounce.
 
-For **cinematic titles**, design the wording, lettering, layout, scene and palette together when a complete title frame is requested. Use the latest selected lettering references; preserve different stroke personalities across a requested series. Read [the film-frame workflow and ten examples](skills/cinematic-title-lettering/references/film-title-frames.md). “小红书式设计感” alone does not change a widescreen film-title request into a portrait editorial cover. Label static frames, original photographs and AI-reconstructed scenes accurately.
+For **cinematic titles**, design the wording, lettering, layout, scene and palette together when a complete title frame is requested. Use the latest selected lettering references; preserve different stroke personalities and purposeful personal quirks across a requested series. Read [the film-frame workflow](skills/cinematic-title-lettering/references/film-title-frames.md) and, for style selection or a multi-style series, [the 40-category catalog](skills/cinematic-title-lettering/references/style-catalog.md). F01–F10 are early studies, F11–F20 are the ten selected originals, and F21–F40 are new drafts. Lettering categories describe construction, not color changes or complete installable fonts. “小红书式设计感” alone does not change a widescreen film-title request into a portrait editorial cover. Label static frames, original photographs and AI-reconstructed scenes accurately.
 
 The remaining sections describe the **chat-sticker workflow**. For a lenticular-card, dynamic-poster, brand-film, storybook, signature or cinematic title brief, use the selected workflow above.
 
