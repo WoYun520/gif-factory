@@ -137,13 +137,28 @@
 
 ### 电影片名字形
 
-从自己的片名和故事出发，设计字形、笔触和排布。可以单独导出字标，也可以配实拍照片，把三幅横画面排成一张白边竖版宣传图。
+从故事的情绪出发，把片名、字形、排版、场景与色调一起设计。细节可以长在笔画、字腔和收笔里，英文嵌进字组留白。这里新增 **10 款原创电影片头静帧**，分别呈现青春、雨夜、悬疑、公路、春日、黄昏、雪地与午夜等气质；不计入上面的动态案例数。
+
+<a href="skills/cinematic-title-lettering/assets/film-title-examples/overview.jpg"><img src="skills/cinematic-title-lettering/assets/film-title-examples/overview.jpg" width="820" alt="十款原创电影片头：晚风经过我、把晴天借给你、晚点再告别、无人应答、风把山路折弯、春天藏在树后、我们慢慢靠岸、远山没有回信、凌晨还有人醒着、等潮水说完"></a>
+
+> 用 `$cinematic-title-lettering` 沿用十款基础字稿，设计新的横向电影片头。句子和场景可以重新选，每款保留不同的笔性和构图；让英文、收笔与画面里的光、路、树或潮线形成关系。
+
+本组为参考实拍素材参与生成的设计图，场景经过 AI 重构。已保存十张独立 PNG、总览、基础字稿、提示词与照片来源；新片头为制作示例，尚未逐款确认。
+
+[片头设计方法与十款原图](skills/cinematic-title-lettering/references/film-title-frames.md) · [生成记录](skills/cinematic-title-lettering/assets/film-title-examples/prompts.json) · [照片来源](skills/cinematic-title-lettering/assets/film-title-examples/source-credits.md) · [电影片名字形 Skill](skills/cinematic-title-lettering/SKILL.md)
+
+<details>
+<summary>更多排法与三幅竖列宣传图</summary>
+
+也可给一张参考图和新片名，或从五种排法选一个编号。根据新字重新安排主字、长笔和留白。需要独立字标、原片叠字或三幅竖列时按对应交付制作。
+
+<a href="skills/cinematic-title-lettering/assets/layout-examples/overview.jpg"><img src="skills/cinematic-title-lettering/assets/layout-examples/overview.jpg" width="560" alt="五款电影片名字标，展示波线托底、两头撑开、两行错层、长笔斜穿和大字抱两行"></a>
 
 <a href="skills/cinematic-title-lettering/assets/three-panel-example/preview.jpg"><img src="skills/cinematic-title-lettering/assets/three-panel-example/preview.jpg" width="420" alt="风经过的坐标、潮汐时差、山外有信号，三幅实拍宣传图"></a>
 
-> 用 `$cinematic-title-lettering` 为《夏日公路》设计字标。让横画带一点向前的动势，副题用 SUMMER ROAD，配一张傍晚公路实拍。
+[五种排法与换字方法](skills/cinematic-title-lettering/references/layout-recipes.md) · [三联制作方法](skills/cinematic-title-lettering/references/promo-triptychs.md) · [三联照片来源](skills/cinematic-title-lettering/assets/three-panel-example/photo-credits.md)
 
-[电影片名字形 Skill](skills/cinematic-title-lettering/SKILL.md) · [三联制作方法](skills/cinematic-title-lettering/references/promo-triptychs.md) · [实拍照片来源](skills/cinematic-title-lettering/assets/three-panel-example/photo-credits.md)
+</details>
 
 ### 动态艺术签名
 

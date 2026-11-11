@@ -2,6 +2,14 @@
 
 [返回首页](README.md) · [按风格浏览](styles/README.md) · [使用指南](GUIDE.md)
 
+## 原创电影片头 · 十款静帧
+
+片名、字形、排版、场景与情绪一同设计，十款各有不同的笔性和构图。本组为参考实拍素材经 AI 重构的静帧制作示例，尚未逐款确认，不计入动态案例数量。
+
+<a href="skills/cinematic-title-lettering/assets/film-title-examples/overview.jpg"><img src="skills/cinematic-title-lettering/assets/film-title-examples/overview.jpg" alt="十款原创电影片头总览" width="720"></a>
+
+[逐款原图与设计关系](skills/cinematic-title-lettering/references/film-title-frames.md) · [制作记录](skills/cinematic-title-lettering/assets/film-title-examples/prompts.json) · [照片来源](skills/cinematic-title-lettering/assets/film-title-examples/source-credits.md)
+
 ## 表情包展厅
 
 这里有 **244 张已有示例**，还有 **2 张刚重做的动作试样，等使用者确认**。点击动图可以看原尺寸。大部分约两秒一轮，部分动作示例会短一些。另有 **9 张电子光栅卡**、**13 张动态海报**，和品牌短片一起单独分类，不计入聊天表情包数量。

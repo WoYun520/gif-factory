@@ -42,7 +42,7 @@
 | 漫画印刷整体融合 | 9 张 | 角色宣传、活动主视觉、演出海报 | [打开风格](comic-fusion/STYLE.md) |
 | 动态艺术签名 | 19 款 | 名字、物体与渐变融合的两笔书写签名 | [打开风格](dynamic-signatures/STYLE.md) |
 
-电影片名字形从片名和题材出发设计字标，可搭配实拍照片做三联宣传图。[制作方法](../skills/cinematic-title-lettering/SKILL.md) · [看三联宣传图](../README.md#cinematic-title-lettering)
+电影片名字形把片名、笔形、排版、镜头和色调一起设计，已收录十款原创横向片头静帧；也可制作独立字标或明确要求的三联宣传图。静帧独立展示，不计入 GIF 动态案例数。[片头方法与十款案例](../skills/cinematic-title-lettering/references/film-title-frames.md) · [Skill](../skills/cinematic-title-lettering/SKILL.md) · [看总览](../README.md#cinematic-title-lettering)
 
 ## 扩展应用：品牌短片
 
