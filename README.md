@@ -137,6 +137,21 @@
 
 名字、物体和渐变色融进同一套手写笔势。上方快划、停约一秒，下方快写，末端缓慢收锋；无底印、无轻震、无回弹。
 
+#### 乐器入字与粒子成字
+
+让乐器和字共享笔画。星屑向「星」的琴弦聚拢，雨丝落入「雨」的笔画，粒子落到哪里，墨迹就从哪里长出来。
+
+<table>
+<tr>
+<td width="50%" valign="top"><a href="skills/dynamic-art-signature/assets/media/instrument-semantic/Instrument_Semantic_Nine_Grid.mp4"><img src="docs/previews/instrument-signatures-grid-1.gif" alt="第一组乐器入字九宫格动态预览" width="360"></a><br><a href="skills/dynamic-art-signature/assets/media/instrument-semantic/Instrument_Semantic_Nine_Grid.mp4">第一组 · 原版 MP4</a></td>
+<td width="50%" valign="top"><a href="skills/dynamic-art-signature/assets/media/instrument-semantic/New_Instrument_Signatures_Nine_Grid.mp4"><img src="docs/previews/instrument-signatures-grid-2.gif" alt="第二组乐器入字九宫格动态预览" width="360"></a><br><a href="skills/dynamic-art-signature/assets/media/instrument-semantic/New_Instrument_Signatures_Nine_Grid.mp4">第二组 · 原版 MP4</a></td>
+</tr>
+</table>
+
+可复现案例：[枕星·竖琴 GIF](skills/dynamic-art-signature/assets/media/instrument-semantic/Zhenxing-Harp.gif) · [雨巷·口琴 GIF](skills/dynamic-art-signature/assets/media/instrument-semantic/Yuxiang-Harmonica.gif) · [素材、配置与渲染步骤](skills/dynamic-art-signature/references/instrument-semantic.md#复现单款)
+
+**英文动态签名九宫格**
+
 <a href="skills/dynamic-art-signature/assets/media/nine-grid.gif"><img src="skills/dynamic-art-signature/assets/media/nine-grid.png" alt="九款原创动态艺术签名，点击播放" width="720"></a>
 
 [▶ 播放九宫格](skills/dynamic-art-signature/assets/media/nine-grid.gif) · [风格与单款案例](styles/dynamic-signatures/STYLE.md) · [动态签名 Skill](skills/dynamic-art-signature/SKILL.md)
@@ -146,8 +161,6 @@
 <a href="skills/dynamic-art-signature/assets/media/chinese/nine-grid.gif"><img src="skills/dynamic-art-signature/assets/media/chinese/nine-grid.png" alt="中文草书动态签名九宫格" width="720"></a>
 
 [▶ 中文九宫格](skills/dynamic-art-signature/assets/media/chinese/nine-grid.gif) · [三字卧云间](skills/dynamic-art-signature/assets/media/chinese/Woyunjian.gif) · [中文制作规则与案例](skills/dynamic-art-signature/references/chinese.md)
-
-[乐器入字与粒子成字 · 两组九宫格与复现示例](skills/dynamic-art-signature/references/instrument-semantic.md)
 
 ## 怎么用
 
