@@ -147,6 +147,8 @@
 
 [▶ 中文九宫格](skills/dynamic-art-signature/assets/media/chinese/nine-grid.gif) · [三字卧云间](skills/dynamic-art-signature/assets/media/chinese/Woyunjian.gif) · [中文制作规则与案例](skills/dynamic-art-signature/references/chinese.md)
 
+[乐器入字与粒子成字 · 两组九宫格与复现示例](skills/dynamic-art-signature/references/instrument-semantic.md)
+
 ## 怎么用
 
 在能生成图片、运行脚本的 Codex 里安装：

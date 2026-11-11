@@ -30,3 +30,7 @@
 ![中文九宫格](../../skills/dynamic-art-signature/assets/media/chinese/nine-grid.gif)
 
 [三字「卧云间」](../../skills/dynamic-art-signature/assets/media/chinese/Woyunjian.gif) · [中文规则与可复现案例](../../skills/dynamic-art-signature/references/chinese.md)
+
+## 乐器入字与粒子成字
+
+竖琴框沿着「星」的外弧，星屑向琴弦和笔画凝聚。口琴进入「雨」的上部横画，雨丝落入「雨」字。查看[两组定稿和复现示例](../../skills/dynamic-art-signature/references/instrument-semantic.md)。

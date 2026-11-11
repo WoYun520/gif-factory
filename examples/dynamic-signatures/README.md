@@ -37,3 +37,9 @@
 | 卧云间 | [播放](../../skills/dynamic-art-signature/assets/media/chinese/Woyunjian.gif) | [视频](../../skills/dynamic-art-signature/assets/media/chinese/Woyunjian.mp4) | [原图](../../skills/dynamic-art-signature/assets/chinese/Woyunjian.png) · [配置](../../skills/dynamic-art-signature/assets/chinese/Woyunjian.json) |
 
 用户选择中文草书方向，并接受三字「卧云间」；扩展九宫格用于展示设计范围，不据此推断每款逐项认可。[中文设计与渲染规则](../../skills/dynamic-art-signature/references/chinese.md)。
+
+## 乐器入字与粒子成字
+
+- [第一组九宫格 MP4](../../skills/dynamic-art-signature/assets/media/instrument-semantic/Instrument_Semantic_Nine_Grid.mp4) · [封面](../../skills/dynamic-art-signature/assets/media/instrument-semantic/Instrument_Semantic_Nine_Grid.png)
+- [第二组九宫格 MP4](../../skills/dynamic-art-signature/assets/media/instrument-semantic/New_Instrument_Signatures_Nine_Grid.mp4) · [封面](../../skills/dynamic-art-signature/assets/media/instrument-semantic/New_Instrument_Signatures_Nine_Grid.png)
+- [枕星·竖琴 GIF](../../skills/dynamic-art-signature/assets/media/instrument-semantic/Zhenxing-Harp.gif) · [雨巷·口琴 GIF](../../skills/dynamic-art-signature/assets/media/instrument-semantic/Yuxiang-Harmonica.gif) · [源素材与复现步骤](../../skills/dynamic-art-signature/references/instrument-semantic.md)

@@ -1,6 +1,6 @@
 ---
 name: dynamic-art-signature
-description: Design original handwritten artistic signatures from a name, one object and a gradient palette, then render stroke-writing MP4/GIF animations and nine-grid collections. Use for 动态签名、艺术签名、名字＋物体＋渐变、两笔快写、书法收锋 or signature-grid requests. Supports Latin names, 中文两字/三字草书与行书, new designs and timing repairs; does not replace ordinary document signing or character-sticker workflows.
+description: Design original handwritten artistic signatures from a name, one object and a gradient palette, then render stroke-writing MP4/GIF animations and nine-grid collections. Use for 动态签名、艺术签名、名字＋物体＋渐变、两笔快写、书法收锋、乐器入字、粒子按字意成字 or signature-grid requests. Supports Latin names, 中文两字/三字草书与行书, new designs and timing repairs; does not replace ordinary document signing or character-sticker workflows.
 ---
 
 # 动态艺术签名
@@ -21,6 +21,12 @@ Use [the nine examples](references/examples.md) for range, not as mandatory temp
 
 Use 草书 as the default for Chinese names in this workflow; honor explicit 行书 or other script requests. Read [Chinese lettering and examples](references/chinese.md) for two- and three-character composition, motif treatment and portable demo configurations. Preserve all requested characters, keep the motif visible, and retain the accepted two-gesture timing when changing script.
 
+## 乐器入字与粒子按字意成字
+
+当用户点名这套玩法或延续已确认的乐器九宫格时，先指定乐器共用的笔画和粒子要形成的目标字。让琴框、琴弦、管身、音孔或钟形直接进入字的轮廓、笔画或留白。粒子的形状、运动方向和落点都由字意决定，粒子落入目标笔画后逐步凝成实字。保留清晰字形、上方独立意象、两段书写和末锋减速。
+
+见[两组九宫格、分层方法与可复现示例](references/instrument-semantic.md)。验收时看片中粒子聚拢、笔画长出和成字后的完整定格。
+
 ## Animate the accepted two-gesture rhythm
 
 Default to a flat opaque charcoal background, 960×640, 60fps MP4, 4-second loop, 25fps GIF. Respect explicit changes.
@@ -35,7 +41,7 @@ Default to a flat opaque charcoal background, 960×640, 60fps MP4, 4-second loop
 | Final tail/terminal | another 0.65–0.72s, progressively slowing |
 | Final hold / loop reset | hold the result, fade ink only during last 0.30s |
 
-Keep the background completely free of future strokes. Composite revealed ink over a clean background; do not dim the full finished artwork underneath the reveal. Never add shake, spring/recoil, particles, glow or audio by default. These were rejected during refinement. An optional effect must be explicitly requested.
+Keep the background completely free of future strokes. Composite revealed ink over a clean background; do not dim the full finished artwork underneath the reveal. Ordinary two-gesture signatures default to no shake, spring/recoil, particles, glow or audio. The requested instrument-and-semantic-particle treatment uses the targeted ink formation described above.
 
 Read [render configuration and safeguards](references/rendering.md). Require Python 3, Pillow, NumPy, SciPy, FFmpeg and ffprobe. Run:
 

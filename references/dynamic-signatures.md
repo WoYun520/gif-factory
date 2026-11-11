@@ -8,3 +8,5 @@
 
 
 支持中英文名字。中文默认草书，可按要求切换行书；两字与三字都需保留完整名字及可见意象。三字沿用两段书写节奏，重新设计排布与末字收锋。详见[中文规则](../skills/dynamic-art-signature/references/chinese.md)。
+
+乐器入字时让乐器和字共享笔画。粒子按字意成字时，为每种粒子设计对应的动势和落笔位置。见[两组定稿九宫格与可复现案例](../skills/dynamic-art-signature/references/instrument-semantic.md)。
