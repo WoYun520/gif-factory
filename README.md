@@ -82,7 +82,16 @@
 
 ## 动态签名
 
-现在支持多种字体，也可以自定义。可以选样例、描述想要的笔画感觉，或直接提供自己的字稿；名字、意象、乐器和配色都能调整。把这些融进同一组笔画，再做快写、停顿、慢收锋或墨迹聚合。
+动态签名分成下面四种。每种都有动图和做法，选喜欢的效果，再换成你的名字、字体和颜色。也可以直接用你提供的字稿。
+
+| 风格 | 主要效果 | 看预览和做法 |
+| --- | --- | --- |
+| 纯文字连笔 | 沿字迹写出名字，配单色或渐变色 | [打开](skills/dynamic-art-signature/references/styles.md#word-only)，新效果，暂未加入 |
+| 意象融字 | 鸟、月亮、植物等融进名字的笔画 | [打开](skills/dynamic-art-signature/references/styles.md#motif-fusion) |
+| 乐器融字 | 琴弦、笛身、音孔成为字的一部分 | [打开](skills/dynamic-art-signature/references/styles.md#instrument-fusion) |
+| 墨迹聚合 | 墨迹碎片移动、聚拢，最后成字 | [打开](skills/dynamic-art-signature/references/styles.md#ink-assembly) |
+
+纯文字连笔是 [@likka-ailive](https://github.com/likka-ailive) 提交的新效果，目前可以先看动图，相关功能还没正式合进仓库，进度见[这次提交](https://github.com/WoYun520/gif-factory/pull/2)。图里的七种颜色都是同一种签名的配色选择。
 
 <a href="skills/dynamic-art-signature/assets/media/multifont/MultiFont_Nine_Grid.mp4"><img src="docs/previews/dynamic-signatures-multifont.gif" alt="九种字体方向的乐器融字动态签名，支持自定义" width="560"></a>
 

@@ -358,6 +358,15 @@
 
 现在支持多种字体，也可以自定义。可以选择书体、描述想要的感觉，或提供自己的字稿；名字、意象、乐器、配色和动效都能调整。
 
+先按风格看效果，再从下面选字稿与案例：
+
+| 风格 | 看什么 | 预览和做法 |
+| --- | --- | --- |
+| 纯文字连笔 | 名字沿笔迹写出，配单色或渐变 | [打开](skills/dynamic-art-signature/references/styles.md#word-only)，新效果，暂未加入 |
+| 意象融字 | 鸟、月亮、植物等融进名字 | [打开](skills/dynamic-art-signature/references/styles.md#motif-fusion) |
+| 乐器融字 | 乐器结构与字共用笔画 | [打开](skills/dynamic-art-signature/references/styles.md#instrument-fusion) |
+| 墨迹聚合 | 笔画碎片移动、聚拢后成字 | [打开](skills/dynamic-art-signature/references/styles.md#ink-assembly) |
+
 ### 多字体动态签名
 
 <a href="skills/dynamic-art-signature/assets/media/multifont/MultiFont_Nine_Grid.mp4"><img src="docs/previews/dynamic-signatures-multifont.gif" alt="九种字体方向的乐器融字动态签名" width="720"></a>

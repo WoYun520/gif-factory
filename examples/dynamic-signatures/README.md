@@ -2,6 +2,12 @@
 
 [制作方法](../../skills/dynamic-art-signature/SKILL.md) · [风格入口](../../styles/dynamic-signatures/STYLE.md)
 
+## 按风格选效果
+
+[纯文字连笔](../../skills/dynamic-art-signature/references/styles.md#word-only) · [意象融字](../../skills/dynamic-art-signature/references/styles.md#motif-fusion) · [乐器融字](../../skills/dynamic-art-signature/references/styles.md#instrument-fusion) · [墨迹聚合](../../skills/dynamic-art-signature/references/styles.md#ink-assembly)
+
+每种都有动图和做法，字体、颜色和动效可以搭配。纯文字连笔是 [@likka-ailive 提交的新效果](https://github.com/WoYun520/gif-factory/pull/2)，目前可以先看动图，相关功能还没正式合进仓库。
+
 ## 多种字体与自定义
 
 现在支持多种字体，也可以自定义。可以提供字稿、字体参考或风格描述，按你的名字、意象、乐器和配色设计。

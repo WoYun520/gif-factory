@@ -30,7 +30,16 @@
 
 ## 动态签名
 
-现在支持多种字体，也可以自定义。名字和物体共用笔画，配渐变色，按当前字形做快写、停顿、慢收锋或墨迹聚合；可以直接提供自己的字稿。
+先选想要的效果，再选字体、配色和动效，也可以直接提供字稿。
+
+| 风格 | 能做什么 | 预览和做法 |
+| --- | --- | --- |
+| 纯文字连笔 | 沿字迹写出名字，配单色或渐变 | [打开](../skills/dynamic-art-signature/references/styles.md#word-only)，新效果，暂未加入 |
+| 意象融字 | 让鸟、月亮、植物等融进笔画 | [打开](../skills/dynamic-art-signature/references/styles.md#motif-fusion) |
+| 乐器融字 | 让琴弦、笛身、音孔与字共用结构 | [打开](../skills/dynamic-art-signature/references/styles.md#instrument-fusion) |
+| 墨迹聚合 | 让墨迹碎片移动、聚拢，再形成完整字稿 | [打开](../skills/dynamic-art-signature/references/styles.md#ink-assembly) |
+
+几种效果可以搭配，比如「瘦金体＋乐器融字＋墨迹聚合」。
 
 [看做法和案例](dynamic-signatures/STYLE.md) · [独立 Skill](../skills/dynamic-art-signature/SKILL.md)
 
