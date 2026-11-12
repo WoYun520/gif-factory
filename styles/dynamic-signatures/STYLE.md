@@ -8,7 +8,7 @@
 
 | 风格 | 看起来是什么样 | 预览和制作说明 |
 | --- | --- | --- |
-| 纯文字连笔 | 名字沿笔迹写出来，保持简洁 | [打开](../../skills/dynamic-art-signature/references/styles.md#word-only)，新效果，暂未加入 |
+| 纯文字连笔 | 名字沿笔迹写出来，保持简洁 | [打开](../../skills/dynamic-art-signature/references/styles.md#word-only) |
 | 意象融字 | 鸟、月亮、植物等与名字共用笔画 | [打开](../../skills/dynamic-art-signature/references/styles.md#motif-fusion) |
 | 乐器融字 | 乐器的琴弦、管身、音孔成为字的一部分 | [打开](../../skills/dynamic-art-signature/references/styles.md#instrument-fusion) |
 | 墨迹聚合 | 笔画碎片移动后回到字里，凝成完整墨迹 | [打开](../../skills/dynamic-art-signature/references/styles.md#ink-assembly) |

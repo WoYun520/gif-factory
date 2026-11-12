@@ -2,7 +2,7 @@
 
 ## Inputs
 
-Resolve exact text, object and gradient. Interpret short prompts such as `Levi + 乌鸦 + 白黑渐变` as a visual design brief. If the user says “自己设计”, choose a cohesive original set instead of asking for all inputs again.
+Resolve the exact text and any requested motif or gradient. Interpret short prompts such as `Levi + 乌鸦 + 白黑渐变` as a visual design brief. For word-only signatures, compose one connected word and keep detached letter marks in the word gesture. If the user says “自己设计”, choose a cohesive original set.
 
 ## Composition
 

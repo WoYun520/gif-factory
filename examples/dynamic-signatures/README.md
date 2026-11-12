@@ -6,7 +6,7 @@
 
 [纯文字连笔](../../skills/dynamic-art-signature/references/styles.md#word-only) · [意象融字](../../skills/dynamic-art-signature/references/styles.md#motif-fusion) · [乐器融字](../../skills/dynamic-art-signature/references/styles.md#instrument-fusion) · [墨迹聚合](../../skills/dynamic-art-signature/references/styles.md#ink-assembly)
 
-每种都有动图和做法，字体、颜色和动效可以搭配。纯文字连笔是 [@likka-ailive 提交的新效果](https://github.com/WoYun520/gif-factory/pull/2)，目前可以先看动图，相关功能还没正式合进仓库。
+每种都有动图和做法，字体、颜色和动效可以搭配。
 
 ## 多种字体与自定义
 
@@ -15,6 +15,14 @@
 ![多字体动态九宫格](../../docs/previews/dynamic-signatures-multifont.gif)
 
 [九种字体、独立动画、原图与参数](../../skills/dynamic-art-signature/references/multifont.md) · [完整九宫格 MP4](../../skills/dynamic-art-signature/assets/media/multifont/MultiFont_Nine_Grid.mp4)
+
+## 同一字稿的七款配色
+
+纯文字连笔签名可以直接沿字身书写。下图用同一张 `likka` 字稿和四秒节奏，同步对比七款预设与原版。
+
+![likka 动态签名配色对比](../../docs/previews/dynamic-signature-palettes.gif)
+
+[配色预设与配置方法](../../skills/dynamic-art-signature/references/rendering.md#配色预设)
 
 ## 早期英文连笔基准
 

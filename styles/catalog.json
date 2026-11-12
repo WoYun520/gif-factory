@@ -385,8 +385,13 @@
     "guide": "dynamic-signatures/STYLE.md",
     "preview": "../docs/previews/dynamic-signatures-multifont.gif",
     "sample": "../skills/dynamic-art-signature/assets/media/multifont/Mira-Latin.gif",
-    "use": "多种字体与自定义字稿，中英文名字、乐器融字、快写与慢收锋",
+    "use": "纯文字连笔、意象融字、乐器融字、墨迹聚合，支持多种字体和自定义字稿",
     "cases": [
+      {
+        "file": "skills/dynamic-art-signature/assets/media/word-only/Likka.gif",
+        "title": "Likka·纯文字连笔",
+        "preview": "docs/previews/signature-word-only.gif"
+      },
       {
         "file": "skills/dynamic-art-signature/assets/media/multifont/Mira-Latin.gif",
         "title": "Mira·英文连笔",

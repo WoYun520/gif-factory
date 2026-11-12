@@ -34,7 +34,7 @@
 
 | 风格 | 能做什么 | 预览和做法 |
 | --- | --- | --- |
-| 纯文字连笔 | 沿字迹写出名字，配单色或渐变 | [打开](../skills/dynamic-art-signature/references/styles.md#word-only)，新效果，暂未加入 |
+| 纯文字连笔 | 沿字迹写出名字，配单色或渐变 | [打开](../skills/dynamic-art-signature/references/styles.md#word-only) |
 | 意象融字 | 让鸟、月亮、植物等融进笔画 | [打开](../skills/dynamic-art-signature/references/styles.md#motif-fusion) |
 | 乐器融字 | 让琴弦、笛身、音孔与字共用结构 | [打开](../skills/dynamic-art-signature/references/styles.md#instrument-fusion) |
 | 墨迹聚合 | 让墨迹碎片移动、聚拢，再形成完整字稿 | [打开](../skills/dynamic-art-signature/references/styles.md#ink-assembly) |

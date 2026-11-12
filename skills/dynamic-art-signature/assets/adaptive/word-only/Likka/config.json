@@ -1,0 +1,13 @@
+{
+  "art": "art.png",
+  "masks": {
+    "first": "first.png"
+  },
+  "background": [
+    26,
+    27,
+    33
+  ],
+  "effect": "write",
+  "palette": "sea-salt-soda"
+}

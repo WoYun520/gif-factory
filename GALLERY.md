@@ -362,7 +362,7 @@
 
 | 风格 | 看什么 | 预览和做法 |
 | --- | --- | --- |
-| 纯文字连笔 | 名字沿笔迹写出，配单色或渐变 | [打开](skills/dynamic-art-signature/references/styles.md#word-only)，新效果，暂未加入 |
+| 纯文字连笔 | 名字沿笔迹写出，配单色或渐变 | [打开](skills/dynamic-art-signature/references/styles.md#word-only) |
 | 意象融字 | 鸟、月亮、植物等融进名字 | [打开](skills/dynamic-art-signature/references/styles.md#motif-fusion) |
 | 乐器融字 | 乐器结构与字共用笔画 | [打开](skills/dynamic-art-signature/references/styles.md#instrument-fusion) |
 | 墨迹聚合 | 笔画碎片移动、聚拢后成字 | [打开](skills/dynamic-art-signature/references/styles.md#ink-assembly) |

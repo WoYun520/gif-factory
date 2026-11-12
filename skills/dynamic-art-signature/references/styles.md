@@ -10,13 +10,15 @@
 
 名字沿原笔迹写出来，靠笔画的粗细、连笔、回钩和收锋体现个性。可以保持原色，也可以配单色或渐变色。
 
-<img src="https://raw.githubusercontent.com/likka-ailive/gif-factory/91ea7572b825e2244d06f6d73b911be202e17f64/docs/previews/dynamic-signature-palettes.gif" alt="likka 纯文字连笔试用：七款配色与原版同步对比" width="520">
+<img src="../assets/media/word-only/Likka.gif" alt="Likka 纯文字连笔，青蓝到浅黄渐变" width="480">
 
-这是 [@likka-ailive](https://github.com/likka-ailive) 提交的新效果。目前可以先看动图，相关功能还没正式合进仓库，进度见[这次提交](https://github.com/WoYun520/gif-factory/pull/2)。图里的七种颜色，都是同一种签名的配色选择。
+同一张字稿可以换成七种配色，笔迹和书写节奏保留。
 
 做这款时，把名字本身写出特点就够了。连笔顺着原字迹写，独立的小点也要保留，最后的长尾可以慢慢收住。已有字稿就沿用字稿，保留原来的细线和柔和边缘。
 
 > 给“Likka”做一款纯文字连笔签名，保持名字完整，试一下青蓝到浅黄的渐变，末锋慢下来。
+
+[原图和参数](../assets/adaptive/word-only/Likka/config.json) · [配色选择](rendering.md#配色预设)
 
 <a id="motif-fusion"></a>
 
@@ -64,4 +66,6 @@
 
 字体决定笔画样子，配色决定底色与墨色，动效决定怎么出现。三者按用户选择组合，换颜色时保留已选字稿与动画节奏。
 
-已有字稿可以保留原来的颜色。纯文字示例里的七种新配色，目前先看动图，等相关功能正式合进仓库后再使用。做完要看名字是否完整、细线和小点是否保留、收尾是否自然、循环是否顺畅。最后给你 MP4、循环 GIF，以及需要的字稿和参数文件。
+已有字稿可以保留原来的颜色，也可以选一套配色。做完要看名字是否完整、细线和小点是否保留、收尾是否自然、循环是否顺畅。最后给你 MP4、循环 GIF，以及需要的字稿和参数文件。
+
+[示例来源](credits.md)

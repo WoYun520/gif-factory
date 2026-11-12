@@ -86,12 +86,12 @@
 
 | 风格 | 主要效果 | 看预览和做法 |
 | --- | --- | --- |
-| 纯文字连笔 | 沿字迹写出名字，配单色或渐变色 | [打开](skills/dynamic-art-signature/references/styles.md#word-only)，新效果，暂未加入 |
+| 纯文字连笔 | 沿字迹写出名字，配单色或渐变色 | [打开](skills/dynamic-art-signature/references/styles.md#word-only) |
 | 意象融字 | 鸟、月亮、植物等融进名字的笔画 | [打开](skills/dynamic-art-signature/references/styles.md#motif-fusion) |
 | 乐器融字 | 琴弦、笛身、音孔成为字的一部分 | [打开](skills/dynamic-art-signature/references/styles.md#instrument-fusion) |
 | 墨迹聚合 | 墨迹碎片移动、聚拢，最后成字 | [打开](skills/dynamic-art-signature/references/styles.md#ink-assembly) |
 
-纯文字连笔是 [@likka-ailive](https://github.com/likka-ailive) 提交的新效果，目前可以先看动图，相关功能还没正式合进仓库，进度见[这次提交](https://github.com/WoYun520/gif-factory/pull/2)。图里的七种颜色都是同一种签名的配色选择。
+同一张字稿可以换成七种配色，笔迹和书写节奏保留。
 
 <a href="skills/dynamic-art-signature/assets/media/multifont/MultiFont_Nine_Grid.mp4"><img src="docs/previews/dynamic-signatures-multifont.gif" alt="九种字体方向的乐器融字动态签名，支持自定义" width="560"></a>
 
