@@ -356,6 +356,18 @@
 
 ## 动态艺术签名
 
+现在支持多种字体，也可以自定义。可以选择书体、描述想要的感觉，或提供自己的字稿；名字、意象、乐器、配色和动效都能调整。
+
+### 多字体动态签名
+
+<a href="skills/dynamic-art-signature/assets/media/multifont/MultiFont_Nine_Grid.mp4"><img src="docs/previews/dynamic-signatures-multifont.gif" alt="九种字体方向的乐器融字动态签名" width="720"></a>
+
+[九种字体与自定义方法](skills/dynamic-art-signature/references/multifont.md) · [完整 GIF](skills/dynamic-art-signature/assets/media/multifont/MultiFont_Nine_Grid.gif) · [MP4](skills/dynamic-art-signature/assets/media/multifont/MultiFont_Nine_Grid.mp4)
+
+这组由九张新字稿分别分层、适配并导出；保留细锋、圆笔、隶意、篆意、狂草与英文连笔各自的结构。已完成逐帧和文件检查，供选择效果与继续自定义。
+
+### 早期英文连笔基准
+
 名字、物体和渐变共享字形轮廓，使用独立上、下笔势与约一秒停顿。末端减速收锋，未写区域无底印，不加轻震或回弹。Levi、Aster 是逐轮修订基准；其余七款是扩展制作样例，技术检查不等同于逐款用户认可。
 
 <a href="skills/dynamic-art-signature/assets/media/nine-grid.gif"><img src="skills/dynamic-art-signature/assets/media/nine-grid.png" alt="动态签名九宫格" width="720"></a>

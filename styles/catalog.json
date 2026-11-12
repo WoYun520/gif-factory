@@ -383,10 +383,55 @@
     "name": "动态艺术签名",
     "category": "动态签名",
     "guide": "dynamic-signatures/STYLE.md",
-    "preview": "../skills/dynamic-art-signature/assets/media/nine-grid.gif",
-    "sample": "../skills/dynamic-art-signature/assets/media/Aster.gif",
-    "use": "中英文名字、两字与三字草书，意象渐变与两段快写慢收锋",
+    "preview": "../docs/previews/dynamic-signatures-multifont.gif",
+    "sample": "../skills/dynamic-art-signature/assets/media/multifont/Mira-Latin.gif",
+    "use": "多种字体与自定义字稿，中英文名字、乐器融字、快写与慢收锋",
     "cases": [
+      {
+        "file": "skills/dynamic-art-signature/assets/media/multifont/Mira-Latin.gif",
+        "title": "Mira·英文连笔",
+        "preview": "skills/dynamic-art-signature/assets/media/multifont/Mira-Latin.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/multifont/Yunqi-Seal.gif",
+        "title": "云栖·篆意圆线",
+        "preview": "skills/dynamic-art-signature/assets/media/multifont/Yunqi-Seal.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/multifont/Changning-Clerical.gif",
+        "title": "长宁·隶书横势",
+        "preview": "skills/dynamic-art-signature/assets/media/multifont/Changning-Clerical.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/multifont/Wendi-Fine.gif",
+        "title": "闻笛·硬锋细线",
+        "preview": "skills/dynamic-art-signature/assets/media/multifont/Wendi-Fine.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/multifont/Mumian-Round.gif",
+        "title": "木棉·圆笔手写",
+        "preview": "skills/dynamic-art-signature/assets/media/multifont/Mumian-Round.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/multifont/Qinghe-Running.gif",
+        "title": "清和·行楷提按",
+        "preview": "skills/dynamic-art-signature/assets/media/multifont/Qinghe-Running.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/multifont/Chengfeng-Cursive.gif",
+        "title": "乘风·狂草飞白",
+        "preview": "skills/dynamic-art-signature/assets/media/multifont/Chengfeng-Cursive.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/multifont/Weiyang-Geometric.gif",
+        "title": "未央·几何折笔",
+        "preview": "skills/dynamic-art-signature/assets/media/multifont/Weiyang-Geometric.gif"
+      },
+      {
+        "file": "skills/dynamic-art-signature/assets/media/multifont/Shijian-Wei.gif",
+        "title": "石见·魏碑楷意",
+        "preview": "skills/dynamic-art-signature/assets/media/multifont/Shijian-Wei.gif"
+      },
       {
         "file": "skills/dynamic-art-signature/assets/media/Levi.gif",
         "title": "Levi",

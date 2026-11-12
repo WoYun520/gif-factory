@@ -1,5 +1,7 @@
 # Nine signature examples
 
+新的多字体与自定义入口见[九种字体方向](multifont.md)：含新字稿、独立动画、提示词和可重跑分层。下面保留早期英文基准，字体与路径不要跨稿照搬。
+
 Read these as concrete design and movement references, not fixed letter templates. Levi and Aster established the accepted design/timing through user revisions. The seven expansion designs were rendered and technically checked; do not describe each as individually approved by the user. Configs recreate the current defaults, while archived demos preserve the delivered versions.
 
 | Name | Motif | Resources |

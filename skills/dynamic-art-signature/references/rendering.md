@@ -1,45 +1,59 @@
-# Renderer configuration
+# 渲染与字体适配
 
-Use `render_signature.py inspect --image FILE` to list component IDs, areas and bounds at the intended output size. JSON paths are relative to the JSON file. Python packages: Pillow, numpy, scipy. External commands: ffmpeg, ffprobe. No API key is required by the local compositor; artwork generation uses the host's image tool separately.
+新字稿默认用 `scripts/render_ink_signature.py`。需要 Python 3、Pillow、NumPy；导出 MP4、GIF 需要 FFmpeg，检查视频参数用 ffprobe。本地渲染不调用付费 API，生图另用当前环境的图像工具。
 
-Minimal configuration:
+先按[字体适配](font-adaptation.md)由代理看图、准备分层，再运行脚本。基础配置不需要手填起笔点、尾巴路径和碎片参数：
 
 ```json
 {
-  "image": "art.png",
-  "width": 960,
-  "height": 640,
-  "foreground_threshold": 60,
-  "upper_components": [1],
-  "background": "1d1e21",
-  "key_color": "202124",
-  "timing": {"upper_start": 0.3, "upper_duration": 0.14, "gap": 1.02,
-             "body_duration": 0.18, "terminal_duration": 0.72, "duration": 4.0}
+  "art": "art.png",
+  "masks": {
+    "upper": "upper.png",
+    "first": "first.png",
+    "tail": "tail.png"
+  },
+  "background": [29, 30, 33],
+  "effect": "write"
 }
 ```
 
-For RGBA art with actual transparency, use its alpha for segmentation and compositing. For opaque dark art, component detection uses luma; adjust threshold and keying to preserve fine gray strokes. The dark-background fallback is not suitable for dark accents on a dark ground. Inspect keyed edges; use genuine alpha or repair the artwork when ink/background are inseparable.
+路径相对于配置文件。原图可用 RGB 或带真实透明度的 RGBA，遮罩为同尺寸黑白 PNG；各层互斥。原图尺寸直接决定视频尺寸，宽高需为至少 32 的偶数。没有长尾时省略 `tail`，不要凭空补一条。
 
-`upper_components` refers to the exact inspect result. All other foreground components belong to the second gesture. The nearest foreground owner extends the matte only through background/antialias pixels, avoiding broad masks that expose other strokes. Inspect that selected IDs represent the upper flourish, not letters or dots. Physical group separation is still a design prerequisite.
+普通款用 `write`。用户明确要墨迹聚合时，增加 `rest` 遮罩并选 `ink-fragments`；该层会切成保有原色和笔画的碎片，移动、转动后回到原位置。其余部分照常书写，不自动给所有字加粒子。
 
-For returning tails add:
-
-```json
-"tail": {
-  "coordinate_size": [960,640],
-  "region_polygon": [[305,640],[960,640],[960,350],[900,350],[720,390],
-                     [700,425],[620,433],[480,435],[400,460],[305,500]],
-  "paths": [[[706,418],[770,418],[840,350],[872,402]],
-            [[872,402],[907,460],[680,451],[565,461]],
-            [[565,461],[460,465],[380,473],[320,496]]],
-  "brush_width": 60
-}
+```bash
+python3 -m pip install Pillow numpy
+python3 scripts/render_ink_signature.py --config assets/adaptive/Woyunjian/write.json --out /tmp/signature --plan-only
+python3 scripts/render_ink_signature.py --config assets/adaptive/Woyunjian/write.json --out /tmp/signature
+python3 scripts/audit_video.py /tmp/signature.mp4
 ```
 
-These example coordinates are **Aster only**. Trace the current design. Define the complete tail region, including its upper edge, before the body reveal. The tail region must exclude body ink; ensure its path touches the body's endpoint. The renderer checks that the final pen path covers the tail's foreground. Fix the region/path instead of filling missed ink in a final global wipe.
+`--plan-only` 不编码视频，输出 `.plan.png` 六张实际中间帧和 `.plan.json` 自动计算记录。检查顶部的三张写出帧、字身快写、末锋中段和定格。正式导出为 MP4、循环 GIF、定格 PNG 和 JSON 参数记录；默认 4 秒、MP4 60fps、GIF 25fps。
 
-Without `tail`, the lower pass is a forward reveal: 78% is quick, remaining 22% decelerates. It is a fallback for forward terminals, not a true font-path tracer. The tool does not automatically recover calligraphic stroke order from arbitrary art. For complicated overlaps, generate separate alpha layers or provide an explicit motion compositor.
+墨迹聚合的现成配置是 `assets/adaptive/Woyunjian/ink-fragments.json`。这两份配置共用同一张已选字稿及分层，均不指定坐标、路径或字体名称。
 
-Run `audit_video.py output.mp4` for 4-second/60fps defaults and a uniform opening. Also decode a frame in the one-second gap and verify that the lower word is absent. Inspect playback at normal speed and frame-by-frame around the tail handoff; no automated color/count test proves that handwriting looks natural.
+## 需要时再改参数
 
-Use `make_grid.py --out /absolute/output/grid --videos FILE1 ... FILE9 --labels NAME1 ... NAME9` for 1440×1440 MP4, cover PNG and 1080×1080 GIF. Inputs must be four-second finished videos; labels are fixed outside the art. Preserve real timings while resampling. ZIP only final assets and useful configs, not intermediate mask frames or machine-specific absolute paths.
+| 配置 | 什么时候改 |
+| --- | --- |
+| `upper_pen.start_point`、`first_pen.start_point`、`tail_pen.start_point` | 自动起笔方向不合当前笔势时，由代理填当前画布的 `[x,y]` |
+| `upper_path`、`first_path`、`tail_path` | 交叉、回环需要明确先后时，由代理给当前稿的一串 `[x,y]` 路径点；精确逐笔仍需另分笔画层 |
+| `upper_pen.front_duration`、`first_pen.front_duration`、`tail_pen.front_duration` | 调整笔头经过局部墨迹的过渡；不要把整层当作透明度淡入 |
+| `upper_pen.acceleration_power`、`first_pen.acceleration_power` | 快写加速度，默认 1.3；末锋使用减速曲线 |
+| `fragments.cell_width`、`cell_height`、`rotation`、`drift` | 已选效果需要更完整墨块或更小动作时覆盖自动值 |
+| `timing` | 调整 `upper_start/end`、`first_start/end`、`tail_start/end`、`fade_start/end`；先保留用户已认可的节奏 |
+| `duration`、`fps`、`seed` | 总时长、视频帧率和墨迹碎片随机种子，默认 4、60、731 |
+
+脚本估计笔宽后计算默认参数，沿当前墨迹而非水平坐标推进。分离点画用不可见的抬笔时间接续，空白处不会生出线。自动路径在交叉处可能分叉；代理看实际帧修分层或路径，不宣称从静态图恢复真实书写笔顺。
+
+遮罩重叠、明显漏分墨迹、没有顶部或字身、路径异常、未成字就进入淡出时，脚本会报错。修当前输入后重跑，不在最后贴完整字稿掩盖缺笔。自动结果不能代替正常播放检查。
+
+## 九宫格与旧案例
+
+九个单款完成后运行 `make_grid.py --out /tmp/grid --videos FILE1 ... FILE9 --labels NAME1 ... NAME9`。输入用四秒成片；输出 1440×1440 MP4、定格和 1080×1080 GIF。标签用本机有授权的中文字体。ZIP 保留成片、配置和必要字稿，不放机器专用绝对路径或私人参考截图。
+
+要从随包字稿重跑九种字体，运行 `python3 scripts/render_collection.py --manifest assets/adaptive/multifont/cases.json --out /tmp/signature-multifont`。网格标签由 Pillow 绘制，不要求 FFmpeg 带 `drawtext`；字体可用 `--font` 指定。
+
+`render_signature.py` 保留重跑 `assets/examples` 和 `assets/chinese` 旧配置，需要额外安装 SciPy；其组件编号和贝塞尔末锋坐标只属于对应原图。没有末锋路径时的横向显露只是旧版兼容方式，新字体走上面的适配流程。
+
+`render_semantic_signature.py` 保留重跑星屑、雨丝两个旧演示，使用 Pillow、NumPy 和 FFmpeg。它不是两组原版九宫格的生成源码；新字稿的墨迹碎片效果用 `render_ink_signature.py`，不要混称。

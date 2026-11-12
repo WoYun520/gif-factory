@@ -19,7 +19,7 @@
 | Skill | 能做什么 | 说明 |
 | --- | --- | --- |
 | GIF 工厂总入口 | 根据需求选择表情包、卡片、海报、签名、片头、绘本或品牌短片的做法 | [查看](SKILL.md) |
-| 动态签名 | 设计名字和意象，再做快写、停顿、慢收锋的动画 | [查看](skills/dynamic-art-signature/SKILL.md) |
+| 动态签名 | 支持多种字体和自定义字稿，把名字与意象融成动态签名 | [查看](skills/dynamic-art-signature/SKILL.md) |
 | 电影片头 | 40 种字形可选，可以设计字、配场景，也可以用你提供的素材 | [查看](skills/cinematic-title-lettering/SKILL.md) |
 | 动态绘本 | 让插画做完一个动作，再翻到下一页，能做横屏或竖屏 | [查看](skills/compact-storybook/SKILL.md) |
 
@@ -82,13 +82,15 @@
 
 ## 动态签名
 
-把名字、意象和乐器融进同一组笔画，再做快写、停顿和慢收锋。下面这组把竹笛、竖琴、古琴等乐器写进字里，配合粒子成字。
+现在支持多种字体，也可以自定义。可以选样例、描述想要的笔画感觉，或直接提供自己的字稿；名字、意象、乐器和配色都能调整。把这些融进同一组笔画，再做快写、停顿、慢收锋或墨迹聚合。
 
-<a href="skills/dynamic-art-signature/assets/media/instrument-semantic/Instrument_Semantic_Nine_Grid.mp4"><img src="docs/previews/dynamic-signatures-instruments.gif" alt="乐器入字与粒子成字动态签名九宫格" width="560"></a>
+<a href="skills/dynamic-art-signature/assets/media/multifont/MultiFont_Nine_Grid.mp4"><img src="docs/previews/dynamic-signatures-multifont.gif" alt="九种字体方向的乐器融字动态签名，支持自定义" width="560"></a>
 
-[看原版视频](skills/dynamic-art-signature/assets/media/instrument-semantic/Instrument_Semantic_Nine_Grid.mp4) · [看做法](styles/dynamic-signatures/STYLE.md) · [中英文案例](examples/dynamic-signatures/README.md) · [乐器入字与粒子成字](skills/dynamic-art-signature/references/instrument-semantic.md) · [Skill](skills/dynamic-art-signature/SKILL.md)
+[多字体视频](skills/dynamic-art-signature/assets/media/multifont/MultiFont_Nine_Grid.mp4) · [九款字体与自定义说明](skills/dynamic-art-signature/references/multifont.md) · [中英文案例](examples/dynamic-signatures/README.md) · [早期乐器案例](skills/dynamic-art-signature/references/instrument-semantic.md) · [Skill](skills/dynamic-art-signature/SKILL.md)
 
 > 做一款「卧云间＋竹笛＋月白到浅青渐变」的动态签名，让乐器融进笔画，沿用仓库的快写和慢收锋节奏。
+
+> 用我提供的字稿，保留字体和颜色，自定义一款动态签名；书写、墨迹聚合和收锋按字形来。
 
 <a id="cinematic-title-lettering"></a>
 

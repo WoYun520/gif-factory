@@ -13,7 +13,7 @@
 | 表情包 | 像素、插画、真人、宠物、粘土角色的小动作或完整动作 | [查看](GALLERY.md#表情包展厅) |
 | 光栅变画卡 | 两种样子在同一张卡片里切换 | [查看](GALLERY.md#电子光栅卡展厅) |
 | 动态海报 | 人物和大字一起变化，或整张海报一起设计 | [查看](GALLERY.md#动态海报展厅) |
-| 动态签名 | 名字、意象、渐变色和书写动画 | [查看](GALLERY.md#动态艺术签名) |
+| 动态签名 | 多种字体与自定义字稿，名字、意象、渐变色和书写动画 | [查看](GALLERY.md#动态艺术签名) |
 | 电影片头 | 原创片名字形和带场景的片头图 | [查看](skills/cinematic-title-lettering/references/style-catalog.md) |
 | 动态绘本 | 插画动起来，再一页页讲故事 | [查看](GALLERY.md#动态绘本展厅) |
 | 品牌短片 | 角色带着产品和包装演一段小故事 | [查看](GALLERY.md#品牌宣传片展厅) |
@@ -48,7 +48,7 @@
 
 > 做一款「卧云间＋竹叶＋月白到浅青渐变」的动态签名。上方快划，停约一秒，下方快写，最后慢收锋。
 
-要换字体、意象或颜色，直接说明；只改字体时可以保留原来的排布和书写节奏。
+现在支持多种字体，也可以自定义。可以指定书体、描述想要的感觉，或直接提供自己的字稿；只改字体时可以保留原来的排布和书写节奏。[看九种字体与自定义方法](skills/dynamic-art-signature/references/multifont.md)。
 
 ### 电影片头
 
@@ -98,7 +98,7 @@
 | 静态片名、字稿和片头图 | 需要可用的图像生成或编辑工具；静态图本身不需要 FFmpeg |
 | 普通表情包 GIF、ZIP | `export_pack.py`、`export_keyframes.py` 用 Python 3 和 Pillow；仅导出 GIF、ZIP 不需要 FFmpeg |
 | 上述表情包的 MP4 预览 | 加 `--preview` 时需要 FFmpeg，把最终 GIF 合成可播放的视频 |
-| 动态签名和签名九宫格 | Python 3、Pillow、NumPy、SciPy，以及 FFmpeg、ffprobe；具体命令见签名 Skill |
+| 动态签名和签名九宫格 | Python 3、Pillow、NumPy，以及 FFmpeg、ffprobe；重跑旧版组件脚本才需 SciPy，具体命令见签名 Skill |
 | 动态绘本视频检查 | 检查脚本用 Python 3、ffprobe；抽取检查帧时用 FFmpeg。制作和渲染工具另按绘本说明准备 |
 | 变画卡、动态海报、品牌短片 | 按所选做法准备图像与视频工具，详见对应制作说明，不统一套用表情包依赖 |
 

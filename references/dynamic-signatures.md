@@ -2,7 +2,11 @@
 
 输入名字、一种物体和渐变色，先把物体形态融入字形，再制作两笔独立书写。阅读[独立模块](../skills/dynamic-art-signature/SKILL.md)及其设计、渲染参考；不要套用贴纸的头像轻动效。
 
+现在支持多种字体，也可以自定义。可以指定书体、描述想要的感觉，或提供自己的字稿与字体参考。先看[九种字体方向与自定义方法](../skills/dynamic-art-signature/references/multifont.md)。
+
 默认两笔分开、间隔约1秒；主笔快速，末端渐慢收锋；无底印、无轻震、无回弹。手写质感指提按、粗细与尖锋，不默认金属、粉笔或立体材质。
+
+字体由当前字稿决定怎么动：代理重新检查粗细、连笔、点画和回钩，脚本据此计算起笔、收锋与可选碎片参数。用户可以直接提供字稿，不需要填写组件编号或坐标；详见[字体适配](../skills/dynamic-art-signature/references/font-adaptation.md)。
 
 [九款样例](../examples/dynamic-signatures/README.md) · [风格入口](../styles/dynamic-signatures/STYLE.md)
 

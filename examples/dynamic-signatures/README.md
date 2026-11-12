@@ -2,6 +2,16 @@
 
 [制作方法](../../skills/dynamic-art-signature/SKILL.md) · [风格入口](../../styles/dynamic-signatures/STYLE.md)
 
+## 多种字体与自定义
+
+现在支持多种字体，也可以自定义。可以提供字稿、字体参考或风格描述，按你的名字、意象、乐器和配色设计。
+
+![多字体动态九宫格](../../docs/previews/dynamic-signatures-multifont.gif)
+
+[九种字体、独立动画、原图与参数](../../skills/dynamic-art-signature/references/multifont.md) · [完整九宫格 MP4](../../skills/dynamic-art-signature/assets/media/multifont/MultiFont_Nine_Grid.mp4)
+
+## 早期英文连笔基准
+
 ![九宫格](../../skills/dynamic-art-signature/assets/media/nine-grid.gif)
 
 | 名字 | GIF | MP4 | 原图与参数 |
