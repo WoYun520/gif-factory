@@ -10,6 +10,14 @@
 
 [九种字体、独立动画、原图与参数](../../skills/dynamic-art-signature/references/multifont.md) · [完整九宫格 MP4](../../skills/dynamic-art-signature/assets/media/multifont/MultiFont_Nine_Grid.mp4)
 
+## 同一字稿的七款配色
+
+纯文字连笔签名可以直接沿字身书写。下图用同一张 `likka` 字稿和四秒节奏，同步对比七款预设与原版。
+
+![likka 动态签名配色对比](../../docs/previews/dynamic-signature-palettes.gif)
+
+[配色预设与配置方法](../../skills/dynamic-art-signature/references/rendering.md#配色预设)
+
 ## 早期英文连笔基准
 
 ![九宫格](../../skills/dynamic-art-signature/assets/media/nine-grid.gif)

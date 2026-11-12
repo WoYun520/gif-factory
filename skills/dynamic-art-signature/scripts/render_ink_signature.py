@@ -15,6 +15,7 @@ import subprocess
 import numpy as np
 from PIL import Image
 from ink_geometry import stroke_profile, reveal_times, fragment_defaults
+from signature_palettes import apply_palette
 
 
 def smooth(a):
@@ -62,30 +63,49 @@ class InkAnimation:
         self.delta=np.asarray(self.art,dtype=np.float32)-np.asarray(self.bg,dtype=np.float32)
         covered=np.any(list(self.masks.values()),axis=0)
         strength=np.max(np.abs(self.delta),axis=2)
+        if 'palette' in self.cfg:
+            alpha = raw.getchannel('A')
+            if alpha.getextrema()[0] < 255:
+                strength = np.asarray(alpha)
         meaningful=strength>float(self.cfg.get('ink_threshold',8))
         missing=meaningful&~covered
         self.unassigned_pixels=int(missing.sum())
         if self.unassigned_pixels>max(8,int(meaningful.sum()*.01)):
             raise ValueError(f'{self.unassigned_pixels} ink pixels are unassigned; fix masks before rendering')
         for name in self.masks:self.masks[name]&=strength>0
-        if not self.masks['upper'].any() or not (self.masks['first']|self.masks['rest']).any():
-            raise ValueError('Separate upper ink and lower name layers are required')
+        self.has_upper = 'upper' in self.cfg['masks']
+        if self.has_upper and not self.masks['upper'].any():
+            raise ValueError('The upper mask is empty; omit it for a word-only signature')
+        if not (self.masks['first']|self.masks['rest']).any():
+            raise ValueError('A name ink layer is required')
+        if 'palette' in self.cfg:
+            # Resolve the original ink geometry before changing the foreground or backdrop.
+            self.bg, self.art = apply_palette(self.cfg['palette'], raw, covered & (strength > 0))
+            self.delta = np.asarray(self.art, dtype=np.float32) - np.asarray(self.bg, dtype=np.float32)
         self.effect=self.cfg.get('effect','ink-fragments' if 'fragments' in self.cfg else 'write')
         if self.effect not in ['write','ink-fragments']:raise ValueError('effect must be write or ink-fragments')
         if self.effect=='write':
             self.masks['first']|=self.masks['rest'];self.masks['rest'][:]=False
         lower=self.masks['first']|self.masks['rest']|self.masks['tail']
         self.profile=stroke_profile(lower)
-        body_duration=.16 if self.profile['median_width_px']<=5*self.w/960 else .18
-        self.t={'upper_start':.30,'upper_end':.44,'first_start':1.46,
-                'first_end':1.46+body_duration,'tail_start':1.46+body_duration,
-                'tail_end':1.46+body_duration+.72,'fade_start':self.duration-.30,'fade_end':self.duration}
+        if self.has_upper:
+            upper_start, upper_end, first_start = .30, .44, 1.46
+            body_duration = .16 if self.profile['median_width_px'] <= 5*self.w/960 else .18
+        else:
+            upper_start, upper_end, first_start = 0., 0., .30
+            body_duration = 1.20
+        first_end = first_start + body_duration
+        self.t={'upper_start':upper_start,'upper_end':upper_end,'first_start':first_start,
+                'first_end':first_end,'tail_start':first_end,'tail_end':first_end+.72,
+                'fade_start':self.duration-.30,'fade_end':self.duration}
         self.t.update(self.cfg.get('timing',{}))
         self.t={k:float(v) for k,v in self.t.items()}
+        if self.has_upper and not 0 <= self.t['upper_start'] < self.t['upper_end'] < self.t['first_start']:
+            raise ValueError('Upper gesture timing must leave a hold before the name starts')
         if (not all(np.isfinite(v) for v in self.t.values())
-                or not 0<=self.t['upper_start']<self.t['upper_end']<self.t['first_start']<self.t['first_end']
+                or not 0<=self.t['first_start']<self.t['first_end']
                 or not self.t['first_end']<=self.t['tail_start']<self.t['tail_end']<self.t['fade_start']<self.t['fade_end']<=self.duration):
-            raise ValueError('Timing must leave an upper hold, body, tail, final hold and ink reset')
+            raise ValueError('Timing must leave room for the name, tail, final hold and ink reset')
         self.f=fragment_defaults(self.profile,self.w,self.t)
         self.f.update(self.cfg.get('fragments',{}))
         if min(self.f['cell_width'],self.f['cell_height'],self.f['alpha_power'])<=0:
@@ -262,22 +282,32 @@ class InkAnimation:
         report.update({'effect':self.effect,'ink_profile':self.profile,'unassigned_ink_pixels':self.unassigned_pixels,
                        'upper_pen':self.upper_report,'first_pen':self.first_report,'tail_pen':self.tail_report,
                        'exact_calligraphic_order':False})
+        if 'palette' in self.cfg:
+            report['palette'] = self.cfg['palette']
         return report
 
     def preview_plan(self,out):
         from PIL import ImageDraw
         out=Path(out);out.parent.mkdir(parents=True,exist_ok=True)
-        times=[self.t['upper_start']+(self.t['upper_end']-self.t['upper_start'])*q for q in [.25,.5,.85]]
-        times.extend([(self.t['first_start']+self.t['first_end'])/2,
-                      (self.t['tail_start']+self.t['tail_end'])/2,
+        first_start = self.t['first_start']
+        first_duration = self.t['first_end'] - first_start
+        if self.has_upper:
+            upper_start = self.t['upper_start']
+            upper_duration = self.t['upper_end'] - upper_start
+            times = [upper_start + upper_duration*q for q in (.25, .5, .85)]
+            times.append(first_start + first_duration/2)
+        else:
+            times = [first_start + first_duration*q for q in (.15, .4, .65, .9)]
+        times.extend([(self.t['tail_start']+self.t['tail_end'])/2,
                       (max(self.last_land,self.t['tail_end'])+self.t['fade_start'])/2])
         height=round(480*self.h/self.w)
         sheet=Image.new('RGB',(1440,2*(height+24)),self.bg)
         draw=ImageDraw.Draw(sheet)
+        label_color = (32, 32, 32) if 'palette' in self.cfg and sum(self.bg) > 450 else (220, 220, 220)
         for i,t in enumerate(times):
             x=(i%3)*480;y=(i//3)*(height+24)
             sheet.paste(self.frame_at(t).resize((480,height),Image.Resampling.LANCZOS),(x,y))
-            draw.text((x+10,y+height+4),f'{t:.3f}s',(220,220,220))
+            draw.text((x+10,y+height+4),f'{t:.3f}s',label_color)
         sheet.save(out.with_suffix('.plan.png'))
         out.with_suffix('.plan.json').write_text(json.dumps(self.report(),ensure_ascii=False,indent=2)+'\n')
 

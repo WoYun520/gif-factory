@@ -99,6 +99,132 @@ class SignatureGeometryTests(unittest.TestCase):
             self.assertFalse(a.masks['rest'].any())
             self.assertTrue(np.isfinite(a.first_times[a.masks['first']]).all())
 
+    def test_word_only_signature_writes_without_an_upper_gesture(self):
+        for include_tail in (False, True):
+            with self.subTest(tail=include_tail), tempfile.TemporaryDirectory() as temp:
+                root = Path(temp)
+                body = Image.new('L', (128, 96))
+                draw = ImageDraw.Draw(body)
+                draw.line([(12, 60), (32, 32), (42, 65), (82, 48)], 255, 3)
+                draw.ellipse((54, 24, 58, 28), fill=255)
+                body.save(root / 'first.png')
+                masks = {'first': 'first.png'}
+                art = Image.composite(Image.new('RGB', body.size, 'white'),
+                                      Image.new('RGB', body.size, 'black'), body)
+                if include_tail:
+                    tail = Image.new('L', body.size)
+                    ImageDraw.Draw(tail).line([(83, 48), (104, 52), (120, 40)], 255)
+                    tail.save(root / 'tail.png')
+                    art.paste('white', mask=tail)
+                    masks['tail'] = 'tail.png'
+                art.save(root / 'art.png')
+                config = root / 'config.json'
+                config.write_text(json.dumps({
+                    'art': 'art.png', 'masks': masks, 'background': [0, 0, 0],
+                }))
+
+                animation = InkAnimation(config)
+                self.assertEqual(animation.upper_report['method'], 'empty layer')
+                self.assertIsNone(animation.frame_at(.29).getbbox())
+                self.assertIsNotNone(animation.frame_at(.7).getbbox())
+                self.assertEqual(animation.frame_at(3).tobytes(), art.tobytes())
+
+    def palette_config(self, root):
+        art = Image.new('RGBA', (96, 64), (255, 255, 255, 0))
+        ImageDraw.Draw(art).rectangle((20, 16, 75, 47), fill='white')
+        art.putpixel((75, 32), (255, 255, 255, 128))
+        art.putpixel((44, 32), (255, 255, 255, 0))
+        art.save(root / 'art.png')
+        mask = Image.new('L', art.size)
+        ImageDraw.Draw(mask).rectangle((20, 16, 75, 47), fill=255)
+        mask.save(root / 'first.png')
+        return {'art': 'art.png', 'masks': {'first': 'first.png'}, 'background': [0, 0, 0]}
+
+    def test_gradient_preserves_transparency_and_writing_timing(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            config = root / 'config.json'
+            original = self.palette_config(root)
+            config.write_text(json.dumps(original))
+            legacy = InkAnimation(config)
+            self.assertEqual(legacy.frame_at(3).getpixel((75, 32)), (128, 128, 128))
+            self.assertNotIn('palette', legacy.report())
+
+            config.write_text(json.dumps({**original, 'palette': 'sea-salt-soda'}))
+            animation = InkAnimation(config)
+            art = animation.frame_at(3)
+            self.assertEqual(animation.report()['palette'], 'sea-salt-soda')
+            self.assertEqual(animation.t, legacy.t)
+            np.testing.assert_array_equal(animation.first_times, legacy.first_times)
+            self.assertEqual(art.getpixel((20, 32)), (106, 211, 238))
+            self.assertEqual(art.getpixel((47, 32)), (160, 228, 188))
+            self.assertEqual(art.getpixel((75, 31)), (217, 246, 137))
+            self.assertEqual(art.getpixel((75, 32)), (118, 145, 95))
+            self.assertEqual(art.getpixel((44, 32)), animation.bg)
+            self.assertEqual(art.getpixel((19, 32)), animation.bg)
+            self.assertEqual(animation.frame_at(0).getpixel((20, 32)), animation.bg)
+
+    def test_banded_palettes_blend_at_horizontal_and_diagonal_boundaries(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            config = root / 'config.json'
+            original = self.palette_config(root)
+            config.write_text(json.dumps({**original, 'palette': 'google-color'}))
+            art = InkAnimation(config).frame_at(3)
+            colors = [(91, 148, 255), (255, 108, 99), (251, 209, 82), (91, 148, 255), (105, 201, 138)]
+            for row in (16, 47):
+                self.assertEqual([art.getpixel((x, row)) for x in (25, 36, 47, 58, 69)], colors)
+                self.assertEqual(art.getpixel((31, row)), (173, 128, 177))
+                stripe = np.asarray(art, dtype=np.int16)[row, 20:76]
+                self.assertLess(np.abs(np.diff(stripe, axis=0)).max(), 45)
+
+            config.write_text(json.dumps({**original, 'palette': 'hello-split'}))
+            art = InkAnimation(config).frame_at(3)
+            self.assertEqual(art.getpixel((20, 16)), (255, 120, 151))
+            self.assertEqual(art.getpixel((75, 47)), (186, 164, 255))
+            self.assertEqual(art.getpixel((32, 16)), art.getpixel((30, 24)))
+            self.assertLess(120, art.getpixel((32, 16))[1])
+            self.assertLess(art.getpixel((32, 16))[1], art.getpixel((32, 47))[1])
+            self.assertLess(art.getpixel((32, 47))[1], 197)
+
+    def test_rgba_palette_recolors_ink_that_matches_source_background(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            config = root / 'config.json'
+            original = self.palette_config(root)
+            with Image.open(root / 'art.png') as source:
+                black_ink = Image.new('RGBA', source.size)
+                black_ink.putalpha(source.getchannel('A'))
+            black_ink.save(root / 'art.png')
+            config.write_text(json.dumps({**original, 'palette': 'cola-red'}))
+
+            animation = InkAnimation(config)
+            art = animation.frame_at(3)
+            self.assertEqual(art.getpixel((20, 32)), (255, 243, 222))
+            self.assertEqual(art.getpixel((75, 32)), (226, 136, 135))
+            self.assertEqual(art.getpixel((44, 32)), animation.bg)
+
+    def test_rgb_palette_uses_ink_masks_and_restores_fragment_colors(self):
+        with tempfile.TemporaryDirectory() as temp:
+            config, _, _ = self.fixture(Path(temp))
+            original = json.loads(config.read_text())
+            config.write_text(json.dumps({**original, 'palette': 'retro-print'}))
+            animation = InkAnimation(config)
+            art = animation.frame_at(3.2)
+            self.assertGreater(len(animation.fragments), 0)
+            self.assertEqual(art.getpixel((0, 0)), (245, 232, 212))
+            self.assertEqual(art.getpixel((14, 36)), (174, 52, 42))
+            self.assertEqual(art.getpixel((85, 48)), (40, 63, 100))
+            self.assertEqual(art.tobytes(), animation.art.tobytes())
+
+    def test_unknown_palette_reports_available_names(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            config = root / 'config.json'
+            config.write_text(json.dumps({**self.palette_config(root), 'palette': 'typo'}))
+            with self.assertRaisesRegex(ValueError, "Unknown signature palette 'typo'.*macaron"):
+                InkAnimation(config)
+
     def test_user_start_and_timing_override_automatic_defaults(self):
         with tempfile.TemporaryDirectory() as temp:
             config, _, _ = self.fixture(Path(temp))
