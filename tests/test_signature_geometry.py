@@ -16,6 +16,50 @@ from signature_palettes import PALETTES
 
 
 class SignatureGeometryTests(unittest.TestCase):
+    def test_ordered_pen_goes_around_a_loop_before_the_returning_side(self):
+        im = Image.new('L', (96, 80))
+        points = [(15, 15), (75, 15), (75, 60), (15, 60), (15, 15)]
+        ImageDraw.Draw(im).line(points, 255, 5)
+        mask = np.asarray(im) > 0
+        times, _, report = reveal_times(mask, .3, 1.5, pen={
+            'stroke_paths': [points], 'start_point': [15, 15],
+        })
+        self.assertLess(times[15, 75], times[60, 15])
+        self.assertGreater(times[30, 15], times[15, 75] + .35)
+        self.assertEqual(report['method'], 'ordered-pen')
+        self.assertTrue(np.isinf(times[~mask]).all())
+        self.assertTrue(np.isfinite(times[mask]).all())
+
+    def test_ordered_pen_respects_separate_strokes_without_painting_a_lift(self):
+        im = Image.new('L', (96, 80))
+        draw = ImageDraw.Draw(im)
+        draw.line((10, 50, 70, 50), 255, 5)
+        draw.ellipse((38, 16, 42, 20), fill=255)
+        mask = np.asarray(im) > 0
+        times, _, report = reveal_times(mask, .3, 1.5, pen={
+            'stroke_paths': [[(39, 17), (41, 19)], [(10, 50), (70, 50)]],
+            'start_point': [10, 50],
+        })
+        self.assertLess(times[18, 40], times[50, 10])
+        self.assertTrue(np.isinf(times[32, 40]))
+        self.assertEqual(report['pen_up_links'], 1)
+        self.assertEqual(report['stroke_count'], 2)
+
+    def test_empty_ordered_strokes_are_rejected_instead_of_using_auto_fill(self):
+        im = Image.new('L', (96, 80))
+        ImageDraw.Draw(im).line((10, 40, 70, 40), 255, 5)
+        with self.assertRaisesRegex(ValueError, 'stroke_paths'):
+            reveal_times(np.asarray(im) > 0, .3, 1.5, pen={'stroke_paths': []})
+
+    def test_connected_pen_subpaths_do_not_add_a_lift(self):
+        im = Image.new('L', (96, 80))
+        ImageDraw.Draw(im).line([(10, 15), (70, 15), (70, 65)], 255, 5)
+        times, _, report = reveal_times(np.asarray(im) > 0, .3, 1.5, pen={
+            'stroke_paths': [[(10, 15), (70, 15)], [(70, 15), (70, 65)]],
+        })
+        self.assertEqual(report['pen_up_links'], 0)
+        self.assertLess(times[15, 40], times[40, 70])
+
     def test_returning_tail_follows_ink_past_right_turn(self):
         im = Image.new('L', (96, 80))
         ImageDraw.Draw(im).line([(15, 15), (75, 15), (75, 60), (15, 60)], 255, 5)

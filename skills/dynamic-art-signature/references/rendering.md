@@ -62,13 +62,14 @@ python3 scripts/render_ink_signature.py --config assets/adaptive/word-only/Likka
 | --- | --- |
 | `upper_pen.start_point`、`first_pen.start_point`、`tail_pen.start_point` | 自动起笔方向不合当前笔势时，由代理填当前画布的 `[x,y]` |
 | `upper_path`、`first_path`、`tail_path` | 交叉、回环需要明确先后时，由代理给当前稿的一串 `[x,y]` 路径点；精确逐笔仍需另分笔画层 |
+| `upper_pen.stroke_paths`、`first_pen.stroke_paths`、`tail_pen.stroke_paths` | 复杂连笔按顺序给出多段路径，每段都是 `[x,y]` 点列；首尾相接时连续书写，分开的点画抬笔后再写。和对应的单条 `*_path` 二选一 |
 | `upper_pen.front_duration`、`first_pen.front_duration`、`tail_pen.front_duration` | 调整笔头经过局部墨迹的过渡；不要把整层当作透明度淡入 |
 | `upper_pen.acceleration_power`、`first_pen.acceleration_power` | 快写加速度，默认 1.3；末锋使用减速曲线 |
 | `fragments.cell_width`、`cell_height`、`rotation`、`drift` | 已选效果需要更完整墨块或更小动作时覆盖自动值 |
 | `timing` | 调整 `upper_start/end`、`first_start/end`、`tail_start/end`、`fade_start/end`；先保留用户已认可的节奏 |
 | `duration`、`fps`、`seed` | 总时长、视频帧率和墨迹碎片随机种子，默认 4、60、731 |
 
-脚本估计笔宽后计算默认参数，沿当前墨迹而非水平坐标推进。分离点画用不可见的抬笔时间接续，空白处不会生出线。自动路径在交叉处可能分叉；代理看实际帧修分层或路径，不宣称从静态图恢复真实书写笔顺。
+脚本估计笔宽后计算默认参数，沿当前墨迹而非水平坐标推进。分离点画用不可见的抬笔时间接续，空白处不会生出线。自动路径在交叉处可能分叉；普通连笔出现扩散、同时长出支线时，改用 `stroke_paths` 按当前字稿安排上挑、回转和落笔。它只让笔头经过的当前笔势显现，笔宽按每段墨迹估计。Likka 示例已按这个方法安排连续字身与最后的点画，字身用 1.60 秒写完；具体路径见示例配置。路径由代理根据当前稿准备，不让用户填坐标，也不套用其他名字的点位。这是视觉书写顺序，不宣称从静态图恢复了书写者的真实笔顺。
 
 遮罩重叠、明显漏分墨迹、字身缺失、指定的 `upper` 遮罩为空、路径异常或未成字就进入淡出时，脚本会报错。修当前输入后重跑，不在最后贴完整字稿掩盖缺笔。自动结果不能代替正常播放检查。
 

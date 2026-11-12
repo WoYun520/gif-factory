@@ -17,9 +17,9 @@
     "upper_start": 0.0,
     "upper_end": 0.0,
     "first_start": 0.3,
-    "first_end": 1.5,
-    "tail_start": 1.5,
-    "tail_end": 2.2199999999999998,
+    "first_end": 1.9,
+    "tail_start": 1.9,
+    "tail_end": 2.62,
     "fade_start": 3.7,
     "fade_end": 4.0
   },
@@ -32,7 +32,7 @@
     "edge_softness": 2.3,
     "birth_base": 0.4,
     "birth_spread": 0.19,
-    "land_base": 1.68,
+    "land_base": 2.08,
     "land_spread": 0.34,
     "time_jitter": 0.045
   },
@@ -55,20 +55,34 @@
     "coverage": 1.0
   },
   "first_pen": {
-    "method": "ink-geodesic",
-    "start_source": "automatic ink endpoints",
-    "start_point": [
-      141,
-      55
-    ],
-    "components": 2,
-    "invisible_connector_lengths": [
-      11.18
-    ],
+    "method": "ordered-pen",
     "coverage": 1.0,
+    "stroke_count": 18,
+    "pen_up_links": 1,
+    "stroke_pen_radii_px": [
+      3.0,
+      6.0,
+      3.0,
+      6.0,
+      3.0,
+      5.0,
+      4.0,
+      6.0,
+      3.0,
+      5.0,
+      5.0,
+      6.0,
+      5.0,
+      4.0,
+      4.0,
+      5.0,
+      3.0,
+      5.0
+    ],
+    "path_error_px": 10.817,
     "start_seconds": 0.3,
-    "end_seconds": 1.5,
-    "duration_seconds": 1.2,
+    "end_seconds": 1.9,
+    "duration_seconds": 1.6,
     "front_duration": 0.006
   },
   "tail_pen": {

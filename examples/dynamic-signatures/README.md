@@ -20,7 +20,7 @@
 
 纯文字连笔签名可以直接沿字身书写。下图用同一张 `likka` 字稿和四秒节奏，同步对比七款预设与原版。
 
-![likka 动态签名配色对比](../../docs/previews/dynamic-signature-palettes.gif)
+![likka 沿笔势书写的动态签名配色对比](../../skills/dynamic-art-signature/assets/media/word-only/Likka-Palettes.gif)
 
 [配色预设与配置方法](../../skills/dynamic-art-signature/references/rendering.md#配色预设)
 

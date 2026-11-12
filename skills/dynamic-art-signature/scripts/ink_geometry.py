@@ -182,7 +182,7 @@ def ink_progress(mask, start_point=None, join_from=None):
     return result, report
 
 
-def path_progress(mask, points):
+def _path_samples(points):
     points = np.asarray(points, float)
     if (points.ndim != 2 or points.shape[1] != 2 or len(points) < 2
             or not np.isfinite(points).all()):
@@ -199,6 +199,11 @@ def path_progress(mask, points):
         walked += length
     samples = np.vstack([samples, points[-1]])
     positions = np.r_[positions, 1.]
+    return samples, positions, total
+
+
+def path_progress(mask, points):
+    samples, positions, _ = _path_samples(points)
     ys, xs = np.where(mask)
     ink = np.column_stack((xs, ys))
     result = np.full(mask.shape, np.inf)
@@ -212,14 +217,89 @@ def path_progress(mask, points):
                     "path_error_px": round(max_error, 3)}
 
 
+def ordered_pen_progress(mask, paths):
+    """Reveal ink at first brush contact along authored, ordered pen strokes.
+
+    Each raster pixel belongs to its nearest stroke. Within that stroke it is
+    painted on the first nearby brush pass, so a crossing does not launch a new
+    flood down every connected branch. Pen-up moves never touch the raster.
+    """
+    if not isinstance(paths, (list, tuple)) or not paths:
+        raise ValueError('stroke_paths must contain at least one nonempty pen path')
+    strokes = [_path_samples(points) for points in paths]
+    lengths = np.asarray([stroke[2] for stroke in strokes])
+    # Connected subpaths share a continuous pen; only real gaps cause a lift.
+    lifts = np.asarray([
+        np.linalg.norm(strokes[i-1][0][-1] - strokes[i][0][0]) > 1.5
+        for i in range(1, len(strokes))
+    ], dtype=bool)
+    weights = lengths.copy()
+    groups = np.r_[0, np.flatnonzero(lifts)+1, len(strokes)]
+    for left, right in zip(groups[:-1], groups[1:]):
+        # Give an isolated dot enough time for a visible tap.
+        weights[left:right] *= max(1., lengths.sum() * .05 / weights[left:right].sum())
+    gaps = lifts * lengths.sum() * .04
+    total = float(weights.sum() + gaps.sum())
+    starts = np.r_[0., np.cumsum(weights[:-1] + gaps)] / total
+    spans = weights / total
+    samples = np.vstack([stroke[0] for stroke in strokes])
+    boundaries = np.r_[0, np.cumsum([len(stroke[0]) for stroke in strokes])]
+    ys, xs = np.where(mask)
+    ink = np.column_stack((xs, ys))
+    radius = max(1.5, stroke_profile(mask)['p90_width_px'] / 2 + .75)
+    result = np.full(mask.shape, np.inf)
+    owners = np.empty(len(ink), dtype=np.int32)
+    errors = np.empty(len(ink), dtype=np.float64)
+    max_error = 0.
+    for start in range(0, len(ink), 256):
+        block = ink[start:start+256]
+        distances = np.sum((block[:, None, :] - samples[None, :, :])**2, axis=2)
+        nearest = np.column_stack([
+            distances[:, boundaries[j]:boundaries[j+1]].min(axis=1)
+            for j in range(len(strokes))
+        ])
+        owners[start:start+len(block)] = nearest.argmin(axis=1)
+        errors[start:start+len(block)] = nearest.min(axis=1)
+        max_error = max(max_error, float(np.sqrt(nearest.min(axis=1)).max()))
+    radii = []
+    for j, (stroke_samples, positions, _) in enumerate(strokes):
+        selected = np.flatnonzero(owners == j)
+        if not len(selected):
+            radii.append(0.)
+            continue
+        owned_mask = np.zeros_like(mask)
+        owned_mask[ys[selected], xs[selected]] = True
+        # Thin upstrokes must not use the brush width of a later broad downstroke.
+        stroke_radius = max(1.25, stroke_profile(owned_mask)['p90_width_px'] / 2 + .5)
+        radii.append(round(stroke_radius, 3))
+        for start in range(0, len(selected), 256):
+            indices = selected[start:start+256]
+            local = np.sum((ink[indices, None, :] - stroke_samples[None, :, :])**2, axis=2)
+            support = np.maximum(stroke_radius**2, errors[indices] + .25)
+            first_touch = (local <= support[:, None]).argmax(axis=1)
+            values = starts[j] + spans[j] * positions[first_touch]
+            result[ys[indices], xs[indices]] = values
+    if max_error > max(12 * mask.shape[1] / 960, radius * 3):
+        raise ValueError('stroke_paths miss part of the ink; trace this artwork again')
+    return result, {'method': 'ordered-pen', 'coverage': 1.,
+                    'stroke_count': len(strokes), 'pen_up_links': int(lifts.sum()),
+                    'stroke_pen_radii_px': radii,
+                    'path_error_px': round(max_error, 3)}
+
+
 def reveal_times(mask, start, end, *, pen=None, join_from=None, path=None, slowing=False):
     pen = pen or {}
     front = float(pen.get("front_duration", min(.006, (end-start)*.025)))
     power = float(pen.get("acceleration_power", 1.3))
     if not 0 < front < end-start or not np.isfinite(power) or power <= 0:
         raise ValueError("Pen duration, front_duration and acceleration_power must be positive")
-    progress, report = (path_progress(mask, path) if path is not None else
-                        ink_progress(mask, pen.get("start_point"), join_from))
+    if 'stroke_paths' in pen:
+        if path is not None:
+            raise ValueError('Use stroke_paths or a single path, not both')
+        progress, report = ordered_pen_progress(mask, pen['stroke_paths'])
+    else:
+        progress, report = (path_progress(mask, path) if path is not None else
+                            ink_progress(mask, pen.get("start_point"), join_from))
     values = np.clip(progress[mask], 0, 1)
     values = 1-np.sqrt(1-values) if slowing else values**(1/power)
     times = np.full(mask.shape, np.inf)
