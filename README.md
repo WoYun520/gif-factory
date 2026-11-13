@@ -20,7 +20,7 @@
 | --- | --- | --- |
 | GIF 工厂总入口 | 根据需求选择表情包、卡片、海报、签名、片头、绘本或品牌短片的做法 | [查看](SKILL.md) |
 | 动态签名 | 支持多种字体和自定义字稿，把名字与意象融成动态签名 | [查看](skills/dynamic-art-signature/SKILL.md) |
-| 电影片头 | 50 种字形可选，可以设计字、配场景，也可以用你提供的素材 | [查看](skills/cinematic-title-lettering/SKILL.md) |
+| 电影片头 | 中文50种写法，英文50款基础字体与装饰封面；可用自己的字体、照片或字稿 | [查看](skills/cinematic-title-lettering/SKILL.md) |
 | 动态绘本 | 让插画做完一个动作，再翻到下一页，能做横屏或竖屏 | [查看](skills/compact-storybook/SKILL.md) |
 
 <a id="stickers"></a>
@@ -105,11 +105,19 @@
 
 ## 电影片头
 
-50 种字的写法。选喜欢的编号，换成你的片名，字和场景一起设计。新增的十款手写风格是 F41–F50，每款都有原稿、白底字稿、换句对照和独立场景。也可以提供自己的照片、文案、字体参考或现成字稿，只做你需要的部分。
+中文50种字的写法，另有英文50款基础字体和装饰封面。中文选 F 编号，英文选 EN 编号；都支持自定义字体和字稿。选喜欢的编号，换成你的片名，字和场景一起设计。新增的十款手写风格是 F41–F50，每款都有原稿、白底字稿、换句对照和独立场景。也可以提供自己的照片、文案、字体参考或现成字稿，只做你需要的部分。
 
 <a href="skills/cinematic-title-lettering/references/handwriting-stability.md"><img src="skills/cinematic-title-lettering/assets/style-catalog/previews/handwriting-scenes-01.jpg" alt="十款手写电影片头 F41–F50，每款各有片名和场景" width="720"></a>
 
 [50 种字形与原图](skills/cinematic-title-lettering/references/style-catalog.md) · [十款手写字怎么用](skills/cinematic-title-lettering/references/handwriting-stability.md) · [五种排法](skills/cinematic-title-lettering/references/layout-recipes.md) · [三联图](skills/cinematic-title-lettering/references/promo-triptychs.md) · [Skill](skills/cinematic-title-lettering/SKILL.md)
+
+英文每款都有独立场景、原始字体文件和装饰参考，分成五张图，每张十款。
+
+<a href="skills/cinematic-title-lettering/references/english-titles.md"><img src="skills/cinematic-title-lettering/assets/english-titles/previews/01-10.jpg" alt="英文装饰片头 EN01–EN10，每张十款，共五组" width="720"></a>
+
+[看英文50款与五组大图](skills/cinematic-title-lettering/references/english-titles.md) · [字体与授权](skills/cinematic-title-lettering/assets/english-titles/source-notes.md)
+
+> 用 EN25 的写法做 “Letters from Summer”，放大首字母，让收笔融进海岸线。
 
 > 用我提供的风景图和片名，按 F13 粉笔拙块做一张横向片头，字写得有点特别。
 

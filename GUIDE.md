@@ -56,6 +56,8 @@
 
 也可以直接提供字稿，只做排版融合。[50 种字形](skills/cinematic-title-lettering/references/style-catalog.md)里可以按编号选，F41–F50 十款手写风格另附原稿、长短句对照和独立场景。也支持自己的照片、文案和字体参考。
 
+英文片名可选 [EN01–EN50](skills/cinematic-title-lettering/references/english-titles.md)，每款有基础字体、装饰封面和实际字稿参考，也可以用自己的字体。
+
 ### 动态绘本
 
 > 把这个故事做成动态绘本，一页完成一个动作，动作做完停一下再翻页。要正文书写和配乐，先做一页看看。

@@ -392,7 +392,7 @@
 
 <a id="电影片头"></a>
 
-## 电影片头 · 50 种字的风格
+## 电影片头 · 中文50种与英文50款
 
 点开看大图，选好编号，再说片名和想要的感觉。F41–F50 是新增的十款手写风格，每款都留了原稿、白底字稿、长短句对照和独立场景。场景、文案和字稿也可以自己提供。
 
@@ -403,6 +403,23 @@
 <a href="skills/cinematic-title-lettering/assets/style-catalog/previews/handwriting-scenes-01.jpg"><img src="skills/cinematic-title-lettering/assets/style-catalog/previews/handwriting-scenes-01.jpg" alt="十款手写电影片头 F41–F50" width="720"></a>
 
 [看全部 50 种和原图](skills/cinematic-title-lettering/references/style-catalog.md) · [十款手写字怎么用](skills/cinematic-title-lettering/references/handwriting-stability.md) · [白底字稿总览](skills/cinematic-title-lettering/assets/style-catalog/previews/handwriting-01.jpg) · [片头怎么做](skills/cinematic-title-lettering/references/film-title-frames.md)
+
+### 英文片头 EN01–EN50
+
+50款基础字体配50张装饰封面。每图十款，按编号选后换成自己的英文片名；也支持自己的照片、字体或字稿。
+
+<a href="skills/cinematic-title-lettering/assets/english-titles/previews/01-10.jpg"><img src="skills/cinematic-title-lettering/assets/english-titles/previews/01-10.jpg" alt="英文装饰片头 EN01–EN10" width="720"></a>
+
+<a href="skills/cinematic-title-lettering/assets/english-titles/previews/11-20.jpg"><img src="skills/cinematic-title-lettering/assets/english-titles/previews/11-20.jpg" alt="英文装饰片头 EN11–EN20" width="720"></a>
+
+<a href="skills/cinematic-title-lettering/assets/english-titles/previews/21-30.jpg"><img src="skills/cinematic-title-lettering/assets/english-titles/previews/21-30.jpg" alt="英文装饰片头 EN21–EN30" width="720"></a>
+
+<a href="skills/cinematic-title-lettering/assets/english-titles/previews/31-40.jpg"><img src="skills/cinematic-title-lettering/assets/english-titles/previews/31-40.jpg" alt="英文装饰片头 EN31–EN40" width="720"></a>
+
+<a href="skills/cinematic-title-lettering/assets/english-titles/previews/41-50.jpg"><img src="skills/cinematic-title-lettering/assets/english-titles/previews/41-50.jpg" alt="英文装饰片头 EN41–EN50" width="720"></a>
+
+[50款编号、字体和做法](skills/cinematic-title-lettering/references/english-titles.md) · [字体来源与授权](skills/cinematic-title-lettering/assets/english-titles/source-notes.md)
+
 
 ## 动态绘本展厅
 

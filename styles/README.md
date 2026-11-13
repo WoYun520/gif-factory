@@ -45,9 +45,11 @@
 
 ## 电影片头
 
-50 种字形可选，F41–F50 十款手写风格附原稿、长短句对照和独立场景。可以重新设计片名和场景，也可以直接用你提供的照片、文案或字稿。
+中文50种写法，英文50款基础字体和装饰封面，也支持自定义字体。中文 F41–F50 十款手写风格附原稿、长短句对照和独立场景。可以重新设计片名和场景，也可以直接用你提供的照片、文案或字稿。
 
-[看 50 种字形](../skills/cinematic-title-lettering/references/style-catalog.md) · [十款手写字怎么用](../skills/cinematic-title-lettering/references/handwriting-stability.md) · [看做法](../skills/cinematic-title-lettering/references/film-title-frames.md) · [独立 Skill](../skills/cinematic-title-lettering/SKILL.md)
+[看中文50种字形](../skills/cinematic-title-lettering/references/style-catalog.md) · [十款手写字怎么用](../skills/cinematic-title-lettering/references/handwriting-stability.md) · [看做法](../skills/cinematic-title-lettering/references/film-title-frames.md) · [独立 Skill](../skills/cinematic-title-lettering/SKILL.md)
+
+[看英文50款与五组大图](../skills/cinematic-title-lettering/references/english-titles.md)
 
 ## 动态绘本
 

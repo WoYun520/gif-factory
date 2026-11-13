@@ -17,7 +17,7 @@ description: 根据图片或文字制作角色表情包、光栅变画卡、动�
 | 光栅变画卡 | [双状态变画](references/lenticular.md) |
 | 动态海报 | [海报制作](references/dynamic-posters.md) |
 | 动态签名 | [签名入口](references/dynamic-signatures.md)、[独立 Skill](skills/dynamic-art-signature/SKILL.md) |
-| 电影片头 | [独立 Skill](skills/cinematic-title-lettering/SKILL.md)、[50 种字形原图](skills/cinematic-title-lettering/references/style-catalog.md) |
+| 电影片头 | [独立 Skill](skills/cinematic-title-lettering/SKILL.md)、[中文50种字形](skills/cinematic-title-lettering/references/style-catalog.md)、[英文50款](skills/cinematic-title-lettering/references/english-titles.md) |
 | 动态绘本 | [绘本入口](references/storybook.md)、[独立 Skill](skills/compact-storybook/SKILL.md) |
 | 品牌短片 | [短片制作](references/brand-film.md) |
 
