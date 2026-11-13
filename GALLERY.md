@@ -392,15 +392,17 @@
 
 <a id="电影片头"></a>
 
-## 电影片头 · 40 种字的风格
+## 电影片头 · 50 种字的风格
 
-每种都有一张完整片头图，点开看大图。选好编号，说片名和想要的感觉，就能继续做新图。
+点开看大图，选好编号，再说片名和想要的感觉。F41–F50 是新增的十款手写风格，每款都留了原稿、白底字稿、长短句对照和独立场景。场景、文案和字稿也可以自己提供。
 
 <a href="skills/cinematic-title-lettering/assets/style-catalog/previews/new-01.jpg"><img src="skills/cinematic-title-lettering/assets/style-catalog/previews/new-01.jpg" alt="新增二十款片头 F21–F30" width="720"></a>
 
 <a href="skills/cinematic-title-lettering/assets/style-catalog/previews/new-02.jpg"><img src="skills/cinematic-title-lettering/assets/style-catalog/previews/new-02.jpg" alt="新增二十款片头 F31–F40" width="720"></a>
 
-[看全部 40 种和原图](skills/cinematic-title-lettering/references/style-catalog.md) · [片头怎么做](skills/cinematic-title-lettering/references/film-title-frames.md)
+<a href="skills/cinematic-title-lettering/assets/style-catalog/previews/handwriting-scenes-01.jpg"><img src="skills/cinematic-title-lettering/assets/style-catalog/previews/handwriting-scenes-01.jpg" alt="十款手写电影片头 F41–F50" width="720"></a>
+
+[看全部 50 种和原图](skills/cinematic-title-lettering/references/style-catalog.md) · [十款手写字怎么用](skills/cinematic-title-lettering/references/handwriting-stability.md) · [白底字稿总览](skills/cinematic-title-lettering/assets/style-catalog/previews/handwriting-01.jpg) · [片头怎么做](skills/cinematic-title-lettering/references/film-title-frames.md)
 
 ## 动态绘本展厅
 

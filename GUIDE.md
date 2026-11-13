@@ -54,7 +54,7 @@
 
 > 用我提供的照片和片名，按 F13 的写法做一张横向片头，字和场景一起设计。
 
-也可以直接提供字稿，只做排版融合。[40 种字形](skills/cinematic-title-lettering/references/style-catalog.md)里可以按编号选。
+也可以直接提供字稿，只做排版融合。[50 种字形](skills/cinematic-title-lettering/references/style-catalog.md)里可以按编号选，F41–F50 十款手写风格另附原稿、长短句对照和独立场景。也支持自己的照片、文案和字体参考。
 
 ### 动态绘本
 

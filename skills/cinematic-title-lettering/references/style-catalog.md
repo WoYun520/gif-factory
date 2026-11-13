@@ -1,12 +1,12 @@
-# 40 种电影片名字的风格
+# 50 种电影片名字的风格
 
-先看图，挑喜欢的编号，再说片名和想要的感觉。每张都是按那句话重新写的，换片名时也会重新设计。
+先看图，挑喜欢的编号，再说片名和想要的感觉。每张都有完整片头案例，换片名时沿着选中的写法重新设计。F41–F50 是新增的十款手写风格，还附原稿、白底字稿和长短句对照。
 
 场景图、片名文案或现成字稿都可以自己提供。可以只设计字、只配场景，也可以把你给的图片和字稿排成一张片头图。
 
 > 例：用 F25 空心双线，做一张《晚风借我一夜》的片头，场景也帮我配。
 
-[前十款](../assets/style-catalog/previews/all-01.jpg) · [原版十款](../assets/style-catalog/previews/selected-01.jpg) · [新作上篇](../assets/style-catalog/previews/new-01.jpg) · [新作下篇](../assets/style-catalog/previews/new-02.jpg)
+[前十款](../assets/style-catalog/previews/all-01.jpg) · [原版十款](../assets/style-catalog/previews/selected-01.jpg) · [新作上篇](../assets/style-catalog/previews/new-01.jpg) · [新作下篇](../assets/style-catalog/previews/new-02.jpg) · [十款手写片头](../assets/style-catalog/previews/handwriting-scenes-01.jpg) · [白底字稿](../assets/style-catalog/previews/handwriting-01.jpg) · [换片名保持写法](handwriting-stability.md)
 
 ## 细字手写
 
@@ -17,6 +17,13 @@
 | <a id="f08"></a>[**F08 瘦骨残墨**](../assets/film-title-examples/08.png) | 字瘦而长，墨不太足，笔画边上能看见干涩的毛边。 | 冬天、独白、空旷画面 |
 | <a id="f11"></a>[**F11 日记硬笔**](../assets/style-catalog/selected/F11.png) | 像私人日记，细线急停，字有大有小，偶尔多描一笔。 | 日常、独处、回忆 |
 | <a id="f28"></a>[**F28 断线钢笔**](../assets/style-catalog/new-20/F28.png) | 细钢笔字，转角尖，写到一半偶尔停笔，留出小缺口。 | 桥下、散步、轻声说话 |
+| <a id="f42"></a>[**F42 圆头长锋**](../assets/style-catalog/handwriting/frames/F42.png) | 圆而饱满的起笔接细长收笔，大小轻轻错落。 | 花园、季节、安静的风景片头 |
+| <a id="f43"></a>[**F43 墨点长钩**](../assets/style-catalog/handwriting/frames/F43.png) | 小墨滴点笔、瘦长骨架和干净长弧钩，字大多分开。 | 四季、花园、旅行与温柔的片头 |
+| <a id="f46"></a>[**F46 松弛趣写**](../assets/style-catalog/handwriting/frames/F46.png) | 偏细的随手字，笔端略钝，歪斜小框、宽窄和大小不齐。 | 人物日常、轻喜剧、轻松的记录 |
+| <a id="f47"></a>[**F47 尖笔日记**](../assets/style-catalog/handwriting/frames/F47.png) | 瘦高硬笔、尖转角和急停短横，收笔干脆。 | 日记、随拍、轻松而有棱角的标题 |
+| <a id="f48"></a>[**F48 轻圆细笔**](../assets/style-catalog/handwriting/frames/F48.png) | 轻细近等粗，短圆转弯，字间松散，收笔柔和。 | 花园、旅行、安静柔和的生活片 |
+| <a id="f49"></a>[**F49 细锋顿收**](../assets/style-catalog/handwriting/frames/F49.png) | 紧窄的细钢笔字，局部顿笔、尖收笔，主竖略长。 | 私人独白、暮色、信件 |
+| <a id="f50"></a>[**F50 疏朗横展**](../assets/style-catalog/handwriting/frames/F50.png) | 平正疏朗的细硬笔，横画舒展、部件留白开，收笔克制。 | 山河、旅行、田野 |
 
 ## 毛笔和排刷
 
@@ -39,6 +46,8 @@
 | <a id="f20"></a>[**F20 绕线怪字**](../assets/style-catalog/selected/F20.png) | 用细线把字绕出大大小小的圈，偶尔重描、打结。 | 独处的夜晚、有点怪的故事 |
 | <a id="f21"></a>[**F21 招牌连笔**](../assets/style-catalog/new-20/F21.png) | 像老店招牌，字身厚，字脚用细线连起来，里面的空隙有点歪。 | 街角、小店、日常故事 |
 | <a id="f32"></a>[**F32 反骨涂写**](../assets/style-catalog/new-20/F32.png) | 像不服气时随手涂写，直线和短折多，有些笔画来回划过。 | 年轻人、告别、城市心情 |
+| <a id="f41"></a>[**F41 回环长竖**](../assets/style-catalog/handwriting/frames/F41.png) | 细线回环，挑一根直竖明显拉长，字间留空。 | 内心独白、夜景、松弛的生活短片 |
+| <a id="f44"></a>[**F44 收紧连笔**](../assets/style-catalog/handwriting/frames/F44.png) | 细笔紧凑快写，字内小回绕，收笔短而轻。 | 日常、随想、轻声自述的短片 |
 
 ## 粗字和刻字
 
@@ -72,6 +81,7 @@
 | <a id="f10"></a>[**F10 饱墨圆锋**](../assets/film-title-examples/10.png) | 圆头毛笔写得饱满，弯笔粗，收尾细，边缘清楚。 | 海边、慢节奏故事 |
 | <a id="f19"></a>[**F19 水痕湿笔**](../assets/style-catalog/selected/F19.png) | 像湿墨刚落下，边缘有点散，圆笔旁带着小墨点。 | 水边、夜晚、青春 |
 | <a id="f27"></a>[**F27 圆头记号**](../assets/style-catalog/new-20/F27.png) | 圆头记号笔字，粗细差不多，笔头圆，字脚高低不齐。 | 便利店、晴天、轻喜剧 |
+| <a id="f45"></a>[**F45 饱墨圆写**](../assets/style-catalog/handwriting/frames/F45.png) | 厚圆笔腹与尖细抬笔交错，字里留白清楚。 | 月色、情感片、温暖的生活故事 |
 
 ## 粉笔和蜡笔
 

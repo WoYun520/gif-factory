@@ -45,9 +45,9 @@
 
 ## 电影片头
 
-40 种字形可选。可以重新设计片名和场景，也可以直接用你提供的照片、文案或字稿。
+50 种字形可选，F41–F50 十款手写风格附原稿、长短句对照和独立场景。可以重新设计片名和场景，也可以直接用你提供的照片、文案或字稿。
 
-[看 40 种字形](../skills/cinematic-title-lettering/references/style-catalog.md) · [看做法](../skills/cinematic-title-lettering/references/film-title-frames.md) · [独立 Skill](../skills/cinematic-title-lettering/SKILL.md)
+[看 50 种字形](../skills/cinematic-title-lettering/references/style-catalog.md) · [十款手写字怎么用](../skills/cinematic-title-lettering/references/handwriting-stability.md) · [看做法](../skills/cinematic-title-lettering/references/film-title-frames.md) · [独立 Skill](../skills/cinematic-title-lettering/SKILL.md)
 
 ## 动态绘本
 
