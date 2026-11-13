@@ -17,6 +17,7 @@
 | 电影片头 | 原创片名字形和带场景的片头图 | [查看](skills/cinematic-title-lettering/references/style-catalog.md) |
 | 动态绘本 | 插画动起来，再一页页讲故事 | [查看](GALLERY.md#动态绘本展厅) |
 | 品牌短片 | 角色带着产品和包装演一段小故事 | [查看](GALLERY.md#品牌宣传片展厅) |
+| 金融科普 | 人物、业务场景和连续账目解释金融机制，默认无个人水印 | [查看](GALLERY.md#金融科普展厅) |
 
 ## 你可以提供什么
 
@@ -66,6 +67,12 @@
 
 > 用这套吉祥物和产品图做一条 15 秒品牌短片。角色亲手把产品装进包装，最后露出店名。给我成片和可修改的工程。
 
+### 金融科普
+
+> 用黑纸摄影拼贴讲清“贷款怎么创造存款”。要柜台签约、两份凭证、盖章还款和结算场景，无个人水印，给我成片、封面和可编辑工程。
+
+只要选题时可以说“先给我一个能拍成具体场景的金融机制选题”。方案认可后再说“开始制作”。[看初版 Skill](skills/finance-paper-explainer/SKILL.md)。
+
 ## 做完会拿到什么
 
 | 类别 | 常用交付 |
@@ -75,6 +82,7 @@
 | 电影片头 | 独立图片；成组时加总览和压缩包；动画另按要求制作 |
 | 动态绘本 | 整本或独立页 MP4，横屏和竖屏按需要做 |
 | 品牌短片 | 视频、可修改的工程和必要素材说明 |
+| 金融科普 | 无水印MP4、同风格封面、可编辑工程及必要来源说明 |
 
 ## 想改效果时
 
@@ -84,7 +92,7 @@
 
 ## 想单独使用某个 Skill
 
-[GIF 工厂总入口](SKILL.md) · [动态签名](skills/dynamic-art-signature/SKILL.md) · [电影片头](skills/cinematic-title-lettering/SKILL.md) · [动态绘本](skills/compact-storybook/SKILL.md)
+[GIF 工厂总入口](SKILL.md) · [动态签名](skills/dynamic-art-signature/SKILL.md) · [电影片头](skills/cinematic-title-lettering/SKILL.md) · [动态绘本](skills/compact-storybook/SKILL.md) · [金融纸艺科普](skills/finance-paper-explainer/SKILL.md)
 
 需要能生成图片、运行制作脚本的环境。自己运行时，从对应 Skill 和制作说明查依赖、素材和命令。
 
@@ -100,6 +108,7 @@
 | 上述表情包的 MP4 预览 | 加 `--preview` 时需要 FFmpeg，把最终 GIF 合成可播放的视频 |
 | 动态签名和签名九宫格 | Python 3、Pillow、NumPy，以及 FFmpeg、ffprobe；重跑旧版组件脚本才需 SciPy，具体命令见签名 Skill |
 | 动态绘本视频检查 | 检查脚本用 Python 3、ffprobe；抽取检查帧时用 FFmpeg。制作和渲染工具另按绘本说明准备 |
+| 金融科普 | 需要可用的图像、配音与视频渲染工具；样例使用HyperFrames、Node.js、FFmpeg和ffprobe；交付检查脚本用Python标准库，不内置模型或服务额度 |
 | 变画卡、动态海报、品牌短片 | 按所选做法准备图像与视频工具，详见对应制作说明，不统一套用表情包依赖 |
 
 FFmpeg 是本地处理视频和声音的工具，这里用于合成 MP4、转换 GIF、拼动态总览和抽帧；ffprobe 用来读取尺寸、帧率和时长。使用这些本地工具不需要付费 API。仓库不自带生图模型，调用外部生图或其他服务时，额度和费用按所用服务计算。

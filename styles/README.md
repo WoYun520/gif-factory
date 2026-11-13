@@ -61,6 +61,12 @@
 
 [看面包店案例](../examples/brand-films/manman-bakery/README.md) · [看制作方法](../references/brand-film.md)
 
+## 金融科普
+
+用完整业务场景、人物动作和连续账目解释金融机制。黑纸摄影拼贴、旁白驱动节奏，默认无个人水印。
+
+[看做法和案例](finance-paper-explainer/STYLE.md) · [独立 Skill](../skills/finance-paper-explainer/SKILL.md)
+
 ## 维护分类
 
 新增做法先有可看的小样，再写清楚适合什么、怎么做、交付什么。循环 GIF 的案例登记在 [catalog.json](catalog.json)，影片和片头按各自格式展示。试作、已选稿和弃用版本在案例说明中分别记录。

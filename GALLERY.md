@@ -2,7 +2,7 @@
 
 [返回首页](README.md) · [分类说明](styles/README.md) · [使用指南](GUIDE.md)
 
-[表情包展厅](#表情包展厅) · [电子光栅卡展厅](#电子光栅卡展厅) · [动态海报展厅](#动态海报展厅) · [动态艺术签名](#动态艺术签名) · [电影片头](#电影片头) · [动态绘本展厅](#动态绘本展厅) · [品牌宣传片展厅](#品牌宣传片展厅)
+[表情包展厅](#表情包展厅) · [电子光栅卡展厅](#电子光栅卡展厅) · [动态海报展厅](#动态海报展厅) · [动态艺术签名](#动态艺术签名) · [电影片头](#电影片头) · [动态绘本展厅](#动态绘本展厅) · [品牌宣传片展厅](#品牌宣传片展厅) · [金融科普展厅](#金融科普展厅)
 
 ## 表情包展厅
 
@@ -438,3 +438,16 @@
 这次借鉴了 [gbro-collage-broll](https://github.com/pyang5166/gbro-collage-broll) 的构思和组装流程，结合本项目的角色动作方法，用可编辑图层完成；没有调用它的 Gemini 视频脚本。发布配乐版时保留[音乐署名](examples/brand-films/manman-bakery/CREDITS.md)。
 
 </details>
+
+
+## 金融科普展厅
+
+### 贷款创造存款 · v0.1方法样片
+
+黑纸摄影拼贴，借款人与职员在柜台签约，存款与欠款凭证同步出现；天平、还本章和结算地图参与解释。无个人水印、底部案例条和配乐署名条。
+
+<a href="examples/finance-explainers/loan-creation/film.mp4"><img src="examples/finance-explainers/loan-creation/preview.gif" alt="贷款创造存款金融科普静音节选" width="320"></a>
+
+[完整视频、封面与说明](examples/finance-explainers/loan-creation/README.md) · [Skill](skills/finance-paper-explainer/SKILL.md) · [场景方法](styles/finance-paper-explainer/STYLE.md) · [素材来源](examples/finance-explainers/loan-creation/CREDITS.md)
+
+成片为42.733333秒、1080×1920、30fps；GIF是静音节选。此例已做文件及画面检查，仍是v0.1方法样片，不计入聊天表情包数量，也不表示新题材或新工具均已稳定验证。

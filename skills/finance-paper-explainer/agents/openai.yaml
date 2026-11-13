@@ -1,0 +1,4 @@
+interface:
+  display_name: "金融纸艺科普"
+  short_description: "用黑纸摄影拼贴、具体人物动作和连续账目，制作讲清金融机制的无水印短视频。"
+  default_prompt: "使用 $finance-paper-explainer，把这个金融机制做成有具体场景和动作的科普短视频，交付成片、封面与可编辑工程。"

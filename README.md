@@ -8,7 +8,7 @@
 
 装好后，给一张图、一段文字，或直接说想做什么。角色图、场景图、片名、字稿和配乐都可以自己提供，缺的部分再一起补。
 
-[表情包](#stickers) · [光栅变画卡](#cards-transforms) · [动态海报](#posters-type) · [动态签名](#dynamic-signatures) · [电影片头](#cinematic-title-lettering) · [动态绘本](#storybooks) · [品牌短片](#brand-films)
+[表情包](#stickers) · [光栅变画卡](#cards-transforms) · [动态海报](#posters-type) · [动态签名](#dynamic-signatures) · [电影片头](#cinematic-title-lettering) · [动态绘本](#storybooks) · [品牌短片](#brand-films) · [金融科普](#finance-explainers)
 
 [分类说明](styles/README.md) · [完整作品库](GALLERY.md) · [使用指南](GUIDE.md) · [下载项目](https://github.com/WoYun520/gif-factory/archive/refs/heads/main.zip)
 
@@ -18,10 +18,11 @@
 
 | Skill | 能做什么 | 说明 |
 | --- | --- | --- |
-| GIF 工厂总入口 | 根据需求选择表情包、卡片、海报、签名、片头、绘本或品牌短片的做法 | [查看](SKILL.md) |
+| GIF 工厂总入口 | 根据需求选择表情包、卡片、海报、签名、片头、绘本、品牌短片或金融科普的做法 | [查看](SKILL.md) |
 | 动态签名 | 支持多种字体和自定义字稿，把名字与意象融成动态签名 | [查看](skills/dynamic-art-signature/SKILL.md) |
 | 电影片头 | 50 种字形可选，可以设计字、配场景，也可以用你提供的素材 | [查看](skills/cinematic-title-lettering/SKILL.md) |
 | 动态绘本 | 让插画做完一个动作，再翻到下一页，能做横屏或竖屏 | [查看](skills/compact-storybook/SKILL.md) |
+| 金融纸艺科普 | 用人物、业务场景和连续账目讲清金融机制，默认无个人水印 | [查看](skills/finance-paper-explainer/SKILL.md) |
 
 <a id="stickers"></a>
 <a id="表情包展厅"></a>
@@ -138,6 +139,18 @@
 
 > 用这套吉祥物和产品图做一条 15 秒品牌短片，让角色亲手把产品装进包装，给我成片和可修改的工程。
 
+<a id="finance-explainers"></a>
+
+## 金融科普
+
+把不熟悉的金融机制做成能看见的过程：柜台签约、两份凭证、盖章还本与跨行结算。黑纸摄影拼贴，数字和旁白同步，默认无个人水印，案例说明和配乐署名放在画面之外。
+
+<a href="examples/finance-explainers/loan-creation/film.mp4"><img src="examples/finance-explainers/loan-creation/preview.gif" alt="贷款创造存款：无水印纸艺金融科普节选" width="320"></a>
+
+[完整案例与来源](examples/finance-explainers/loan-creation/README.md) · [制作方法](styles/finance-paper-explainer/STYLE.md) · [独立 Skill](skills/finance-paper-explainer/SKILL.md)
+
+> 把“银行借给你的100万从哪来”做成一条约45秒竖屏科普。人物在具体场景里操作，给我无水印成片、封面和可编辑工程。
+
 ## 使用说明
 
 想换台词、配色、画风、尺寸或动作，直接说。已经选好的稿子和要求会继续沿用。完整系列和试作的说明放在[作品库](GALLERY.md)，具体怎么提需求看[使用指南](GUIDE.md)。
@@ -147,4 +160,6 @@
 制作脚本与 Skill 文档采用 [MIT](LICENSE)。动态海报的角色与参考设计语言不随代码转授商业权利，见[案例说明](examples/dynamic-posters/p5-integrated/README.md)。电子光栅卡中的角色 IP、网络照片与他人插画不随代码一并授予 MIT 权利，出处及使用边界见[案例来源说明](examples/lenticular-cards/README.md)。
 
 第三方配乐和字体按各自许可使用；面包店案例的来源与署名见 [CREDITS](examples/brand-films/manman-bakery/CREDITS.md)。
+
+金融科普案例的配乐、生成素材与文件检查说明见 [CREDITS](examples/finance-explainers/loan-creation/CREDITS.md)；配乐不随代码改标为MIT。
 
