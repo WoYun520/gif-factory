@@ -1,0 +1,120 @@
+{
+  "video": {
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "fps": 24,
+    "duration": 76.666667,
+    "frames": 1840,
+    "video_codec": "h264",
+    "audio_codecs": [
+      "aac"
+    ]
+  },
+  "cover": {
+    "file": "cover.jpg",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "sourceTimeSeconds": 47
+  },
+  "preview": {
+    "file": "preview.gif",
+    "dimensions": [
+      480,
+      270
+    ],
+    "frames": 95,
+    "durationSeconds": 9.5,
+    "silent": true,
+    "loopingWebExcerpt": true,
+    "sourceSegmentsSeconds": [
+      [
+        8.3,
+        11.3
+      ],
+      [
+        19,
+        21.5
+      ],
+      [
+        32,
+        34
+      ],
+      [
+        44,
+        46
+      ]
+    ]
+  },
+  "subtitles": {
+    "file": "captions.srt",
+    "cues": 18,
+    "withinVideoDuration": true
+  },
+  "provenance": {
+    "externalSkill": "lemo-opuscar",
+    "upstreamAuthor": "Lemomo (LemoLab)",
+    "upstreamUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+    "upstreamCommit": "3a7132b996be0241c1ea0ab180d519f06e6f10b6",
+    "includesUpstreamSkillOrRuntime": false,
+    "credits": "CREDITS.md"
+  },
+  "checks": {
+    "sourceVideoUnchanged": true,
+    "scope": "Published packaging preserves the rendered film and original Yunjie audio; source motion, reading-time, full-decode and ASR checks are documented in the case README. Not a new render or a human listening review.",
+    "fullVideoAndAudioDecode": true
+  },
+  "files": {
+    "model.json": {
+      "bytes": 1179,
+      "sha256": "2a7cad0742d598a4256a9cc44919d3449731f29190db15dd1899bfea9b022e38"
+    },
+    "CREDITS.md": {
+      "bytes": 3446,
+      "sha256": "3dc8a37b2dc0a36375a2a1e1f79fe08a5d878265abb10c05496970f5ce66b9d4"
+    },
+    "film.mp4": {
+      "bytes": 44928990,
+      "sha256": "fb467a1f5140d52b031f23ff9a76653b7e61abc453c84b34400c51237e9e60d3"
+    },
+    "look-test.mp4": {
+      "bytes": 3200430,
+      "sha256": "858622a44ee3393e9ad755ab8c5eb647ea3e88da89d6e42a80407d896ab5ce29"
+    },
+    "captions.srt": {
+      "bytes": 1481,
+      "sha256": "ba4e4d7dce1183a8900403c3da5454cacbe4cc3f6e4b338231cf6dc57714379b"
+    },
+    "README.md": {
+      "bytes": 3953,
+      "sha256": "20196855d86e0fef64545e1ebe02f772612abab61f24b64df0cffedeac4bc353"
+    },
+    "LEMO-MIT.txt": {
+      "bytes": 1078,
+      "sha256": "b05785f9f18e6716bab63424b11454513b9943a222595b70411009202fc592b5"
+    },
+    "preview.gif": {
+      "bytes": 2237166,
+      "sha256": "45b4eeef15d768079fd43d6c90cb6e7dc71831f7446b4353dff8a3dbd9337c69"
+    },
+    "timeline.json": {
+      "bytes": 9117,
+      "sha256": "67db53eb3fcbe9cfb6b9bd1fafc3cda5ce56f8e903f586b0b3c0c541d7facd27"
+    },
+    "cover.jpg": {
+      "bytes": 99904,
+      "sha256": "fc1bbbe9410cd3801b6570d2b8827b7180b209351f113d609acfe6c70485b51a"
+    },
+    "FACTS.md": {
+      "bytes": 2655,
+      "sha256": "04a2c2f67a7902645c1d60192a847c52bfa520d8dde9342fc2361c9d66679651"
+    },
+    "narration.txt": {
+      "bytes": 953,
+      "sha256": "6bed66331f7de6c1db8b00bdb4c67d60ac6189ccbf51508bd3c4b55ffc3f1183"
+    }
+  }
+}

@@ -20,13 +20,15 @@ description: 根据图片或文字制作角色表情包、光栅变画卡、动�
 | 电影片头 | [独立 Skill](skills/cinematic-title-lettering/SKILL.md)、[中文50种字形](skills/cinematic-title-lettering/references/style-catalog.md)、[英文50款](skills/cinematic-title-lettering/references/english-titles.md) |
 | 动态绘本 | [绘本入口](references/storybook.md)、[独立 Skill](skills/compact-storybook/SKILL.md) |
 | 品牌短片 | [短片制作](references/brand-film.md) |
-| vibe 知识大赏 | [独立 Skill](skills/paper-mechanism-explainer/SKILL.md)、[三种风格与案例](styles/paper-mechanism-explainer/STYLE.md) |
+| vibe 知识大赏 | [独立 Skill](skills/paper-mechanism-explainer/SKILL.md)、[内置风格与外部立体剖面](styles/paper-mechanism-explainer/STYLE.md) |
 
 卡片先检查两图的角度、眼线、下巴和肩线，默认 480×720、6 秒、标题固定。海报先区分保留原画加动态字，还是连人物、背景和字一起重新设计；现有漫画海报是两幅完整状态切换，不能说成逐字独立动画。游戏界面的 GIF 演示也不等于可玩的游戏。
 
 签名先看[四种风格的动图和做法](skills/dynamic-art-signature/references/styles.md)：纯文字连笔、意象融字、乐器融字、墨迹聚合。字体、颜色和动效可以搭配。支持多种字体和自定义字稿，纯文字直接沿字迹写出；带独立上方意象时，安排快写、约一秒停顿和慢收锋，普通款用平面墨迹。电影片头把字形、排法、场景一起设计，默认横向；提供的原图和定稿字稿按要求沿用。绘本默认固定画面、实际 6fps、每页约三秒、一个动作加结果停留，前后页道具要接得上。品牌短片交付视频和所需工程，不套表情包的方形循环规格。具体参数以各自说明和用户要求为准。
 
-生活机关、机械结构或金融机制的讲解视频走「vibe 知识大赏」分支，先选内容，再选摄影纸艺、彩色贴纸或复古档案；续作沿用已选风格和声线。只读当前内容与风格的说明。用统一状态模型驱动接触、转动或金额变化，新片起步为1080×1920、30fps，默认无个人水印。微缩场景与三维人物不在该分支中；准确的三维机构几何按机械说明处理。只要选题时先给方案，批准制作后再完成成片、封面和可编辑工程。现有公开案例提供媒体和模型，不能当成完整可渲染工程或所有题材都已验证的模板。
+生活机关、机械结构或金融机制的讲解视频走「vibe 知识大赏」分支，先选内容，再选摄影纸艺、彩色贴纸或复古档案；续作沿用已选风格和声线。只读当前内容与风格的说明。用统一状态模型驱动接触、转动或金额变化，内置风格新片起步为1080×1920、30fps，默认无个人水印。微缩场景与三维人物不在该分支中；准确的三维机构几何按机械说明处理。只要选题时先给方案，批准制作后再完成成片、封面和可编辑工程。现有公开案例提供媒体和模型，不能当成完整可渲染工程或所有题材都已验证的模板。
+
+用户选择立体剖面、零件真实联动或 Lemo 分色机械图解时，读取[外部 Skill 工作流](skills/paper-mechanism-explainer/references/lemo-cutaway.md)，实际调用另行安装的 `lemo-opuscar` Skill，并在来源说明中标明 Lemo-Opuscar by Lemomo（LemoLab）。GIF 工厂只提供调用入口与案例，上游 Skill 和运行时需另行准备；画幅与帧率按该分支或用户已选工程，已验收的齿轮片为1920×1080、24fps。
 
 ## 表情包先分清画风和动作
 

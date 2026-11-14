@@ -22,7 +22,7 @@
 | 动态签名 | 支持多种字体和自定义字稿，把名字与意象融成动态签名 | [查看](skills/dynamic-art-signature/SKILL.md) |
 | 电影片头 | 中文50种写法，英文50款基础字体与装饰封面；可用自己的字体、照片或字稿 | [查看](skills/cinematic-title-lettering/SKILL.md) |
 | 动态绘本 | 让插画做完一个动作，再翻到下一页，能做横屏或竖屏 | [查看](skills/compact-storybook/SKILL.md) |
-| vibe 知识大赏 | 讲生活机关、机械结构与金融机制，支持摄影纸艺、彩色贴纸和复古档案 | [查看](skills/paper-mechanism-explainer/SKILL.md) |
+| vibe 知识大赏 | 三种内置风格；立体剖面联动使用外部 lemo-opuscar Skill，来源单独说明 | [查看](skills/paper-mechanism-explainer/SKILL.md) |
 
 <a id="stickers"></a>
 <a id="表情包展厅"></a>
@@ -151,7 +151,7 @@
 
 ## vibe 知识大赏
 
-把一个物件的机关或一笔钱的来去讲成能看见的动作。内容可选生活机关、机械结构、金融机制；画面可选下面三种风格。默认无个人水印，延续作品时保留已选声线和节奏。
+把一个物件的机关或一笔钱的来去讲成能看见的动作。内容可选生活机关、机械结构、金融机制；画面有三种内置风格，以及使用外部 Skill 的立体剖面联动。默认无个人水印，延续作品时保留已选声线和节奏。
 
 先看两分钟无水印精选，包含拉链、机械表、弹子锁、差速器、按动笔，以及金融与消费机制。
 
@@ -169,11 +169,23 @@
 
 点击预览看带旁白的完整视频。三支是制作方法与风格示例，示例参数不代表真实产品或当前报价；每支附封面、字幕、数据模型及声音署名，不含完整渲染工程。
 
-[怎么选风格](styles/paper-mechanism-explainer/STYLE.md) · [三个案例与来源](examples/mechanism-explainers/README.md) · [独立 Skill v0.4.0](skills/paper-mechanism-explainer/SKILL.md)
+[怎么选风格](styles/paper-mechanism-explainer/STYLE.md) · [案例与来源](examples/mechanism-explainers/README.md) · [独立 Skill v0.5.0](skills/paper-mechanism-explainer/SKILL.md)
+
+### 立体剖面联动：使用 lemo-opuscar Skill
+
+**这期《齿轮减速原理》由 Codex 调用 [Lemo-Opuscar by Lemomo（LemoLab）](https://github.com/lemomo-ai/lemo-opuscar) 的 `lemo-opuscar` Skill 制作**，使用其分色机械图解风格，复用了齿形、描边代码及材质、剖面渲染方法。齿轮箱布局、讲解稿、镜头、传动时序和声音编排为本期定制。
+
+<a href="examples/mechanism-explainers/gear-reduction-cutaway/film.mp4"><img src="examples/mechanism-explainers/gear-reduction-cutaway/preview.gif" alt="使用 lemo-opuscar Skill 制作的立体剖面齿轮减速讲解，静音节选" width="480"></a>
+
+[观看76.67秒完整视频](examples/mechanism-explainers/gear-reduction-cutaway/film.mp4) · [5秒效果小样](examples/mechanism-explainers/gear-reduction-cutaway/look-test.mp4) · [制作流程与来源](examples/mechanism-explainers/gear-reduction-cutaway/README.md) · [外部 Skill 调用说明](skills/paper-mechanism-explainer/references/lemo-cutaway.md)
+
+GIF 工厂收录调用入口和案例。**上游 Skill 与渲染运行时需另行安装**；安装 GIF 工厂不会同时带上 Lemo-Opuscar 的完整风格库。原作者链接、代码复用范围与各自许可见案例的[CREDITS](examples/mechanism-explainers/gear-reduction-cutaway/CREDITS.md)。
 
 > 用彩色贴纸风讲“优惠券到底谁买单”，跟着一笔订单看顾客、商家和平台的资金关系。先核实规则，再给我无水印成片、封面和可编辑工程。
 
 > 用摄影纸艺讲拉链怎么扣上，做出剖面里的咬合动作；文字和结构可编辑。
+
+> 调用 lemo-opuscar Skill，用立体剖面和零件联动讲清齿轮减速，沿用我选的声线，交付成片、字幕、封面和可编辑工程，并写清使用了 Lemo-Opuscar。
 
 ## 使用说明
 
@@ -181,7 +193,7 @@
 
 ## 开源许可
 
-制作脚本与 Skill 文档采用 [MIT](LICENSE)。动态海报的角色与参考设计语言不随代码转授商业权利，见[案例说明](examples/dynamic-posters/p5-integrated/README.md)。电子光栅卡中的角色 IP、网络照片与他人插画不随代码一并授予 MIT 权利，出处及使用边界见[案例来源说明](examples/lenticular-cards/README.md)。
+本仓库原创制作脚本与 Skill 说明采用 [MIT](LICENSE)。外部 Lemo-Opuscar Skill、文档和代码分别按其[上游许可](https://github.com/lemomo-ai/lemo-opuscar/blob/main/LICENSE)处理，来源与使用范围见[齿轮案例说明](examples/mechanism-explainers/gear-reduction-cutaway/CREDITS.md)。动态海报的角色与参考设计语言不随代码转授商业权利，见[案例说明](examples/dynamic-posters/p5-integrated/README.md)。电子光栅卡中的角色 IP、网络照片与他人插画不随代码一并授予 MIT 权利，出处及使用边界见[案例来源说明](examples/lenticular-cards/README.md)。
 
 第三方配乐和字体按各自许可使用；面包店案例的来源与署名见 [CREDITS](examples/brand-films/manman-bakery/CREDITS.md)，vibe 知识大赏的声音及画面来源见[各案例说明](examples/mechanism-explainers/README.md#来源与复用)。
 

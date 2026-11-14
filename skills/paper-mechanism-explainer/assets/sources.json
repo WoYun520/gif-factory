@@ -1,5 +1,5 @@
 {
-  "purpose": "供观察摄影纸艺、彩色贴纸与复古档案的构图、材料和讲解关系，不作为完整运动验证或自动上传的生成参考",
+  "purpose": "供观察三种内置风格及使用外部Lemo Skill的立体剖面案例，不作为完整运动验证或自动上传的生成参考",
   "references": [
     {
       "file": "zipper-reference.png",
@@ -80,12 +80,24 @@
         }
       ],
       "visiblePersonalWatermark": false
+    },
+    {
+      "file": "lemo-cutaway-reference.jpg",
+      "source": "齿轮减速原理：四圈怎么变成一圈，本期立体剖面成片",
+      "kind": "本项目调用lemo-opuscar Skill后制作的视频抽帧，等比例缩小并JPEG压缩，未增删原画面内容",
+      "sourceVideoSha256": "fb467a1f5140d52b031f23ff9a76653b7e61abc453c84b34400c51237e9e60d3",
+      "timeSeconds": 47,
+      "externalSkill": "lemo-opuscar",
+      "upstreamAuthor": "Lemomo (LemoLab)",
+      "upstream": "https://github.com/lemomo-ai/lemo-opuscar",
+      "visiblePersonalWatermark": false
     }
   ],
   "notes": [
     "旧片画面里的栏目名与标题仅为该案例内容，不是Skill默认添加的品牌。",
     "预览图不含原视频音轨或字体二进制文件；新作品需使用合法可用的字体与声音。",
     "本包整理制作方法、检查点与文件检查工具，不包含案例的完整渲染工程；新机构需建立自己的模型与审计。",
-    "贴纸参考来自商品比较与优惠券成片；档案参考采用暖色商品摄影。它们用于观察表现方法，不能替代新题目的机制、账目或事实核验。"
+    "贴纸参考来自商品比较与优惠券成片；档案参考采用暖色商品摄影。它们用于观察表现方法，不能替代新题目的机制、账目或事实核验。",
+    "立体剖面案例实际使用了Lemo-Opuscar Skill及部分齿形和渲染代码；本包收录本期抽帧和调用说明，上游Skill与运行时另行安装。"
   ]
 }

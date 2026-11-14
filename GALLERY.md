@@ -476,6 +476,18 @@
 
 贷款片用凭证和天平解释等额资产负债，优惠券片区分三种互斥的出资安排，购物档案把价格统一到同一容量。数字是讲解条件，不代表真实银行产品、平台分摊规则或当前商店报价。暖色档案照片是生成插图，不是真实史料。
 
-[怎么选风格](styles/paper-mechanism-explainer/STYLE.md) · [案例文件与许可](examples/mechanism-explainers/README.md) · [独立 Skill v0.4.0](skills/paper-mechanism-explainer/SKILL.md)
+[怎么选风格](styles/paper-mechanism-explainer/STYLE.md) · [案例文件与许可](examples/mechanism-explainers/README.md) · [独立 Skill v0.5.0](skills/paper-mechanism-explainer/SKILL.md)
 
 案例提供影片、封面、字幕、模型与署名，没有附完整渲染工程。生活机关和机械结构也在Skill内容分支中；新的题材与风格组合仍需建立自己的模型并检查成片。
+
+### 立体剖面联动 · 使用外部 lemo-opuscar Skill
+
+**《齿轮减速原理》实际调用了 [Lemo-Opuscar by Lemomo（LemoLab）](https://github.com/lemomo-ai/lemo-opuscar) 的 Skill**，使用分色机械图解风格，复用齿形、描边及材质与剖面渲染方法；本期重新制作齿轮箱布局、讲解稿、镜头、传动时序和声音。
+
+<a href="examples/mechanism-explainers/gear-reduction-cutaway/film.mp4"><img src="examples/mechanism-explainers/gear-reduction-cutaway/preview.gif" alt="使用Lemo-Opuscar Skill的齿轮减速片，立体剖面与真实联动，静音节选" width="480"></a>
+
+1920×1080、24fps、76.67秒；云杰HD配音，含配乐及机械音效，无个人水印。
+
+[完整视频](examples/mechanism-explainers/gear-reduction-cutaway/film.mp4) · [5秒小样](examples/mechanism-explainers/gear-reduction-cutaway/look-test.mp4) · [制作流程与模型](examples/mechanism-explainers/gear-reduction-cutaway/README.md) · [原作者及许可](examples/mechanism-explainers/gear-reduction-cutaway/CREDITS.md) · [外部 Skill 调用说明](skills/paper-mechanism-explainer/references/lemo-cutaway.md)
+
+该分支需另装上游 `lemo-opuscar` Skill 及其运行时，GIF 工厂不内置上游完整风格库。

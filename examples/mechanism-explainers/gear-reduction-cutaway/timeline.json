@@ -1,0 +1,450 @@
+{
+  "duration": 76.66666666666667,
+  "fps": 24,
+  "voiceDuration": 63.648,
+  "voice": [
+    {
+      "id": 0,
+      "text": "输入轴转了四圈，输出轴，为什么只转一圈？",
+      "sourceStart": 0.0,
+      "sourceEnd": 3.04,
+      "start": 0.5,
+      "end": 3.54,
+      "shift": 0.5
+    },
+    {
+      "id": 1,
+      "text": "打开齿轮箱，跟着这条传动路线看。",
+      "sourceStart": 3.84,
+      "sourceEnd": 7.12,
+      "start": 8.59,
+      "end": 11.87,
+      "shift": 4.75
+    },
+    {
+      "id": 2,
+      "text": "第一组，小齿轮二十个齿，大齿轮四十个齿。",
+      "sourceStart": 8.0,
+      "sourceEnd": 11.24,
+      "start": 12.75,
+      "end": 15.99,
+      "shift": 4.75
+    },
+    {
+      "id": 3,
+      "text": "小轮转一圈，送过去二十个齿。大轮只走过半圈，转速也就减半。",
+      "sourceStart": 12.04,
+      "sourceEnd": 16.8,
+      "start": 16.79,
+      "end": 21.55,
+      "shift": 4.75
+    },
+    {
+      "id": 4,
+      "text": "齿数翻倍，转速减半。这一对外啮合齿轮，转向也相反。",
+      "sourceStart": 17.64,
+      "sourceEnd": 22.08,
+      "start": 24.64,
+      "end": 29.08,
+      "shift": 7.0
+    },
+    {
+      "id": 5,
+      "text": "注意，大轮上面，还有一个十八齿的小轮。它们固定在同一根轴上，转速完全相同。",
+      "sourceStart": 22.96,
+      "sourceEnd": 29.36,
+      "start": 29.96,
+      "end": 36.36,
+      "shift": 7.0
+    },
+    {
+      "id": 6,
+      "text": "这个小轮，再带动三十六齿的大轮，转速又减半。",
+      "sourceStart": 30.36,
+      "sourceEnd": 33.96,
+      "start": 37.36,
+      "end": 40.96,
+      "shift": 7.0
+    },
+    {
+      "id": 7,
+      "text": "两次减半，最后就剩四分之一。两级减速比，要相乘，二乘二，等于四。",
+      "sourceStart": 35.04,
+      "sourceEnd": 39.92,
+      "start": 42.04,
+      "end": 46.92,
+      "shift": 7.0
+    },
+    {
+      "id": 8,
+      "text": "那，慢下来有什么用？",
+      "sourceStart": 40.96,
+      "sourceEnd": 42.68,
+      "start": 51.46,
+      "end": 53.18,
+      "shift": 10.5
+    },
+    {
+      "id": 9,
+      "text": "忽略损耗时，传递的功率不变。转速降到四分之一，输出扭矩，就能提高到四倍。",
+      "sourceStart": 43.88,
+      "sourceEnd": 49.48,
+      "start": 54.38,
+      "end": 59.98,
+      "shift": 10.5
+    },
+    {
+      "id": 10,
+      "text": "真实齿轮箱还会损失一些能量。减速，是用转速，换取更大的扭矩。",
+      "sourceStart": 50.52,
+      "sourceEnd": 55.6,
+      "start": 61.02,
+      "end": 66.1,
+      "shift": 10.5
+    },
+    {
+      "id": 11,
+      "text": "看懂这三件事：每对齿轮看齿数，同轴齿轮一起转，多级减速，比例相乘。",
+      "sourceStart": 56.68,
+      "sourceEnd": 62.6,
+      "start": 67.18,
+      "end": 73.1,
+      "shift": 10.5
+    }
+  ],
+  "audioEdits": [
+    {
+      "sourceStart": 0,
+      "sourceEnd": 3.44,
+      "destination": 0.5
+    },
+    {
+      "sourceStart": 3.44,
+      "sourceEnd": 7.56,
+      "destination": 8.19
+    },
+    {
+      "sourceStart": 7.56,
+      "sourceEnd": 11.64,
+      "destination": 12.309999999999999
+    },
+    {
+      "sourceStart": 11.64,
+      "sourceEnd": 17.22,
+      "destination": 16.39
+    },
+    {
+      "sourceStart": 17.22,
+      "sourceEnd": 22.52,
+      "destination": 24.22
+    },
+    {
+      "sourceStart": 22.52,
+      "sourceEnd": 29.86,
+      "destination": 29.52
+    },
+    {
+      "sourceStart": 29.86,
+      "sourceEnd": 34.5,
+      "destination": 36.86
+    },
+    {
+      "sourceStart": 34.5,
+      "sourceEnd": 40.44,
+      "destination": 41.5
+    },
+    {
+      "sourceStart": 40.44,
+      "sourceEnd": 43.28,
+      "destination": 50.94
+    },
+    {
+      "sourceStart": 43.28,
+      "sourceEnd": 50.0,
+      "destination": 53.78
+    },
+    {
+      "sourceStart": 50.0,
+      "sourceEnd": 56.14,
+      "destination": 60.5
+    },
+    {
+      "sourceStart": 56.14,
+      "sourceEnd": 63.648,
+      "destination": 66.64
+    }
+  ],
+  "scenes": [
+    {
+      "id": "hook",
+      "start": 0,
+      "end": 8.19
+    },
+    {
+      "id": "open",
+      "start": 8.19,
+      "end": 12.4
+    },
+    {
+      "id": "pair1",
+      "start": 12.4,
+      "end": 16.49
+    },
+    {
+      "id": "count",
+      "start": 16.49,
+      "end": 24.34
+    },
+    {
+      "id": "direction",
+      "start": 24.34,
+      "end": 29.66
+    },
+    {
+      "id": "coax",
+      "start": 29.66,
+      "end": 37.01
+    },
+    {
+      "id": "pair2",
+      "start": 37.01,
+      "end": 41.64
+    },
+    {
+      "id": "product",
+      "start": 41.64,
+      "end": 51.21
+    },
+    {
+      "id": "question",
+      "start": 51.21,
+      "end": 54.18
+    },
+    {
+      "id": "ideal",
+      "start": 54.18,
+      "end": 60.72
+    },
+    {
+      "id": "loss",
+      "start": 60.72,
+      "end": 66.83
+    },
+    {
+      "id": "close",
+      "start": 66.83,
+      "end": 76.66666666666667
+    }
+  ],
+  "captions": [
+    {
+      "t0": 0.38,
+      "t1": 8.41,
+      "text": "输入轴转了4圈，输出轴为什么只转1圈？",
+      "voiceLine": 0
+    },
+    {
+      "t0": 8.47,
+      "t1": 12.57,
+      "text": "打开齿轮箱，跟着这条传动路线看。",
+      "voiceLine": 1
+    },
+    {
+      "t0": 12.63,
+      "t1": 16.61,
+      "text": "第一组，小齿轮20齿，大齿轮40齿。",
+      "voiceLine": 2
+    },
+    {
+      "t0": 16.67,
+      "t1": 19.2,
+      "text": "小轮转1圈，送过去20个齿。",
+      "voiceLine": 3
+    },
+    {
+      "t0": 19.2,
+      "t1": 24.46,
+      "text": "大轮只走过半圈，转速也就减半。",
+      "voiceLine": 3
+    },
+    {
+      "t0": 24.52,
+      "t1": 26.37,
+      "text": "齿数翻倍，转速减半。",
+      "voiceLine": 4
+    },
+    {
+      "t0": 26.37,
+      "t1": 29.78,
+      "text": "这一对外啮合齿轮，转向也相反。",
+      "voiceLine": 4
+    },
+    {
+      "t0": 29.84,
+      "t1": 33.04,
+      "text": "注意，大轮上面还有一个18齿的小轮。",
+      "voiceLine": 5
+    },
+    {
+      "t0": 33.04,
+      "t1": 37.18,
+      "text": "它们固定在同一根轴上，转速完全相同。",
+      "voiceLine": 5
+    },
+    {
+      "t0": 37.24,
+      "t1": 41.86,
+      "text": "这个小轮再带动36齿的大轮，转速又减半。",
+      "voiceLine": 6
+    },
+    {
+      "t0": 41.92,
+      "t1": 43.77,
+      "text": "两次减半，最后就剩四分之一。",
+      "voiceLine": 7
+    },
+    {
+      "t0": 43.77,
+      "t1": 51.28,
+      "text": "两级减速比要相乘：2×2=4。",
+      "voiceLine": 7
+    },
+    {
+      "t0": 51.34,
+      "t1": 54.2,
+      "text": "那，慢下来有什么用？",
+      "voiceLine": 8
+    },
+    {
+      "t0": 54.26,
+      "t1": 56.44,
+      "text": "忽略损耗时，传递的功率不变。",
+      "voiceLine": 9
+    },
+    {
+      "t0": 56.44,
+      "t1": 60.84,
+      "text": "转速降到四分之一，输出扭矩就能提高到4倍。",
+      "voiceLine": 9
+    },
+    {
+      "t0": 60.9,
+      "t1": 62.75,
+      "text": "真实齿轮箱还会损失一些能量。",
+      "voiceLine": 10
+    },
+    {
+      "t0": 62.75,
+      "t1": 67.0,
+      "text": "减速，是用转速换取更大的扭矩。",
+      "voiceLine": 10
+    },
+    {
+      "t0": 67.06,
+      "t1": 76.517,
+      "text": "看懂这三件事：每对齿轮看齿数，同轴齿轮一起转，\n多级减速，比例相乘。",
+      "voiceLine": 11
+    }
+  ],
+  "motion": [
+    {
+      "start": 0,
+      "end": 8,
+      "kind": "linear",
+      "speed": 0.5
+    },
+    {
+      "start": 8,
+      "end": 9,
+      "kind": "ramp",
+      "v0": 0.5,
+      "v1": 0.13
+    },
+    {
+      "start": 9,
+      "end": 16.2,
+      "kind": "linear",
+      "speed": 0.13
+    },
+    {
+      "start": 16.2,
+      "end": 17.0,
+      "kind": "ramp",
+      "v0": 0.13,
+      "v1": 0
+    },
+    {
+      "start": 17.0,
+      "end": 23.99,
+      "kind": "ease",
+      "turns": 1
+    },
+    {
+      "start": 23.99,
+      "end": 24.49,
+      "kind": "linear",
+      "speed": 0
+    },
+    {
+      "start": 24.49,
+      "end": 25.09,
+      "kind": "ramp",
+      "v0": 0,
+      "v1": 0.13
+    },
+    {
+      "start": 25.09,
+      "end": 41.04,
+      "kind": "linear",
+      "speed": 0.13
+    },
+    {
+      "start": 41.04,
+      "end": 41.64,
+      "kind": "ramp",
+      "v0": 0.13,
+      "v1": 0
+    },
+    {
+      "start": 41.64,
+      "end": 50.44,
+      "kind": "cruise",
+      "turns": 4,
+      "ramp": 0.8
+    },
+    {
+      "start": 50.44,
+      "end": 51.81,
+      "kind": "linear",
+      "speed": 0
+    },
+    {
+      "start": 51.81,
+      "end": 52.41,
+      "kind": "ramp",
+      "v0": 0,
+      "v1": 0.13
+    },
+    {
+      "start": 52.41,
+      "end": 76.66667,
+      "kind": "linear",
+      "speed": 0.13
+    }
+  ],
+  "countWindow": [
+    17.0,
+    23.99
+  ],
+  "productWindow": [
+    41.64,
+    50.44
+  ],
+  "voiceProfile": {
+    "provider": "clipchamp",
+    "language": "zh-CN",
+    "voice": "Yunjie Dragon HD Flash Latest",
+    "pitch": "default",
+    "speed": 1.0
+  }
+}

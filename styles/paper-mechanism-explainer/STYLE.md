@@ -2,7 +2,7 @@
 
 把一个原理变成观众能跟上的操作：零件怎样接触、怎样复位，一笔钱从哪里来、记到哪里、最后还剩多少。适合生活机关、机械结构和金融机制的解释。
 
-[返回分类](../README.md) · [三个完整案例](../../examples/mechanism-explainers/README.md) · [独立 Skill v0.4.0](../../skills/paper-mechanism-explainer/SKILL.md)
+[返回分类](../README.md) · [完整案例与来源](../../examples/mechanism-explainers/README.md) · [独立 Skill v0.5.0](../../skills/paper-mechanism-explainer/SKILL.md)
 
 [先看两分钟无水印合集](../../examples/mechanism-explainers/highlights/README.md)，观察三种风格和不同题目的动作、旁白与切换节奏。
 
@@ -19,8 +19,11 @@
 | 摄影纸艺 | 黑纸、灰度摄影剪贴、暖白撕边；签约、递凭证、盖章或剖面联动 | [贷款创造存款](../../examples/mechanism-explainers/loan-creation/README.md) |
 | 彩色贴纸风 | 奶油纸底、彩色二维白边贴纸；同一组物件持续操作、路径到达再记账 | [优惠券到底谁买单](../../examples/mechanism-explainers/coupon-funding/README.md) |
 | 复古档案记录 | 档案夹、账纸、暖色照片；有限打字、红笔核对与盖章 | [大包装一定更划算吗](../../examples/mechanism-explainers/unit-price-archive/README.md) |
+| 立体剖面联动 · 外部 Skill | 使用 lemo-opuscar 的分色机械图解，外壳剖开后观察真实零件联动 | [齿轮减速原理](../../examples/mechanism-explainers/gear-reduction-cutaway/README.md) |
 
-明确指定的风格优先，续作沿用当前选择；没有指定、也没有接续工程时，从摄影纸艺起步。上表的题材是适用方向，三支公开案例主要验证金融与消费解释的画面方法，不代表每种题材和风格的组合都有现成工程。
+前三种为内置制作说明；**立体剖面联动实际调用 [Lemo-Opuscar by Lemomo（LemoLab）](https://github.com/lemomo-ai/lemo-opuscar) 的 `lemo-opuscar` Skill**，复用其齿形、描边代码及材质、剖面渲染方法。齿轮片的布局、稿件、镜头、时序和声音为本期定制。上游依赖另行安装，见[调用与署名说明](../../skills/paper-mechanism-explainer/references/lemo-cutaway.md)。
+
+明确指定的风格优先，续作沿用当前选择；没有指定、也没有接续工程时，从摄影纸艺起步。已有三种金融/消费方法示例及一支外部 Skill 齿轮案例，不代表每种题材和风格的组合都有现成工程。
 
 ## 可以直接这样说
 
@@ -30,12 +33,14 @@
 
 > 用复古档案记录讲大包装如何比单价，把两张价签记到账纸上，再统一到每100毫升比较。
 
-具体配色、素材、动作与检查点由[独立 Skill](../../skills/paper-mechanism-explainer/SKILL.md)按所选分支引导。制作时核实新题目的原理，按真实旁白安排动作，并检查实际导出画面。准确的机构几何可按机械分支制作，微缩场景和三维人物不在此分支中。
+> 调用 lemo-opuscar Skill，用立体剖面和真实零件联动讲齿轮减速，沿用当前声线，交付完整视频与工程，来源写清 Lemo-Opuscar。
+
+具体配色、素材、动作与检查点由[独立 Skill](../../skills/paper-mechanism-explainer/SKILL.md)按所选分支引导，立体剖面读取外部 Skill 的当前规范。制作时核实新题目的原理，按真实旁白安排动作，并检查实际导出画面。准确的机构几何可按机械分支制作，微缩场景和三维人物不在此分支中。
 
 ## 工具和交付
 
 这是制作方法与文件检查工具，需要可用的视频渲染环境、本地素材或相应生成工具；不附模型、服务额度或渲染器。已有旁白可以复用，新配音跟随当前用户选择和授权。工具详情见[使用指南](../../GUIDE.md#需要装什么)。
 
-新片通常为1080×1920、30fps，时长随讲解与阅读需要安排；接续作品沿用已定画幅。交付成片、同风格封面、可编辑工程及来源说明，默认无个人水印和固定作者名。配乐署名放在来源及发布文案中。
+三种内置风格的新片通常为1080×1920、30fps；本期外部 Skill 齿轮片为1920×1080、24fps。时长随讲解与阅读需要安排，接续作品沿用已定画幅。交付成片、同风格封面、可编辑工程及来源说明，默认无个人水印和固定作者名。配乐署名放在来源及发布文案中。
 
 仓库案例提供影片、封面、静音预览、字幕、数据模型与署名，供观察与复作参考；没有附完整渲染工程，也没有分发本机字体、配音模型或单独音乐文件。

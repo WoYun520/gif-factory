@@ -1,0 +1,49 @@
+{
+  "kind": "original teaching gearbox; kinematic demonstration",
+  "units": "arbitrary model units",
+  "module": 0.11,
+  "pressureAngleDegrees": 20,
+  "stages": [
+    {
+      "driverTeeth": 20,
+      "drivenTeeth": 40,
+      "centreDistance": 3.3,
+      "ratioInputOverOutput": 2
+    },
+    {
+      "driverTeeth": 18,
+      "drivenTeeth": 36,
+      "centreDistance": 2.97,
+      "ratioInputOverOutput": 2
+    }
+  ],
+  "compoundShaft": {
+    "rigidlyConnectedTeeth": [
+      40,
+      18
+    ],
+    "sameAngularVelocity": true
+  },
+  "totalReductionInputOverOutput": 4,
+  "outputSpeedFraction": 0.25,
+  "idealSteadyStateTorqueMultiplier": 4,
+  "idealTorqueAssumptions": [
+    "neglect losses",
+    "constant transmitted power",
+    "steady or quasi-static operation"
+  ],
+  "efficiencyValueAssumed": null,
+  "authoring": {
+    "externalSkill": "lemo-opuscar",
+    "upstreamAuthor": "Lemomo (LemoLab)",
+    "upstream": "https://github.com/lemomo-ai/lemo-opuscar",
+    "upstreamCommit": "3a7132b996be0241c1ea0ab180d519f06e6f10b6",
+    "ownContributions": [
+      "gearbox layout",
+      "script",
+      "camera path",
+      "motion timeline",
+      "audio arrangement"
+    ]
+  }
+}
