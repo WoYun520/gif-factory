@@ -118,6 +118,8 @@ python3 scripts/prepare_english_title.py --style EN25 --title "Letters from Summ
 
 有自己的照片可加 `--photo /path/to/photo.jpg`。将输出中的 `imagegen_args` 交给当前可用的生图工具。基础字体路径也会返回，方便直接排字。
 
+有自己的 TTF 或 OTF 字体时，加 `--font /path/to/font.ttf`。脚本会用这个字体排出当前片名的白底参考图；`--style` 继续指定喜欢的装饰做法。生成参考图需要 Python 3 和 Pillow，准备输入本身不调用生图服务。检查参考图是否完整显示所需字符，再交给生图工具。
+
 这批有50张场景样图，EN23和EN25调整过裁断的笔画与文字。它们是字稿参考和实际提示词，没有做模型权重训练；换句后仍需检查拼写、字形和画面。
 
 [中文50种写法](style-catalog.md) · [片头做法](film-title-frames.md) · [基础字体授权与来源](../assets/english-titles/source-notes.md)
