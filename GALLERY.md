@@ -2,15 +2,15 @@
 
 [返回首页](README.md) · [分类说明](styles/README.md) · [使用指南](GUIDE.md)
 
-[表情包展厅](#表情包展厅) · [电子光栅卡展厅](#电子光栅卡展厅) · [动态海报展厅](#动态海报展厅) · [动态艺术签名](#动态艺术签名) · [电影片头](#电影片头) · [动态绘本展厅](#动态绘本展厅) · [品牌宣传片展厅](#品牌宣传片展厅) · [机制科普展厅](#mechanism-explainers)
+[表情包展厅](#表情包展厅) · [电子光栅卡展厅](#电子光栅卡展厅) · [动态海报展厅](#动态海报展厅) · [动态艺术签名](#动态艺术签名) · [电影片头](#电影片头) · [动态绘本展厅](#动态绘本展厅) · [品牌宣传片展厅](#品牌宣传片展厅) · [vibe 知识大赏展厅](#mechanism-explainers)
 
 ## 表情包展厅
 
-这里有 **244 张已有示例**，还有 **2 张刚重做的动作试样，等使用者确认**。点击动图可以看原尺寸。大部分约两秒一轮，部分动作示例会短一些。另有 **9 张电子光栅卡**、**13 张动态海报**，和品牌短片、机制科普一起单独分类，不计入聊天表情包数量。
+这里有 **244 张已有示例**，还有 **2 张刚重做的动作试样，等使用者确认**。点击动图可以看原尺寸。大部分约两秒一轮，部分动作示例会短一些。另有 **9 张电子光栅卡**、**13 张动态海报**，和品牌短片、vibe 知识大赏一起单独分类，不计入聊天表情包数量。
 
 **各系列默认收起；点击对应窗口即可展开分类动图。**
 
-[下载整个项目：244 张表情包示例＋2 张重做试样＋9 张光栅卡＋13 张动态海报＋品牌短片＋机制科普与合集](https://github.com/WoYun520/gif-factory/archive/refs/heads/main.zip)
+[下载整个项目：244 张表情包示例＋2 张重做试样＋9 张光栅卡＋13 张动态海报＋品牌短片＋vibe 知识大赏与合集](https://github.com/WoYun520/gif-factory/archive/refs/heads/main.zip)
 
 ### 大肥鱼 · 12 张动态预览
 
@@ -458,13 +458,13 @@
 
 <a id="mechanism-explainers"></a>
 
-## 机制科普展厅
+## vibe 知识大赏展厅
 
 以下三支按方法样片或风格试作收录，均为1080×1920、30fps、无个人水印的完整视频。动图为缩小的静音节选，点击可看带旁白成片；不计入聊天表情包数量。
 
 [先看两分钟无水印合集](examples/mechanism-explainers/highlights/README.md)：生活机关、机械结构与金融机制，摄影纸艺、复古档案和彩色贴纸依次出现。
 
-<a href="examples/mechanism-explainers/highlights/film.mp4"><img src="examples/mechanism-explainers/highlights/preview.gif" alt="120秒机制科普无水印合集的静音节选" width="200"></a>
+<a href="examples/mechanism-explainers/highlights/film.mp4"><img src="examples/mechanism-explainers/highlights/preview.gif" alt="120秒 vibe 知识大赏无水印合集的静音节选" width="200"></a>
 
 <table>
 <tr>

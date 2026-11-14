@@ -63,7 +63,7 @@
 
 [看面包店案例](../examples/brand-films/manman-bakery/README.md) · [看制作方法](../references/brand-film.md)
 
-## 机制科普
+## vibe 知识大赏
 
 内容分为生活机关、机械结构与金融机制；画面风格单独选择，续作沿用当前选择。
 

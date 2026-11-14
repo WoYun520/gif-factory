@@ -17,7 +17,7 @@
 | 电影片头 | 原创片名字形和带场景的片头图 | [查看](skills/cinematic-title-lettering/references/style-catalog.md) |
 | 动态绘本 | 插画动起来，再一页页讲故事 | [查看](GALLERY.md#动态绘本展厅) |
 | 品牌短片 | 角色带着产品和包装演一段小故事 | [查看](GALLERY.md#品牌宣传片展厅) |
-| 机制科普 | 生活机关、机械结构、金融机制；摄影纸艺、彩色贴纸或复古档案 | [查看](GALLERY.md#mechanism-explainers) |
+| vibe 知识大赏 | 生活机关、机械结构、金融机制；摄影纸艺、彩色贴纸或复古档案 | [查看](GALLERY.md#mechanism-explainers) |
 
 ## 你可以提供什么
 
@@ -69,7 +69,7 @@
 
 > 用这套吉祥物和产品图做一条 15 秒品牌短片。角色亲手把产品装进包装，最后露出店名。给我成片和可修改的工程。
 
-### 机制科普
+### vibe 知识大赏
 
 > 用彩色贴纸风讲“优惠券到底谁买单”，用一笔订单追踪顾客付款、商家让利和平台补贴。核实规则后开始制作，交付无水印成片、封面和可编辑工程。
 
@@ -86,7 +86,7 @@
 | 电影片头 | 独立图片；成组时加总览和压缩包；动画另按要求制作 |
 | 动态绘本 | 整本或独立页 MP4，横屏和竖屏按需要做 |
 | 品牌短片 | 视频、可修改的工程和必要素材说明 |
-| 机制科普 | MP4、同风格封面、可编辑工程与来源说明；字幕随内容对时 |
+| vibe 知识大赏 | MP4、同风格封面、可编辑工程与来源说明；字幕随内容对时 |
 
 ## 想改效果时
 
@@ -96,11 +96,11 @@
 
 ## 想单独使用某个 Skill
 
-[GIF 工厂总入口](SKILL.md) · [动态签名](skills/dynamic-art-signature/SKILL.md) · [电影片头](skills/cinematic-title-lettering/SKILL.md) · [动态绘本](skills/compact-storybook/SKILL.md) · [机制科普短视频](skills/paper-mechanism-explainer/SKILL.md)
+[GIF 工厂总入口](SKILL.md) · [动态签名](skills/dynamic-art-signature/SKILL.md) · [电影片头](skills/cinematic-title-lettering/SKILL.md) · [动态绘本](skills/compact-storybook/SKILL.md) · [vibe 知识大赏](skills/paper-mechanism-explainer/SKILL.md)
 
-只安装机制科普时，可以直接说：
+只安装「vibe 知识大赏」时，可以直接说：
 
-> 从 WoYun520/gif-factory 的 `skills/paper-mechanism-explainer` 文件夹安装“机制科普短视频”。
+> 从 WoYun520/gif-factory 的 `skills/paper-mechanism-explainer` 文件夹安装“vibe 知识大赏”。
 
 安装后可用 `$paper-mechanism-explainer` 调用。这个文件夹可单独使用，包含三种风格的制作说明、参考抽帧和文件检查工具；仓库里的三个案例在 `examples/mechanism-explainers`，不随独立文件夹安装。不自动下载配音模型、绑定外部服务或提供生成额度。
 
@@ -118,7 +118,7 @@
 | 上述表情包的 MP4 预览 | 加 `--preview` 时需要 FFmpeg，把最终 GIF 合成可播放的视频 |
 | 动态签名和签名九宫格 | Python 3、Pillow、NumPy，以及 FFmpeg、ffprobe；重跑旧版组件脚本才需 SciPy，具体命令见签名 Skill |
 | 动态绘本视频检查 | 检查脚本用 Python 3、ffprobe；抽取检查帧时用 FFmpeg。制作和渲染工具另按绘本说明准备 |
-| 机制科普 | 需要可用的视频制作与渲染环境；示例采用 HyperFrames，已有工程沿用固定版本。文件检查用 Python 3、ffprobe，完整解码另用 FFmpeg；图像和旁白可用合法本地素材，也可选可用的生成工具，按当前用户授权调用 |
+| vibe 知识大赏 | 需要可用的视频制作与渲染环境；示例采用 HyperFrames，已有工程沿用固定版本。文件检查用 Python 3、ffprobe，完整解码另用 FFmpeg；图像和旁白可用合法本地素材，也可选可用的生成工具，按当前用户授权调用 |
 | 变画卡、动态海报、品牌短片 | 按所选做法准备图像与视频工具，详见对应制作说明，不统一套用表情包依赖 |
 
 FFmpeg 是本地处理视频和声音的工具，这里用于合成 MP4、转换 GIF、拼动态总览和抽帧；ffprobe 用来读取尺寸、帧率和时长。使用这些本地工具不需要付费 API。仓库不自带生图模型，调用外部生图或其他服务时，额度和费用按所用服务计算。

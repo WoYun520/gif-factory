@@ -1,10 +1,10 @@
-# 机制科普 · 两分钟无水印合集
+# vibe 知识大赏 · 两分钟无水印合集
 
 用120秒看摄影纸艺、复古档案记录和彩色贴纸的效果：从拉链、机械表、弹子锁、差速器和按动笔，走到分期、市值、贷款与购物比较。13个片段来自11支既有成片，保留原男声与各自画面。
 
-<a href="film.mp4"><img src="preview.gif" alt="三种机制科普风格的静音节选" width="240"></a>
+<a href="film.mp4"><img src="preview.gif" alt="vibe 知识大赏：三种风格的静音节选" width="240"></a>
 
-[完整MP4](film.mp4) · [封面](cover.jpg) · [字幕](captions.srt) · [逐帧剪辑清单](edit-decision-list.json) · [规格与哈希](media.json) · [声音来源](CREDITS.md) · [机制科普 Skill](../../../skills/paper-mechanism-explainer/SKILL.md)
+[完整MP4](film.mp4) · [封面](cover.jpg) · [字幕](captions.srt) · [逐帧剪辑清单](edit-decision-list.json) · [规格与哈希](media.json) · [声音来源](CREDITS.md) · [vibe 知识大赏 Skill](../../../skills/paper-mechanism-explainer/SKILL.md)
 
 完整视频1080×1920、30fps、3600帧、120秒，H.264/AAC，无个人水印。这里提供适合网页加载的视频压缩版，时长、剪辑点、画幅和音轨与原交付一致。GIF为240像素宽的静音节选，会循环播放，完整影片按讲解顺序播放一次。
 
