@@ -63,6 +63,18 @@
 
 [看面包店案例](../examples/brand-films/manman-bakery/README.md) · [看制作方法](../references/brand-film.md)
 
+## 机制科普
+
+内容分为生活机关、机械结构与金融机制；画面风格单独选择，续作沿用当前选择。
+
+| 风格 | 主要效果 | 完整案例 |
+| --- | --- | --- |
+| 摄影纸艺 | 黑纸、摄影剪贴、撕边与实际操作 | [贷款创造存款](../examples/mechanism-explainers/loan-creation/README.md) |
+| 彩色贴纸风 | 奶油纸底、二维白边贴纸、物件与资金路径 | [优惠券到底谁买单](../examples/mechanism-explainers/coupon-funding/README.md) |
+| 复古档案记录 | 档案夹、暖色照片、账纸、红笔与核对章 | [大包装一定更划算吗](../examples/mechanism-explainers/unit-price-archive/README.md) |
+
+[怎么选与怎么做](paper-mechanism-explainer/STYLE.md) · [独立 Skill v0.4.0](../skills/paper-mechanism-explainer/SKILL.md)
+
 ## 维护分类
 
 新增做法先有可看的小样，再写清楚适合什么、怎么做、交付什么。循环 GIF 的案例登记在 [catalog.json](catalog.json)，影片和片头按各自格式展示。试作、已选稿和弃用版本在案例说明中分别记录。

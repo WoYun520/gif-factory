@@ -1,0 +1,79 @@
+{
+  "video": {
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "fps": 30.0,
+    "duration": 50.4,
+    "frames": 1512,
+    "video_codec": "h264",
+    "audio_codecs": [
+      "aac"
+    ]
+  },
+  "cover": {
+    "file": "cover.jpg",
+    "dimensions": [
+      1080,
+      1920
+    ]
+  },
+  "preview": {
+    "file": "preview.gif",
+    "dimensions": [
+      240,
+      427
+    ],
+    "frames": 127,
+    "durationSeconds": 12.7,
+    "silent": true,
+    "loopingWebExcerpt": true,
+    "sourceSegmentsSeconds": [
+      [
+        0,
+        4.8
+      ],
+      [
+        24.5,
+        28.2
+      ],
+      [
+        34.6,
+        38.8
+      ]
+    ]
+  },
+  "subtitles": {
+    "file": "captions.srt",
+    "cues": 27,
+    "withinVideoDuration": true
+  },
+  "checks": {
+    "fullVideoAndAudioDecode": true,
+    "sourceVideoUnchanged": true,
+    "scope": "Media packaging and selected-frame review; not a new render or a listening review."
+  },
+  "files": {
+    "film.mp4": {
+      "bytes": 4199942,
+      "sha256": "c8af39f0e0c95bb481d8065ae6a74aea51d99f4dc0ec501ef42ca0635cccf554"
+    },
+    "cover.jpg": {
+      "bytes": 262444,
+      "sha256": "ad89890a0b17c718270a55da7ed1cfb77f6b5750ee06256f7f4001761a4f3ddb"
+    },
+    "preview.gif": {
+      "bytes": 375884,
+      "sha256": "682721d12109df1508dcc5e0efe4a2969479a86a5fd2e9607042e7d56c7b83c4"
+    },
+    "captions.srt": {
+      "bytes": 1580,
+      "sha256": "dc9351d54fe8f77176a193282e08e33b6b500cad8d11c4a2f8a74c16022d4308"
+    },
+    "finance-model.json": {
+      "bytes": 2316,
+      "sha256": "968cd2f8253c58ec1ede0c44ef99953f76603b67764bcb50a4f13cd7e28383f9"
+    }
+  }
+}

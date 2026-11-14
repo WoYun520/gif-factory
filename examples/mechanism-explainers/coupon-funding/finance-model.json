@@ -1,0 +1,91 @@
+{
+  "fps": 30,
+  "frames": 1512,
+  "duration": 50.4,
+  "cuts": [
+    0,
+    5.5,
+    14.366666666666667,
+    22.566666666666666,
+    28.5,
+    39.4,
+    50.4
+  ],
+  "cues": {
+    "coupon": 0.453625,
+    "question": 2.733166,
+    "order30": 6.09,
+    "orderCoupon": 7.994541,
+    "customerPay": 9.028625,
+    "fees": 10.505916,
+    "merchant10": 15.433957666666666,
+    "concession": 18.338499666666667,
+    "platform10": 24.815749666666665,
+    "receive30": 26.781666666666666,
+    "merchant4": 31.210458,
+    "platform6": 32.551375,
+    "sharedTransfer": 34.608166,
+    "receive26": 37.119541,
+    "rules": 43.587708,
+    "profit": 46.917291,
+    "customerArrive": 10.028625
+  },
+  "grossCents": 3000,
+  "couponCents": 1000,
+  "customerPayCents": 2000,
+  "scenarios": [
+    {
+      "id": "merchant",
+      "merchantConcessionCents": 1000,
+      "platformSubsidyCents": 0,
+      "merchantReceiptCents": 2000
+    },
+    {
+      "id": "platform",
+      "merchantConcessionCents": 0,
+      "platformSubsidyCents": 1000,
+      "merchantReceiptCents": 3000
+    },
+    {
+      "id": "shared",
+      "merchantConcessionCents": 400,
+      "platformSubsidyCents": 600,
+      "merchantReceiptCents": 2600
+    }
+  ],
+  "cashFlows": [
+    {
+      "id": "customer",
+      "scenario": "all",
+      "amountCents": 2000,
+      "payer": "customer",
+      "recipient": "merchant",
+      "start": 9.028625,
+      "arrival": 10.028625,
+      "path": "M335 780 C480 780 455 1044 590 1044"
+    },
+    {
+      "id": "platform-full",
+      "scenario": "platform",
+      "amountCents": 1000,
+      "payer": "platform",
+      "recipient": "merchant",
+      "start": 24.815749666666665,
+      "arrival": 26.781666666666666,
+      "path": "M383 1150 C455 1150 481 1112 590 1112"
+    },
+    {
+      "id": "platform-shared",
+      "scenario": "shared",
+      "amountCents": 600,
+      "payer": "platform",
+      "recipient": "merchant",
+      "start": 34.768165999999994,
+      "arrival": 37.119541,
+      "path": "M383 1150 C455 1150 481 1112 590 1112"
+    }
+  ],
+  "scenarioResetsAreAlternatives": true,
+  "merchantConcessionIsCashTransfer": false,
+  "scope": "Illustrative single order, three alternative funding arrangements; fees, freight, refunds and other costs omitted. Receipts are before fees, not profit. No real offer or fee rate."
+}

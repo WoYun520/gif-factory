@@ -1,0 +1,4 @@
+interface:
+  display_name: "机制科普短视频"
+  short_description: "用摄影纸艺、彩色贴纸或复古档案，讲清生活机关、机械结构与金融机制。"
+  default_prompt: "使用 $paper-mechanism-explainer，沿用当前已选风格或按指定的摄影纸艺、彩色贴纸、复古档案记录风格，制作无水印机制科普短视频，交付成片、封面与可编辑工程。"

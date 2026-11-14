@@ -1,0 +1,163 @@
+{
+  "fps": 30,
+  "frames": 3600,
+  "duration": 120,
+  "segments": [
+    {
+      "id": "shot-01",
+      "title": "拉链",
+      "source": "zipper",
+      "sourceStartFrame": 0,
+      "sourceEndFrame": 477,
+      "timelineStartFrame": 0,
+      "timelineEndFrame": 477,
+      "frames": 477,
+      "start": 0.0,
+      "duration": 15.9
+    },
+    {
+      "id": "shot-02",
+      "title": "机械表",
+      "source": "watch",
+      "sourceStartFrame": 675,
+      "sourceEndFrame": 963,
+      "timelineStartFrame": 477,
+      "timelineEndFrame": 765,
+      "frames": 288,
+      "start": 15.9,
+      "duration": 9.6
+    },
+    {
+      "id": "shot-03",
+      "title": "弹子锁",
+      "source": "lock",
+      "sourceStartFrame": 816,
+      "sourceEndFrame": 963,
+      "timelineStartFrame": 765,
+      "timelineEndFrame": 912,
+      "frames": 147,
+      "start": 25.5,
+      "duration": 4.9
+    },
+    {
+      "id": "shot-04",
+      "title": "弹子锁",
+      "source": "lock",
+      "sourceStartFrame": 1040,
+      "sourceEndFrame": 1230,
+      "timelineStartFrame": 912,
+      "timelineEndFrame": 1102,
+      "frames": 190,
+      "start": 30.4,
+      "duration": 6.333333333333333
+    },
+    {
+      "id": "shot-05",
+      "title": "差速器",
+      "source": "differential",
+      "sourceStartFrame": 813,
+      "sourceEndFrame": 1128,
+      "timelineStartFrame": 1102,
+      "timelineEndFrame": 1417,
+      "frames": 315,
+      "start": 36.733333333333334,
+      "duration": 10.5
+    },
+    {
+      "id": "shot-06",
+      "title": "按动圆珠笔",
+      "source": "pen",
+      "sourceStartFrame": 1293,
+      "sourceEndFrame": 1596,
+      "timelineStartFrame": 1417,
+      "timelineEndFrame": 1720,
+      "frames": 303,
+      "start": 47.233333333333334,
+      "duration": 10.1
+    },
+    {
+      "id": "shot-07",
+      "title": "免息分期",
+      "source": "installment",
+      "sourceStartFrame": 525,
+      "sourceEndFrame": 846,
+      "timelineStartFrame": 1720,
+      "timelineEndFrame": 2041,
+      "frames": 321,
+      "start": 57.333333333333336,
+      "duration": 10.7
+    },
+    {
+      "id": "shot-08",
+      "title": "市值蒸发",
+      "source": "marketcap",
+      "sourceStartFrame": 1047,
+      "sourceEndFrame": 1317,
+      "timelineStartFrame": 2041,
+      "timelineEndFrame": 2311,
+      "frames": 270,
+      "start": 68.03333333333333,
+      "duration": 9.0
+    },
+    {
+      "id": "shot-09",
+      "title": "贷款创造存款",
+      "source": "loan",
+      "sourceStartFrame": 125,
+      "sourceEndFrame": 357,
+      "timelineStartFrame": 2311,
+      "timelineEndFrame": 2543,
+      "frames": 232,
+      "start": 77.03333333333333,
+      "duration": 7.733333333333333
+    },
+    {
+      "id": "shot-10",
+      "title": "复古购物档案",
+      "source": "archive",
+      "sourceStartFrame": 97,
+      "sourceEndFrame": 309,
+      "timelineStartFrame": 2543,
+      "timelineEndFrame": 2755,
+      "frames": 212,
+      "start": 84.76666666666667,
+      "duration": 7.066666666666666
+    },
+    {
+      "id": "shot-11",
+      "title": "贴纸单价比较",
+      "source": "stickers",
+      "sourceStartFrame": 315,
+      "sourceEndFrame": 663,
+      "timelineStartFrame": 2755,
+      "timelineEndFrame": 3103,
+      "frames": 348,
+      "start": 91.83333333333333,
+      "duration": 11.6
+    },
+    {
+      "id": "shot-12",
+      "title": "贴纸优惠券",
+      "source": "coupon",
+      "sourceStartFrame": 677,
+      "sourceEndFrame": 852,
+      "timelineStartFrame": 3103,
+      "timelineEndFrame": 3278,
+      "frames": 175,
+      "start": 103.43333333333334,
+      "duration": 5.833333333333333
+    },
+    {
+      "id": "shot-13",
+      "title": "贴纸优惠券",
+      "source": "coupon",
+      "sourceStartFrame": 1179,
+      "sourceEndFrame": 1501,
+      "timelineStartFrame": 3278,
+      "timelineEndFrame": 3600,
+      "frames": 322,
+      "start": 109.26666666666667,
+      "duration": 10.733333333333333
+    }
+  ]
+}

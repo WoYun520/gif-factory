@@ -8,7 +8,7 @@
 
 装好后，给一张图、一段文字，或直接说想做什么。角色图、场景图、片名、字稿和配乐都可以自己提供，缺的部分再一起补。
 
-[表情包](#stickers) · [光栅变画卡](#cards-transforms) · [动态海报](#posters-type) · [动态签名](#dynamic-signatures) · [电影片头](#cinematic-title-lettering) · [动态绘本](#storybooks) · [品牌短片](#brand-films)
+[表情包](#stickers) · [光栅变画卡](#cards-transforms) · [动态海报](#posters-type) · [动态签名](#dynamic-signatures) · [电影片头](#cinematic-title-lettering) · [动态绘本](#storybooks) · [品牌短片](#brand-films) · [机制科普](#mechanism-explainers)
 
 [分类说明](styles/README.md) · [完整作品库](GALLERY.md) · [使用指南](GUIDE.md) · [下载项目](https://github.com/WoYun520/gif-factory/archive/refs/heads/main.zip)
 
@@ -18,10 +18,11 @@
 
 | Skill | 能做什么 | 说明 |
 | --- | --- | --- |
-| GIF 工厂总入口 | 根据需求选择表情包、卡片、海报、签名、片头、绘本或品牌短片的做法 | [查看](SKILL.md) |
+| GIF 工厂总入口 | 根据需求选择表情包、卡片、海报、签名、片头、绘本、品牌短片或机制科普的做法 | [查看](SKILL.md) |
 | 动态签名 | 支持多种字体和自定义字稿，把名字与意象融成动态签名 | [查看](skills/dynamic-art-signature/SKILL.md) |
 | 电影片头 | 中文50种写法，英文50款基础字体与装饰封面；可用自己的字体、照片或字稿 | [查看](skills/cinematic-title-lettering/SKILL.md) |
 | 动态绘本 | 让插画做完一个动作，再翻到下一页，能做横屏或竖屏 | [查看](skills/compact-storybook/SKILL.md) |
+| 机制科普短视频 | 讲生活机关、机械结构与金融机制，支持摄影纸艺、彩色贴纸和复古档案 | [查看](skills/paper-mechanism-explainer/SKILL.md) |
 
 <a id="stickers"></a>
 <a id="表情包展厅"></a>
@@ -146,6 +147,34 @@
 
 > 用这套吉祥物和产品图做一条 15 秒品牌短片，让角色亲手把产品装进包装，给我成片和可修改的工程。
 
+<a id="mechanism-explainers"></a>
+
+## 机制科普
+
+把一个物件的机关或一笔钱的来去讲成能看见的动作。内容可选生活机关、机械结构、金融机制；画面可选下面三种风格。默认无个人水印，延续作品时保留已选声线和节奏。
+
+先看两分钟无水印精选，包含拉链、机械表、弹子锁、差速器、按动笔，以及金融与消费机制。
+
+<a href="examples/mechanism-explainers/highlights/film.mp4"><img src="examples/mechanism-explainers/highlights/preview.gif" alt="两分钟机制科普精选，摄影纸艺、复古档案与彩色贴纸的静音节选" width="240"></a>
+
+[观看120秒完整合集](examples/mechanism-explainers/highlights/film.mp4) · [片段、字幕与声音来源](examples/mechanism-explainers/highlights/README.md)
+
+<table>
+<tr>
+<td align="center" valign="top"><a href="examples/mechanism-explainers/loan-creation/film.mp4"><img src="examples/mechanism-explainers/loan-creation/preview.gif" alt="摄影纸艺：贷款创造存款，静音节选" width="180"></a><br>摄影纸艺<br>贷款创造存款 · 42.73秒</td>
+<td align="center" valign="top"><a href="examples/mechanism-explainers/coupon-funding/film.mp4"><img src="examples/mechanism-explainers/coupon-funding/preview.gif" alt="彩色贴纸：优惠券到底谁买单，静音节选" width="180"></a><br>彩色贴纸风<br>优惠券到底谁买单 · 50.4秒</td>
+<td align="center" valign="top"><a href="examples/mechanism-explainers/unit-price-archive/film.mp4"><img src="examples/mechanism-explainers/unit-price-archive/preview.gif" alt="复古档案：大包装一定更划算吗，静音节选" width="180"></a><br>复古档案记录<br>大包装一定更划算吗 · 22.17秒</td>
+</tr>
+</table>
+
+点击预览看带旁白的完整视频。三支是制作方法与风格示例，示例参数不代表真实产品或当前报价；每支附封面、字幕、数据模型及声音署名，不含完整渲染工程。
+
+[怎么选风格](styles/paper-mechanism-explainer/STYLE.md) · [三个案例与来源](examples/mechanism-explainers/README.md) · [独立 Skill v0.4.0](skills/paper-mechanism-explainer/SKILL.md)
+
+> 用彩色贴纸风讲“优惠券到底谁买单”，跟着一笔订单看顾客、商家和平台的资金关系。先核实规则，再给我无水印成片、封面和可编辑工程。
+
+> 用摄影纸艺讲拉链怎么扣上，做出剖面里的咬合动作；文字和结构可编辑。
+
 ## 使用说明
 
 想换台词、配色、画风、尺寸或动作，直接说。已经选好的稿子和要求会继续沿用。完整系列和试作的说明放在[作品库](GALLERY.md)，具体怎么提需求看[使用指南](GUIDE.md)。
@@ -154,5 +183,5 @@
 
 制作脚本与 Skill 文档采用 [MIT](LICENSE)。动态海报的角色与参考设计语言不随代码转授商业权利，见[案例说明](examples/dynamic-posters/p5-integrated/README.md)。电子光栅卡中的角色 IP、网络照片与他人插画不随代码一并授予 MIT 权利，出处及使用边界见[案例来源说明](examples/lenticular-cards/README.md)。
 
-第三方配乐和字体按各自许可使用；面包店案例的来源与署名见 [CREDITS](examples/brand-films/manman-bakery/CREDITS.md)。
+第三方配乐和字体按各自许可使用；面包店案例的来源与署名见 [CREDITS](examples/brand-films/manman-bakery/CREDITS.md)，机制科普的声音及画面来源见[各案例说明](examples/mechanism-explainers/README.md#来源与复用)。
 

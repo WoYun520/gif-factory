@@ -1,0 +1,35 @@
+{
+  "fps": 30,
+  "frames": 665,
+  "duration": 22.166666666666668,
+  "cuts": [
+    0,
+    3.2333333333333334,
+    10.566666666666666,
+    15.8,
+    22.166666666666668
+  ],
+  "baseMl": 100,
+  "small": {
+    "volumeMl": 450,
+    "priceCents": 990,
+    "unitCents": 220
+  },
+  "large": {
+    "volumeMl": 750,
+    "priceCents": 1800,
+    "unitCents": 240
+  },
+  "cues": {
+    "question": 1.499083,
+    "smallPrice": 6.039249333333333,
+    "largePrice": 8.886958333333332,
+    "baseUnit": 11.440749666666665,
+    "smallUnit": 12.952124666666666,
+    "largeUnit": 14.168041666666666,
+    "delta": 17.469541,
+    "align": 19.794541
+  },
+  "scope": "Same fictional drink; demo prices, no extra discounts, fees or deposits. Not a live offer.",
+  "unitDifferenceCents": 20
+}

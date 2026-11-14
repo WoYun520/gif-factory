@@ -1,0 +1,90 @@
+{
+  "video": {
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "duration": 120,
+    "frames": 3600,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "originalMasterSha256": "ded14ed08a34a3fa404e2e0ea7710faf341b2767a6f69cdfac8943a9b8a1a2ea",
+  "conversion": {
+    "video": "libx264, preset slow, CRF 23, maxrate 1400k, bufsize 2800k, yuv420p, faststart",
+    "audio": "original AAC stream copied unchanged"
+  },
+  "checks": {
+    "fullDecode": true,
+    "originalAudioPacketsIdentical": true,
+    "integratedLufs": -16.06,
+    "truePeakDbtp": -1.96,
+    "listeningReview": "not assessed"
+  },
+  "preview": {
+    "dimensions": [
+      240,
+      427
+    ],
+    "frames": 124,
+    "durationSeconds": 12.4,
+    "silent": true,
+    "sourceSegmentsSeconds": [
+      [
+        11.2,
+        12.8
+      ],
+      [
+        18,
+        19.4
+      ],
+      [
+        32.2,
+        33.8
+      ],
+      [
+        41,
+        42.6
+      ],
+      [
+        80.5,
+        82
+      ],
+      [
+        88.5,
+        89.8
+      ],
+      [
+        96.8,
+        98.2
+      ],
+      [
+        106,
+        108
+      ]
+    ]
+  },
+  "files": {
+    "film.mp4": {
+      "bytes": 13526713,
+      "sha256": "da993c0bacbc41f89a79ced600092640c882b55278e2cbf2390714439a8f0197"
+    },
+    "preview.gif": {
+      "bytes": 1817205,
+      "sha256": "58dadfd491a0fabfb41c87c39ab95015926991265e060f010defa6c5d8c63750"
+    },
+    "cover.jpg": {
+      "bytes": 295718,
+      "sha256": "930226a8b1482f8d28b8bd698c270034fd54a46ba1c048cd7322a26f2ecf3024"
+    },
+    "captions.srt": {
+      "bytes": 3766,
+      "sha256": "96af46fad966f2dbdcebb7bd073c8c32859d3daf9fb571c6816989b534eaec76"
+    },
+    "edit-decision-list.json": {
+      "bytes": 3962,
+      "sha256": "de420d006722b7a524de0f50646e97fd3fa56bc1b6bf3341425eb3f3f4b6cf6d"
+    }
+  }
+}

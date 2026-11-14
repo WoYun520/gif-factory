@@ -2,15 +2,15 @@
 
 [返回首页](README.md) · [分类说明](styles/README.md) · [使用指南](GUIDE.md)
 
-[表情包展厅](#表情包展厅) · [电子光栅卡展厅](#电子光栅卡展厅) · [动态海报展厅](#动态海报展厅) · [动态艺术签名](#动态艺术签名) · [电影片头](#电影片头) · [动态绘本展厅](#动态绘本展厅) · [品牌宣传片展厅](#品牌宣传片展厅)
+[表情包展厅](#表情包展厅) · [电子光栅卡展厅](#电子光栅卡展厅) · [动态海报展厅](#动态海报展厅) · [动态艺术签名](#动态艺术签名) · [电影片头](#电影片头) · [动态绘本展厅](#动态绘本展厅) · [品牌宣传片展厅](#品牌宣传片展厅) · [机制科普展厅](#mechanism-explainers)
 
 ## 表情包展厅
 
-这里有 **244 张已有示例**，还有 **2 张刚重做的动作试样，等使用者确认**。点击动图可以看原尺寸。大部分约两秒一轮，部分动作示例会短一些。另有 **9 张电子光栅卡**、**13 张动态海报**，和品牌短片一起单独分类，不计入聊天表情包数量。
+这里有 **244 张已有示例**，还有 **2 张刚重做的动作试样，等使用者确认**。点击动图可以看原尺寸。大部分约两秒一轮，部分动作示例会短一些。另有 **9 张电子光栅卡**、**13 张动态海报**，和品牌短片、机制科普一起单独分类，不计入聊天表情包数量。
 
 **各系列默认收起；点击对应窗口即可展开分类动图。**
 
-[下载整个项目：244 张表情包示例＋2 张重做试样＋9 张光栅卡＋13 张动态海报＋品牌短片案例](https://github.com/WoYun520/gif-factory/archive/refs/heads/main.zip)
+[下载整个项目：244 张表情包示例＋2 张重做试样＋9 张光栅卡＋13 张动态海报＋品牌短片＋机制科普与合集](https://github.com/WoYun520/gif-factory/archive/refs/heads/main.zip)
 
 ### 大肥鱼 · 12 张动态预览
 
@@ -455,3 +455,27 @@
 这次借鉴了 [gbro-collage-broll](https://github.com/pyang5166/gbro-collage-broll) 的构思和组装流程，结合本项目的角色动作方法，用可编辑图层完成；没有调用它的 Gemini 视频脚本。发布配乐版时保留[音乐署名](examples/brand-films/manman-bakery/CREDITS.md)。
 
 </details>
+
+<a id="mechanism-explainers"></a>
+
+## 机制科普展厅
+
+以下三支按方法样片或风格试作收录，均为1080×1920、30fps、无个人水印的完整视频。动图为缩小的静音节选，点击可看带旁白成片；不计入聊天表情包数量。
+
+[先看两分钟无水印合集](examples/mechanism-explainers/highlights/README.md)：生活机关、机械结构与金融机制，摄影纸艺、复古档案和彩色贴纸依次出现。
+
+<a href="examples/mechanism-explainers/highlights/film.mp4"><img src="examples/mechanism-explainers/highlights/preview.gif" alt="120秒机制科普无水印合集的静音节选" width="200"></a>
+
+<table>
+<tr>
+<td align="center" valign="top"><strong>摄影纸艺</strong><br><a href="examples/mechanism-explainers/loan-creation/film.mp4"><img src="examples/mechanism-explainers/loan-creation/preview.gif" alt="贷款创造存款的摄影纸艺方法样片" width="200"></a><br>贷款创造存款 · 42.733秒<br><a href="examples/mechanism-explainers/loan-creation/README.md">镜头、模型与来源</a></td>
+<td align="center" valign="top"><strong>彩色贴纸风</strong><br><a href="examples/mechanism-explainers/coupon-funding/film.mp4"><img src="examples/mechanism-explainers/coupon-funding/preview.gif" alt="优惠券到底谁买单的彩色贴纸方法样片" width="200"></a><br>优惠券到底谁买单 · 50.4秒<br><a href="examples/mechanism-explainers/coupon-funding/README.md">镜头、模型与来源</a></td>
+<td align="center" valign="top"><strong>复古档案记录</strong><br><a href="examples/mechanism-explainers/unit-price-archive/film.mp4"><img src="examples/mechanism-explainers/unit-price-archive/preview.gif" alt="大包装一定更划算吗的复古档案风格试作" width="200"></a><br>大包装一定更划算吗 · 22.167秒<br><a href="examples/mechanism-explainers/unit-price-archive/README.md">镜头、模型与来源</a></td>
+</tr>
+</table>
+
+贷款片用凭证和天平解释等额资产负债，优惠券片区分三种互斥的出资安排，购物档案把价格统一到同一容量。数字是讲解条件，不代表真实银行产品、平台分摊规则或当前商店报价。暖色档案照片是生成插图，不是真实史料。
+
+[怎么选风格](styles/paper-mechanism-explainer/STYLE.md) · [案例文件与许可](examples/mechanism-explainers/README.md) · [独立 Skill v0.4.0](skills/paper-mechanism-explainer/SKILL.md)
+
+案例提供影片、封面、字幕、模型与署名，没有附完整渲染工程。生活机关和机械结构也在Skill内容分支中；新的题材与风格组合仍需建立自己的模型并检查成片。

@@ -1,0 +1,40 @@
+{
+  "id": "illustrative_loan_creates_deposit",
+  "currency": "CNY",
+  "principalCents": 100000000,
+  "repaymentCents": 10000000,
+  "borrowerOtherNetAssetsCents": null,
+  "bankInitialCashBalanceCents": null,
+  "states": [
+    {
+      "id": "before",
+      "borrowerDepositCents": 0,
+      "borrowerLoanCents": 0,
+      "bankLoanAssetDeltaCents": 0,
+      "bankDepositLiabilityDeltaCents": 0
+    },
+    {
+      "id": "created",
+      "borrowerDepositCents": 100000000,
+      "borrowerLoanCents": 100000000,
+      "bankLoanAssetDeltaCents": 100000000,
+      "bankDepositLiabilityDeltaCents": 100000000
+    },
+    {
+      "id": "repaid",
+      "borrowerDepositCents": 90000000,
+      "borrowerLoanCents": 90000000,
+      "bankLoanAssetDeltaCents": 90000000,
+      "bankDepositLiabilityDeltaCents": 90000000
+    }
+  ],
+  "assumptions": [
+    "虚构案例，一家正常经营的商业银行，一笔直接记入借款人本行账户的新贷款",
+    "只展示本笔贷款带来的资产负债变化，不代表银行起初没有资金或资本",
+    "借款人原有其他资产负债未知；本笔净资产变化为0",
+    "先不发生消费转账，直接用本笔存款归还本行10万元本金",
+    "省略利息、费用、税费、坏账及其会计处理",
+    "贷款创造存款受资本、流动性、监管和贷款风险等约束，非无限造钱",
+    "结算场景只是跨行资金需求示意，无实际数值交易，未改变本例90万元结余"
+  ]
+}
