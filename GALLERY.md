@@ -476,9 +476,19 @@
 
 贷款片用凭证和天平解释等额资产负债，优惠券片区分三种互斥的出资安排，购物档案把价格统一到同一容量。数字是讲解条件，不代表真实银行产品、平台分摊规则或当前商店报价。暖色档案照片是生成插图，不是真实史料。
 
-[怎么选风格](styles/paper-mechanism-explainer/STYLE.md) · [案例文件与许可](examples/mechanism-explainers/README.md) · [独立 Skill v0.5.0](skills/paper-mechanism-explainer/SKILL.md)
+[怎么选风格](styles/paper-mechanism-explainer/STYLE.md) · [案例文件与许可](examples/mechanism-explainers/README.md) · [独立 Skill v0.6.0](skills/paper-mechanism-explainer/SKILL.md)
 
 案例提供影片、封面、字幕、模型与署名，没有附完整渲染工程。生活机关和机械结构也在Skill内容分支中；新的题材与风格组合仍需建立自己的模型并检查成片。
+
+### 同屏实验 · 内置独立流程
+
+相同起始条件、同一时刻操作，只改变一个关键变量，先看结果差异，再用局部透视、电流、受力或能量图解释。三维装置与渲染由本项目独立制作，**不调用 lemo-opuscar Skill**。
+
+<a href="examples/mechanism-explainers/copper-magnet-same-screen/film.mp4"><img src="examples/mechanism-explainers/copper-magnet-same-screen/preview.gif" alt="同屏实验：完整铜管与纵向开缝铜管中的磁铁下落，静音节选" width="480"></a>
+
+[观看79秒完整视频](examples/mechanism-explainers/copper-magnet-same-screen/film.mp4) · [铜管5秒小样](examples/mechanism-explainers/copper-magnet-same-screen/look-test.mp4) · [吸管5秒小样](examples/mechanism-explainers/copper-magnet-same-screen/straw-look-test.mp4) · [流程、三维源码与模型](examples/mechanism-explainers/copper-magnet-same-screen/README.md) · [同屏实验制作说明](skills/paper-mechanism-explainer/references/same-screen-experiments.md)
+
+完整片为1920×1080、24fps，云杰HD配音，含字幕、原创轻配乐和拟音。运动、场线和能量采用有范围说明的原理模型，不作为实测落时或完整电磁仿真。
 
 ### 立体剖面联动 · 使用外部 lemo-opuscar Skill
 

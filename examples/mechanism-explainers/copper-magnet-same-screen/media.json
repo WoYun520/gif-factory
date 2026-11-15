@@ -1,0 +1,198 @@
+{
+  "video": {
+    "file": "film.mp4",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "fps": 24,
+    "duration": 79.0,
+    "frames": 1896,
+    "video_codec": "h264",
+    "audio_codecs": [
+      "aac"
+    ]
+  },
+  "lookTest": {
+    "file": "look-test.mp4",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "fps": 24,
+    "duration": 5.0,
+    "frames": 120,
+    "video_codec": "h264",
+    "audio_codecs": [
+      "aac"
+    ]
+  },
+  "strawLookTest": {
+    "file": "straw-look-test.mp4",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "fps": 24,
+    "duration": 5.0,
+    "frames": 120,
+    "video_codec": "h264",
+    "audio_codecs": [
+      "aac"
+    ]
+  },
+  "cover": {
+    "file": "cover.png",
+    "dimensions": [
+      1920,
+      1080
+    ]
+  },
+  "preview": {
+    "file": "preview.gif",
+    "dimensions": [
+      480,
+      270
+    ],
+    "frames": 105,
+    "durationSeconds": 10.5,
+    "silent": true,
+    "loopingWebExcerpt": true,
+    "sourceSegmentsSeconds": [
+      [
+        3.08,
+        6.08
+      ],
+      [
+        9,
+        10.5
+      ],
+      [
+        31.5,
+        34
+      ],
+      [
+        50,
+        52
+      ],
+      [
+        65,
+        66.5
+      ]
+    ]
+  },
+  "subtitles": {
+    "file": "captions.srt",
+    "cues": 25,
+    "withinVideoDuration": true
+  },
+  "provenance": {
+    "independentlyAuthoredSceneAndRenderer": true,
+    "externalSkill": null,
+    "genericTools": [
+      "Three.js 0.170.0 / WebGL",
+      "browser",
+      "FFmpeg"
+    ],
+    "speech": {
+      "provider": "Clipchamp",
+      "voice": "Yunjie Dragon HD Flash Latest",
+      "language": "zh-CN",
+      "pitch": "default",
+      "speed": 1
+    },
+    "includesVoiceModelOrRawNarration": false,
+    "includesRenderingRuntime": false,
+    "sourceFolder": "source",
+    "credits": "CREDITS.md"
+  },
+  "checks": {
+    "sourceVideoUnchanged": true,
+    "scope": "Existing delivered media are preserved. This publication adds packaging, muted previews, reference frames and source portability checks, not a new full-film render or a new listening review.",
+    "fullVideoAndAudioDecode": true,
+    "sourceBrowserSmoke": {
+      "loaded": true,
+      "shots": 12,
+      "seekStable": true,
+      "duration": 79
+    }
+  },
+  "files": {
+    "CREDITS.md": {
+      "bytes": 2604,
+      "sha256": "189399d78a3b56d43a2f80980ce81a1e1e870343236a322537b354a123090cb1"
+    },
+    "FACTS.md": {
+      "bytes": 1765,
+      "sha256": "e05c69c8f87449ba559fab0d3f1a669e79d650e8ea36dc1a981fe19eaf8f09dd"
+    },
+    "README.md": {
+      "bytes": 4138,
+      "sha256": "8440ba6d4c7876224d1b8a85d64b27f4e6bb20e9f6039c50ceee932bf000c564"
+    },
+    "captions.srt": {
+      "bytes": 1960,
+      "sha256": "4785d9952eca886768171d1196e4683d5592482406e09ea4fb3832ed2ee4fe11"
+    },
+    "cover.png": {
+      "bytes": 181477,
+      "sha256": "d6ae102a1d8d6a8165396f75f35114c3aed7e15e59bc5f692946b0a7570cb320"
+    },
+    "film.mp4": {
+      "bytes": 5149281,
+      "sha256": "26e31859721b48cf95d367f7756d0cc81d0c354b171c19e62d47f2e03f35eb19"
+    },
+    "look-test.mp4": {
+      "bytes": 192312,
+      "sha256": "d443caa4ab82572af0e9e6bd4fba61ff29a0fcd2ac96a12a79a16110f4ac9021"
+    },
+    "model.json": {
+      "bytes": 1320,
+      "sha256": "b00460336dffc813ff841f2f4b23ea5563ecb4ff9ef5f7af1f8caa8553281491"
+    },
+    "narration.txt": {
+      "bytes": 1187,
+      "sha256": "6c18715713e5db4137fcef618de9fa4a039b3a447e1c6080b26d632f34420d9d"
+    },
+    "preview.gif": {
+      "bytes": 475326,
+      "sha256": "fe44e193d0b971e5b5b124c6bc51f250719f7b0e2597f26c6247747ec8a9ce0e"
+    },
+    "source/.gitignore": {
+      "bytes": 19,
+      "sha256": "9ae8e02462ff393bb40e787f0a65e79d241ed4f74b32cc57c64acb4ac18fa3fc"
+    },
+    "source/apparatus.js": {
+      "bytes": 7667,
+      "sha256": "52b86a996bde1371fec2a1ea1577681f7f9ae40f4c74d2dfd536c09e1046e241"
+    },
+    "source/film.js": {
+      "bytes": 15086,
+      "sha256": "4c2b18ad06adf473222aa9f5fb07319ed3dcdd2579473b908ea778666ca2a1b0"
+    },
+    "source/index.html": {
+      "bytes": 494,
+      "sha256": "f9b663eb1e134ac298361c2e4fea4c99e4d0e981a9c14178ce00258580dc3eeb"
+    },
+    "source/model.js": {
+      "bytes": 2761,
+      "sha256": "768d29857ead698e7397051ee2f3c0e080146935b8620966983fd8a8782a22ac"
+    },
+    "source/package.json": {
+      "bytes": 101,
+      "sha256": "6ac1a75dd4b9858e16ae134f3be91c1863a5bd503950c6b0f9d7b02bd68f824e"
+    },
+    "source/serve.mjs": {
+      "bytes": 1516,
+      "sha256": "82306a5e5df8a784e9c304d6edc3faa9f8744082ce2ca41e30f93e0cb9e0fa96"
+    },
+    "source/timeline.json": {
+      "bytes": 5998,
+      "sha256": "b50f441c52058df54001b9d9ec4d39d1f9c1fdaf2bae99a6706f86b619f330bb"
+    },
+    "straw-look-test.mp4": {
+      "bytes": 133783,
+      "sha256": "66f5c083b8670b3fad11e5ec658f182f0bff25342550f3d14b37e0283d066f96"
+    }
+  }
+}

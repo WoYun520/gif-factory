@@ -22,7 +22,7 @@
 | 动态签名 | 支持多种字体和自定义字稿，把名字与意象融成动态签名 | [查看](skills/dynamic-art-signature/SKILL.md) |
 | 电影片头 | 中文50种写法，英文50款基础字体与装饰封面；可用自己的字体、照片或字稿 | [查看](skills/cinematic-title-lettering/SKILL.md) |
 | 动态绘本 | 让插画做完一个动作，再翻到下一页，能做横屏或竖屏 | [查看](skills/compact-storybook/SKILL.md) |
-| vibe 知识大赏 | 三种内置风格；立体剖面联动使用外部 lemo-opuscar Skill，来源单独说明 | [查看](skills/paper-mechanism-explainer/SKILL.md) |
+| vibe 知识大赏 | 四种内置风格，含同屏实验；立体剖面联动使用外部 lemo-opuscar Skill | [查看](skills/paper-mechanism-explainer/SKILL.md) |
 
 <a id="stickers"></a>
 <a id="表情包展厅"></a>
@@ -151,7 +151,7 @@
 
 ## vibe 知识大赏
 
-把一个物件的机关或一笔钱的来去讲成能看见的动作。内容可选生活机关、机械结构、金融机制；画面有三种内置风格，以及使用外部 Skill 的立体剖面联动。默认无个人水印，延续作品时保留已选声线和节奏。
+把一个物件的机关、一种物理变化或一笔钱的来去讲成能看见的动作。内容可选生活机关、机械结构、物理现象、金融机制；画面有摄影纸艺、彩色贴纸、复古档案、同屏实验四种内置风格，以及使用外部 Skill 的立体剖面联动。默认无个人水印，延续作品时保留已选声线和节奏。
 
 先看两分钟无水印精选，包含拉链、机械表、弹子锁、差速器、按动笔，以及金融与消费机制。
 
@@ -169,7 +169,17 @@
 
 点击预览看带旁白的完整视频。三支是制作方法与风格示例，示例参数不代表真实产品或当前报价；每支附封面、字幕、数据模型及声音署名，不含完整渲染工程。
 
-[怎么选风格](styles/paper-mechanism-explainer/STYLE.md) · [案例与来源](examples/mechanism-explainers/README.md) · [独立 Skill v0.5.0](skills/paper-mechanism-explainer/SKILL.md)
+[怎么选风格](styles/paper-mechanism-explainer/STYLE.md) · [案例与来源](examples/mechanism-explainers/README.md) · [独立 Skill v0.6.0](skills/paper-mechanism-explainer/SKILL.md)
+
+### 同屏实验：内置独立流程
+
+相同起始条件、同一时刻操作，只改变一个关键变量，先看结果差异，再用局部透视、电流、受力或能量图解释。三维装置与渲染由本项目独立制作，**不调用 lemo-opuscar Skill**。
+
+<a href="examples/mechanism-explainers/copper-magnet-same-screen/film.mp4"><img src="examples/mechanism-explainers/copper-magnet-same-screen/preview.gif" alt="同屏实验：完整铜管与纵向开缝铜管中的磁铁下落，静音节选" width="480"></a>
+
+[观看79秒完整视频](examples/mechanism-explainers/copper-magnet-same-screen/film.mp4) · [铜管5秒小样](examples/mechanism-explainers/copper-magnet-same-screen/look-test.mp4) · [吸管5秒小样](examples/mechanism-explainers/copper-magnet-same-screen/straw-look-test.mp4) · [流程、三维源码与模型](examples/mechanism-explainers/copper-magnet-same-screen/README.md) · [同屏实验制作说明](skills/paper-mechanism-explainer/references/same-screen-experiments.md)
+
+完整片为1920×1080、24fps，云杰HD配音，含字幕、原创轻配乐和拟音。运动、场线和能量采用有范围说明的原理模型，不作为实测落时或完整电磁仿真。
 
 ### 立体剖面联动：使用 lemo-opuscar Skill
 
@@ -184,6 +194,8 @@ GIF 工厂收录调用入口和案例。**上游 Skill 与渲染运行时需另�
 > 用彩色贴纸风讲“优惠券到底谁买单”，跟着一笔订单看顾客、商家和平台的资金关系。先核实规则，再给我无水印成片、封面和可编辑工程。
 
 > 用摄影纸艺讲拉链怎么扣上，做出剖面里的咬合动作；文字和结构可编辑。
+
+> 用同屏实验讲“铜管开一条纵缝，磁铁为什么落得更快”，控制比较条件，再用透视和电流回路解释，沿用我选的配音，交付成片、字幕、封面与工程。
 
 > 调用 lemo-opuscar Skill，用立体剖面和零件联动讲清齿轮减速，沿用我选的声线，交付成片、字幕、封面和可编辑工程，并写清使用了 Lemo-Opuscar。
 

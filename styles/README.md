@@ -65,18 +65,19 @@
 
 ## vibe 知识大赏
 
-内容分为生活机关、机械结构与金融机制；画面风格单独选择，续作沿用当前选择。
+内容分为生活机关、机械结构、物理现象与金融机制；画面风格单独选择，续作沿用当前选择。
 
 | 风格 | 主要效果 | 完整案例 |
 | --- | --- | --- |
 | 摄影纸艺 | 黑纸、摄影剪贴、撕边与实际操作 | [贷款创造存款](../examples/mechanism-explainers/loan-creation/README.md) |
 | 彩色贴纸风 | 奶油纸底、二维白边贴纸、物件与资金路径 | [优惠券到底谁买单](../examples/mechanism-explainers/coupon-funding/README.md) |
 | 复古档案记录 | 档案夹、暖色照片、账纸、红笔与核对章 | [大包装一定更划算吗](../examples/mechanism-explainers/unit-price-archive/README.md) |
+| 同屏实验 · 内置 | 相同条件并排操作，观察变量造成的差异，再用局部透视与统一模型解释 | [铜管与磁铁](../examples/mechanism-explainers/copper-magnet-same-screen/README.md) |
 | 立体剖面联动 · 外部 Skill | 调用 lemo-opuscar，剖开外壳、按齿数联动、镜头追踪传动路径 | [齿轮减速原理](../examples/mechanism-explainers/gear-reduction-cutaway/README.md) |
 
 立体剖面分支实际使用 [Lemo-Opuscar by Lemomo（LemoLab）](https://github.com/lemomo-ai/lemo-opuscar) 的 Skill 与部分渲染代码；本仓库提供入口和案例，所需上游 Skill 与运行时另行安装。
 
-[怎么选与怎么做](paper-mechanism-explainer/STYLE.md) · [独立 Skill v0.5.0](../skills/paper-mechanism-explainer/SKILL.md)
+[怎么选与怎么做](paper-mechanism-explainer/STYLE.md) · [独立 Skill v0.6.0](../skills/paper-mechanism-explainer/SKILL.md)
 
 ## 维护分类
 

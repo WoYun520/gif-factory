@@ -17,7 +17,7 @@
 | 电影片头 | 原创片名字形和带场景的片头图 | [查看](skills/cinematic-title-lettering/references/style-catalog.md) |
 | 动态绘本 | 插画动起来，再一页页讲故事 | [查看](GALLERY.md#动态绘本展厅) |
 | 品牌短片 | 角色带着产品和包装演一段小故事 | [查看](GALLERY.md#品牌宣传片展厅) |
-| vibe 知识大赏 | 生活机关、机械结构、金融机制；摄影纸艺、彩色贴纸或复古档案 | [查看](GALLERY.md#mechanism-explainers) |
+| vibe 知识大赏 | 生活机关、机械结构、物理现象、金融机制；四种内置风格及外部立体剖面 | [查看](GALLERY.md#mechanism-explainers) |
 
 ## 你可以提供什么
 
@@ -75,6 +75,12 @@
 
 也可以说“摄影纸艺讲拉链怎么扣上”或“复古档案讲大包装怎么比单价”。先选讲什么，再选画面风格；续作直接说“沿用上一期”。只想先看选题或分镜，也可以明确说。
 
+同屏实验采用独立流程，不需要外部 Lemo Skill。可以说：
+
+> 用同屏实验讲铜管与磁铁，两边同样的磁铁同时释放，只改变铜管是否有贯通纵缝，再用透视和电流解释差异。配音沿用我选的声线。
+
+[79秒完整案例与三维画面源码](examples/mechanism-explainers/copper-magnet-same-screen/README.md) · [同屏实验制作说明](skills/paper-mechanism-explainer/references/same-screen-experiments.md)
+
 新增的立体剖面联动实际使用 [Lemo-Opuscar by Lemomo（LemoLab）](https://github.com/lemomo-ai/lemo-opuscar) 的 Skill，可以说：
 
 > 调用 lemo-opuscar Skill，用立体剖面和真实零件联动讲齿轮减速，配音用我选的声线，并记录原作者与复用来源。
@@ -106,7 +112,7 @@
 
 > 从 WoYun520/gif-factory 的 `skills/paper-mechanism-explainer` 文件夹安装“vibe 知识大赏”。
 
-安装后可用 `$paper-mechanism-explainer` 调用。这个文件夹可单独安装，包含三种内置风格的制作说明、参考抽帧和文件检查工具，以及立体剖面联动的外部 Skill 调用说明。**该分支需另装 `lemo-opuscar` Skill 及其运行时**，按[上游安装说明](https://github.com/lemomo-ai/lemo-opuscar/blob/main/README.zh-CN.md#安装)准备。仓库案例在 `examples/mechanism-explainers`，不随独立文件夹安装。不自动下载配音模型、绑定外部服务或提供生成额度。
+安装后可用 `$paper-mechanism-explainer` 调用。这个文件夹可单独安装，包含四种内置风格的制作说明、参考抽帧和文件检查工具，同屏实验也包含在内；另有立体剖面联动的外部 Skill 调用说明。**只有外部立体剖面分支需另装 `lemo-opuscar` Skill 及其运行时**，按[上游安装说明](https://github.com/lemomo-ai/lemo-opuscar/blob/main/README.zh-CN.md#安装)准备。仓库案例在 `examples/mechanism-explainers`，不随独立文件夹安装。不自动下载配音模型、绑定外部服务或提供生成额度。
 
 需要能生成图片、运行制作脚本的环境。自己运行时，从对应 Skill 和制作说明查依赖、素材和命令。
 
@@ -122,7 +128,7 @@
 | 上述表情包的 MP4 预览 | 加 `--preview` 时需要 FFmpeg，把最终 GIF 合成可播放的视频 |
 | 动态签名和签名九宫格 | Python 3、Pillow、NumPy，以及 FFmpeg、ffprobe；重跑旧版组件脚本才需 SciPy，具体命令见签名 Skill |
 | 动态绘本视频检查 | 检查脚本用 Python 3、ffprobe；抽取检查帧时用 FFmpeg。制作和渲染工具另按绘本说明准备 |
-| vibe 知识大赏 | 三种内置风格案例采用 HyperFrames；立体剖面联动调用另行安装的 lemo-opuscar Skill 及其渲染工具，齿轮案例使用 Three.js / WebGL。已有工程沿用已选版本。文件检查用 Python 3、ffprobe，完整解码与合成用 FFmpeg；图像和旁白跟随用户素材、选择与授权 |
+| vibe 知识大赏 | 摄影纸艺、贴纸与档案案例采用 HyperFrames；同屏实验采用独立 Three.js / WebGL、可用浏览器与 FFmpeg，无需外部影片 Skill；外部立体剖面联动另装 lemo-opuscar 及其工具。已有工程沿用已选版本。文件检查用 Python 3、ffprobe，完整解码与合成用 FFmpeg；图像和旁白跟随用户素材、选择与授权 |
 | 变画卡、动态海报、品牌短片 | 按所选做法准备图像与视频工具，详见对应制作说明，不统一套用表情包依赖 |
 
 FFmpeg 是本地处理视频和声音的工具，这里用于合成 MP4、转换 GIF、拼动态总览和抽帧；ffprobe 用来读取尺寸、帧率和时长。使用这些本地工具不需要付费 API。仓库不自带生图模型，调用外部生图或其他服务时，额度和费用按所用服务计算。

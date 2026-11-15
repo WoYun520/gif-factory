@@ -1,0 +1,42 @@
+{
+  "kind": "qualitative electromagnetic braking illustration",
+  "controls": {
+    "sameMagnets": true,
+    "sameReleaseHeight": true,
+    "sameReleaseTime": true,
+    "sameTubeMaterialLengthAndBore": true
+  },
+  "changedVariable": "continuous copper tube versus a longitudinal through slit",
+  "fullVideoSeconds": 79,
+  "source": "source/model.js",
+  "timing": "source/timeline.json",
+  "visualOnly": [
+    "front-wall transparency",
+    "magnetic field lines",
+    "current and force arrows",
+    "magnified cross-section"
+  ],
+  "modelLimits": [
+    "position-dependent linear damping, not fitted to experimental data",
+    "nonzero damping remains in the slit tube",
+    "energy shot excludes pad contact",
+    "replay clock may differ between shots; both comparison objects always share the same clock"
+  ],
+  "originalChecks": {
+    "samples": 3841,
+    "checks": {
+      "initialEqual": true,
+      "monotone": true,
+      "ordering": true,
+      "nonnegativeHeat": true,
+      "energyPhaseConserved": true
+    },
+    "maxEnergyError": 9.951289792198281e-12,
+    "initialEnergyJ": 0.2271015,
+    "events": {
+      "rightImpact": 1.7836329782137952,
+      "leftImpact": 10.174104630043493
+    },
+    "scope": "Qualitative damping; conservation checked through the complete energy shot, before pad contact."
+  }
+}
