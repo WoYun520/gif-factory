@@ -1,6 +1,6 @@
 ---
 name: pixel-gif-sticker-pack
-description: 根据图片或文字制作角色表情包、光栅变画卡、动态海报、动态签名、电影片头、动态绘本、品牌短片及「vibe 知识大赏」系列知识短视频。按用途选择做法，保留用户已定的画风、素材和要求，导出并检查实际作品。
+description: 根据图片或文字制作角色表情包、光栅变画卡、动态海报、动态签名、电影片头、文章封面配色、动态绘本、品牌短片及「vibe 知识大赏」系列知识短视频。按用途选择做法，保留用户已定的画风、素材和要求，导出并检查实际作品。
 ---
 
 # GIF 工厂
@@ -9,7 +9,7 @@ description: 根据图片或文字制作角色表情包、光栅变画卡、动�
 
 ## 先按用途找做法
 
-在[分类说明](styles/README.md)看效果，按需阅读对应说明。八类用途平等，不把画风当成用途；[作品库](GALLERY.md)保留案例状态，待确认的版本不能当成已认可模板。
+在[分类说明](styles/README.md)看效果，按需阅读对应说明。各类用途平等，不把画风当成用途；[作品库](GALLERY.md)保留案例状态，待确认的版本不能当成已认可模板。
 
 | 要做什么 | 看哪里 |
 | --- | --- |
@@ -18,11 +18,14 @@ description: 根据图片或文字制作角色表情包、光栅变画卡、动�
 | 动态海报 | [海报制作](references/dynamic-posters.md) |
 | 动态签名 | [签名入口](references/dynamic-signatures.md)、[独立 Skill](skills/dynamic-art-signature/SKILL.md) |
 | 电影片头 | [独立 Skill](skills/cinematic-title-lettering/SKILL.md)、[中文50种字形](skills/cinematic-title-lettering/references/style-catalog.md)、[英文50款](skills/cinematic-title-lettering/references/english-titles.md) |
+| 文章封面配色 | [独立 Skill](skills/article-cover-palette/SKILL.md)、[说明与安装](skills/article-cover-palette/README.md)、[100套色卡](skills/article-cover-palette/references/color-cards.md) |
 | 动态绘本 | [绘本入口](references/storybook.md)、[独立 Skill](skills/compact-storybook/SKILL.md) |
 | 品牌短片 | [短片制作](references/brand-film.md) |
 | vibe 知识大赏 | [独立 Skill](skills/paper-mechanism-explainer/SKILL.md)、[内置风格与外部立体剖面](styles/paper-mechanism-explainer/STYLE.md) |
 
 卡片先检查两图的角度、眼线、下巴和肩线，默认 480×720、6 秒、标题固定。海报先区分保留原画加动态字，还是连人物、背景和字一起重新设计；现有漫画海报是两幅完整状态切换，不能说成逐字独立动画。游戏界面的 GIF 演示也不等于可玩的游戏。
+
+文章选色、正文色卡和带配色要求的封面走文章封面配色分支。只问颜色先给方案，要图片再继续制作；100套是颜色库，不是100种文章或版式。沿用用户已选构图、字稿与素材，原配色合适也可保留。静态封面不套表情包动效或视频依赖。
 
 签名先看[四种风格的动图和做法](skills/dynamic-art-signature/references/styles.md)：纯文字连笔、意象融字、乐器融字、墨迹聚合。字体、颜色和动效可以搭配。支持多种字体和自定义字稿，纯文字直接沿字迹写出；带独立上方意象时，安排快写、约一秒停顿和慢收锋，普通款用平面墨迹。电影片头把字形、排法、场景一起设计，默认横向；提供的原图和定稿字稿按要求沿用。绘本默认固定画面、实际 6fps、每页约三秒、一个动作加结果停留，前后页道具要接得上。品牌短片交付视频和所需工程，不套表情包的方形循环规格。具体参数以各自说明和用户要求为准。
 

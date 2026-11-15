@@ -2,7 +2,7 @@
 
 [返回首页](README.md) · [分类说明](styles/README.md) · [使用指南](GUIDE.md)
 
-[表情包展厅](#表情包展厅) · [电子光栅卡展厅](#电子光栅卡展厅) · [动态海报展厅](#动态海报展厅) · [动态艺术签名](#动态艺术签名) · [电影片头](#电影片头) · [动态绘本展厅](#动态绘本展厅) · [品牌宣传片展厅](#品牌宣传片展厅) · [vibe 知识大赏展厅](#mechanism-explainers)
+[表情包展厅](#表情包展厅) · [电子光栅卡展厅](#电子光栅卡展厅) · [动态海报展厅](#动态海报展厅) · [动态艺术签名](#动态艺术签名) · [电影片头](#电影片头) · [文章封面配色](#article-cover-palette) · [动态绘本展厅](#动态绘本展厅) · [品牌宣传片展厅](#品牌宣传片展厅) · [vibe 知识大赏展厅](#mechanism-explainers)
 
 ## 表情包展厅
 
@@ -420,6 +420,20 @@
 
 [50款编号、字体和做法](skills/cinematic-title-lettering/references/english-titles.md) · [字体来源与授权](skills/cinematic-title-lettering/assets/english-titles/source-notes.md)
 
+
+<a id="article-cover-palette"></a>
+
+## 文章封面配色 · 100套
+
+每组有编号、名称、原始HEX、适用题材、情绪，以及标题字和底色的搭法。下面是两张窄横色卡，全部100张按顺序收在独立图表里。
+
+<a href="skills/article-cover-palette/assets/cards/030-落日与海.jpg"><img src="skills/article-cover-palette/assets/cards/030-落日与海.jpg" alt="030落日与海色卡" width="720"></a>
+
+<a href="skills/article-cover-palette/assets/cards/070-数字先锋.jpg"><img src="skills/article-cover-palette/assets/cards/070-数字先锋.jpg" alt="070数字先锋色卡" width="720"></a>
+
+[按001—100看色卡＋色号](skills/article-cover-palette/references/color-cards.md) · [用途、情绪和标题搭法](skills/article-cover-palette/references/palette-table.md) · [说明与安装](skills/article-cover-palette/README.md)
+
+色卡都是1200×400的AI视觉预览；精确用色按HEX。文章封面另按内容构图，可用用户的场景图、照片、字体或字稿，也能做无人物版。已有颜色合适就保留，不为套色重画整张封面。
 
 ## 动态绘本展厅
 

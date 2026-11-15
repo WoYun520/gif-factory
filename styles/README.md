@@ -51,6 +51,12 @@
 
 [看英文50款与五组大图](../skills/cinematic-title-lettering/references/english-titles.md)
 
+## 文章封面配色
+
+100套可选配色，附100张正文窄色卡。按文章在讲什么、想传达什么情绪来选，说明标题字、底色和点缀怎么分。文章只需按少数用途判断，版式和字体随内容来。已有封面的构图与配色合适时可以保留。
+
+[说明与安装](../skills/article-cover-palette/README.md) · [100张色卡＋色号](../skills/article-cover-palette/references/color-cards.md) · [用途和搭法](../skills/article-cover-palette/references/palette-table.md) · [独立 Skill](../skills/article-cover-palette/SKILL.md)
+
 ## 动态绘本
 
 一页做完一个动作，再翻到下一页。可做独立页面、横屏翻书和竖屏书页，支持正文书写和配乐。

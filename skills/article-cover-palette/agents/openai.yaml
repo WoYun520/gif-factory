@@ -1,0 +1,4 @@
+interface:
+  display_name: "文章封面配色 · 100套"
+  short_description: "从文章内容挑100套配色，写清标题、底色和点缀色，支持封面和正文窄卡。"
+  default_prompt: "使用 $article-cover-palette，根据这篇文章推荐配色，说明标题字和底色怎么搭，并按需要生成封面或正文配色卡。"

@@ -15,6 +15,7 @@
 | 动态海报 | 人物和大字一起变化，或整张海报一起设计 | [查看](GALLERY.md#动态海报展厅) |
 | 动态签名 | 多种字体与自定义字稿，名字、意象、渐变色和书写动画 | [查看](GALLERY.md#动态艺术签名) |
 | 电影片头 | 原创片名字形和带场景的片头图 | [查看](skills/cinematic-title-lettering/references/style-catalog.md) |
+| 文章封面配色 | 按文章从100套颜色里挑方案，做封面或正文窄色卡 | [查看](skills/article-cover-palette/README.md) |
 | 动态绘本 | 插画动起来，再一页页讲故事 | [查看](GALLERY.md#动态绘本展厅) |
 | 品牌短片 | 角色带着产品和包装演一段小故事 | [查看](GALLERY.md#品牌宣传片展厅) |
 | vibe 知识大赏 | 生活机关、机械结构、物理现象、金融机制；四种内置风格及外部立体剖面 | [查看](GALLERY.md#mechanism-explainers) |
@@ -59,6 +60,12 @@
 
 英文片名可选 [EN01–EN50](skills/cinematic-title-lettering/references/english-titles.md)，每款有基础字体、装饰封面和实际字稿参考，也可以用自己的字体。
 
+### 文章封面配色
+
+> 读这篇文章，先推荐配色，说明标题字、底色和点缀怎么搭。要鲜明一点，保留我提供的照片。
+
+也可以说“用030做一张5:2封面”或“只换颜色，原来的字体和构图保留”。已有配色更合适时可以沿用，不强制换成目录颜色。正文色卡默认1200×400，适合放在段落中间。[看100张色卡和安装方法](skills/article-cover-palette/README.md)。
+
 ### 动态绘本
 
 > 把这个故事做成动态绘本，一页完成一个动作，动作做完停一下再翻页。要正文书写和配乐，先做一页看看。
@@ -94,6 +101,7 @@
 | 表情包、光栅卡、动态海报 | 独立循环 GIF；成组时加总览和压缩包 |
 | 动态签名 | MP4、循环 GIF；需要时加九宫格 |
 | 电影片头 | 独立图片；成组时加总览和压缩包；动画另按要求制作 |
+| 文章封面配色 | 配色建议与颜色分工；需要时交付封面或正文窄色卡 |
 | 动态绘本 | 整本或独立页 MP4，横屏和竖屏按需要做 |
 | 品牌短片 | 视频、可修改的工程和必要素材说明 |
 | vibe 知识大赏 | MP4、同风格封面、可编辑工程与来源说明；字幕随内容对时 |
@@ -106,7 +114,9 @@
 
 ## 想单独使用某个 Skill
 
-[GIF 工厂总入口](SKILL.md) · [动态签名](skills/dynamic-art-signature/SKILL.md) · [电影片头](skills/cinematic-title-lettering/SKILL.md) · [动态绘本](skills/compact-storybook/SKILL.md) · [vibe 知识大赏](skills/paper-mechanism-explainer/SKILL.md)
+[GIF 工厂总入口](SKILL.md) · [动态签名](skills/dynamic-art-signature/SKILL.md) · [电影片头](skills/cinematic-title-lettering/SKILL.md) · [文章封面配色](skills/article-cover-palette/README.md) · [动态绘本](skills/compact-storybook/SKILL.md) · [vibe 知识大赏](skills/paper-mechanism-explainer/SKILL.md)
+
+只用文章配色时，单独安装`skills/article-cover-palette`即可，100张色卡、配色表、规则和模板都在这个文件夹里，装好后用`$article-cover-palette`调用。不需要安装其他动态制作功能。
 
 只安装「vibe 知识大赏」时，可以直接说：
 
@@ -123,6 +133,7 @@
 | 做什么 | 需要什么 |
 | --- | --- |
 | 查看案例、读说明 | 不需要 FFmpeg |
+| 文章封面配色 | 查表、选色、准备提示词只用Python 3；使用现成色卡无需生图，新图片需可用的画图工具；不需要FFmpeg |
 | 静态片名、字稿和片头图 | 需要可用的图像生成或编辑工具；静态图本身不需要 FFmpeg |
 | 普通表情包 GIF、ZIP | `export_pack.py`、`export_keyframes.py` 用 Python 3 和 Pillow；仅导出 GIF、ZIP 不需要 FFmpeg |
 | 上述表情包的 MP4 预览 | 加 `--preview` 时需要 FFmpeg，把最终 GIF 合成可播放的视频 |

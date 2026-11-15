@@ -8,7 +8,7 @@
 
 装好后，给一张图、一段文字，或直接说想做什么。角色图、场景图、片名、字稿和配乐都可以自己提供，缺的部分再一起补。
 
-[表情包](#stickers) · [光栅变画卡](#cards-transforms) · [动态海报](#posters-type) · [动态签名](#dynamic-signatures) · [电影片头](#cinematic-title-lettering) · [动态绘本](#storybooks) · [品牌短片](#brand-films) · [vibe 知识大赏](#mechanism-explainers)
+[表情包](#stickers) · [光栅变画卡](#cards-transforms) · [动态海报](#posters-type) · [动态签名](#dynamic-signatures) · [电影片头](#cinematic-title-lettering) · [文章封面配色](#article-cover-palette) · [动态绘本](#storybooks) · [品牌短片](#brand-films) · [vibe 知识大赏](#mechanism-explainers)
 
 [分类说明](styles/README.md) · [完整作品库](GALLERY.md) · [使用指南](GUIDE.md) · [下载项目](https://github.com/WoYun520/gif-factory/archive/refs/heads/main.zip)
 
@@ -18,9 +18,10 @@
 
 | Skill | 能做什么 | 说明 |
 | --- | --- | --- |
-| GIF 工厂总入口 | 根据需求选择表情包、卡片、海报、签名、片头、绘本、品牌短片或「vibe 知识大赏」的做法 | [查看](SKILL.md) |
+| GIF 工厂总入口 | 根据需求选择表情包、卡片、海报、签名、片头、文章配色、绘本、品牌短片或「vibe 知识大赏」的做法 | [查看](SKILL.md) |
 | 动态签名 | 支持多种字体和自定义字稿，把名字与意象融成动态签名 | [查看](skills/dynamic-art-signature/SKILL.md) |
 | 电影片头 | 中文50种写法，英文50款基础字体与装饰封面；可用自己的字体、照片或字稿 | [查看](skills/cinematic-title-lettering/SKILL.md) |
+| 文章封面配色 | 100套颜色，按文章挑选，写清标题、底色和点缀怎么搭；附100张现成色卡 | [说明与安装](skills/article-cover-palette/README.md) |
 | 动态绘本 | 让插画做完一个动作，再翻到下一页，能做横屏或竖屏 | [查看](skills/compact-storybook/SKILL.md) |
 | vibe 知识大赏 | 四种内置风格，含同屏实验；立体剖面联动使用外部 lemo-opuscar Skill | [查看](skills/paper-mechanism-explainer/SKILL.md) |
 
@@ -121,6 +122,25 @@
 > 用 EN25 的写法做 “Letters from Summer”，放大首字母，让收笔融进海岸线。
 
 > 用我提供的风景图和片名，按 F13 粉笔拙块做一张横向片头，字写得有点特别。
+
+<a id="article-cover-palette"></a>
+
+## 文章封面配色
+
+给一篇文章或一个标题，挑出适合的颜色，说明底色、标题字和点缀怎么分；需要时继续做成封面。100套是配色选择，文章按教程、工具介绍、分析、经验、清单、故事情绪等少数用途来判断。也可以指定编号、自定义HEX，或提供自己的照片、字稿和字体要求。
+
+<table>
+<tr>
+<td><a href="skills/article-cover-palette/assets/cards/030-落日与海.jpg"><img src="skills/article-cover-palette/assets/cards/030-落日与海.jpg" alt="030落日与海：橙、米色、钴蓝" width="350"></a></td>
+<td><a href="skills/article-cover-palette/assets/cards/070-数字先锋.jpg"><img src="skills/article-cover-palette/assets/cards/070-数字先锋.jpg" alt="070数字先锋：黄、蓝、黑、白" width="350"></a></td>
+</tr>
+</table>
+
+[说明与安装](skills/article-cover-palette/README.md) · [100张色卡＋色号](skills/article-cover-palette/references/color-cards.md) · [用途和标题搭法](skills/article-cover-palette/references/palette-table.md) · [Skill](skills/article-cover-palette/SKILL.md)
+
+正文窄卡默认1200×400，封面从1500×600起步。已有版式和配色合适时可以保留；不用为了套色重画整张图。查表脚本只用Python 3，不需要FFmpeg；新图片需要可用的画图工具。
+
+> 读这篇文章，先给一套主推配色和两套有区别的备选。说清标题、底色和点缀怎么搭，选定后做一张5:2封面，不加人物。
 
 <a id="storybooks"></a>
 
