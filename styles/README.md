@@ -53,7 +53,7 @@
 
 ## 文章封面配色
 
-100套可选配色，附100张正文窄色卡。按文章在讲什么、想传达什么情绪来选，说明标题字、底色和点缀怎么分。文章只需按少数用途判断，版式和字体随内容来。已有封面的构图与配色合适时可以保留。
+100套可选配色，附100张现成色卡。按文章内容与情绪推荐颜色，说明标题字、底色和点缀怎么分，不负责封面设计和出图。推荐搭配[Adrian Punk的Punk-Posters](https://github.com/adrianpunk/Punk-Posters)制作封面，分别安装并按各自许可使用。已有配色合适时可以保留。
 
 [说明与安装](../skills/article-cover-palette/README.md) · [100张色卡＋色号](../skills/article-cover-palette/references/color-cards.md) · [用途和搭法](../skills/article-cover-palette/references/palette-table.md) · [独立 Skill](../skills/article-cover-palette/SKILL.md)
 

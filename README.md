@@ -21,7 +21,7 @@
 | GIF 工厂总入口 | 根据需求选择表情包、卡片、海报、签名、片头、文章配色、绘本、品牌短片或「vibe 知识大赏」的做法 | [查看](SKILL.md) |
 | 动态签名 | 支持多种字体和自定义字稿，把名字与意象融成动态签名 | [查看](skills/dynamic-art-signature/SKILL.md) |
 | 电影片头 | 中文50种写法，英文50款基础字体与装饰封面；可用自己的字体、照片或字稿 | [查看](skills/cinematic-title-lettering/SKILL.md) |
-| 文章封面配色 | 100套颜色，按文章挑选，写清标题、底色和点缀怎么搭；附100张现成色卡 | [说明与安装](skills/article-cover-palette/README.md) |
+| 文章封面配色 | 按文章选配色，写清标题、底色和点缀怎么搭；推荐搭配Punk制作封面 | [说明与安装](skills/article-cover-palette/README.md) |
 | 动态绘本 | 让插画做完一个动作，再翻到下一页，能做横屏或竖屏 | [查看](skills/compact-storybook/SKILL.md) |
 | vibe 知识大赏 | 四种内置风格，含同屏实验；立体剖面联动使用外部 lemo-opuscar Skill | [查看](skills/paper-mechanism-explainer/SKILL.md) |
 
@@ -127,7 +127,9 @@
 
 ## 文章封面配色
 
-给一篇文章或一个标题，挑出适合的颜色，说明底色、标题字和点缀怎么分；需要时继续做成封面。100套是配色选择，文章按教程、工具介绍、分析、经验、清单、故事情绪等少数用途来判断。也可以指定编号、自定义HEX，或提供自己的照片、字稿和字体要求。
+这套Skill负责给文章选配色，不负责制作封面。给一篇文章、标题或现有封面，它会推荐颜色并说明底色、标题字、小字和点缀怎么分。支持指定编号、自定义HEX，也可以保留合适的原配色。100套是颜色库，文章仍按少数用途判断。
+
+推荐搭配[Adrian Punk的Punk-Posters](https://github.com/adrianpunk/Punk-Posters)使用：本Skill选颜色，Punk负责构图、字体、风格和出图。两套分别安装，按各自说明和许可使用，本包不附带Punk。
 
 <table>
 <tr>
@@ -138,9 +140,9 @@
 
 [说明与安装](skills/article-cover-palette/README.md) · [100张色卡＋色号](skills/article-cover-palette/references/color-cards.md) · [用途和标题搭法](skills/article-cover-palette/references/palette-table.md) · [Skill](skills/article-cover-palette/SKILL.md)
 
-正文窄卡默认1200×400，封面从1500×600起步。已有版式和配色合适时可以保留；不用为了套色重画整张图。查表脚本只用Python 3，不需要FFmpeg；新图片需要可用的画图工具。
+附100张1200×400现成色卡和完整配色表。选色、查表和导出交接单只用Python 3，不需要FFmpeg或画图工具；实际封面由后续工具制作。
 
-> 读这篇文章，先给一套主推配色和两套有区别的备选。说清标题、底色和点缀怎么搭，选定后做一张5:2封面，不加人物。
+> 读这篇文章，给一套主推配色，必要时再给两套有区别的备选。说清颜色怎么分，整理成配色方案，我再交给Punk做封面。
 
 <a id="storybooks"></a>
 

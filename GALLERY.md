@@ -433,7 +433,7 @@
 
 [按001—100看色卡＋色号](skills/article-cover-palette/references/color-cards.md) · [用途、情绪和标题搭法](skills/article-cover-palette/references/palette-table.md) · [说明与安装](skills/article-cover-palette/README.md)
 
-色卡都是1200×400的AI视觉预览；精确用色按HEX。文章封面另按内容构图，可用用户的场景图、照片、字体或字稿，也能做无人物版。已有颜色合适就保留，不为套色重画整张封面。
+色卡都是1200×400的AI视觉预览；精确用色按HEX。这套Skill负责选配色，不制作封面；推荐把方案交给[Adrian Punk的Punk-Posters](https://github.com/adrianpunk/Punk-Posters)负责构图、字体和出图。两套分别安装并按各自许可使用，已有颜色合适时也可以保留。
 
 ## 动态绘本展厅
 

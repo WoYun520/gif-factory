@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""查配色、计算字色、排序和填提示词。只用Python标准库，不调用生图API。"""
+"""查配色、计算字色、推荐方案和导出配色交接单。只用Python标准库，不生成封面。"""
 import argparse
 import colorsys
 import json
@@ -180,70 +180,62 @@ def select_palettes(brief,limit=3):
     return chosen
 
 
-def make_prompt(palette,mode,title=None,ratio=None,width=None,scene=None,lettering=None,background=None,background_hex=None,brief=None):
+def make_handoff(palette,title=None,background=None,background_hex=None,brief=None):
+    """仅导出颜色与用法，不编排封面、不调用图像工具或其他Skill。"""
     brief=brief or {}
-    title=title or brief.get('title')
     background=background if background is not None else brief.get('background','不限')
     background_hex=background_hex if background_hex is not None else brief.get('background_hex')
-    if background not in ['不限','浅底','深底']:
-        raise ValueError('background使用不限、浅底或深底。')
-    roles=color_roles(palette,background,background_hex)
-    ratio=ratio or ('3:1' if mode=='palette-card' else '5:2')
-    parts=ratio.split(':')
-    if len(parts)!=2 or not all(p.isdigit() and int(p)>0 for p in parts):
-        raise ValueError('比例写成3:1或5:2这样的形式。')
-    width=width or (1200 if mode=='palette-card' else 1500)
-    height=round(width*int(parts[1])/int(parts[0]))
-    if width<300 or height<100:
-        raise ValueError('尺寸过小，色名和色号难以阅读。')
-    if mode=='article-cover' and not title:
-        raise ValueError('制作文章封面需要title；只问配色可用select或show。')
-    inputs=[]
-    if mode=='palette-card':
-        inputs.append({'path':str(ROOT/'assets/style-reference.jpg'),'role':'仅参考已经选定的窄横版式与块字，不沿用参考图的色号和文字。'})
-    for path,role in [(scene,'用户场景或内容图，保留用户指定的主体和事实。'),(lettering,'用户字稿，按其字形与文字要求使用。')]:
-        if path:
-            path=Path(path).expanduser().resolve()
-            if not path.is_file(): raise ValueError('找不到用户素材：'+str(path))
-            if path.suffix.lower() not in ['.png','.jpg','.jpeg','.webp']:
-                raise ValueError('图片参数接收PNG/JPG/WebP；字体文件先由当前排版工具处理。')
-            inputs.append({'path':str(path),'role':role})
-    lines=[]
-    for c,ink in zip(palette['colors'],roles['swatch_inks']):
-        line=f'{c["name"]} {c["hex"]}'
-        if mode=='palette-card':
-            line+=f'；此色块文字用 {ink["hex"]}。字色只用于读字，不新增配色色块或色号标签。'
-        lines.append(line)
-    ratio_note='未指定固定用色比例，按主底、次色与小面积点缀安排。'
+    if brief.get('palette_id') is not None and (palette['id'] is None or int(brief['palette_id'])!=palette['id']):
+        raise ValueError('交接编号与brief指定的编号冲突。')
+    if brief.get('custom_colors') and palette['id'] is not None:
+        raise ValueError('指定编号与brief自定义颜色不能同时使用。')
+    constraints={k:brief[k] for k in ['required_colors','excluded_colors','color_count'] if k in brief}
+    constraints.update(background=background,background_hex=background_hex)
+    if palette['id'] is None:
+        constraints.update(custom_colors=palette['colors'],palette_name=palette['name'])
+    else:
+        constraints['palette_id']=palette['id']
+    roles=select_palettes(constraints,1)[0]['roles']
+    def field(value,default):
+        if isinstance(value,list):
+            return '；'.join(str(v) for v in value) or default
+        return str(value) if value is not None and str(value).strip() else default
+    area_note='按主底、次色和少量点缀分工，不要求每个颜色均分面积。'
     if palette.get('source_usage_ratio'):
         if roles['background']['hex']==palette['colors'][0]['hex']:
-            ratio_note='原清单建议6:3:1，按以上原色顺序安排封面大致面积；色卡为读色号保留足够宽度。'
+            area_note='原清单建议按原色顺序约6:3:1使用，实际面积配合后续版式。'
         else:
-            ratio_note='原清单建议6:3:1，但本次已明确更换底色，封面面积以当前角色分工安排；色卡保留读字空间。'
-    preserve=brief.get('preserve',[])
-    if isinstance(preserve,str):
-        preserve=[preserve]
-    values={'number':palette['number'],'palette_name':palette['name'],'title':json.dumps(title or palette['name'],ensure_ascii=False),
-            'ratio':ratio,'width':str(width),'height':str(height),'color_count':str(len(palette['colors'])),
-            'color_lines':'\n'.join(lines),'background_hex':roles['background']['hex'],'title_hex':roles['title']['hex'],
-            'body_hex':roles['body']['hex'],'accent_hex':roles['accent']['hex'],'ratio_note':ratio_note,
-            'article_summary':brief.get('article_summary','只提供了标题，按标题作暂定构思，不声称已读全文。'),
-            'article_message':brief.get('message','围绕给定标题，不自加结论。'),
-            'article_moods':'、'.join(brief.get('moods',palette.get('moods',[]))),
-            'article_purpose':brief.get('purpose','按标题与用户要求判断'),
-            'visual_direction':brief.get('visual_direction','根据文章用途选择版式、字体和材料；沿用用户已选的风格。'),
-            'visual_subject':brief.get('visual_subject','用一个与核心落点有关的主体或视觉关系，不用无关小图标填空。'),
-            'palette_scope':brief.get('palette_scope','可调整的底面、标题字、关键词衬底与少量点缀；照片、人物肤色、产品实色与数据图例保留。'),
-            'preserve_requirements':'；'.join(preserve) or '保留用户标题、已定素材、字形与尺寸要求。',
-            'title_note':'标题字色对比只适合大字；缩到390px宽时标题保持至少28px，小字另用正文色。' if roles['title']['large_only'] else '标题与背景对比足够；仍需检查用户照片里实际落字的位置。',
-            'user_assets':'\n'.join(f'{i["path"]}：{i["role"]}' for i in inputs if i['path']!=str(ROOT/'assets/style-reference.jpg')) or ('没有额外素材，按以上配色色块与文字制作。' if mode=='palette-card' else '没有用户素材，可用主题物件、图解或色块，不强行加人物。')}
-    template=(ROOT/f'templates/{mode}.md').read_text()
-    variables=set(re.findall(r'\{\{(\w+)\}\}',template))
-    missing=variables-values.keys()
-    if missing: raise ValueError('模板变量缺失：'+','.join(sorted(missing)))
-    template=re.sub(r'\{\{(\w+)\}\}',lambda match:values[match.group(1)],template)
-    return {'prepared_only':True,'mode':mode,'palette_id':palette['id'],'palette_name':palette['name'],
-            'target_size':[width,height],'ratio':ratio,'roles':roles,'input_images':inputs,'prompt':template}
+            area_note='原清单有6:3:1建议；本次更换底色，以当前分工为准。'
+    values={
+        'title':field(title or brief.get('title'),'未提供标题'),
+        'article_summary':field(brief.get('article_summary'),'未提供正文，只按已有信息提出选色建议。'),
+        'article_message':field(brief.get('message'),'沿用文章原意，不增加结论。'),
+        'article_moods':field(brief.get('moods'), '按文章语气判断'),
+        'number':palette['number'],'palette_name':palette['name'],
+        'color_lines':'\n'.join('- '+c['name']+' '+c['hex'] for c in palette['colors']),
+        'background_hex':roles['background']['hex'],'title_hex':roles['title']['hex'],
+        'body_hex':roles['body']['hex'],'accent_hex':roles['accent']['hex'],
+        'title_note':'标题色仅适合大字，小字改用正文色。' if roles['title']['large_only'] else '仍需按实际落字区域复核对比。',
+        'area_note':area_note,
+        'style_context':field(brief.get('style_context',brief.get('visual_direction')),'未指定，由后续封面Skill决定。'),
+        'palette_scope':field(brief.get('palette_scope'),'可设计的底面、标题字、关键词衬底和少量点缀；照片、肤色、产品原色和数据图例保留。'),
+        'preserve_requirements':field(brief.get('preserve'),'保留用户标题、已有素材和明确要求。')}
+    template=(ROOT/'templates/palette-handoff.md').read_text()
+    missing=set(re.findall(r'\{\{(\w+)\}\}',template))-values.keys()
+    if missing:
+        raise ValueError('交接模板变量缺失：'+','.join(sorted(missing)))
+    handoff=re.sub(r'\{\{(\w+)\}\}',lambda match:values[match.group(1)],template)
+    return {'selection_only':True,'image_generated':False,'palette_id':palette['id'],
+            'palette_name':palette['name'],'colors':palette['colors'],'roles':roles,
+            'preview':str(ROOT/palette['preview']) if palette.get('preview') else None,
+            'handoff':handoff,'next_step':'需要制作封面时，把配色方案交给另行安装的Punk或其他封面Skill；本脚本不会自动调用。'}
+
+
+def load_brief(path):
+    value=json.loads(Path(path).expanduser().read_text())
+    if not isinstance(value,dict):
+        raise ValueError('brief需为JSON对象。')
+    return value
 
 
 def main():
@@ -252,14 +244,12 @@ def main():
     show=sub.add_parser('show');show.add_argument('id',type=int)
     sub.add_parser('vocabulary')
     select=sub.add_parser('select');select.add_argument('--brief',required=True);select.add_argument('--limit',type=int,default=3)
-    prompt=sub.add_parser('prompt')
-    source=prompt.add_mutually_exclusive_group(required=True)
+    handoff=sub.add_parser('handoff',help='导出配色方案交接单，不生成图片')
+    source=handoff.add_mutually_exclusive_group(required=True)
     source.add_argument('--id',type=int);source.add_argument('--custom',nargs='+')
-    prompt.add_argument('--name',default='自定配色');prompt.add_argument('--mode',choices=['palette-card','article-cover'],default='palette-card')
-    prompt.add_argument('--title');prompt.add_argument('--ratio');prompt.add_argument('--width',type=int)
-    prompt.add_argument('--scene');prompt.add_argument('--lettering');prompt.add_argument('--background',choices=['不限','浅底','深底'])
-    prompt.add_argument('--background-hex');prompt.add_argument('--out')
-    prompt.add_argument('--brief')
+    handoff.add_argument('--name',default='自定配色');handoff.add_argument('--title')
+    handoff.add_argument('--background',choices=['不限','浅底','深底']);handoff.add_argument('--background-hex')
+    handoff.add_argument('--brief');handoff.add_argument('--out')
     args=parser.parse_args()
     try:
         if args.command=='vocabulary':
@@ -268,11 +258,11 @@ def main():
         elif args.command=='show':
             p=next((p for p in load_catalog() if p['id']==args.id),None)
             if p is None: raise ValueError('编号应在1—100之间。')
-            result={'palette':p,'roles':color_roles(p),'preview':str(ROOT/p['preview'])}
+            result={'selection_only':True,'palette':p,'roles':color_roles(p),'preview':str(ROOT/p['preview'])}
         elif args.command=='select':
             if not 1<=args.limit<=10: raise ValueError('limit应在1—10之间。')
-            brief=json.loads(Path(args.brief).read_text())
-            result={'article_summary':brief.get('article_summary'),'message':brief.get('message'),
+            brief=load_brief(args.brief)
+            result={'selection_only':True,'article_summary':brief.get('article_summary'),'message':brief.get('message'),
                     'recommendations':select_palettes(brief,args.limit),'note':'按助手提炼的题材、情绪和任务排序，不代表脚本已经阅读或验证全文。'}
         else:
             if args.custom:
@@ -280,12 +270,12 @@ def main():
             else:
                 p=next((p for p in load_catalog() if p['id']==args.id),None)
                 if p is None: raise ValueError('编号应在1—100之间。')
-            brief=json.loads(Path(args.brief).read_text()) if args.brief else None
-            result=make_prompt(p,args.mode,args.title,args.ratio,args.width,args.scene,args.lettering,args.background,args.background_hex,brief)
+            brief=load_brief(args.brief) if args.brief else None
+            result=make_handoff(p,args.title,args.background,args.background_hex,brief)
             if args.out:
                 out=Path(args.out).expanduser();out.mkdir(parents=True,exist_ok=True)
-                (out/'prompt.txt').write_text(result['prompt'])
-                (out/'plan.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
+                (out/'palette-handoff.md').write_text(result['handoff'])
+                (out/'plan.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
                 result['saved_to']=str(out.resolve())
         print(json.dumps(result,ensure_ascii=False,indent=2))
     except (ValueError,KeyError,OSError,json.JSONDecodeError) as exc:
