@@ -1,0 +1,4 @@
+interface:
+  display_name: "纸艺互动短片与儿歌 MV"
+  short_description: "制作森林纸艺互动故事或随歌词接唱的儿歌 MV，检查人物表演与道具遮挡"
+  default_prompt: "使用 $continuous-paper-story，按我的故事或歌曲设计纸艺互动，先试演关键回应，再扩成完整短片。"

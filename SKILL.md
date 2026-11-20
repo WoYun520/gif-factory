@@ -20,6 +20,7 @@ description: 根据图片或文字制作角色表情包、光栅变画卡、动�
 | 电影片头 | [独立 Skill](skills/cinematic-title-lettering/SKILL.md)、[中文50种字形](skills/cinematic-title-lettering/references/style-catalog.md)、[英文50款](skills/cinematic-title-lettering/references/english-titles.md) |
 | 文章封面配色 | [独立 Skill](skills/article-cover-palette/SKILL.md)、[说明与安装](skills/article-cover-palette/README.md)、[100套色卡](skills/article-cover-palette/references/color-cards.md) |
 | 动态绘本 | [绘本入口](references/storybook.md)、[独立 Skill](skills/compact-storybook/SKILL.md) |
+| 连续纸艺短片与儿歌 MV | [制作流程](skills/continuous-paper-story/SKILL.md)、[角色与道具遮挡检查](skills/continuous-paper-story/references/action-review.md#角色经过道具) |
 | 品牌短片 | [短片制作](references/brand-film.md) |
 | vibe 知识大赏 | [独立 Skill](skills/paper-mechanism-explainer/SKILL.md)、[内置风格与外部立体剖面](styles/paper-mechanism-explainer/STYLE.md) |
 

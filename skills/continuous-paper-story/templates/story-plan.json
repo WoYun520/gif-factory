@@ -1,0 +1,80 @@
+{
+  "status": "experimental",
+  "appearance": "user-approved reference look",
+  "movement_method": "not selected until an action test",
+  "output": {
+    "fps": null,
+    "duration_seconds": null,
+    "audio": "follow brief"
+  },
+  "locations": [
+    {
+      "id": "destination",
+      "visible_before_use": null
+    }
+  ],
+  "events": [
+    {
+      "id": "handoff",
+      "goal": "one prop changes owner",
+      "start": null,
+      "contact": null,
+      "release": null,
+      "settle": null,
+      "prop": {
+        "id": "letter-1",
+        "count": 1,
+        "owner_before": "sender",
+        "owner_during_contact": "sender",
+        "owner_after": "receiver",
+        "contacting_hands": [
+          "sender",
+          "receiver"
+        ]
+      },
+      "views_needed": [
+        "decide from acting"
+      ],
+      "contact_points": [
+        "sender palm",
+        "receiver palm"
+      ],
+      "next_event_cue": "receiver visible before reaching",
+      "review": {
+        "technical": "not_tested",
+        "visual": "not_tested",
+        "user": "pending",
+        "evidence": []
+      },
+      "occlusion_crossings": [
+        {
+          "shot": "basket-pickup",
+          "subject": "hand and letter",
+          "back_to_front": [
+            "basket interior",
+            "hand and letter",
+            "near basket rim"
+          ],
+          "frame_basis": "shot-local, zero-based, inclusive",
+          "start_frame": null,
+          "end_frame": null,
+          "expected": "The near rim covers the letter until the hand lifts it clear.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "interaction": {
+        "initiator_action": "Sender holds out the letter and waits.",
+        "listener_notices": "Receiver looks up from the basket toward the letter.",
+        "response": "Receiver reaches out and takes the letter.",
+        "change_on_repeat": null,
+        "cue_into_next_shot": null,
+        "review": {
+          "silent_without_captions": "not_tested",
+          "with_audio": "not_tested",
+          "evidence": []
+        }
+      }
+    }
+  ]
+}
