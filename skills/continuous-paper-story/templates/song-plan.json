@@ -1,0 +1,72 @@
+{
+  "song": "农场接唱会（换歌时重填）",
+  "recording": "Sam Patterson Trio · Edison 51644-R · 1925",
+  "timeline": {
+    "basis": "成片秒数，含片头",
+    "fps": 24
+  },
+  "events": [
+    {
+      "shot": "农场门口",
+      "start": 0,
+      "end": 6.84,
+      "lyric_cues": [
+        {
+          "word": "farm",
+          "singer": "农夫",
+          "receiver": "小鸡",
+          "approx_seconds": 2.42
+        }
+      ],
+      "interaction": {
+        "initiator_action": "农夫先看小鸡，抬前臂领唱。",
+        "listener_notices": "小鸡停下低头看地的动作。",
+        "response": "小鸡朝向农夫，在副歌应声。",
+        "leader_yields": "农夫放低手、侧耳等，把画面留给小鸡。",
+        "review": {
+          "silent_without_captions": "not_tested",
+          "with_audio": "not_tested",
+          "evidence": []
+        }
+      }
+    },
+    {
+      "shot": "池塘接到鸡舍",
+      "start": 27.875,
+      "end": 35.875,
+      "lyric_cues": [
+        {
+          "word": "quack-quack here",
+          "singer": "左鸭",
+          "receiver": "右鸭",
+          "approx_seconds": 29.27
+        },
+        {
+          "word": "quack-quack there",
+          "singer": "右鸭",
+          "receiver": "左鸭",
+          "approx_seconds": 30.5
+        },
+        {
+          "word": "everywhere",
+          "singer": "两只鸭子",
+          "action": "一起伸颈；尾声朝岸边抬头",
+          "approx_seconds": 32.55
+        }
+      ],
+      "interaction": {
+        "initiator_action": "左鸭先叫，停下来等。",
+        "listener_notices": "右鸭从水面的叶子抬起头。",
+        "response": "右鸭朝左鸭接唱。",
+        "change_on_repeat": "再唱时右鸭已朝向左鸭，直接接声。",
+        "cue_into_next_shot": "两鸭朝岸边望，鸡舍里的小鸡从啄食中抬头。",
+        "review": {
+          "silent_without_captions": "not_tested",
+          "with_audio": "not_tested",
+          "evidence": []
+        }
+      }
+    }
+  ],
+  "approved_ranges": []
+}

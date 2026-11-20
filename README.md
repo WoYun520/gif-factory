@@ -23,7 +23,7 @@
 | 电影片头 | 中文50种写法，英文50款基础字体与装饰封面；可用自己的字体、照片或字稿 | [查看](skills/cinematic-title-lettering/SKILL.md) |
 | 文章封面配色 | 按文章选配色，写清标题、底色和点缀怎么搭；推荐搭配Punk制作封面 | [说明与安装](skills/article-cover-palette/README.md) |
 | 动态绘本 | 让插画做完一个动作，再翻到下一页，能做横屏或竖屏 | [查看](skills/compact-storybook/SKILL.md) |
-| 连续纸艺短片 | 让角色在纸艺场景中行动和接唱，出整片前逐帧检查角色经过道具的位置 | [查看](skills/continuous-paper-story/SKILL.md) |
+| 连续纸艺短片与儿歌 MV | 人物领唱、同伴回应，随歌词换景，出整片前检查动作与遮挡 | [制作流程](skills/continuous-paper-story/SKILL.md) · [接唱样片与分镜](skills/continuous-paper-story/references/song-performance.md) |
 | vibe 知识大赏 | 四种内置风格，含同屏实验；立体剖面联动使用外部 lemo-opuscar Skill | [查看](skills/paper-mechanism-explainer/SKILL.md) |
 
 <a id="stickers"></a>
