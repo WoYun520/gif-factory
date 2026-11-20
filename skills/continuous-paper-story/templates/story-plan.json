@@ -62,7 +62,19 @@
           "status": "not_tested",
           "evidence": []
         }
-      ]
+      ],
+      "interaction": {
+        "initiator_action": "Sender holds out the letter and waits.",
+        "listener_notices": "Receiver looks up from the basket toward the letter.",
+        "response": "Receiver reaches out and takes the letter.",
+        "change_on_repeat": null,
+        "cue_into_next_shot": null,
+        "review": {
+          "silent_without_captions": "not_tested",
+          "with_audio": "not_tested",
+          "evidence": []
+        }
+      }
     }
   ]
 }

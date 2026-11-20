@@ -50,7 +50,19 @@
         8
       ],
       "action": "小熊看看两块面包，把自己的送向小兔；互相看一眼",
-      "bread": "每人仍只有自己的半块，没有第三块"
+      "bread": "每人仍只有自己的半块，没有第三块",
+      "interaction": {
+        "initiator_action": "小熊看看两块面包，把自己的半块送向小兔。",
+        "listener_notices": "小兔的目光从面包移向小熊。",
+        "response": "两人对上视线，再一起吃。",
+        "change_on_repeat": null,
+        "cue_into_next_shot": null,
+        "review": {
+          "silent_without_captions": "not_tested",
+          "with_audio": "not_tested",
+          "evidence": []
+        }
+      }
     },
     {
       "time": [
