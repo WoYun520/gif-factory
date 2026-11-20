@@ -1,0 +1,4 @@
+interface:
+  display_name: "森林纸艺互动短片"
+  short_description: "延续已确认的纸艺骑行与分享小故事，保持完整角色和停格节奏"
+  default_prompt: "使用 $continuous-paper-story，先读森林纸艺互动基准并复用随包素材与运行样例，再设计一个同风格的简单互动故事；新增动作先验证，不擅自换制作形式。"
